@@ -17,6 +17,7 @@ public class QuizManager : MonoBehaviour
     private int scoreCount = 0;
     private float currentTime;
     private int lifeRemaining = 3;
+    private int questionCount = 0;
 
     private GameStatus gameStatus = GameStatus.Next;
 
@@ -29,6 +30,7 @@ public class QuizManager : MonoBehaviour
         currentTime = timeLimit;
         lifeRemaining = 3;
         questions = new List<Question>();
+        questionCount = 0;
 
         for (int i = 0; i < quizData[index].questions.Count; i++)
         {
@@ -46,6 +48,9 @@ public class QuizManager : MonoBehaviour
         selectedQuestion = questions[val];
 
         quizUI.SetQuestion(selectedQuestion);
+
+        questionCount += 1;
+        quizUI.QuestionCountText.text = "Q : " + questionCount + " /10";
 
         questions.RemoveAt(val);
     }
