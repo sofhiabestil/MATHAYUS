@@ -17,27 +17,29 @@ public class Dialog : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        // StartCoroutine(Type());
-        DisplayText();
+        StartCoroutine(WriteSentences());
+        //DisplayText();
     }
 
     void Update()
     {
-        if(textDisplay.text == elements[0])
+        //check if textDisplay is currently displaying
+        if(textDisplay.text == elements[index])
         {
-
             //For abling continue button
             continueButton.SetActive(true);
         }
     }
 
-    void DisplayText()
+    //void DisplayText(){}
+    
+    IEnumerator WriteSentences()
     {
          foreach(char letter in elements[index].ToCharArray())
          {
              textDisplay.text += letter;
              //typing speed
-             yield return new WaitForSeconds(0.02f); 
+             yield return new WaitForSeconds(typingSpeed); 
          }
 
         /**for (int i=0; i<elements.Length; i++)
@@ -61,7 +63,7 @@ public class Dialog : MonoBehaviour
             // reset the text display so sentences don't stack
             textDisplay.text = "";
             // to make sentence slowly displays itself
-            StartCoroutine(Type());
+            StartCoroutine(WriteSentences());
         }
         else
         {
@@ -71,8 +73,4 @@ public class Dialog : MonoBehaviour
             continueButton.SetActive(false);
         }
     }
-
-    
-
-
 }
