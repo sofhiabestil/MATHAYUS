@@ -1,0 +1,95 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3d317cf6ac226e8458b690194e175596, type: 3}
+  m_Name: QuestionData
+  m_EditorClassIdentifier: 
+  questions:
+  - QuestionInfo: Question 1
+    options:
+    - 1
+    - 2
+    - 3
+    - 4
+    CorrectAnswer: 1
+    Hints: Question 1 Hint
+  - QuestionInfo: Question 2
+    options:
+    - 1
+    - 2
+    - 3
+    - 4
+    CorrectAnswer: 2
+    Hints: Question  2  Hint
+  - QuestionInfo: Question 3
+    options:
+    - 1
+    - 2
+    - 3
+    - 4
+    CorrectAnswer: 3
+    Hints: Question  3  Hint
+  - QuestionInfo: Question 4
+    options:
+    - 1
+    - 2
+    - 3
+    - 4
+    CorrectAnswer: 4
+    Hints: Question 4 Hint
+  - QuestionInfo: Question 5
+    options:
+    - 5
+    - 6
+    - 7
+    - 8
+    CorrectAnswer: 5
+    Hints: Question 5 Hint
+  - QuestionInfo: Question 6
+    options:
+    - 5
+    - 6
+    - 7
+    - 8
+    CorrectAnswer: 6
+    Hints: Question 6 Hint
+  - QuestionInfo: Question 7
+    options:
+    - 5
+    - 6
+    - 7
+    - 8
+    CorrectAnswer: 7
+    Hints: Question 7 Hint
+  - QuestionInfo: Question 8
+    options:
+    - 7
+    - 8
+    - 9
+    - 10
+    CorrectAnswer: 8
+    Hints: Question 8 Hint
+  - QuestionInfo: Question 9
+    options:
+    - 7
+    - 8
+    - 9
+    - 10
+    CorrectAnswer: 9
+    Hints: Question 9 Hint
+  - QuestionInfo: Question 10
+    options:
+    - 10
+    - 7
+    - 8
+    - 9
+    CorrectAnswer: 10
+    Hints: Question 10 Hint
