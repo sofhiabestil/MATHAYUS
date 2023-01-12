@@ -33,17 +33,18 @@ public class Dialog : MonoBehaviour
 
     void DisplayText()
     {
-        /** foreach(char letter in elements[index].ToCharArray())
+         foreach(char letter in elements[index].ToCharArray())
          {
              textDisplay.text += letter;
              //typing speed
              yield return new WaitForSeconds(0.02f); 
-         }*/
-        for (int i=0; i<elements.Length; i++)
+         }
+
+        /**for (int i=0; i<elements.Length; i++)
         {
             textDisplay.text += elements[i];
 
-        }
+        }*/
     }
 
     // Update is called once per frame
@@ -60,7 +61,7 @@ public class Dialog : MonoBehaviour
             // reset the text display so sentences don't stack
             textDisplay.text = "";
             // to make sentence slowly displays itself
-            //StartCoroutine(Type());
+            StartCoroutine(Type());
         }
         else
         {
