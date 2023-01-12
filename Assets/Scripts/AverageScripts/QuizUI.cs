@@ -8,7 +8,7 @@ using UnityEngine.SceneManagement;
 public class QuizUI : MonoBehaviour
 {
     [SerializeField] private QuizManager quizManager;
-    [SerializeField] private TextMeshProUGUI questionText, scoreText, timerText;
+    [SerializeField] private TextMeshProUGUI questionText, scoreText, timerText, questioncountText;
     [SerializeField] private List<Image> lifeImageList;
     [SerializeField] private GameObject gameOverPanel, averageMenuPanel, gameMenuPanel;
     [SerializeField] public  GameObject star0, star1, star2, star3;
@@ -26,6 +26,8 @@ public class QuizUI : MonoBehaviour
 
     public TextMeshProUGUI TimerText { get { return timerText; } }
     //public TextMeshProUGUI QuestionNum { get { return questionNum; } }
+
+    public TextMeshProUGUI QuestionCountText { get { return questioncountText; } }
 
     public GameObject GameOverPanel { get { return gameOverPanel; } }
 
