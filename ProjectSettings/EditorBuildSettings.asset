@@ -7,8 +7,17 @@ EditorBuildSettings:
   m_Scenes:
   - enabled: 1
     path: Assets/Scenes/MainMenu.unity
-    guid: 9f0c84b9377c8ad48ba152f91f1b3da9
+    guid: 60bc49177a210f3408249d8e9610f86e
   - enabled: 1
-    path: Assets/Scenes/Introduction_Average.unity
-    guid: d1255b8e0c4983f40826ad918e1a27f4
+    path: Assets/Scenes/EasyGameScene.unity
+    guid: 57da9e66439cc464688fbb8978d0b1d8
+  - enabled: 1
+    path: Assets/Scenes/AverageGameScene.unity
+    guid: 49dd60c58df098940a0b5bbaed4fc5dc
+  - enabled: 1
+    path: Assets/Scenes/DifficultGameScene.unity
+    guid: 5aed6c28bcb281847bb4fb0d8d7905ca
+  - enabled: 1
+    path: Assets/Scenes/Practice.unity
+    guid: 75b21ed2506f954489729fa183181f7a
   m_configObjects: {}
