@@ -20,4 +20,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Practice.unity
     guid: 75b21ed2506f954489729fa183181f7a
+  - enabled: 1
+    path: Assets/Scenes/Levels Menu.unity
+    guid: 0ef9658ac69d234428b3bebe2e7b0b49
   m_configObjects: {}
