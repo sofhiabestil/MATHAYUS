@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using System;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class AudioManager : MonoBehaviour
 {
@@ -30,16 +29,6 @@ public class AudioManager : MonoBehaviour
     private void Start()
     {
         PlayMusic("Theme");
-
-        if (!PlayerPrefs.HasKey("musicVolume"))
-        {
-            PlayerPrefs.SetFloat("musicVolume", 1);
-            Load();
-        }
-        else
-        {
-            Load();
-        }
     }
 
     //method to play music
@@ -71,23 +60,23 @@ public class AudioManager : MonoBehaviour
         }
     }*/
 
-    // method to toggle volume
-    [SerializeField] Slider volumeSlider;
-
-    public void ChangeVolume()
+    public void ToggleMusic()
     {
-        AudioListener.volume = volumeSlider.value;
-        Save();
+        musicSource.mute = !musicSource.mute;
     }
 
-    private void Load()
+    /*public void ToggleSFX()
     {
-        volumeSlider.value = PlayerPrefs.GetFloat("musicvolume");
+        musicSource.mute = !sfxSource.mute;
+    }*/
+
+    public void MusicVolume(float volume)
+    {
+        musicSource.volume = volume;
     }
 
-    private void Save()
+    public void SFXVolume(float volume)
     {
-        PlayerPrefs.SetFloat("musicVolume", volumeSlider.value);
+        sfxSource.volume = volume;
     }
-
 }
