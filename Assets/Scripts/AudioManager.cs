@@ -1,3 +1,10 @@
+/*
+ * AudioManager Script 
+ * - is for playing the Background music once the game open
+ * - 
+ * @Sofhia Bestil
+*/
+
 using System.Collections;
 using System.Collections.Generic;
 using System;
@@ -25,13 +32,13 @@ public class AudioManager : MonoBehaviour
         }
     }
 
-    //method to play the background music when it open.
+//method to play the background music when it open.
     private void Start()
     {
         PlayMusic("Theme");
     }
 
-    //method to play music
+//method to play music
     public void PlayMusic(string name)
     {
         Sound s = Array.Find(musicSounds, x => x.name == name);
@@ -60,16 +67,27 @@ public class AudioManager : MonoBehaviour
         }
     }*/
 
+
+// Muting the Music & Sound Icon button 
+
     public void ToggleMusic()
     {
+        //musicSource is mute(boolean) equals musicSource is not mute
         musicSource.mute = !musicSource.mute;
     }
 
+    // Muting the Music Icon button
     /*public void ToggleSFX()
     {
-        musicSource.mute = !sfxSource.mute;
+        //sfxSource is mute(boolean) equals sfxSource is not mute
+        sfxSource.mute = !sfxSource.mute;
     }*/
 
+// Method for Volume Slider
+/* 
+* The function for music slider
+* - it get the value of music slider that inside of the Setting Menu
+*/
     public void MusicVolume(float volume)
     {
         musicSource.volume = volume;
@@ -79,4 +97,6 @@ public class AudioManager : MonoBehaviour
     {
         sfxSource.volume = volume;
     }
+
+
 }

@@ -1,5 +1,9 @@
 /**
- * UIContoller script is to access the audio manager script from this panel.
+ * UIContoller script 
+ * - is to access the audio manager script from this panel.
+ * - This is where the function for Music and Sound Slider.
+ * 
+ * @Sofhia Bestil
  */
 
 using System.Collections;
@@ -21,6 +25,11 @@ public class UIController : MonoBehaviour
         AudioManager.Instance.ToggleSFX();
     }*/
 
+
+/* 
+ * This method is for cotrolling the music and sound slider
+ * 
+*/
     public void MusicVolume()
     {
         AudioManager.Instance.MusicVolume(_musicSlider.value);
@@ -30,5 +39,7 @@ public class UIController : MonoBehaviour
     {
         AudioManager.Instance.SFXVolume(_sfxSlider.value);
     }*/
+
+    
 
 }
