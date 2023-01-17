@@ -34,16 +34,29 @@ public class PracticeManager : MonoBehaviour{
         practicegameStatus = PracticeGameStatus.Playing;
 
     }
-    void SelectQuestion(){
 
-        int val = UnityEngine.Random.Range(0, questions.Count);
-        SelectedQuestion = questions[val];
+     void ModernFisherYatesShuffle(List<PracticeQuestion> list){
+        for (int i = list.Count - 1; i > 0; i--){
+        
+        int j = UnityEngine.Random.Range(0, i + 1);
+        PracticeQuestion temp = list[i];
+        list[i] = list[j];
+        list[j] = temp;
+    }
+    
+    }
+
+        void SelectQuestion(){
+
+        ModernFisherYatesShuffle(questions);
+        SelectedQuestion = questions[0];
 
         practicehandler.SetQuestion(SelectedQuestion);
-        questionCount += 1;
-        practicehandler.QuestionCountText.text = "Q : " + questionCount + " /10";
 
-        questions.RemoveAt(val);
+        questionCount += 1;
+        practicehandler.QuestionCountText.text = "Q :" + questionCount + "/10";
+
+        questions.RemoveAt(0);
     }
 
    public bool Answer(string answered){
@@ -53,20 +66,29 @@ public class PracticeManager : MonoBehaviour{
 
             CorrectAnswer = true;
             scoreCount += 1;
+
             practicehandler.ScoreText.text = scoreCount + "/10";
+            practicehandler.correctPanel.gameObject.SetActive(true); 
+            practicehandler.PracticesoundEffect[1].Play();
 
         }else{
 
+            practicehandler.wrongPanel.gameObject.SetActive(true);
+            practicehandler.CorrectAnswerMessage.text = SelectedQuestion.CorrectAnswer;
+            practicehandler.PracticesoundEffect[0].Play();
+
         }
          if (practicegameStatus == PracticeGameStatus.Playing){
+
+            Invoke("DismissMessagePanel", 0.8f);
             
-            if (questions.Count > 0){
+            if (questions.Count > 0 && questionCount < 10){
 
                 Invoke("SelectQuestion", 0.4f);
 
             }else{
+                Invoke("ActivateGameOverPanel", 1f);
                 practicegameStatus = PracticeGameStatus.Next;
-                practicehandler.GameOverPanel.SetActive(true);
                 
             }
 
@@ -90,6 +112,15 @@ public class PracticeManager : MonoBehaviour{
         }
 
         return CorrectAnswer;
+    }
+
+    void DismissMessagePanel(){
+    practicehandler.correctPanel.gameObject.SetActive(false);
+    practicehandler.wrongPanel.gameObject.SetActive(false);
+    }
+
+    void ActivateGameOverPanel(){
+    practicehandler.GameOverPanel.gameObject.SetActive(true);
     }
 
 }
