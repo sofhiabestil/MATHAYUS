@@ -1413,21 +1413,21 @@ struct U3CU3Ec__DisplayClass19_0_tEDD634AD0C85F8B49D0CB1A88FAAB95923402174  : pu
 	PracticeUIHandler_t70595A477C164F0039D9B7DE924B9CA8CED3D784* ___U3CU3E4__this_1;
 };
 
-// QuizUI/<>c__DisplayClass32_0
-struct U3CU3Ec__DisplayClass32_0_t144067E59676E5193CD5D66CA8A3FA32A92B60FD  : public RuntimeObject
+// QuizUI/<>c__DisplayClass29_0
+struct U3CU3Ec__DisplayClass29_0_t30EA76E99B34A722053311857A779435D2F04B54  : public RuntimeObject
 {
-	// UnityEngine.UI.Button QuizUI/<>c__DisplayClass32_0::localBtn
+	// UnityEngine.UI.Button QuizUI/<>c__DisplayClass29_0::localBtn
 	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___localBtn_0;
-	// QuizUI QuizUI/<>c__DisplayClass32_0::<>4__this
+	// QuizUI QuizUI/<>c__DisplayClass29_0::<>4__this
 	QuizUI_t28B4AE9BAAF1366ED2FF5D07E398F8CA7A4F116F* ___U3CU3E4__this_1;
 };
 
-// QuizUI/<>c__DisplayClass32_1
-struct U3CU3Ec__DisplayClass32_1_t0F7B37CEA845D9893B951ED2C2B32062B775F994  : public RuntimeObject
+// QuizUI/<>c__DisplayClass29_1
+struct U3CU3Ec__DisplayClass29_1_t62AA5FE42D4EED2EBCC1EB251D8463DEC1BE1F1D  : public RuntimeObject
 {
-	// UnityEngine.UI.Button QuizUI/<>c__DisplayClass32_1::localBtn
+	// UnityEngine.UI.Button QuizUI/<>c__DisplayClass29_1::localBtn
 	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___localBtn_0;
-	// QuizUI QuizUI/<>c__DisplayClass32_1::<>4__this
+	// QuizUI QuizUI/<>c__DisplayClass29_1::<>4__this
 	QuizUI_t28B4AE9BAAF1366ED2FF5D07E398F8CA7A4F116F* ___U3CU3E4__this_1;
 };
 
@@ -6664,18 +6664,12 @@ struct QuizUI_t28B4AE9BAAF1366ED2FF5D07E398F8CA7A4F116F  : public MonoBehaviour_
 	List_1_tCB5B3B0C70F6DFB6B059BB2C65DC77B101849444* ___options_20;
 	// System.Collections.Generic.List`1<UnityEngine.UI.Button> QuizUI::uiButtons
 	List_1_tCB5B3B0C70F6DFB6B059BB2C65DC77B101849444* ___uiButtons_21;
-	// UnityEngine.Color QuizUI::correctCol
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___correctCol_22;
-	// UnityEngine.Color QuizUI::wrongCol
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___wrongCol_23;
-	// UnityEngine.Color QuizUI::normalCol
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___normalCol_24;
 	// Question QuizUI::question
-	Question_t0B0CC3F94BC00966B249726D1CD3AE7CB137435E* ___question_25;
+	Question_t0B0CC3F94BC00966B249726D1CD3AE7CB137435E* ___question_22;
 	// System.Boolean QuizUI::answered
-	bool ___answered_26;
+	bool ___answered_23;
 	// System.Single QuizUI::audioLength
-	float ___audioLength_27;
+	float ___audioLength_24;
 };
 
 // TMPro.Examples.ShaderPropAnimator
@@ -7927,13 +7921,13 @@ struct RaycastHitComparer_t8EF6567C19BE9FB575E01A10941FBF7DE3D3DDF1_StaticFields
 
 // PracticeUIHandler/<>c__DisplayClass19_0
 
-// QuizUI/<>c__DisplayClass32_0
+// QuizUI/<>c__DisplayClass29_0
 
-// QuizUI/<>c__DisplayClass32_0
+// QuizUI/<>c__DisplayClass29_0
 
-// QuizUI/<>c__DisplayClass32_1
+// QuizUI/<>c__DisplayClass29_1
 
-// QuizUI/<>c__DisplayClass32_1
+// QuizUI/<>c__DisplayClass29_1
 
 // System.Text.RegularExpressions.RegexCharClass/SingleRangeComparer
 struct SingleRangeComparer_t2D299E0E54D7F24BAF67EA65E92B6FCDB806F9D0_StaticFields
@@ -10057,13 +10051,13 @@ IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3250[3] =
 	static_cast<int32_t>(sizeof(RuntimeObject)),0,0,};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3251[2] = 
 {
-	static_cast<int32_t>(offsetof(U3CU3Ec__DisplayClass32_0_t144067E59676E5193CD5D66CA8A3FA32A92B60FD, ___localBtn_0)),static_cast<int32_t>(offsetof(U3CU3Ec__DisplayClass32_0_t144067E59676E5193CD5D66CA8A3FA32A92B60FD, ___U3CU3E4__this_1)),};
+	static_cast<int32_t>(offsetof(U3CU3Ec__DisplayClass29_0_t30EA76E99B34A722053311857A779435D2F04B54, ___localBtn_0)),static_cast<int32_t>(offsetof(U3CU3Ec__DisplayClass29_0_t30EA76E99B34A722053311857A779435D2F04B54, ___U3CU3E4__this_1)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3252[2] = 
 {
-	static_cast<int32_t>(offsetof(U3CU3Ec__DisplayClass32_1_t0F7B37CEA845D9893B951ED2C2B32062B775F994, ___localBtn_0)),static_cast<int32_t>(offsetof(U3CU3Ec__DisplayClass32_1_t0F7B37CEA845D9893B951ED2C2B32062B775F994, ___U3CU3E4__this_1)),};
-IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3253[24] = 
+	static_cast<int32_t>(offsetof(U3CU3Ec__DisplayClass29_1_t62AA5FE42D4EED2EBCC1EB251D8463DEC1BE1F1D, ___localBtn_0)),static_cast<int32_t>(offsetof(U3CU3Ec__DisplayClass29_1_t62AA5FE42D4EED2EBCC1EB251D8463DEC1BE1F1D, ___U3CU3E4__this_1)),};
+IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3253[21] = 
 {
-	static_cast<int32_t>(offsetof(QuizUI_t28B4AE9BAAF1366ED2FF5D07E398F8CA7A4F116F, ___quizManager_4)),static_cast<int32_t>(offsetof(QuizUI_t28B4AE9BAAF1366ED2FF5D07E398F8CA7A4F116F, ___questionText_5)),static_cast<int32_t>(offsetof(QuizUI_t28B4AE9BAAF1366ED2FF5D07E398F8CA7A4F116F, ___scoreText_6)),static_cast<int32_t>(offsetof(QuizUI_t28B4AE9BAAF1366ED2FF5D07E398F8CA7A4F116F, ___timerText_7)),static_cast<int32_t>(offsetof(QuizUI_t28B4AE9BAAF1366ED2FF5D07E398F8CA7A4F116F, ___questioncountText_8)),static_cast<int32_t>(offsetof(QuizUI_t28B4AE9BAAF1366ED2FF5D07E398F8CA7A4F116F, ___lifeImageList_9)),static_cast<int32_t>(offsetof(QuizUI_t28B4AE9BAAF1366ED2FF5D07E398F8CA7A4F116F, ___gameOverPanel_10)),static_cast<int32_t>(offsetof(QuizUI_t28B4AE9BAAF1366ED2FF5D07E398F8CA7A4F116F, ___averageMenuPanel_11)),static_cast<int32_t>(offsetof(QuizUI_t28B4AE9BAAF1366ED2FF5D07E398F8CA7A4F116F, ___gameMenuPanel_12)),static_cast<int32_t>(offsetof(QuizUI_t28B4AE9BAAF1366ED2FF5D07E398F8CA7A4F116F, ___star0_13)),static_cast<int32_t>(offsetof(QuizUI_t28B4AE9BAAF1366ED2FF5D07E398F8CA7A4F116F, ___star1_14)),static_cast<int32_t>(offsetof(QuizUI_t28B4AE9BAAF1366ED2FF5D07E398F8CA7A4F116F, ___star2_15)),static_cast<int32_t>(offsetof(QuizUI_t28B4AE9BAAF1366ED2FF5D07E398F8CA7A4F116F, ___star3_16)),static_cast<int32_t>(offsetof(QuizUI_t28B4AE9BAAF1366ED2FF5D07E398F8CA7A4F116F, ___questionImage_17)),static_cast<int32_t>(offsetof(QuizUI_t28B4AE9BAAF1366ED2FF5D07E398F8CA7A4F116F, ___questionVideo_18)),static_cast<int32_t>(offsetof(QuizUI_t28B4AE9BAAF1366ED2FF5D07E398F8CA7A4F116F, ___questionAudio_19)),static_cast<int32_t>(offsetof(QuizUI_t28B4AE9BAAF1366ED2FF5D07E398F8CA7A4F116F, ___options_20)),static_cast<int32_t>(offsetof(QuizUI_t28B4AE9BAAF1366ED2FF5D07E398F8CA7A4F116F, ___uiButtons_21)),static_cast<int32_t>(offsetof(QuizUI_t28B4AE9BAAF1366ED2FF5D07E398F8CA7A4F116F, ___correctCol_22)),static_cast<int32_t>(offsetof(QuizUI_t28B4AE9BAAF1366ED2FF5D07E398F8CA7A4F116F, ___wrongCol_23)),static_cast<int32_t>(offsetof(QuizUI_t28B4AE9BAAF1366ED2FF5D07E398F8CA7A4F116F, ___normalCol_24)),static_cast<int32_t>(offsetof(QuizUI_t28B4AE9BAAF1366ED2FF5D07E398F8CA7A4F116F, ___question_25)),static_cast<int32_t>(offsetof(QuizUI_t28B4AE9BAAF1366ED2FF5D07E398F8CA7A4F116F, ___answered_26)),static_cast<int32_t>(offsetof(QuizUI_t28B4AE9BAAF1366ED2FF5D07E398F8CA7A4F116F, ___audioLength_27)),};
+	static_cast<int32_t>(offsetof(QuizUI_t28B4AE9BAAF1366ED2FF5D07E398F8CA7A4F116F, ___quizManager_4)),static_cast<int32_t>(offsetof(QuizUI_t28B4AE9BAAF1366ED2FF5D07E398F8CA7A4F116F, ___questionText_5)),static_cast<int32_t>(offsetof(QuizUI_t28B4AE9BAAF1366ED2FF5D07E398F8CA7A4F116F, ___scoreText_6)),static_cast<int32_t>(offsetof(QuizUI_t28B4AE9BAAF1366ED2FF5D07E398F8CA7A4F116F, ___timerText_7)),static_cast<int32_t>(offsetof(QuizUI_t28B4AE9BAAF1366ED2FF5D07E398F8CA7A4F116F, ___questioncountText_8)),static_cast<int32_t>(offsetof(QuizUI_t28B4AE9BAAF1366ED2FF5D07E398F8CA7A4F116F, ___lifeImageList_9)),static_cast<int32_t>(offsetof(QuizUI_t28B4AE9BAAF1366ED2FF5D07E398F8CA7A4F116F, ___gameOverPanel_10)),static_cast<int32_t>(offsetof(QuizUI_t28B4AE9BAAF1366ED2FF5D07E398F8CA7A4F116F, ___averageMenuPanel_11)),static_cast<int32_t>(offsetof(QuizUI_t28B4AE9BAAF1366ED2FF5D07E398F8CA7A4F116F, ___gameMenuPanel_12)),static_cast<int32_t>(offsetof(QuizUI_t28B4AE9BAAF1366ED2FF5D07E398F8CA7A4F116F, ___star0_13)),static_cast<int32_t>(offsetof(QuizUI_t28B4AE9BAAF1366ED2FF5D07E398F8CA7A4F116F, ___star1_14)),static_cast<int32_t>(offsetof(QuizUI_t28B4AE9BAAF1366ED2FF5D07E398F8CA7A4F116F, ___star2_15)),static_cast<int32_t>(offsetof(QuizUI_t28B4AE9BAAF1366ED2FF5D07E398F8CA7A4F116F, ___star3_16)),static_cast<int32_t>(offsetof(QuizUI_t28B4AE9BAAF1366ED2FF5D07E398F8CA7A4F116F, ___questionImage_17)),static_cast<int32_t>(offsetof(QuizUI_t28B4AE9BAAF1366ED2FF5D07E398F8CA7A4F116F, ___questionVideo_18)),static_cast<int32_t>(offsetof(QuizUI_t28B4AE9BAAF1366ED2FF5D07E398F8CA7A4F116F, ___questionAudio_19)),static_cast<int32_t>(offsetof(QuizUI_t28B4AE9BAAF1366ED2FF5D07E398F8CA7A4F116F, ___options_20)),static_cast<int32_t>(offsetof(QuizUI_t28B4AE9BAAF1366ED2FF5D07E398F8CA7A4F116F, ___uiButtons_21)),static_cast<int32_t>(offsetof(QuizUI_t28B4AE9BAAF1366ED2FF5D07E398F8CA7A4F116F, ___question_22)),static_cast<int32_t>(offsetof(QuizUI_t28B4AE9BAAF1366ED2FF5D07E398F8CA7A4F116F, ___answered_23)),static_cast<int32_t>(offsetof(QuizUI_t28B4AE9BAAF1366ED2FF5D07E398F8CA7A4F116F, ___audioLength_24)),};
 IL2CPP_EXTERN_C const int32_t g_FieldOffsetTable3255[5] = 
 {
 	static_cast<int32_t>(offsetof(U3CWriteSentencesU3Ed__7_t9E39937A8E652034D40A6315F316BFC70A0A3468, ___U3CU3E1__state_0)),static_cast<int32_t>(offsetof(U3CWriteSentencesU3Ed__7_t9E39937A8E652034D40A6315F316BFC70A0A3468, ___U3CU3E2__current_1)),static_cast<int32_t>(offsetof(U3CWriteSentencesU3Ed__7_t9E39937A8E652034D40A6315F316BFC70A0A3468, ___U3CU3E4__this_2)),static_cast<int32_t>(offsetof(U3CWriteSentencesU3Ed__7_t9E39937A8E652034D40A6315F316BFC70A0A3468, ___U3CU3E7__wrap1_3)),static_cast<int32_t>(offsetof(U3CWriteSentencesU3Ed__7_t9E39937A8E652034D40A6315F316BFC70A0A3468, ___U3CU3E7__wrap2_4)),};

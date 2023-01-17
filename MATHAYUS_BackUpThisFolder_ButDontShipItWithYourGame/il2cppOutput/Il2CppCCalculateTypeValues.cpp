@@ -11261,21 +11261,21 @@ struct QueueEnumerator_tA454AC08FDA03FCE3C9F57238527F1E666384DED  : public Runti
 	RuntimeObject* ____currentElement_3;
 };
 
-// QuizUI/<>c__DisplayClass32_0
-struct U3CU3Ec__DisplayClass32_0_t144067E59676E5193CD5D66CA8A3FA32A92B60FD  : public RuntimeObject
+// QuizUI/<>c__DisplayClass29_0
+struct U3CU3Ec__DisplayClass29_0_t30EA76E99B34A722053311857A779435D2F04B54  : public RuntimeObject
 {
-	// UnityEngine.UI.Button QuizUI/<>c__DisplayClass32_0::localBtn
+	// UnityEngine.UI.Button QuizUI/<>c__DisplayClass29_0::localBtn
 	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___localBtn_0;
-	// QuizUI QuizUI/<>c__DisplayClass32_0::<>4__this
+	// QuizUI QuizUI/<>c__DisplayClass29_0::<>4__this
 	QuizUI_t28B4AE9BAAF1366ED2FF5D07E398F8CA7A4F116F* ___U3CU3E4__this_1;
 };
 
-// QuizUI/<>c__DisplayClass32_1
-struct U3CU3Ec__DisplayClass32_1_t0F7B37CEA845D9893B951ED2C2B32062B775F994  : public RuntimeObject
+// QuizUI/<>c__DisplayClass29_1
+struct U3CU3Ec__DisplayClass29_1_t62AA5FE42D4EED2EBCC1EB251D8463DEC1BE1F1D  : public RuntimeObject
 {
-	// UnityEngine.UI.Button QuizUI/<>c__DisplayClass32_1::localBtn
+	// UnityEngine.UI.Button QuizUI/<>c__DisplayClass29_1::localBtn
 	Button_t6786514A57F7AFDEE5431112FEA0CAB24F5AE098* ___localBtn_0;
-	// QuizUI QuizUI/<>c__DisplayClass32_1::<>4__this
+	// QuizUI QuizUI/<>c__DisplayClass29_1::<>4__this
 	QuizUI_t28B4AE9BAAF1366ED2FF5D07E398F8CA7A4F116F* ___U3CU3E4__this_1;
 };
 
@@ -41418,18 +41418,12 @@ struct QuizUI_t28B4AE9BAAF1366ED2FF5D07E398F8CA7A4F116F  : public MonoBehaviour_
 	List_1_tCB5B3B0C70F6DFB6B059BB2C65DC77B101849444* ___options_20;
 	// System.Collections.Generic.List`1<UnityEngine.UI.Button> QuizUI::uiButtons
 	List_1_tCB5B3B0C70F6DFB6B059BB2C65DC77B101849444* ___uiButtons_21;
-	// UnityEngine.Color QuizUI::correctCol
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___correctCol_22;
-	// UnityEngine.Color QuizUI::wrongCol
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___wrongCol_23;
-	// UnityEngine.Color QuizUI::normalCol
-	Color_tD001788D726C3A7F1379BEED0260B9591F440C1F ___normalCol_24;
 	// Question QuizUI::question
-	Question_t0B0CC3F94BC00966B249726D1CD3AE7CB137435E* ___question_25;
+	Question_t0B0CC3F94BC00966B249726D1CD3AE7CB137435E* ___question_22;
 	// System.Boolean QuizUI::answered
-	bool ___answered_26;
+	bool ___answered_23;
 	// System.Single QuizUI::audioLength
-	float ___audioLength_27;
+	float ___audioLength_24;
 };
 
 // UnityEngine.UIElements.RadioButtonGroup
@@ -49412,13 +49406,13 @@ struct RaycastHitComparer_t8EF6567C19BE9FB575E01A10941FBF7DE3D3DDF1_StaticFields
 
 // System.Collections.Queue/QueueEnumerator
 
-// QuizUI/<>c__DisplayClass32_0
+// QuizUI/<>c__DisplayClass29_0
 
-// QuizUI/<>c__DisplayClass32_0
+// QuizUI/<>c__DisplayClass29_0
 
-// QuizUI/<>c__DisplayClass32_1
+// QuizUI/<>c__DisplayClass29_1
 
-// QuizUI/<>c__DisplayClass32_1
+// QuizUI/<>c__DisplayClass29_1
 
 // System.Text.RegularExpressions.RegexCharClass/SingleRangeComparer
 struct SingleRangeComparer_t2D299E0E54D7F24BAF67EA65E92B6FCDB806F9D0_StaticFields
@@ -68019,9 +68013,9 @@ const Il2CppTypeDefinitionSizes g_typeDefinitionSize3249 = { sizeof(int32_t)+ si
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3250;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize3250 = { sizeof(int32_t)+ sizeof(RuntimeObject), sizeof(int32_t), 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3251;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize3251 = { sizeof(U3CU3Ec__DisplayClass32_0_t144067E59676E5193CD5D66CA8A3FA32A92B60FD), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize3251 = { sizeof(U3CU3Ec__DisplayClass29_0_t30EA76E99B34A722053311857A779435D2F04B54), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3252;
-const Il2CppTypeDefinitionSizes g_typeDefinitionSize3252 = { sizeof(U3CU3Ec__DisplayClass32_1_t0F7B37CEA845D9893B951ED2C2B32062B775F994), -1, 0, 0 };
+const Il2CppTypeDefinitionSizes g_typeDefinitionSize3252 = { sizeof(U3CU3Ec__DisplayClass29_1_t62AA5FE42D4EED2EBCC1EB251D8463DEC1BE1F1D), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3253;
 const Il2CppTypeDefinitionSizes g_typeDefinitionSize3253 = { sizeof(QuizUI_t28B4AE9BAAF1366ED2FF5D07E398F8CA7A4F116F), -1, 0, 0 };
 extern const Il2CppTypeDefinitionSizes g_typeDefinitionSize3254;
