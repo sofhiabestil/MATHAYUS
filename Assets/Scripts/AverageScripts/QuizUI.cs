@@ -16,7 +16,7 @@ public class QuizUI : MonoBehaviour
     [SerializeField] private UnityEngine.Video.VideoPlayer questionVideo;
     [SerializeField] private AudioSource questionAudio;
     [SerializeField] private List<Button> options, uiButtons;
-    [SerializeField] private Color correctCol, wrongCol, normalCol;
+    /*[SerializeField] private Color correctCol, wrongCol, normalCol;*/
 
     private Question question;
     private bool answered;
@@ -60,7 +60,7 @@ public class QuizUI : MonoBehaviour
             //set the child text
             options[i].GetComponentInChildren<TextMeshProUGUI>().text = answerList[i];
             options[i].name = answerList[i]; //set the name of button
-            options[i].image.color = normalCol; //set color of button to normal
+            /*options[i].image.color = normalCol; //set color of button to normal*/
         }
 
         answered = false;
@@ -85,14 +85,14 @@ public class QuizUI : MonoBehaviour
                 answered = true;
                 bool val = quizManager.Answer(btn.name);
 
-                if (val)
+               /* if (val)
                 {
                     btn.image.color = correctCol;
                 }
                 else
                 {
                     btn.image.color = wrongCol;
-                }
+                }*/
             }
         }
 

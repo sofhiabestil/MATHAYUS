@@ -42,17 +42,30 @@ public class QuizManager : MonoBehaviour
         gameStatus = GameStatus.Playing;
     }
 
+    void ModernFisherYatesShuffle(List<Question> list)
+    {
+        for (int i = list.Count - 1; i > 0; i--)
+        {
+
+            int j = UnityEngine.Random.Range(0, i + 1);
+            Question temp = list[i];
+            list[i] = list[j];
+            list[j] = temp;
+        }
+    }
+
     void SelectQuestion()
     {
-        int val = UnityEngine.Random.Range(0, questions.Count);
-        selectedQuestion = questions[val];
+
+        ModernFisherYatesShuffle(questions);
+        selectedQuestion = questions[0];
 
         quizUI.SetQuestion(selectedQuestion);
 
         questionCount += 1;
-        quizUI.QuestionCountText.text = "Q : " + questionCount + " /10";
+        quizUI.QuestionCountText.text = "Q :" + questionCount + "/10";
 
-        questions.RemoveAt(val);
+        questions.RemoveAt(0);
     }
 
     private void Update()
