@@ -7,10 +7,11 @@ using UnityEngine.SceneManagement;
 public class PracticeUIHandler : MonoBehaviour{
     
     [SerializeField] private PracticeManager practicemanager;
-    [SerializeField] private Text QuestionText, HintText, scoreText, questioncountText;
+    [SerializeField] private Text QuestionText, HintText, scoreText, questioncountText,correctMessage;
     [SerializeField] private List<Button> options;
+    [SerializeField] public List<AudioSource> PracticesoundEffect = new List<AudioSource>();
     [SerializeField] private GameObject gameOverPanel;
-    [SerializeField] public  GameObject star0, star1, star2, star3;
+    [SerializeField] public  GameObject star0, star1, star2, star3, wrongPanel, correctPanel;
 
     private PracticeQuestion question;
     private bool answered;
@@ -19,7 +20,13 @@ public class PracticeUIHandler : MonoBehaviour{
 
     public Text QuestionCountText { get { return questioncountText; } }
 
+    public Text CorrectAnswerMessage { get { return correctMessage; } }
+
     public GameObject GameOverPanel { get { return gameOverPanel; } }
+
+    public GameObject WrongPanel { get { return wrongPanel; } }
+
+    public GameObject CorrectPanel { get { return correctPanel; } }
     
     void Awake(){
          
