@@ -100,13 +100,17 @@ public class QuizManager : MonoBehaviour
             correctAns = true;
             scoreCount += 1;
             quizUI.ScoreText.text = scoreCount + "/10";
-            
+            quizUI.correctPanel.gameObject.SetActive(true);
+            /*quizUI.PracticesoundEffect[1].Play();*/
+
         }
         else
         {
             //No
             //lifeRemaining--;
             //quizUI.ReduceLife(lifeRemaining);
+            quizUI.wrongPanel.gameObject.SetActive(true);
+            quizUI.CorrectAnswerMessage.text = selectedQuestion.correctAns;
 
             if (lifeRemaining <= 0)
             {
@@ -117,6 +121,8 @@ public class QuizManager : MonoBehaviour
 
         if (gameStatus == GameStatus.Playing)
         {
+            Invoke("DismissMessagePanel", 0.8f);
+
             if (questions.Count > 0)
             {
                 //call SelectQuestion method again after 1s
@@ -124,8 +130,9 @@ public class QuizManager : MonoBehaviour
             }
             else
             {
+                Invoke("ActivateGameOverPanel", 1f);
                 gameStatus = GameStatus.Next;
-                quizUI.GameOverPanel.SetActive(true);
+                /*quizUI.GameOverPanel.SetActive(true);*/
             }
 
         }
@@ -154,6 +161,18 @@ public class QuizManager : MonoBehaviour
         //return the value of correct bool
         return correctAns;
     }
+
+    void DismissMessagePanel()
+    {
+        quizUI.correctPanel.gameObject.SetActive(false);
+        quizUI.wrongPanel.gameObject.SetActive(false);
+    }
+
+    void ActivateGameOverPanel()
+    {
+        quizUI.GameOverPanel.gameObject.SetActive(true);
+    }
+
 }
 
 [System.Serializable]
