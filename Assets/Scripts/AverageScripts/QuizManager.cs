@@ -101,7 +101,7 @@ public class QuizManager : MonoBehaviour
             scoreCount += 1;
             quizUI.ScoreText.text = scoreCount + "/10";
             quizUI.correctPanel.gameObject.SetActive(true);
-            /*quizUI.PracticesoundEffect[1].Play();*/
+            quizUI.PracticesoundEffect[1].Play();
 
         }
         else
@@ -111,6 +111,7 @@ public class QuizManager : MonoBehaviour
             //quizUI.ReduceLife(lifeRemaining);
             quizUI.wrongPanel.gameObject.SetActive(true);
             quizUI.CorrectAnswerMessage.text = selectedQuestion.correctAns;
+            quizUI.PracticesoundEffect[0].Play();
 
             if (lifeRemaining <= 0)
             {

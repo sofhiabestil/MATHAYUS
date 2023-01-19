@@ -16,6 +16,7 @@ public class QuizUI : MonoBehaviour
     [SerializeField] private UnityEngine.Video.VideoPlayer questionVideo;
     [SerializeField] private AudioSource questionAudio;
     [SerializeField] private List<Button> options, uiButtons;
+    [SerializeField] public List<AudioSource> PracticesoundEffect = new List<AudioSource>();
     /*[SerializeField] private Color correctCol, wrongCol, normalCol;*/
 
     private Question question;
