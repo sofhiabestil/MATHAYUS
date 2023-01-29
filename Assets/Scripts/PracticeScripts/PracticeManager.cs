@@ -68,26 +68,24 @@ public class PracticeManager : MonoBehaviour{
             scoreCount += 1;
 
             practicehandler.ScoreText.text = scoreCount + "/10";
-            practicehandler.correctPanel.gameObject.SetActive(true); 
-            practicehandler.PracticesoundEffect[1].Play();
-
-        }else{
-
-            practicehandler.wrongPanel.gameObject.SetActive(true);
-            practicehandler.CorrectAnswerMessage.text = SelectedQuestion.CorrectAnswer;
-            practicehandler.PracticesoundEffect[0].Play();
+            Invoke("ActivateCorrectPanel", 1f);
 
         }
-         if (practicegameStatus == PracticeGameStatus.Playing){
-
-            Invoke("DismissMessagePanel", 0.8f);
+        else{
+            Invoke("ActivateWrongPanel", 1f);
             
+
+        }
+        if (practicegameStatus == PracticeGameStatus.Playing){
+
+            Invoke("DismissMessagePanel", 3f);
+
             if (questions.Count > 0 && questionCount < 10){
 
-                Invoke("SelectQuestion", 0.4f);
+                Invoke("SelectQuestion", 1.5f);
 
             }else{
-                Invoke("ActivateGameOverPanel", 1f);
+                Invoke("ActivateGameOverPanel", 2f);
                 practicegameStatus = PracticeGameStatus.Next;
                 
             }
@@ -117,10 +115,25 @@ public class PracticeManager : MonoBehaviour{
     void DismissMessagePanel(){
     practicehandler.correctPanel.gameObject.SetActive(false);
     practicehandler.wrongPanel.gameObject.SetActive(false);
+
     }
 
     void ActivateGameOverPanel(){
     practicehandler.GameOverPanel.gameObject.SetActive(true);
+
+    }
+
+    void ActivateCorrectPanel()
+    {
+        practicehandler.correctPanel.gameObject.SetActive(true);
+        practicehandler.PracticesoundEffect[1].Play();
+    }
+
+    void ActivateWrongPanel()
+    {
+        practicehandler.wrongPanel.gameObject.SetActive(true);
+        practicehandler.CorrectAnswerMessage.text = SelectedQuestion.CorrectAnswer;
+        practicehandler.PracticesoundEffect[0].Play();
     }
 
 }
