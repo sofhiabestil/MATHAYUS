@@ -8,14 +8,15 @@ using UnityEngine.SceneManagement;
 public class QuizUI : MonoBehaviour
 {
     [SerializeField] private QuizManager quizManager;
-    [SerializeField] private TextMeshProUGUI questionText, scoreText, timerText, questioncountText;
+    [SerializeField] private TextMeshProUGUI questionText, scoreText, timerText, questioncountText, correctMessage;
     [SerializeField] private List<Image> lifeImageList;
     [SerializeField] private GameObject gameOverPanel, averageMenuPanel, gameMenuPanel;
-    [SerializeField] public  GameObject star0, star1, star2, star3;
+    [SerializeField] public  GameObject star0, star1, star2, star3, wrongPanel, correctPanel;
     [SerializeField] private Image questionImage;
     [SerializeField] private UnityEngine.Video.VideoPlayer questionVideo;
     [SerializeField] private AudioSource questionAudio;
     [SerializeField] private List<Button> options, uiButtons;
+    [SerializeField] public List<AudioSource> PracticesoundEffect = new List<AudioSource>();
     /*[SerializeField] private Color correctCol, wrongCol, normalCol;*/
 
     private Question question;
@@ -29,7 +30,13 @@ public class QuizUI : MonoBehaviour
 
     public TextMeshProUGUI QuestionCountText { get { return questioncountText; } }
 
+    public TextMeshProUGUI CorrectAnswerMessage { get { return correctMessage; } }
+
     public GameObject GameOverPanel { get { return gameOverPanel; } }
+
+    public GameObject WrongPanel { get { return wrongPanel; } }
+
+    public GameObject CorrectPanel { get { return correctPanel; } }
 
     // Start is called before the first frame update
     void Awake()
