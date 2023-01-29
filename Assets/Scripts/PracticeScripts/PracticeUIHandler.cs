@@ -12,6 +12,7 @@ public class PracticeUIHandler : MonoBehaviour{
     [SerializeField] public List<AudioSource> PracticesoundEffect = new List<AudioSource>();
     [SerializeField] private GameObject gameOverPanel;
     [SerializeField] public  GameObject star0, star1, star2, star3, wrongPanel, correctPanel;
+    [SerializeField] public List<GameObject> JumpNico = new List<GameObject>();
 
     private PracticeQuestion question;
     private bool answered;
@@ -59,9 +60,44 @@ public class PracticeUIHandler : MonoBehaviour{
             answered = true;
             bool val = practicemanager.Answer(btn.name);
 
+            int buttonIndex = options.IndexOf(btn);
+            string buttonName = btn.name;
+            
+            if (buttonIndex == 0)
+            {
+                JumpNico[4].SetActive(false);
+                JumpNico[0].SetActive(true);
+                Invoke("ResetJumpNico", 1.5f);
+            }
+            else if (buttonIndex == 1)
+            {
+                JumpNico[4].SetActive(false);
+                JumpNico[1].SetActive(true);
+                Invoke("ResetJumpNico", 1.5f);
+            }
+            else if (buttonIndex == 2)
+            {
+                JumpNico[4].SetActive(false);
+                JumpNico[2].SetActive(true);
+                Invoke("ResetJumpNico", 1.5f);
+            }
+            else if (buttonIndex == 3)
+            {
+                JumpNico[4].SetActive(false);
+                JumpNico[3].SetActive(true);
+                Invoke("ResetJumpNico", 1.5f);
+            }
         }
     }
 
+    private void ResetJumpNico()
+    {
+        for (int i = 0; i < 4; i++)
+        {
+            JumpNico[i].SetActive(false);
+        }
+        JumpNico[4].SetActive(true);
+    }
     public void RetryButton(){
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
