@@ -1,0 +1,35 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f178d955afca5644ea945180bec204d8, type: 3}
+  m_Name: DifficultQuestionsData
+  m_EditorClassIdentifier: 
+  difficultquestions:
+  - diffquestions: Number 1
+    answer: One
+  - diffquestions: Number 2
+    answer: Two
+  - diffquestions: Number 3
+    answer: Three
+  - diffquestions: Number 4
+    answer: Four
+  - diffquestions: Number 5
+    answer: Five
+  - diffquestions: Number 6
+    answer: Six
+  - diffquestions: Number 7
+    answer: Seven
+  - diffquestions: Number 8
+    answer: Eight
+  - diffquestions: Number 9
+    answer: Nine
+  - diffquestions: Number 10
+    answer: Ten
