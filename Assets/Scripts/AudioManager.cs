@@ -76,7 +76,7 @@ public class AudioManager : MonoBehaviour
         musicSource.mute = !musicSource.mute;
     }
 
-    // Muting the Music Icon button
+    // Muting the Sound Icon button
     /*public void ToggleSFX()
     {
         //sfxSource is mute(boolean) equals sfxSource is not mute
