@@ -30,6 +30,7 @@ public class AudioManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
+
     }
 
 //method to play the background music when it open.
@@ -48,7 +49,11 @@ public class AudioManager : MonoBehaviour
         }
         else
         {
+            musicSource.source = gameObject.AddComponent<AudioSource>();
             musicSource.clip = s.clip;
+            musicSource.source.volume = s.volume;
+            musicSource.source.pitch = s.pitch;
+            musicSource.source.loop = s.loop;
             musicSource.Play();
         }
     }
@@ -83,6 +88,7 @@ public class AudioManager : MonoBehaviour
         sfxSource.mute = !sfxSource.mute;
     }*/
 
+
 // Method for Volume Slider
 /* 
 * The function for music slider
@@ -97,6 +103,4 @@ public class AudioManager : MonoBehaviour
     {
         sfxSource.volume = volume;
     }
-
-
 }

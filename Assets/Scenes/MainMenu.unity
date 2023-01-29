@@ -463,7 +463,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -2, y: -0.5972}
   m_SizeDelta: {x: 1.3224, y: -15.9439}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -923,7 +923,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0.0025024414}
+  m_AnchoredPosition: {x: 0, y: 0.0024414062}
   m_SizeDelta: {x: 0, y: 0.0050049}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &181154318
@@ -1880,7 +1880,8 @@ AudioSource:
   m_GameObject: {fileID: 618823061}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 24300002, guid: 4e5900f0742e2374aa049ba504d01e7a,
+    type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 1
   m_Volume: 1
@@ -2016,7 +2017,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -2, y: -0.5972}
   m_SizeDelta: {x: 1.3224, y: -15.9439}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -2236,8 +2237,8 @@ RectTransform:
   m_Father: {fileID: 528945874}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 0.34, y: 0}
+  m_AnchorMax: {x: 0.34, y: 1}
   m_AnchoredPosition: {x: -47.7, y: -19.9}
   m_SizeDelta: {x: 51.2639, y: -56.4146}
   m_Pivot: {x: 0.28547493, y: 0.8427898}
@@ -3258,7 +3259,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &910434431
 RectTransform:
   m_ObjectHideFlags: 0
@@ -4408,9 +4409,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed69e26f2504f0543aeea3bc208eee05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  musicSounds:
-  - name: Theme
-    clip: {fileID: 8300000, guid: 0abd45803bc259e458d3256c7648e1d9, type: 3}
+  musicSounds: []
   sfxSounds: []
   musicSource: {fileID: 618823062}
   sfxSource: {fileID: 199284310}
@@ -5343,8 +5342,8 @@ MonoBehaviour:
   m_FillRect: {fileID: 106509416}
   m_HandleRect: {fileID: 2114062127}
   m_Direction: 0
-  m_MinValue: 0
-  m_MaxValue: 1
+  m_MinValue: -80
+  m_MaxValue: 0
   m_WholeNumbers: 0
   m_Value: 1
   m_OnValueChanged:
@@ -8077,8 +8076,8 @@ RectTransform:
   m_Father: {fileID: 1199197204}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -47.7, y: -19.9}
   m_SizeDelta: {x: 51.2639, y: -56.4146}
   m_Pivot: {x: 0.28547493, y: 0.8427898}
