@@ -78,7 +78,7 @@ public class PracticeManager : MonoBehaviour{
         }
         if (practicegameStatus == PracticeGameStatus.Playing){
 
-            Invoke("DismissMessagePanel", 3f);
+            Invoke("DismissMessagePanel", 2f);
 
             if (questions.Count > 0 && questionCount < 10){
 
