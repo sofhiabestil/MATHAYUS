@@ -14,8 +14,6 @@ public class AudioManager : MonoBehaviour
 {
     //method for easily access it from anywhere
     public static AudioManager Instance;
-
-
     public Sound[] musicSounds, sfxSounds;
     public AudioSource musicSource, sfxSource;
 
@@ -31,9 +29,18 @@ public class AudioManager : MonoBehaviour
             Destroy(gameObject);
         }
 
+        /*        foreach (Sound s in musicSounds)
+                {
+                    musicSource.source = gameObject.AddComponent<AudioSource>();
+                    musicSource.clip = s.clip;
+                    musicSource.source.volume = s.volume;
+                    musicSource.source.pitch = s.pitch;
+                    musicSource.source.loop = s.loop;
+                    musicSource.Play();
+                }*/
     }
 
-//method to play the background music when it open.
+    //method to play the background music when it open.
     private void Start()
     {
         PlayMusic("Theme");
@@ -49,12 +56,7 @@ public class AudioManager : MonoBehaviour
         }
         else
         {
-            musicSource.source = gameObject.AddComponent<AudioSource>();
-            musicSource.clip = s.clip;
-            musicSource.source.volume = s.volume;
-            musicSource.source.pitch = s.pitch;
-            musicSource.source.loop = s.loop;
-            musicSource.Play();
+            musicSource.PlayOneShot(s.clip);
         }
     }
 

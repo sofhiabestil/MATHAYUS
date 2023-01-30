@@ -16,8 +16,8 @@ public class UIController : MonoBehaviour
 {
     public Slider _musicSlider, _sfxSlider;
 
-    public AudioMixer mixer;
-    private float value;
+    //public AudioMixer mixer;
+    //private float value;
 
     public void ToggleMusic()
     {
@@ -34,24 +34,22 @@ public class UIController : MonoBehaviour
  * This method is for cotrolling the music and sound slider
 */
 
-    public void Start()
+    /*public void Start()
     {
         mixer.GetFloat("volume", value);
         _musicSlider.value = value;
-    }
-
-    /**public void MusicVolume()
+    }*/
+    public void MusicVolume()
     {
         AudioManager.Instance.MusicVolume(_musicSlider.value);
-    }*/
+    }
 
-    public void MusicVolume()
+  /*  public void MusicVolume()
     {
         // volume is the name of the expose parameter in AudioMixer
         mixer.SetFloat("volume", _musicSlider.value);
         //using _musicSlider.value we can use this value to change the volume of the mixer.
-        
-    }
+    }*/
 
     /*public void SFXVolume()
     {
