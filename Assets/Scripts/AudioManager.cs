@@ -28,16 +28,6 @@ public class AudioManager : MonoBehaviour
         {
             Destroy(gameObject);
         }
-
-        /*        foreach (Sound s in musicSounds)
-                {
-                    musicSource.source = gameObject.AddComponent<AudioSource>();
-                    musicSource.clip = s.clip;
-                    musicSource.source.volume = s.volume;
-                    musicSource.source.pitch = s.pitch;
-                    musicSource.source.loop = s.loop;
-                    musicSource.Play();
-                }*/
     }
 
     //method to play the background music when it open.
@@ -46,7 +36,7 @@ public class AudioManager : MonoBehaviour
         PlayMusic("Theme");
     }
 
-//method to play music
+    //method to play music
     public void PlayMusic(string name)
     {
         Sound s = Array.Find(musicSounds, x => x.name == name);
@@ -75,7 +65,7 @@ public class AudioManager : MonoBehaviour
     }*/
 
 
-// Muting the Music & Sound Icon button 
+    // Muting the Music & Sound Icon button 
 
     public void ToggleMusic()
     {
@@ -91,11 +81,11 @@ public class AudioManager : MonoBehaviour
     }*/
 
 
-// Method for Volume Slider
-/* 
-* The function for music slider
-* - it get the value of music slider that inside of the Setting Menu
-*/
+    // Method for Volume Slider
+    /* 
+    * The function for music slider
+    * - it get the value of music slider that inside of the Setting Menu
+    */
     public void MusicVolume(float volume)
     {
         musicSource.volume = volume;
