@@ -1771,6 +1771,7 @@ GameObject:
   - component: {fileID: 481747874}
   - component: {fileID: 481747873}
   - component: {fileID: 481747876}
+  - component: {fileID: 481747877}
   m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
@@ -1814,7 +1815,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 1.5524, y: 1.5524}
+  m_AnchoredPosition: {x: -0.1, y: 0}
   m_SizeDelta: {x: 1942.7219, y: 1089.7607}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &481747873
@@ -1890,6 +1891,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad32dff6233214f4aba2ef106ea42420, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &481747877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 481747871}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bca40bb0e5d128498393c394b2dc3bc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  anchorType: 4
+  anchorOffset: {x: -0.1, y: 0, z: 0}
 --- !u!1 &496550846
 GameObject:
   m_ObjectHideFlags: 0
@@ -2058,6 +2073,7 @@ GameObject:
   - component: {fileID: 519420032}
   - component: {fileID: 519420031}
   - component: {fileID: 519420029}
+  - component: {fileID: 519420033}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -2100,7 +2116,7 @@ Camera:
   far clip plane: 1000
   field of view: 57.364445
   orthographic: 1
-  orthographic size: 546.15857
+  orthographic size: 540
   m_Depth: 5
   m_CullingMask:
     serializedVersion: 2
@@ -2132,6 +2148,22 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &519420033
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 519420028}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cca20c0e4e8a2134ba30d3d76fb44066, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  wireColor: {r: 1, g: 1, b: 1, a: 1}
+  UnitsSize: 1920
+  constraint: 0
+  camera: {fileID: 519420031}
 --- !u!1 &610131370
 GameObject:
   m_ObjectHideFlags: 0
