@@ -41,7 +41,7 @@ PlayerSettings:
     height: 1
   m_SplashScreenLogos:
   - logo: {fileID: 21300000, guid: 63192af484d86bc4dbf2e7bedb7486ae, type: 3}
-    duration: 2
+    duration: 4
   - logo: {fileID: 21300000, guid: 0cee68d6876a10348a2e3d352e802c4c, type: 3}
     duration: 4
   m_VirtualRealitySplashScreen: {fileID: 0}
@@ -693,7 +693,7 @@ PlayerSettings:
   allowUnsafeCode: 0
   useDeterministicCompilation: 1
   enableRoslynAnalyzers: 1
-  selectedPlatform: 0
+  selectedPlatform: 2
   additionalIl2CppArgs: 
   scriptingRuntimeVersion: 1
   gcIncremental: 0
