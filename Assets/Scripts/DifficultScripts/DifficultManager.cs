@@ -90,7 +90,7 @@ public class DifficultManager : MonoBehaviour
     }
 
 
-    private void ModernFisherYatesShuffle(List<DifficultQuestionData> list)
+ private void ModernFisherYatesShuffle(List<DifficultQuestionData> list)
     {
         for (int i = list.Count - 1; i > 0; i--)
         {
