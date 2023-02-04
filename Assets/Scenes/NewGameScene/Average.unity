@@ -2415,7 +2415,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 644473572}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 824063545}
+        m_TargetAssemblyTypeName: LevelsMenu, Assembly-CSharp
+        m_MethodName: Loadlevel
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 4
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &644473572
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3327,7 +3339,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: e55391f62a155694084bac57fc8dba3f, type: 3}
+  m_Sprite: {fileID: 21300000, guid: a69037b564fe527439827812a04eb417, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -3954,7 +3966,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1106547249}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1237909415}
+        m_TargetAssemblyTypeName: QuizUI, Assembly-CSharp
+        m_MethodName: RetryButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1106547249
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4670,7 +4694,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 36691f032d3a99c42b640cafe53eef30, type: 3}
+  m_Sprite: {fileID: 21300000, guid: d2877cd7720627845b2d859aac6e66c4, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
