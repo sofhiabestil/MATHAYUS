@@ -1108,11 +1108,19 @@ RectTransform:
   m_Father: {fileID: 1106445954}
   m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< Updated upstream
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 786.62164, y: -53.00473}
   m_SizeDelta: {x: -1745.24, y: 178.5752}
   m_Pivot: {x: 0.5, y: 1}
+=======
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.90835416, y: 0.5}
+  m_AnchoredPosition: {x: 379, y: 379.74835}
+  m_SizeDelta: {x: -608.4358, y: 166.5033}
+  m_Pivot: {x: 0.5, y: 0.5}
+>>>>>>> Stashed changes
 --- !u!114 &507959734
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2572,10 +2580,17 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
+<<<<<<< Updated upstream
   m_AnchoredPosition: {x: 12.555, y: 0.0000066757}
   m_SizeDelta: {x: 100, y: 100}
   m_Pivot: {x: 0.6255096, y: 0.5}
 --- !u!114 &944263052
+=======
+  m_AnchoredPosition: {x: -502, y: -254.9}
+  m_SizeDelta: {x: 453.9455, y: 570.2}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &953548534
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2647,6 +2662,7 @@ RectTransform:
   m_Father: {fileID: 1106445954}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< Updated upstream
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 0}
 <<<<<<< HEAD
@@ -2658,6 +2674,14 @@ RectTransform:
 >>>>>>> dd93f4d27475a279b0e5b25a75d12a00be42dfcf
   m_Pivot: {x: 0.5, y: -0.0000000037252903}
 --- !u!114 &953548534
+=======
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0.0974, y: -0.25629}
+  m_SizeDelta: {x: 1925.3679, y: 1080.6}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &973679796
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2936,12 +2960,21 @@ RectTransform:
   m_Father: {fileID: 1260603293}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< Updated upstream
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1037632402
+=======
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -766, y: -367}
+  m_SizeDelta: {x: 347, y: 329}
+  m_Pivot: {x: 0.49999976, y: 0.50000006}
+--- !u!114 &1080639210
+>>>>>>> Stashed changes
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -5953,11 +5986,19 @@ RectTransform:
   m_Father: {fileID: 1260603293}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< Updated upstream
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
   m_AnchoredPosition: {x: 103.99707, y: -85.001465}
   m_SizeDelta: {x: 511.6259, y: 645.8803}
   m_Pivot: {x: 0, y: 0}
+=======
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -600.19, y: -210.8544}
+  m_SizeDelta: {x: 511.6259, y: 658.2941}
+  m_Pivot: {x: 0.5, y: 0.5}
+>>>>>>> Stashed changes
 --- !u!114 &1976644504
 MonoBehaviour:
   m_ObjectHideFlags: 0
