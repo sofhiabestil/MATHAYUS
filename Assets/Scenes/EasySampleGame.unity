@@ -1108,6 +1108,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   correctForm: {fileID: 2127682703}
+  idleform1: {fileID: 1623500232}
+  idleform2: {fileID: 268510947}
+  idleform3: {fileID: 564647056}
+  idleform4: {fileID: 25004681}
+  idleform5: {fileID: 1201586486}
+  idleform6: {fileID: 1977267218}
 --- !u!61 &561445199
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1735,6 +1741,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   correctForm: {fileID: 268510947}
+  idleform1: {fileID: 1623500232}
+  idleform2: {fileID: 25004681}
+  idleform3: {fileID: 564647056}
+  idleform4: {fileID: 2127682703}
+  idleform5: {fileID: 1201586486}
+  idleform6: {fileID: 1977267218}
 --- !u!61 &950919751
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2068,7 +2080,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c30f0342b8403a4da8e6ad12d7da800, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctForm: {fileID: 1977267218}
+  correctForm: {fileID: 1201586486}
+  idleform1: {fileID: 1623500232}
+  idleform2: {fileID: 268510947}
+  idleform3: {fileID: 564647056}
+  idleform4: {fileID: 25004681}
+  idleform5: {fileID: 2127682703}
+  idleform6: {fileID: 1201586486}
 --- !u!61 &1109269782
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2442,7 +2460,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2c30f0342b8403a4da8e6ad12d7da800, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  correctForm: {fileID: 564647056}
+  correctForm: {fileID: 268510947}
+  idleform1: {fileID: 1623500232}
+  idleform2: {fileID: 268510947}
+  idleform3: {fileID: 2127682703}
+  idleform4: {fileID: 1201586486}
+  idleform5: {fileID: 1977267218}
+  idleform6: {fileID: 25004681}
 --- !u!61 &1260204373
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2812,6 +2836,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   correctForm: {fileID: 25004681}
+  idleform1: {fileID: 1623500232}
+  idleform2: {fileID: 564647056}
+  idleform3: {fileID: 268510947}
+  idleform4: {fileID: 2127682703}
+  idleform5: {fileID: 1201586486}
+  idleform6: {fileID: 1977267218}
 --- !u!61 &1414274822
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3192,6 +3222,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   correctForm: {fileID: 1201586486}
+  idleform1: {fileID: 1623500232}
+  idleform2: {fileID: 268510947}
+  idleform3: {fileID: 564647056}
+  idleform4: {fileID: 25004681}
+  idleform5: {fileID: 2127682703}
+  idleform6: {fileID: 1977267218}
 --- !u!61 &1613446077
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -4107,6 +4143,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   correctForm: {fileID: 1623500232}
+  idleform1: {fileID: 268510947}
+  idleform2: {fileID: 564647056}
+  idleform3: {fileID: 25004681}
+  idleform4: {fileID: 2127682703}
+  idleform5: {fileID: 1201586486}
+  idleform6: {fileID: 1977267218}
 --- !u!61 &1981724896
 BoxCollider2D:
   m_ObjectHideFlags: 0
