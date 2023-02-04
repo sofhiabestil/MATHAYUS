@@ -12,13 +12,8 @@ EditorBuildSettings:
     path: Assets/Scenes/EasyGameScene.unity
     guid: 57da9e66439cc464688fbb8978d0b1d8
   - enabled: 0
-<<<<<<< HEAD
-    path: 
-    guid: 00000000000000000000000000000000
-=======
     path: Assets/Scenes/AverageGameScene.unity
     guid: 49dd60c58df098940a0b5bbaed4fc5dc
->>>>>>> dd93f4d27475a279b0e5b25a75d12a00be42dfcf
   - enabled: 1
     path: Assets/Scenes/DifficultGameScene.unity
     guid: 5aed6c28bcb281847bb4fb0d8d7905ca
