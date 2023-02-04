@@ -66,6 +66,7 @@ MonoBehaviour:
 =======
   controlID: 615
 >>>>>>> dd93f4d27475a279b0e5b25a75d12a00be42dfcf
+<<<<<<< HEAD
 =======
     width: 1206
     height: 665
@@ -74,6 +75,8 @@ MonoBehaviour:
   vertical: 0
   controlID: 119
 >>>>>>> Stashed changes
+=======
+>>>>>>> 5094a9613b492a901d74c0a48a92fee81c5d97d8
 --- !u!114 &3
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -88,7 +91,10 @@ MonoBehaviour:
   m_Children: []
   m_Position:
     serializedVersion: 2
+<<<<<<< HEAD
 <<<<<<< Updated upstream
+=======
+>>>>>>> 5094a9613b492a901d74c0a48a92fee81c5d97d8
 <<<<<<< HEAD
     x: 1400
     y: 0
@@ -137,7 +143,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
 <<<<<<< Updated upstream
+=======
+>>>>>>> 5094a9613b492a901d74c0a48a92fee81c5d97d8
 <<<<<<< HEAD
     width: 225
     height: 575
@@ -175,7 +184,10 @@ MonoBehaviour:
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
 <<<<<<< HEAD
   m_Name: ProjectBrowser
+<<<<<<< HEAD
 <<<<<<< Updated upstream
+=======
+>>>>>>> 5094a9613b492a901d74c0a48a92fee81c5d97d8
 =======
   m_Name: 
 >>>>>>> dd93f4d27475a279b0e5b25a75d12a00be42dfcf
@@ -187,7 +199,10 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
+<<<<<<< HEAD
 <<<<<<< Updated upstream
+=======
+>>>>>>> 5094a9613b492a901d74c0a48a92fee81c5d97d8
 <<<<<<< HEAD
     y: 575
     width: 1400
@@ -199,6 +214,7 @@ MonoBehaviour:
   - {fileID: 16}
   - {fileID: 20}
   - {fileID: 14}
+<<<<<<< HEAD
 =======
     y: 394
     width: 921
@@ -210,6 +226,8 @@ MonoBehaviour:
   - {fileID: 12}
   - {fileID: 17}
 >>>>>>> Stashed changes
+=======
+>>>>>>> 5094a9613b492a901d74c0a48a92fee81c5d97d8
   m_Selected: 0
   m_LastSelected: 1
 =======
@@ -326,7 +344,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
 <<<<<<< Updated upstream
+=======
+>>>>>>> 5094a9613b492a901d74c0a48a92fee81c5d97d8
 <<<<<<< HEAD
     width: 1400
     height: 939
@@ -342,6 +363,7 @@ MonoBehaviour:
   vertical: 1
   controlID: 547
 >>>>>>> dd93f4d27475a279b0e5b25a75d12a00be42dfcf
+<<<<<<< HEAD
 =======
     width: 921
     height: 665
@@ -350,6 +372,8 @@ MonoBehaviour:
   vertical: 1
   controlID: 92
 >>>>>>> Stashed changes
+=======
+>>>>>>> 5094a9613b492a901d74c0a48a92fee81c5d97d8
 --- !u!114 &10
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -368,7 +392,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
+<<<<<<< HEAD
 <<<<<<< Updated upstream
+=======
+>>>>>>> 5094a9613b492a901d74c0a48a92fee81c5d97d8
 <<<<<<< HEAD
     width: 1400
     height: 575
@@ -384,6 +411,7 @@ MonoBehaviour:
   vertical: 0
   controlID: 548
 >>>>>>> dd93f4d27475a279b0e5b25a75d12a00be42dfcf
+<<<<<<< HEAD
 =======
     width: 921
     height: 394
@@ -392,6 +420,8 @@ MonoBehaviour:
   vertical: 0
   controlID: 93
 >>>>>>> Stashed changes
+=======
+>>>>>>> 5094a9613b492a901d74c0a48a92fee81c5d97d8
 --- !u!114 &11
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1173,6 +1203,7 @@ MonoBehaviour:
         m_UserAcceptedRename: 0
         m_Name: 
         m_OriginalName: 
+<<<<<<< HEAD
 =======
     m_Image: {fileID: 7966133145522015247, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip:
@@ -1194,6 +1225,8 @@ MonoBehaviour:
         m_Name:
         m_OriginalName:
 >>>>>>> Stashed changes
+=======
+>>>>>>> 5094a9613b492a901d74c0a48a92fee81c5d97d8
         m_EditFieldRect:
           serializedVersion: 2
           x: 0
@@ -1205,6 +1238,7 @@ MonoBehaviour:
         m_IsRenaming: 0
         m_OriginalEventType: 11
         m_IsRenamingFilename: 0
+<<<<<<< HEAD
 <<<<<<< Updated upstream
         m_ClientGUIView: {fileID: 4}
       m_SearchString: 
@@ -1212,11 +1246,16 @@ MonoBehaviour:
         m_ClientGUIView: {fileID: 0}
       m_SearchString:
 >>>>>>> Stashed changes
+=======
+        m_ClientGUIView: {fileID: 4}
+      m_SearchString: 
+>>>>>>> 5094a9613b492a901d74c0a48a92fee81c5d97d8
     m_ExpandedScenes: []
     m_CurrenRootInstanceID: 0
     m_LockTracker:
       m_IsLocked: 0
     m_CurrentSortingName: TransformSorting
+<<<<<<< HEAD
 <<<<<<< Updated upstream
   m_WindowGUID: c04c80b9b5235264690974246f13ebfd
 --- !u!114 &19
@@ -1224,12 +1263,19 @@ MonoBehaviour:
   m_WindowGUID: 4c969a2b90040154d917609493e03593
 --- !u!114 &15
 >>>>>>> Stashed changes
+=======
+  m_WindowGUID: c04c80b9b5235264690974246f13ebfd
+--- !u!114 &19
+>>>>>>> 5094a9613b492a901d74c0a48a92fee81c5d97d8
 MonoBehaviour:
   m_ObjectHideFlags: 52
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< Updated upstream
+=======
+>>>>>>> 5094a9613b492a901d74c0a48a92fee81c5d97d8
 =======
     m_SearchString: 
     m_ColumnWidths: []
@@ -1243,8 +1289,11 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
 >>>>>>> dd93f4d27475a279b0e5b25a75d12a00be42dfcf
+<<<<<<< HEAD
 =======
 >>>>>>> Stashed changes
+=======
+>>>>>>> 5094a9613b492a901d74c0a48a92fee81c5d97d8
   m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 1
@@ -1540,6 +1589,7 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 227.41197, y: 23.688913, z: -12.286346}
 =======
+<<<<<<< HEAD
     m_Target: {x: 0, y: 0, z: 0}
     speed: 2
     m_Value: {x: 0, y: 0, z: 0}
@@ -1566,9 +1616,12 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
+=======
+>>>>>>> 5094a9613b492a901d74c0a48a92fee81c5d97d8
     m_Target: {x: 0, y: 0, z: 0}
     speed: 2
     m_Value: {x: 0, y: 0, z: 0}
+>>>>>>> dd93f4d27475a279b0e5b25a75d12a00be42dfcf
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1635,7 +1688,10 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: -0.08717229, y: 0.89959055, z: -0.21045254, w: -0.3726226}
   m_Size:
+<<<<<<< HEAD
 <<<<<<< Updated upstream
+=======
+>>>>>>> 5094a9613b492a901d74c0a48a92fee81c5d97d8
 <<<<<<< HEAD
     m_Target: 784.39636
     speed: 2
@@ -1645,11 +1701,14 @@ MonoBehaviour:
     speed: 2
     m_Value: 10
 >>>>>>> dd93f4d27475a279b0e5b25a75d12a00be42dfcf
+<<<<<<< HEAD
 =======
     m_Target: 10
     speed: 2
     m_Value: 10
 >>>>>>> Stashed changes
+=======
+>>>>>>> 5094a9613b492a901d74c0a48a92fee81c5d97d8
   m_Ortho:
     m_Target: 0
     speed: 2
@@ -1940,6 +1999,7 @@ MonoBehaviour:
     width: 1366
     height: 308
 >>>>>>> dd93f4d27475a279b0e5b25a75d12a00be42dfcf
+<<<<<<< HEAD
 =======
     m_Image: {fileID: -4327648978806127646, guid: 0000000000000000d000000000000000, type: 0}
     m_Tooltip:
@@ -1952,3 +2012,5 @@ MonoBehaviour:
   m_ViewDataDictionary: {fileID: 0}
 
 >>>>>>> Stashed changes
+=======
+>>>>>>> 5094a9613b492a901d74c0a48a92fee81c5d97d8
