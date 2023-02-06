@@ -33,7 +33,7 @@ MonoBehaviour:
     - Monday
     - Saturday
     - Tuesday
-    - Wednesday
+    - Sunday
     correctAns: Monday
   - questionInfo: How many months are there in one year?
     questionType: 0
