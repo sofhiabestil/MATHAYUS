@@ -1,98 +1,52 @@
-/*
- * AudioManager Script 
- * - is for playing the Background music once the game open
- * - 
- * @Sofhia Bestil
-*/
+// MATHAYUS 3
+/**
+ This class will only be doing the loading ans 
+ */
 
-using System.Collections;
+/**
+     * Now we want to be able to save these values so the player doesn't have to set them every single time they play
+     * and we'll save them between scenes as well so our canvas will be doing the saving and our audio manager will be 
+     * loading the channels volumes 
+     */
+
 using System.Collections.Generic;
-using System;
 using UnityEngine;
+using UnityEngine.Audio;
 
 public class AudioManager : MonoBehaviour
 {
-    //method for easily access it from anywhere
-    public static AudioManager Instance;
-    public Sound[] musicSounds, sfxSounds;
-    public AudioSource musicSource, sfxSource;
+    public static AudioManager instance;
 
-    private void Awake()
+    [SerializeField] AudioMixer mixer;
+
+    // we need key in order to show player props where to save it 
+    public const string MUSIC_KEY = "Music Volume";
+    public const string SFX_KEY = "Sound Effects Volume";
+
+
+    void Awake()
     {
-        if (Instance == null)
+        if (instance == null)
         {
-            Instance = this;
+            instance = this;
+
             DontDestroyOnLoad(gameObject);
         }
         else
         {
             Destroy(gameObject);
         }
+        LoadVolume();
     }
 
-    //method to play the background music when it open.
-    private void Start()
+    // FOR  able to save these values so the player doesn't have to set them every single time they play and we'll save them between scenes
+    //Volume saved in VolumeSettings.cs
+    void LoadVolume()
     {
-        PlayMusic("Theme");
-    }
+        float musicVolume = PlayerPrefs.GetFloat(MUSIC_KEY, 1f);
+        float sfxVolume = PlayerPrefs.GetFloat(SFX_KEY, 1f);
 
-    //method to play music
-    public void PlayMusic(string name)
-    {
-        Sound s = Array.Find(musicSounds, x => x.name == name);
-        if (s == null)
-        {
-            Debug.Log("Sound Not Found");
-        }
-        else
-        {
-            musicSource.PlayOneShot(s.clip);
-        }
-    }
-
-    /***public void PlaySFX(string name)
-    {
-        Sound s = Array.Find(musicSounds, x => x.name == name);
-        if (s == null)
-        {
-            Debug.Log("Sound Not Found");
-        }
-
-        else
-        {
-            sfxSource.PlayOneShot(s.clip);
-        }
-    }*/
-
-
-    // Muting the Music & Sound Icon button 
-
-    public void ToggleMusic()
-    {
-        //musicSource is mute(boolean) equals musicSource is not mute
-        musicSource.mute = !musicSource.mute;
-    }
-
-    // Muting the Sound Icon button
-    /*public void ToggleSFX()
-    {
-        //sfxSource is mute(boolean) equals sfxSource is not mute
-        sfxSource.mute = !sfxSource.mute;
-    }*/
-
-
-    // Method for Volume Slider
-    /* 
-    * The function for music slider
-    * - it get the value of music slider that inside of the Setting Menu
-    */
-    public void MusicVolume(float volume)
-    {
-        musicSource.volume = volume;
-    }
-
-    public void SFXVolume(float volume)
-    {
-        sfxSource.volume = volume;
+        mixer.SetFloat(VolumeSettings.MIXER_MUSIC, Mathf.Log10(musicVolume * 20));
+        mixer.SetFloat(VolumeSettings.MIXER_SFX, Mathf.Log10(sfxVolume * 20));
     }
 }
