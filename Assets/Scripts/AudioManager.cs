@@ -17,7 +17,7 @@ public class AudioManager : MonoBehaviour
 {
     public static AudioManager instance;
 
-    [SerializeField] AudioMixer mixer;
+    //[SerializeField] AudioMixer mixer;
 
     // we need key in order to show player props where to save it 
     public const string MUSIC_KEY = "Music Volume";

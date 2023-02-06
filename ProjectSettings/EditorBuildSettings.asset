@@ -27,7 +27,7 @@ EditorBuildSettings:
     path: Assets/Scenes/End Game.unity
     guid: 248bb72b5d2111d46b7745f436504000
   - enabled: 1
-    path: Assets/Scenes/AVGGAME.unity
+    path: Assets/Scenes/AverageGAME.unity
     guid: 58dfbd270aa1e834cb9385f20dfb3c29
   - enabled: 1
     path: Assets/Scenes/NewGameScene/Average.unity
