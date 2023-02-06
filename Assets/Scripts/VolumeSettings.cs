@@ -15,26 +15,11 @@ public class VolumeSettings : MonoBehaviour
     [SerializeField] AudioMixer mixer;
     [SerializeField] Slider musicSlider;
     [SerializeField] Slider sfxSlider;
-    [SerializeField] public TextMeshProGUI musicSliderText;
-    [SerializeField] public TextMeshProGUI soudEffectsSliderText;
 
     // the expose parameter
     public const string MIXER_MUSIC = "musicVolume";
     public const string MIXER_SFX = "sfxVolume";
-
-    public static float MusicVolume { get; private set; }
-    public static float SoundEffectsVolume { get; private set; }
-
-   
-
-    public void OnMusicSliderValueChange(float value)
-    {
-        MusicVolume = value;
-        musicSliderTex.text = value.ToString();
-    }
-
-
-
+ 
     // whenever the player changes the value of the slider on value changed is called and we're going to go on value 
     // change.add a listener so add a function to 
     // the function requires float parameter
