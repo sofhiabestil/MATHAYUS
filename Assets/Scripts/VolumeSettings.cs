@@ -1,7 +1,7 @@
-// MATHAYUS 3
-
 /**
- * This class will only be doing saving 
+ *This class will only be doing saving 
+ *
+ * @Sofhia Bestil 02/06/2023
  */
 
 using UnityEngine;
@@ -15,10 +15,25 @@ public class VolumeSettings : MonoBehaviour
     [SerializeField] AudioMixer mixer;
     [SerializeField] Slider musicSlider;
     [SerializeField] Slider sfxSlider;
+    [SerializeField] public TextMeshProGUI musicSliderText;
+    [SerializeField] public TextMeshProGUI soudEffectsSliderText;
 
     // the expose parameter
-    public const string MIXER_MUSIC = "Music Volume";
-    public const string MIXER_SFX = "Sound Effects Volume";
+    public const string MIXER_MUSIC = "musicVolume";
+    public const string MIXER_SFX = "sfxVolume";
+
+    public static float MusicVolume { get; private set; }
+    public static float SoundEffectsVolume { get; private set; }
+
+   
+
+    public void OnMusicSliderValueChange(float value)
+    {
+        MusicVolume = value;
+        musicSliderTex.text = value.ToString();
+    }
+
+
 
     // whenever the player changes the value of the slider on value changed is called and we're going to go on value 
     // change.add a listener so add a function to 
@@ -28,7 +43,6 @@ public class VolumeSettings : MonoBehaviour
         musicSlider.onValueChanged.AddListener(SetMusicVolume);
         sfxSlider.onValueChanged.AddListener(SetSFXVolume);
     }
-
 
     // FOR  able to save these values so the player doesn't have to set them every single time they play and we'll save them between scenes
     /**
@@ -47,7 +61,6 @@ public class VolumeSettings : MonoBehaviour
         musicSlider.value = PlayerPrefs.GetFloat(AudioManager.MUSIC_KEY, 1f);
         sfxSlider.value = PlayerPrefs.GetFloat(AudioManager.SFX_KEY, 1f);
     }
-
 
     //set the float of our music channe; and to do that we have to tap on our music channel
     // we have to set the default volume into logarithmic value because the mixer is logarithmic value.
