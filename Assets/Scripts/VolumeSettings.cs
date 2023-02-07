@@ -7,9 +7,35 @@
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.Audio;
+using TMPro;
 
 public class VolumeSettings : MonoBehaviour
 {
+
+
+    [SerializeField] private TextMeshProUGUI musicSliderText;
+    [SerializeField] private TextMeshProUGUI soudEffectsSliderText;
+
+    public static float MusicVolume { get; private set; }
+    public static float SoundEffectsVolume { get; private set; }
+
+    public void OnMusicSliderValueChange(float value)
+    {
+        MusicVolume = value;
+        musicSliderText.text = ((int)(value*100)).ToString();
+        AudioManager.Instance.LoadVolume();
+    }
+
+    public void OnSoundEffectsSliderValueChange(float value)
+    {
+        SoundVolume = value;
+        soudEffectsSliderText.text = ((int)(value * 100)).ToString();
+        AudioManager.Instance.LoadVolume();
+
+    }
+
+
+
     //This is the field that need to fill out in UI of Volume settings
     //lagayan nang mixer,
     [SerializeField] AudioMixer mixer;

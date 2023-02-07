@@ -1,6 +1,5 @@
 using System.Collections;
 using System.Collections.Generic;
-using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
@@ -8,7 +7,7 @@ using UnityEngine.SceneManagement;
 public class PracticeUIHandler : MonoBehaviour{
     
     [SerializeField] private PracticeManager practicemanager;
-    [SerializeField] private TextMeshProUGUI QuestionText, HintText, scoreText, questioncountText,correctMessage;
+    [SerializeField] private Text QuestionText, HintText, scoreText, questioncountText,correctMessage;
     [SerializeField] private List<Button> options;
     [SerializeField] public List<AudioSource> PracticesoundEffect = new List<AudioSource>();
     [SerializeField] private GameObject gameOverPanel;
@@ -18,11 +17,11 @@ public class PracticeUIHandler : MonoBehaviour{
     private PracticeQuestion question;
     private bool answered;
 
-    public TextMeshProUGUI ScoreText { get { return scoreText; } }
+    public Text ScoreText { get { return scoreText; } }
 
-    public TextMeshProUGUI QuestionCountText { get { return questioncountText; } }
+    public Text QuestionCountText { get { return questioncountText; } }
 
-    public TextMeshProUGUI CorrectAnswerMessage { get { return correctMessage; } }
+    public Text CorrectAnswerMessage { get { return correctMessage; } }
 
     public GameObject GameOverPanel { get { return gameOverPanel; } }
 
@@ -47,7 +46,7 @@ public class PracticeUIHandler : MonoBehaviour{
 
         List<string> answerList = ShuffleList.ShuffleListItems<string>(question.options);
         for(int i = 0; i < options.Count;  i++){
-            options[i].GetComponentInChildren<TextMeshProUGUI>().text = answerList[i]; 
+            options[i].GetComponentInChildren<Text>().text = answerList[i]; 
             options[i].name = answerList[i];
         }
         answered = false;
