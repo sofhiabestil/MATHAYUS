@@ -387,7 +387,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -2, y: -0.5972}
   m_SizeDelta: {x: 1.3224, y: -15.9439}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1244,7 +1244,7 @@ RectTransform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -2, y: -0.5972}
   m_SizeDelta: {x: 1.3224, y: -15.9439}
   m_Pivot: {x: 0.5, y: 0.5}
@@ -1464,8 +1464,8 @@ RectTransform:
   m_Father: {fileID: 528945874}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -47.7, y: -19.9}
   m_SizeDelta: {x: 51.2639, y: -56.4146}
   m_Pivot: {x: 0.28547493, y: 0.8427898}
@@ -2333,7 +2333,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &910434431
 RectTransform:
   m_ObjectHideFlags: 0
@@ -5945,8 +5945,8 @@ RectTransform:
   m_Father: {fileID: 1199197204}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
+  m_AnchorMin: {x: 1, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
   m_AnchoredPosition: {x: -47.7, y: -19.9}
   m_SizeDelta: {x: 51.2639, y: -56.4146}
   m_Pivot: {x: 0.28547493, y: 0.8427898}
@@ -6266,19 +6266,5 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
-    - target: {fileID: 1022321086558952241, guid: fdcdb751088fde84db95db5c5225d7d0,
-        type: 3}
-      propertyPath: mixer
-      value: 
-      objectReference: {fileID: 24100000, guid: 4e5900f0742e2374aa049ba504d01e7a,
-        type: 2}
-    - target: {fileID: 1022321086558952243, guid: fdcdb751088fde84db95db5c5225d7d0,
-        type: 3}
-      propertyPath: m_Name
-      value: AudioManager
-      objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdcdb751088fde84db95db5c5225d7d0, type: 3}

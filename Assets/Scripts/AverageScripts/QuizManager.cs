@@ -100,8 +100,9 @@ public class QuizManager : MonoBehaviour
             correctAns = true;
             scoreCount += 1;
             quizUI.ScoreText.text = scoreCount + "/10";
-            quizUI.correctPanel.gameObject.SetActive(true);
-            quizUI.PracticesoundEffect[1].Play();
+            Invoke("ActivateCorrectPanel", 1f);
+            //quizUI.correctPanel.gameObject.SetActive(true);
+            //quizUI.PracticesoundEffect[1].Play();
 
         }
         else
@@ -109,9 +110,10 @@ public class QuizManager : MonoBehaviour
             //No
             //lifeRemaining--;
             //quizUI.ReduceLife(lifeRemaining);
-            quizUI.wrongPanel.gameObject.SetActive(true);
-            quizUI.CorrectAnswerMessage.text = selectedQuestion.correctAns;
-            quizUI.PracticesoundEffect[0].Play();
+            //quizUI.wrongPanel.gameObject.SetActive(true);
+            //quizUI.CorrectAnswerMessage.text = selectedQuestion.correctAns;
+            //quizUI.PracticesoundEffect[0].Play();
+            Invoke("ActivateWrongPanel", 1.0f);
 
             if (lifeRemaining <= 0)
             {
@@ -122,16 +124,16 @@ public class QuizManager : MonoBehaviour
 
         if (gameStatus == GameStatus.Playing)
         {
-            Invoke("DismissMessagePanel", 0.8f);
+            Invoke("DismissMessagePanel", 2f);
 
             if (questions.Count > 0)
             {
                 //call SelectQuestion method again after 1s
-                Invoke("SelectQuestion", 0.4f);
+                Invoke("SelectQuestion", 1.5f);
             }
             else
             {
-                Invoke("ActivateGameOverPanel", 1f);
+                Invoke("ActivateGameOverPanel", 2f);
                 gameStatus = GameStatus.Next;
                 /*quizUI.GameOverPanel.SetActive(true);*/
             }
@@ -172,6 +174,19 @@ public class QuizManager : MonoBehaviour
     void ActivateGameOverPanel()
     {
         quizUI.GameOverPanel.gameObject.SetActive(true);
+    }
+
+    void ActivateCorrectPanel()
+    {
+        quizUI.correctPanel.gameObject.SetActive(true);
+        quizUI.PracticesoundEffect[1].Play();
+    }
+
+    void ActivateWrongPanel()
+    {
+        quizUI.wrongPanel.gameObject.SetActive(true);
+        quizUI.CorrectAnswerMessage.text = selectedQuestion.correctAns;
+        quizUI.PracticesoundEffect[0].Play();
     }
 
 }

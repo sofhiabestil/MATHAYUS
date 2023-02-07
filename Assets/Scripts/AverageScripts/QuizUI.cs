@@ -17,6 +17,7 @@ public class QuizUI : MonoBehaviour
     [SerializeField] private AudioSource questionAudio;
     [SerializeField] private List<Button> options, uiButtons;
     [SerializeField] public List<AudioSource> PracticesoundEffect = new List<AudioSource>();
+    [SerializeField] public List<GameObject> JumpNico = new List<GameObject>();
     /*[SerializeField] private Color correctCol, wrongCol, normalCol;*/
 
     private Question question;
@@ -92,16 +93,38 @@ public class QuizUI : MonoBehaviour
                 answered = true;
                 bool val = quizManager.Answer(btn.name);
 
-               /* if (val)
+                int buttonIndex = options.IndexOf(btn);
+                string buttonName = btn.name;
+
+                if (buttonIndex == 0)
                 {
-                    btn.image.color = correctCol;
+                    JumpNico[4].SetActive(false);
+                    JumpNico[0].SetActive(true);
+                    Invoke("ResetJumpNico", 1.5f);
                 }
-                else
+                else if (buttonIndex == 1)
                 {
-                    btn.image.color = wrongCol;
-                }*/
+                    JumpNico[4].SetActive(false);
+                    JumpNico[1].SetActive(true);
+                    Invoke("ResetJumpNico", 1.5f);
+                }
+                else if (buttonIndex == 2)
+                {
+                    JumpNico[4].SetActive(false);
+                    JumpNico[2].SetActive(true);
+                    Invoke("ResetJumpNico", 1.5f);
+                }
+                else if (buttonIndex == 3)
+                {
+                    JumpNico[4].SetActive(false);
+                    JumpNico[3].SetActive(true);
+                    Invoke("ResetJumpNico", 1.5f);
+                }
+
             }
         }
+
+
 
         switch (btn.name)
         {
@@ -126,6 +149,15 @@ public class QuizUI : MonoBehaviour
                 gameMenuPanel.SetActive(true);
                 break;
         }
+    }
+
+    private void ResetJumpNico()
+    {
+        for (int i = 0; i < 4; i++)
+        {
+            JumpNico[i].SetActive(false);
+        }
+        JumpNico[4].SetActive(true);
     }
 
     public void RetryButton()
