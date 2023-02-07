@@ -868,6 +868,7 @@ GameObject:
   - component: {fileID: 199806308}
   - component: {fileID: 199806307}
   - component: {fileID: 199806306}
+  - component: {fileID: 199806309}
   m_Layer: 0
   m_Name: ContinueGame
   m_TagString: Untagged
@@ -938,7 +939,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 199806307}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 199806309}
+        m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
+        m_MethodName: OpenHintPanel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &199806307
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -977,6 +990,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 199806304}
   m_CullTransparentMesh: 1
+--- !u!114 &199806309
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 199806304}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43040f7511d0bd847a8673ec3b96ac69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HintPanel: {fileID: 1280061330}
 --- !u!1 &221595832
 GameObject:
   m_ObjectHideFlags: 0
@@ -989,6 +1015,7 @@ GameObject:
   - component: {fileID: 221595836}
   - component: {fileID: 221595835}
   - component: {fileID: 221595834}
+  - component: {fileID: 221595837}
   m_Layer: 0
   m_Name: No
   m_TagString: Untagged
@@ -1059,7 +1086,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 221595835}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 221595837}
+        m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
+        m_MethodName: OpenHintPanel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &221595835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1098,6 +1137,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 221595832}
   m_CullTransparentMesh: 1
+--- !u!114 &221595837
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 221595832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43040f7511d0bd847a8673ec3b96ac69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HintPanel: {fileID: 1932372674}
 --- !u!1 &221889350
 GameObject:
   m_ObjectHideFlags: 0
@@ -2362,6 +2414,7 @@ GameObject:
   - component: {fileID: 527505591}
   - component: {fileID: 527505590}
   - component: {fileID: 527505589}
+  - component: {fileID: 527505592}
   m_Layer: 0
   m_Name: Hint
   m_TagString: Untagged
@@ -2432,7 +2485,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 527505590}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 527505592}
+        m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
+        m_MethodName: OpenHintPanel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &527505590
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2471,6 +2536,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 527505587}
   m_CullTransparentMesh: 1
+--- !u!114 &527505592
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 527505587}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43040f7511d0bd847a8673ec3b96ac69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HintPanel: {fileID: 1739204956}
 --- !u!1 &644473569
 GameObject:
   m_ObjectHideFlags: 0
@@ -3055,6 +3133,7 @@ GameObject:
   - component: {fileID: 888108674}
   - component: {fileID: 888108673}
   - component: {fileID: 888108672}
+  - component: {fileID: 888108675}
   m_Layer: 0
   m_Name: return
   m_TagString: Untagged
@@ -3125,7 +3204,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 888108673}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 888108675}
+        m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
+        m_MethodName: OpenHintPanel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &888108673
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3164,6 +3255,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 888108670}
   m_CullTransparentMesh: 1
+--- !u!114 &888108675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 888108670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43040f7511d0bd847a8673ec3b96ac69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HintPanel: {fileID: 1932372674}
 --- !u!1 &899714797
 GameObject:
   m_ObjectHideFlags: 0
@@ -3930,6 +4034,7 @@ GameObject:
   - component: {fileID: 1097610167}
   - component: {fileID: 1097610166}
   - component: {fileID: 1097610165}
+  - component: {fileID: 1097610168}
   m_Layer: 0
   m_Name: Exit
   m_TagString: Untagged
@@ -4000,7 +4105,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1097610166}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1097610168}
+        m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
+        m_MethodName: OpenHintPanel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1097610166
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4039,6 +4156,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1097610163}
   m_CullTransparentMesh: 1
+--- !u!114 &1097610168
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1097610163}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43040f7511d0bd847a8673ec3b96ac69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HintPanel: {fileID: 1739204956}
 --- !u!1 &1106547246
 GameObject:
   m_ObjectHideFlags: 0
@@ -6469,6 +6599,7 @@ GameObject:
   - component: {fileID: 1830302709}
   - component: {fileID: 1830302708}
   - component: {fileID: 1830302707}
+  - component: {fileID: 1830302710}
   m_Layer: 0
   m_Name: instruction
   m_TagString: Untagged
@@ -6539,7 +6670,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1830302708}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1830302710}
+        m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
+        m_MethodName: OpenHintPanel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1830302708
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -6578,6 +6721,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1830302705}
   m_CullTransparentMesh: 1
+--- !u!114 &1830302710
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1830302705}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43040f7511d0bd847a8673ec3b96ac69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HintPanel: {fileID: 1280061330}
 --- !u!1 &1854235454
 GameObject:
   m_ObjectHideFlags: 0
