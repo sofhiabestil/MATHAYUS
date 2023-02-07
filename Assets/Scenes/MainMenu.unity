@@ -2411,8 +2411,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 23bab100034cee047b8d286cf5b22731, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  musicSliderText: {fileID: 0}
-  soudEffectsSliderText: {fileID: 0}
   mixer: {fileID: 24100000, guid: 4e5900f0742e2374aa049ba504d01e7a, type: 2}
   musicSlider: {fileID: 1291539650}
   sfxSlider: {fileID: 1623374495}
@@ -4139,19 +4137,7 @@ MonoBehaviour:
   m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3447947384555820163}
-        m_TargetAssemblyTypeName: VolumeSettings, Assembly-CSharp
-        m_MethodName: OnMusicSliderValueChange
-        m_Mode: 0
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &1297518421
 GameObject:
   m_ObjectHideFlags: 0
@@ -4763,7 +4749,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -3.0477905, y: 2.668457}
+  m_AnchoredPosition: {x: -3.0478516, y: 2.668457}
   m_SizeDelta: {x: 48.776, y: 57.728}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1590291527
@@ -4894,19 +4880,7 @@ MonoBehaviour:
   m_Value: 1
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 3447947384555820162}
-        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
-        m_MethodName: 
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: 
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!1 &1726866090
 GameObject:
   m_ObjectHideFlags: 0
@@ -5649,7 +5623,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: New Text
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -5676,13 +5650,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 100
+  m_fontSize: 35.25
   m_fontSizeBase: 100
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 1004.4
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -6148,7 +6122,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: New Text
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -6175,13 +6149,13 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 100
+  m_fontSize: 35.25
   m_fontSizeBase: 100
   m_fontWeight: 400
   m_enableAutoSizing: 1
   m_fontSizeMin: 18
   m_fontSizeMax: 1004.4
-  m_fontStyle: 1
+  m_fontStyle: 0
   m_HorizontalAlignment: 2
   m_VerticalAlignment: 512
   m_textAlignment: 65535
@@ -6239,33 +6213,18 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1022321086558952240, guid: fdcdb751088fde84db95db5c5225d7d0,
         type: 3}
-      propertyPath: m_LocalScale.x
-      value: 0.99999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 3218625581464123408, guid: fdcdb751088fde84db95db5c5225d7d0,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 0.99999994
-      objectReference: {fileID: 0}
-    - target: {fileID: 3218625581464123408, guid: fdcdb751088fde84db95db5c5225d7d0,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 0.9999999
-      objectReference: {fileID: 0}
-    - target: {fileID: 3218625581464123408, guid: fdcdb751088fde84db95db5c5225d7d0,
-        type: 3}
       propertyPath: m_LocalPosition.x
       value: 755.27325
       objectReference: {fileID: 0}
     - target: {fileID: 1022321086558952240, guid: fdcdb751088fde84db95db5c5225d7d0,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 380.1443
+      value: 380.14426
       objectReference: {fileID: 0}
     - target: {fileID: 1022321086558952240, guid: fdcdb751088fde84db95db5c5225d7d0,
         type: 3}
       propertyPath: m_LocalPosition.z
-      value: -3.3404021
+      value: -3.3404062
       objectReference: {fileID: 0}
     - target: {fileID: 1022321086558952240, guid: fdcdb751088fde84db95db5c5225d7d0,
         type: 3}
@@ -6275,17 +6234,17 @@ PrefabInstance:
     - target: {fileID: 1022321086558952240, guid: fdcdb751088fde84db95db5c5225d7d0,
         type: 3}
       propertyPath: m_LocalRotation.x
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1022321086558952240, guid: fdcdb751088fde84db95db5c5225d7d0,
         type: 3}
       propertyPath: m_LocalRotation.y
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1022321086558952240, guid: fdcdb751088fde84db95db5c5225d7d0,
         type: 3}
       propertyPath: m_LocalRotation.z
-      value: -0
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 1022321086558952240, guid: fdcdb751088fde84db95db5c5225d7d0,
         type: 3}
@@ -6302,8 +6261,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
     - target: {fileID: 1022321086558952241, guid: fdcdb751088fde84db95db5c5225d7d0,
         type: 3}
       propertyPath: mixer
@@ -6314,29 +6271,5 @@ PrefabInstance:
       propertyPath: m_Name
       value: AudioManager
       objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdcdb751088fde84db95db5c5225d7d0, type: 3}
---- !u!1 &3447947384555820162 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1593841880250423510, guid: fdcdb751088fde84db95db5c5225d7d0,
-    type: 3}
-  m_PrefabInstance: {fileID: 3447947384555820161}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &3447947384555820163
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 3447947384555820162}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 23bab100034cee047b8d286cf5b22731, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  musicSliderText: {fileID: 1992042481}
-  soudEffectsSliderText: {fileID: 0}
-  mixer: {fileID: 0}
-  musicSlider: {fileID: 0}
-  sfxSlider: {fileID: 0}

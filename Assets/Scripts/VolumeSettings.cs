@@ -9,43 +9,34 @@ using UnityEngine.UI;
 using UnityEngine.Audio;
 using TMPro;
 
+
 public class VolumeSettings : MonoBehaviour
 {
-
-
-    [SerializeField] private TextMeshProUGUI musicSliderText;
-    [SerializeField] private TextMeshProUGUI soudEffectsSliderText;
-
-    public static float MusicVolume { get; private set; }
-    public static float SoundEffectsVolume { get; private set; }
-
-    public void OnMusicSliderValueChange(float value)
-    {
-        MusicVolume = value;
-        musicSliderText.text = ((int)(value*100)).ToString();
-        AudioManager.Instance.LoadVolume();
-    }
-
-    public void OnSoundEffectsSliderValueChange(float value)
-    {
-        SoundVolume = value;
-        soudEffectsSliderText.text = ((int)(value * 100)).ToString();
-        AudioManager.Instance.LoadVolume();
-
-    }
-
-
-
     //This is the field that need to fill out in UI of Volume settings
     //lagayan nang mixer,
     [SerializeField] AudioMixer mixer;
     [SerializeField] Slider musicSlider;
     [SerializeField] Slider sfxSlider;
+    [SerializeField] public TextMeshProUGUI musicSliderText;
+    [SerializeField] public TextMeshProUGUI soudEffectsSliderText;
 
     // the expose parameter
     public const string MIXER_MUSIC = "musicVolume";
     public const string MIXER_SFX = "sfxVolume";
- 
+
+    public static float MusicVolume { get; private set; }
+    public static float SoundEffectsVolume { get; private set; }
+
+
+
+    public void OnMusicSliderValueChange(float value)
+    {
+        MusicVolume = value;
+        musicSliderText.text = value.ToString();
+    }
+
+
+
     // whenever the player changes the value of the slider on value changed is called and we're going to go on value 
     // change.add a listener so add a function to 
     // the function requires float parameter
