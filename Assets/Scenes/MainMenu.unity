@@ -6307,20 +6307,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-<<<<<<< Updated upstream
-=======
-    - target: {fileID: 1022321086558952241, guid: fdcdb751088fde84db95db5c5225d7d0,
-        type: 3}
-      propertyPath: mixer
-      value: 
-      objectReference: {fileID: 24100000, guid: 4e5900f0742e2374aa049ba504d01e7a,
-        type: 2}
-    - target: {fileID: 1022321086558952243, guid: fdcdb751088fde84db95db5c5225d7d0,
-        type: 3}
-      propertyPath: m_Name
-      value: AudioManager
-      objectReference: {fileID: 0}
->>>>>>> Stashed changes
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: fdcdb751088fde84db95db5c5225d7d0, type: 3}
 --- !u!1 &3447947384555820162 stripped
