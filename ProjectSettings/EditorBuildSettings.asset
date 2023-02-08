@@ -32,4 +32,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/NewGameScene/Average.unity
     guid: 99036944d0ca125499621543269e8df0
+  - enabled: 1
+    path: Assets/Scenes/NewGameScene/Practice.unity
+    guid: 5ecd4eda601645f4bb3315ea5f665059
   m_configObjects: {}
