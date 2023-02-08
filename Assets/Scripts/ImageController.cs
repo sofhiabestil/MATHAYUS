@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class ImageController : MonoBehaviour
 {
-    public GameObject GameOverPanel,WalkingPanel;
+    public GameObject NextPanel, WalkingPanel;
     public GameObject targetObject;
 
     private void Update()
@@ -11,7 +11,7 @@ public class ImageController : MonoBehaviour
 
         if (Vector2.Distance(transform.position, targetObject.transform.position) < 0.1f)
         {
-            GameOverPanel.SetActive(true);
+            NextPanel.SetActive(true);
             WalkingPanel.SetActive(false);
         }
     }
