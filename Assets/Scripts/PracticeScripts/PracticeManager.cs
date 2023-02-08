@@ -139,13 +139,6 @@ public class PracticeManager : MonoBehaviour{
 
     }
 
-
-    void ActivateCelebrationPanel()
-    {
-        practicehandler.Celebrate.gameObject.SetActive(true);
-
-    }
-
     void ActivateCorrectPanel()
     {
         practicehandler.correctPanel.gameObject.SetActive(true);
