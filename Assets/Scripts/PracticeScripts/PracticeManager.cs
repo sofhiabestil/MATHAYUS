@@ -85,9 +85,18 @@ public class PracticeManager : MonoBehaviour{
                 Invoke("SelectQuestion", 1.5f);
 
             }else{
-                Invoke("ActivateGameOverPanel", 2f);
-                practicegameStatus = PracticeGameStatus.Next;
+                if (scoreCount > 4)
+                { 
+                    Invoke("ActivateWalkPanel", 2f);
+                    //Invoke("ActivateGameOverPanel", 2f);
+                    
+                }
+                else
+                {
+                    Invoke("ActivateGameOverPanel", 2f);
+                }
                 
+                practicegameStatus = PracticeGameStatus.Next;
             }
 
         }
@@ -123,6 +132,20 @@ public class PracticeManager : MonoBehaviour{
 
     }
 
+
+    void ActivateWalkPanel()
+    {
+        practicehandler.Walkpanel.gameObject.SetActive(true);
+
+    }
+
+
+    void ActivateCelebrationPanel()
+    {
+        practicehandler.Celebrate.gameObject.SetActive(true);
+
+    }
+
     void ActivateCorrectPanel()
     {
         practicehandler.correctPanel.gameObject.SetActive(true);
@@ -136,6 +159,7 @@ public class PracticeManager : MonoBehaviour{
         practicehandler.PracticesoundEffect[0].Play();
     }
 
+    
 }
 
 [System.Serializable]
