@@ -19,9 +19,6 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
     public GameObject[] objectsToReset;
    
 
-
-
-
     void Start()
     {
         rectTrans = GetComponent<RectTransform>();

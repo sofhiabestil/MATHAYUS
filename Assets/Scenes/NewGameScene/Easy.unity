@@ -568,6 +568,7 @@ GameObject:
   - component: {fileID: 173231463}
   - component: {fileID: 173231465}
   - component: {fileID: 173231464}
+  - component: {fileID: 173231466}
   m_Layer: 0
   m_Name: BlackSunday
   m_TagString: Untagged
@@ -633,6 +634,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 173231462}
   m_CullTransparentMesh: 1
+--- !u!114 &173231466
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 173231462}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 652a26c903420494a9e7bfe6c84f38b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 1
+  score: 0
+  checkButton: {fileID: 2140620877}
+  filled: 0
 --- !u!1 &188132637
 GameObject:
   m_ObjectHideFlags: 0
@@ -644,6 +661,7 @@ GameObject:
   - component: {fileID: 188132638}
   - component: {fileID: 188132640}
   - component: {fileID: 188132639}
+  - component: {fileID: 188132641}
   m_Layer: 0
   m_Name: BlackFriday
   m_TagString: Untagged
@@ -709,6 +727,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 188132637}
   m_CullTransparentMesh: 1
+--- !u!114 &188132641
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 188132637}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 652a26c903420494a9e7bfe6c84f38b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 6
+  score: 0
+  checkButton: {fileID: 2140620877}
+  filled: 0
 --- !u!1 &199120609
 GameObject:
   m_ObjectHideFlags: 0
@@ -721,6 +755,7 @@ GameObject:
   - component: {fileID: 199120613}
   - component: {fileID: 199120612}
   - component: {fileID: 199120611}
+  - component: {fileID: 199120614}
   m_Layer: 0
   m_Name: ResetButton
   m_TagString: Untagged
@@ -792,7 +827,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 199120612}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 199120614}
+        m_TargetAssemblyTypeName: DragAndDrop, Assembly-CSharp
+        m_MethodName: ResetObjects
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &199120612
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -831,6 +878,29 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 199120609}
   m_CullTransparentMesh: 1
+--- !u!114 &199120614
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 199120609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0f6b0fb3743e4a4eb3d1be0e1e13d5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myCanvas: {fileID: 0}
+  id: 0
+  startingPosition: {x: 0, y: 0}
+  objectsToReset:
+  - {fileID: 991529341}
+  - {fileID: 923850148}
+  - {fileID: 1205760670}
+  - {fileID: 1482936314}
+  - {fileID: 1610248180}
+  - {fileID: 1353978192}
+  - {fileID: 805692652}
 --- !u!1 &202727892
 GameObject:
   m_ObjectHideFlags: 0
@@ -922,6 +992,7 @@ GameObject:
   - component: {fileID: 241349999}
   - component: {fileID: 241350001}
   - component: {fileID: 241350000}
+  - component: {fileID: 241350002}
   m_Layer: 0
   m_Name: BlackTuesday
   m_TagString: Untagged
@@ -987,6 +1058,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 241349998}
   m_CullTransparentMesh: 1
+--- !u!114 &241350002
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 241349998}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 652a26c903420494a9e7bfe6c84f38b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 3
+  score: 0
+  checkButton: {fileID: 2140620877}
+  filled: 0
 --- !u!1 &270818944
 GameObject:
   m_ObjectHideFlags: 0
@@ -1231,6 +1318,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: Transition
       objectReference: {fileID: 0}
+    - target: {fileID: 5598797729915958477, guid: fae5200425ef8e24396f44d476510f76,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5598797729915958478, guid: fae5200425ef8e24396f44d476510f76,
         type: 3}
       propertyPath: m_Pivot.x
@@ -1244,7 +1336,7 @@ PrefabInstance:
     - target: {fileID: 5598797729915958478, guid: fae5200425ef8e24396f44d476510f76,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5598797729915958478, guid: fae5200425ef8e24396f44d476510f76,
         type: 3}
@@ -2173,6 +2265,8 @@ RectTransform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
+  - {fileID: 954345668}
+  - {fileID: 1527465489}
   - {fileID: 1031539290}
   - {fileID: 516085698}
   m_Father: {fileID: 1630384418}
@@ -2301,6 +2395,7 @@ GameObject:
   - component: {fileID: 589058364}
   - component: {fileID: 589058366}
   - component: {fileID: 589058365}
+  - component: {fileID: 589058367}
   m_Layer: 0
   m_Name: BlackThursday
   m_TagString: Untagged
@@ -2366,6 +2461,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 589058363}
   m_CullTransparentMesh: 1
+--- !u!114 &589058367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 589058363}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 652a26c903420494a9e7bfe6c84f38b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 5
+  score: 0
+  checkButton: {fileID: 2140620877}
+  filled: 0
 --- !u!1 &608873783
 GameObject:
   m_ObjectHideFlags: 0
@@ -3142,6 +3253,8 @@ GameObject:
   - component: {fileID: 805692653}
   - component: {fileID: 805692655}
   - component: {fileID: 805692654}
+  - component: {fileID: 805692656}
+  - component: {fileID: 805692657}
   m_Layer: 0
   m_Name: Saturday
   m_TagString: Untagged
@@ -3207,6 +3320,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 805692652}
   m_CullTransparentMesh: 1
+--- !u!114 &805692656
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 805692652}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0f6b0fb3743e4a4eb3d1be0e1e13d5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myCanvas: {fileID: 1630384421}
+  id: 7
+  startingPosition: {x: 0, y: 0}
+  objectsToReset: []
+--- !u!225 &805692657
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 805692652}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &813875194
 GameObject:
   m_ObjectHideFlags: 0
@@ -3218,6 +3359,7 @@ GameObject:
   - component: {fileID: 813875195}
   - component: {fileID: 813875197}
   - component: {fileID: 813875196}
+  - component: {fileID: 813875198}
   m_Layer: 0
   m_Name: BlackMonday
   m_TagString: Untagged
@@ -3283,6 +3425,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 813875194}
   m_CullTransparentMesh: 1
+--- !u!114 &813875198
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 813875194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 652a26c903420494a9e7bfe6c84f38b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 2
+  score: 0
+  checkButton: {fileID: 2140620877}
+  filled: 0
 --- !u!1 &826211627
 GameObject:
   m_ObjectHideFlags: 0
@@ -3678,6 +3836,8 @@ GameObject:
   - component: {fileID: 923850149}
   - component: {fileID: 923850151}
   - component: {fileID: 923850150}
+  - component: {fileID: 923850152}
+  - component: {fileID: 923850153}
   m_Layer: 0
   m_Name: Tuesday
   m_TagString: Untagged
@@ -3743,6 +3903,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 923850148}
   m_CullTransparentMesh: 1
+--- !u!114 &923850152
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 923850148}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0f6b0fb3743e4a4eb3d1be0e1e13d5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myCanvas: {fileID: 1630384421}
+  id: 3
+  startingPosition: {x: 0, y: 0}
+  objectsToReset: []
+--- !u!225 &923850153
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 923850148}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &935117558
 GameObject:
   m_ObjectHideFlags: 0
@@ -3865,6 +4053,82 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 935117558}
   m_CullTransparentMesh: 1
+--- !u!1 &954345667
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 954345668}
+  - component: {fileID: 954345670}
+  - component: {fileID: 954345669}
+  m_Layer: 0
+  m_Name: Trigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &954345668
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954345667}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 561244321}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -1.5419922, y: 197.78998}
+  m_SizeDelta: {x: -1664.6768, y: -1002}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &954345669
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954345667}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.019607844}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 10907, guid: 0000000000000000f000000000000000, type: 0}
+  m_Type: 1
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &954345670
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 954345667}
+  m_CullTransparentMesh: 1
 --- !u!1 &991529341
 GameObject:
   m_ObjectHideFlags: 0
@@ -3876,6 +4140,8 @@ GameObject:
   - component: {fileID: 991529342}
   - component: {fileID: 991529344}
   - component: {fileID: 991529343}
+  - component: {fileID: 991529345}
+  - component: {fileID: 991529346}
   m_Layer: 0
   m_Name: Monday
   m_TagString: Untagged
@@ -3941,6 +4207,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 991529341}
   m_CullTransparentMesh: 1
+--- !u!114 &991529345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 991529341}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0f6b0fb3743e4a4eb3d1be0e1e13d5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myCanvas: {fileID: 1630384421}
+  id: 2
+  startingPosition: {x: 0, y: 0}
+  objectsToReset: []
+--- !u!225 &991529346
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 991529341}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &994332661
 GameObject:
   m_ObjectHideFlags: 0
@@ -4161,6 +4455,7 @@ GameObject:
   - component: {fileID: 1031539292}
   - component: {fileID: 1031539291}
   - component: {fileID: 1031539294}
+  - component: {fileID: 1031539295}
   m_Layer: 0
   m_Name: WalkingCha-Cha
   m_TagString: Untagged
@@ -4181,11 +4476,11 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 561244321}
-  m_RootOrder: 0
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 11, y: 191}
+  m_AnchoredPosition: {x: -1.542, y: 191}
   m_SizeDelta: {x: 195, y: 382}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1031539291
@@ -4259,6 +4554,21 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 40
+--- !u!114 &1031539295
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1031539289}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da2bebc49fefba1488eb5e02a7189296, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NextPanel: {fileID: 893065590}
+  WalkingPanel: {fileID: 561244320}
+  targetObject: {fileID: 954345667}
 --- !u!1 &1071100643
 GameObject:
   m_ObjectHideFlags: 0
@@ -4892,6 +5202,7 @@ GameObject:
   - component: {fileID: 1201872827}
   - component: {fileID: 1201872829}
   - component: {fileID: 1201872828}
+  - component: {fileID: 1201872830}
   m_Layer: 0
   m_Name: BlackWednesday
   m_TagString: Untagged
@@ -4957,6 +5268,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1201872826}
   m_CullTransparentMesh: 1
+--- !u!114 &1201872830
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1201872826}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 652a26c903420494a9e7bfe6c84f38b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 4
+  score: 0
+  checkButton: {fileID: 2140620877}
+  filled: 0
 --- !u!1 &1204903124
 GameObject:
   m_ObjectHideFlags: 0
@@ -5048,6 +5375,8 @@ GameObject:
   - component: {fileID: 1205760671}
   - component: {fileID: 1205760673}
   - component: {fileID: 1205760672}
+  - component: {fileID: 1205760674}
+  - component: {fileID: 1205760675}
   m_Layer: 0
   m_Name: Sunday
   m_TagString: Untagged
@@ -5113,6 +5442,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1205760670}
   m_CullTransparentMesh: 1
+--- !u!114 &1205760674
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1205760670}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0f6b0fb3743e4a4eb3d1be0e1e13d5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myCanvas: {fileID: 1630384421}
+  id: 1
+  startingPosition: {x: 0, y: 0}
+  objectsToReset: []
+--- !u!225 &1205760675
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1205760670}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1280992532
 GameObject:
   m_ObjectHideFlags: 0
@@ -5525,6 +5882,8 @@ GameObject:
   - component: {fileID: 1353978193}
   - component: {fileID: 1353978195}
   - component: {fileID: 1353978194}
+  - component: {fileID: 1353978196}
+  - component: {fileID: 1353978197}
   m_Layer: 0
   m_Name: Thursday
   m_TagString: Untagged
@@ -5590,6 +5949,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1353978192}
   m_CullTransparentMesh: 1
+--- !u!114 &1353978196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1353978192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0f6b0fb3743e4a4eb3d1be0e1e13d5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myCanvas: {fileID: 1630384421}
+  id: 5
+  startingPosition: {x: 0, y: 0}
+  objectsToReset: []
+--- !u!225 &1353978197
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1353978192}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1360387483
 GameObject:
   m_ObjectHideFlags: 0
@@ -5909,6 +6296,7 @@ GameObject:
   - component: {fileID: 1427049366}
   - component: {fileID: 1427049368}
   - component: {fileID: 1427049367}
+  - component: {fileID: 1427049369}
   m_Layer: 0
   m_Name: BlackSaturday
   m_TagString: Untagged
@@ -5974,6 +6362,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1427049365}
   m_CullTransparentMesh: 1
+--- !u!114 &1427049369
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1427049365}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 652a26c903420494a9e7bfe6c84f38b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  id: 7
+  score: 0
+  checkButton: {fileID: 2140620877}
+  filled: 0
 --- !u!1 &1439974269
 GameObject:
   m_ObjectHideFlags: 0
@@ -6229,6 +6633,8 @@ GameObject:
   - component: {fileID: 1482936315}
   - component: {fileID: 1482936317}
   - component: {fileID: 1482936316}
+  - component: {fileID: 1482936318}
+  - component: {fileID: 1482936319}
   m_Layer: 0
   m_Name: Wednesday
   m_TagString: Untagged
@@ -6294,6 +6700,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1482936314}
   m_CullTransparentMesh: 1
+--- !u!114 &1482936318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1482936314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0f6b0fb3743e4a4eb3d1be0e1e13d5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myCanvas: {fileID: 1630384421}
+  id: 4
+  startingPosition: {x: 0, y: 0}
+  objectsToReset: []
+--- !u!225 &1482936319
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1482936314}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1519748379
 GameObject:
   m_ObjectHideFlags: 0
@@ -6369,6 +6803,103 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1519748379}
+  m_CullTransparentMesh: 1
+--- !u!1 &1527465488
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1527465489}
+  - component: {fileID: 1527465492}
+  - component: {fileID: 1527465491}
+  - component: {fileID: 1527465490}
+  m_Layer: 0
+  m_Name: OpenDoor
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1527465489
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1527465488}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 561244321}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 1}
+  m_AnchorMax: {x: 0.5, y: 1}
+  m_AnchoredPosition: {x: -14, y: -242}
+  m_SizeDelta: {x: 465.4843, y: 278.4254}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!95 &1527465490
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1527465488}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 17d656998bced4b4495efe3bd9ae25cd, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &1527465491
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1527465488}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 139883e0f2e6b08478b38b6063b09465, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1527465492
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1527465488}
   m_CullTransparentMesh: 1
 --- !u!1 &1542894334
 GameObject:
@@ -6704,6 +7235,8 @@ GameObject:
   - component: {fileID: 1610248181}
   - component: {fileID: 1610248183}
   - component: {fileID: 1610248182}
+  - component: {fileID: 1610248184}
+  - component: {fileID: 1610248185}
   m_Layer: 0
   m_Name: Friday
   m_TagString: Untagged
@@ -6769,6 +7302,34 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1610248180}
   m_CullTransparentMesh: 1
+--- !u!114 &1610248184
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1610248180}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e0f6b0fb3743e4a4eb3d1be0e1e13d5f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myCanvas: {fileID: 1630384421}
+  id: 6
+  startingPosition: {x: 0, y: 0}
+  objectsToReset: []
+--- !u!225 &1610248185
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1610248180}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &1610998946
 GameObject:
   m_ObjectHideFlags: 0
