@@ -1321,7 +1321,7 @@ PrefabInstance:
     - target: {fileID: 5598797729915958477, guid: fae5200425ef8e24396f44d476510f76,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5598797729915958478, guid: fae5200425ef8e24396f44d476510f76,
         type: 3}
@@ -4104,7 +4104,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.019607844}
+  m_Color: {r: 1, g: 1, b: 1, a: 0.015686275}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
@@ -6838,10 +6838,10 @@ RectTransform:
   m_Father: {fileID: 561244321}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 1}
-  m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: -14, y: -242}
-  m_SizeDelta: {x: 465.4843, y: 278.4254}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -9.1404, y: 349.39}
+  m_SizeDelta: {x: 544.0436, y: 381.21}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!95 &1527465490
 Animator:
