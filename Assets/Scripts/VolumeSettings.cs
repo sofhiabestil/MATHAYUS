@@ -23,19 +23,18 @@ public class VolumeSettings : MonoBehaviour
     // the expose parameter
     public const string MIXER_MUSIC = "musicVolume";
     public const string MIXER_SFX = "sfxVolume";
-
-    public static float MusicVolume { get; private set; }
-    public static float SoundEffectsVolume { get; private set; }
-
-
-
-    public void OnMusicSliderValueChange(float value)
-    {
-        MusicVolume = value;
-        musicSliderText.text = value.ToString();
-    }
+    /**
+        public static float MusicVolume { get; private set; }
+        public static float SoundEffectsVolume { get; private set; }
 
 
+
+        public void OnMusicSliderValueChange(float value)
+        {
+            MusicVolume = value;
+            musicSliderText.text = value.ToString();
+        }
+*/
 
     // whenever the player changes the value of the slider on value changed is called and we're going to go on value 
     // change.add a listener so add a function to 
