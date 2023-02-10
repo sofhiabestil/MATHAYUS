@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 956c66cc6daa82346bec363712d82566
+guid: 4df43e9c17048a24c9d1ce1d87199bf4
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,127 +117,253 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CampFire2_0
+      name: Fish (4)_0
+      rect:
+        serializedVersion: 2
+        x: 7
+        y: 3487
+        width: 754
+        height: 395
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 5, w: 6}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdfddf94d05f53f42b31714782732bb5
+      internalID: -1530765637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fish (4)_1
+      rect:
+        serializedVersion: 2
+        x: 1183
+        y: 3167
+        width: 785
+        height: 715
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 8, y: 8, z: 4, w: 9}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19bf2e7d34d700746b2304e0fbb820e6
+      internalID: 1414349391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fish (4)_2
+      rect:
+        serializedVersion: 2
+        x: 2387
+        y: 3177
+        width: 784
+        height: 705
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 5, y: 0, z: 5, w: 6}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20dbab8f4e62f9c4bae60b676e132ddf
+      internalID: -1129694833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fish (4)_3
+      rect:
+        serializedVersion: 2
+        x: 3585
+        y: 3124
+        width: 814
+        height: 848
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 7, y: 6, z: 0, w: 6}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93ac18d6d9e76c74cb0fd946cb8f065e
+      internalID: -1247333528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fish (4)_4
       rect:
         serializedVersion: 2
         x: 0
-        y: 296
-        width: 270
-        height: 270
+        y: 1449
+        width: 881
+        height: 1027
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 10, y: 12, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c444acbef8726924590a667c293b96c3
-      internalID: -918413016
+      spriteID: 532513f85ab7a5247995b10f5850d683
+      internalID: 772433906
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CampFire2_1
+      name: Fish (4)_5
       rect:
         serializedVersion: 2
-        x: 319
-        y: 299
-        width: 270
-        height: 270
+        x: 1212
+        y: 1461
+        width: 848
+        height: 1005
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 9, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 649258363ea31764bbe5450400fee859
-      internalID: -348193526
+      spriteID: 56a75fbae0f2a5c49acbe61ae468f06e
+      internalID: 1556676364
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CampFire2_2
+      name: Fish (4)_6
       rect:
         serializedVersion: 2
-        x: 604
-        y: 301
-        width: 270
-        height: 270
+        x: 2385
+        y: 1320
+        width: 923
+        height: 1164
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 7, y: 0, z: 12, w: 6}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac6b576241506d9489d95225937f3b09
-      internalID: 717695543
+      spriteID: de14009be85497443ba1adbe8e7468f7
+      internalID: -1583671904
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CampFire2_3
+      name: Fish (4)_7
       rect:
         serializedVersion: 2
-        x: 13
-        y: 5
-        width: 270
-        height: 270
+        x: 3636
+        y: 1469
+        width: 977
+        height: 1015
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 9, y: 7, z: 0, w: 9}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c9db0dca96baea34cb54b14be17a51ce
-      internalID: 1642268999
+      spriteID: c8f03e62f4f4f47419e0d8f58e0be3bb
+      internalID: 989474566
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CampFire2_4
+      name: Fish (4)_8
       rect:
         serializedVersion: 2
-        x: 320
+        x: 232
+        y: 105
+        width: 943
+        height: 744
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 5, z: 0, w: 15}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5a004f43968c474eabd37d82b088185
+      internalID: -659849141
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fish (4)_9
+      rect:
+        serializedVersion: 2
+        x: 1605
+        y: 114
+        width: 545
+        height: 727
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 16, z: 4, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8589bf827e27df543a18552f3497be58
+      internalID: -1790071245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fish (4)_10
+      rect:
+        serializedVersion: 2
+        x: 2745
+        y: 135
+        width: 498
+        height: 676
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 11, y: 0, z: 8, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2e681d71cc0d4647b4af1a2b0fa6427
+      internalID: 416801821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Fish (4)_11
+      rect:
+        serializedVersion: 2
+        x: 3839
         y: 0
-        width: 270
-        height: 270
+        width: 501
+        height: 787
       alignment: 0
       pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
+      border: {x: 8, y: 19, z: 9, w: 8}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 60dc77a5762b64341a7054034787b4e9
-      internalID: -1481830192
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: CampFire2_5
-      rect:
-        serializedVersion: 2
-        x: 605
-        y: 4
-        width: 270
-        height: 270
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: a97e49217dc2b614d83d0a56b6f82f31
-      internalID: 1498930103
+      spriteID: 5929c539a62d8c34f94db80f69f1f692
+      internalID: -1791348426
       vertices: []
       indices: 
       edges: []
@@ -253,12 +379,18 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      CampFire2_4: -1481830192
-      CampFire2_0: -918413016
-      CampFire2_2: 717695543
-      CampFire2_1: -348193526
-      CampFire2_3: 1642268999
-      CampFire2_5: 1498930103
+      Fish (4)_10: 416801821
+      Fish (4)_8: -659849141
+      Fish (4)_9: -1790071245
+      Fish (4)_5: 1556676364
+      Fish (4)_7: 989474566
+      Fish (4)_4: 772433906
+      Fish (4)_6: -1583671904
+      Fish (4)_1: 1414349391
+      Fish (4)_11: -1791348426
+      Fish (4)_0: -1530765637
+      Fish (4)_3: -1247333528
+      Fish (4)_2: -1129694833
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
