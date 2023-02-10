@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 956c66cc6daa82346bec363712d82566
+guid: ffd01f2945e5af24d99cec0a6d50d4ac
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: CampFire2_0
+      name: CampFire2 (1)_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 296
-        width: 270
-        height: 270
+        y: 1460
+        width: 1333
+        height: 1334
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c444acbef8726924590a667c293b96c3
-      internalID: -918413016
+      spriteID: 5c757dbd302a8f840ab8e5b4129f1c1d
+      internalID: -1167584045
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CampFire2_1
+      name: CampFire2 (1)_1
       rect:
         serializedVersion: 2
-        x: 319
-        y: 299
-        width: 270
-        height: 270
+        x: 1574
+        y: 1475
+        width: 1333
+        height: 1334
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +152,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 649258363ea31764bbe5450400fee859
-      internalID: -348193526
+      spriteID: 9b974721f5b7fc64190c4e3062d12388
+      internalID: -422730463
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CampFire2_2
+      name: CampFire2 (1)_2
       rect:
         serializedVersion: 2
-        x: 604
-        y: 301
-        width: 270
-        height: 270
+        x: 2980
+        y: 1485
+        width: 1334
+        height: 1333
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,20 +173,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac6b576241506d9489d95225937f3b09
-      internalID: 717695543
+      spriteID: 28cb9976c0b842944b05cba45d7673c9
+      internalID: -1306607369
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CampFire2_3
+      name: CampFire2 (1)_3
       rect:
         serializedVersion: 2
-        x: 13
-        y: 5
-        width: 270
-        height: 270
+        x: 64
+        y: 24
+        width: 1333
+        height: 1334
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,20 +194,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: c9db0dca96baea34cb54b14be17a51ce
-      internalID: 1642268999
+      spriteID: 799638e1bc406ac49a3611d053251c34
+      internalID: -615592320
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CampFire2_4
+      name: CampFire2 (1)_4
       rect:
         serializedVersion: 2
-        x: 320
+        x: 1579
         y: 0
-        width: 270
-        height: 270
+        width: 1333
+        height: 1333
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -215,20 +215,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 60dc77a5762b64341a7054034787b4e9
-      internalID: -1481830192
+      spriteID: 8197d06d401881040b5bd972a8c4c87d
+      internalID: 1131193350
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: CampFire2_5
+      name: CampFire2 (1)_5
       rect:
         serializedVersion: 2
-        x: 605
-        y: 4
-        width: 270
-        height: 270
+        x: 2985
+        y: 19
+        width: 1333
+        height: 1334
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -236,8 +236,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a97e49217dc2b614d83d0a56b6f82f31
-      internalID: 1498930103
+      spriteID: 9ff7a5907274060479bea5dd84029c75
+      internalID: 1029384417
       vertices: []
       indices: 
       edges: []
@@ -253,12 +253,12 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      CampFire2_4: -1481830192
-      CampFire2_0: -918413016
-      CampFire2_2: 717695543
-      CampFire2_1: -348193526
-      CampFire2_3: 1642268999
-      CampFire2_5: 1498930103
+      CampFire2 (1)_3: -615592320
+      CampFire2 (1)_2: -1306607369
+      CampFire2 (1)_4: 1131193350
+      CampFire2 (1)_5: 1029384417
+      CampFire2 (1)_0: -1167584045
+      CampFire2 (1)_1: -422730463
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
