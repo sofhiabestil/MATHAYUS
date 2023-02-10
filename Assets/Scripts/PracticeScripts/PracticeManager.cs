@@ -78,11 +78,11 @@ public class PracticeManager : MonoBehaviour{
         }
         if (practicegameStatus == PracticeGameStatus.Playing){
 
-            Invoke("DismissMessagePanel", 2f);
+            Invoke("DismissMessagePanel", 2.5f);
 
             if (questions.Count > 0 && questionCount < 10){
 
-                Invoke("SelectQuestion", 1.5f);
+                Invoke("SelectQuestion", 2.5f);
 
             }else{
                 if (scoreCount > 4)
