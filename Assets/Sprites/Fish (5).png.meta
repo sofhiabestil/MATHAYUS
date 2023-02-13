@@ -120,12 +120,12 @@ TextureImporter:
       name: Fish (5)_0
       rect:
         serializedVersion: 2
-        x: 55
-        y: 3505
-        width: 573
-        height: 264
+        x: 32
+        y: 2859
+        width: 832
+        height: 968
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -141,12 +141,12 @@ TextureImporter:
       name: Fish (5)_1
       rect:
         serializedVersion: 2
-        x: 1332
-        y: 3360
-        width: 554
-        height: 377
+        x: 1297
+        y: 2824
+        width: 832
+        height: 968
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -162,12 +162,12 @@ TextureImporter:
       name: Fish (5)_2
       rect:
         serializedVersion: 2
-        x: 2536
-        y: 3205
-        width: 595
-        height: 532
+        x: 2508
+        y: 2830
+        width: 832
+        height: 968
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -183,12 +183,12 @@ TextureImporter:
       name: Fish (5)_3
       rect:
         serializedVersion: 2
-        x: 3731
-        y: 3168
-        width: 652
-        height: 669
+        x: 3581
+        y: 2920
+        width: 832
+        height: 968
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -206,10 +206,10 @@ TextureImporter:
         serializedVersion: 2
         x: 112
         y: 1478
-        width: 767
-        height: 904
+        width: 832
+        height: 968
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -226,11 +226,11 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 1284
-        y: 1478
-        width: 756
-        height: 930
+        y: 1440
+        width: 832
+        height: 968
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -248,10 +248,10 @@ TextureImporter:
         serializedVersion: 2
         x: 2513
         y: 1344
-        width: 781
-        height: 903
+        width: 832
+        height: 968
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -267,12 +267,12 @@ TextureImporter:
       name: Fish (5)_7
       rect:
         serializedVersion: 2
-        x: 3778
-        y: 1478
-        width: 814
-        height: 741
+        x: 3765
+        y: 1319
+        width: 832
+        height: 968
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -290,10 +290,10 @@ TextureImporter:
         serializedVersion: 2
         x: 328
         y: 109
-        width: 828
-        height: 575
+        width: 832
+        height: 968
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -311,10 +311,10 @@ TextureImporter:
         serializedVersion: 2
         x: 1673
         y: 240
-        width: 415
-        height: 473
+        width: 832
+        height: 968
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -332,10 +332,10 @@ TextureImporter:
         serializedVersion: 2
         x: 2778
         y: 302
-        width: 424
-        height: 416
+        width: 832
+        height: 968
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -351,12 +351,12 @@ TextureImporter:
       name: Fish (5)_15
       rect:
         serializedVersion: 2
-        x: 3917
-        y: 363
-        width: 403
-        height: 412
+        x: 3784
+        y: 300
+        width: 832
+        height: 968
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
