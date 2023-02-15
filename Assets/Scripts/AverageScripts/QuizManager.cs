@@ -133,9 +133,17 @@ public class QuizManager : MonoBehaviour
             }
             else
             {
-                Invoke("ActivateGameOverPanel", 2f);
+                if (scoreCount > 4)
+                {
+                    Invoke("ActivateWalkPanel", 2f);
+                    //Invoke("ActivateGameOverPanel", 2f);
+                    //gameStatus = GameStatus.Next;
+                    /*quizUI.GameOverPanel.SetActive(true);*/
+                }
+                else {
+                    Invoke("ActivateGameOverPanel", 2f);
+                }
                 gameStatus = GameStatus.Next;
-                /*quizUI.GameOverPanel.SetActive(true);*/
             }
 
         }
@@ -174,6 +182,12 @@ public class QuizManager : MonoBehaviour
     void ActivateGameOverPanel()
     {
         quizUI.GameOverPanel.gameObject.SetActive(true);
+    }
+
+    void ActivateWalkPanel()
+    {
+        quizUI.Walkpanel.gameObject.SetActive(true);
+
     }
 
     void ActivateCorrectPanel()
