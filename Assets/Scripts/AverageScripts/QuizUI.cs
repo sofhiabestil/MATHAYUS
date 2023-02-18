@@ -10,7 +10,7 @@ public class QuizUI : MonoBehaviour
     [SerializeField] private QuizManager quizManager;
     [SerializeField] private TextMeshProUGUI questionText, scoreText, timerText, questioncountText, correctMessage;
     [SerializeField] private List<Image> lifeImageList;
-    [SerializeField] private GameObject gameOverPanel, averageMenuPanel, gameMenuPanel;
+    [SerializeField] private GameObject gameOverPanel, averageMenuPanel, gameMenuPanel, walkpanel;
     [SerializeField] public  GameObject star0, star1, star2, star3, wrongPanel, correctPanel;
     [SerializeField] private Image questionImage;
     [SerializeField] private UnityEngine.Video.VideoPlayer questionVideo;
@@ -34,6 +34,8 @@ public class QuizUI : MonoBehaviour
     public TextMeshProUGUI CorrectAnswerMessage { get { return correctMessage; } }
 
     public GameObject GameOverPanel { get { return gameOverPanel; } }
+
+    public GameObject Walkpanel { get { return walkpanel; } }
 
     public GameObject WrongPanel { get { return wrongPanel; } }
 
