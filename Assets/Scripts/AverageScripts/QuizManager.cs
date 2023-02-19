@@ -179,12 +179,7 @@ public class QuizManager : MonoBehaviour
         quizUI.wrongPanel.gameObject.SetActive(false);
     }
 
-    void ActivateGameOverPanel()
-    {
-        quizUI.GameOverPanel.gameObject.SetActive(true);
-    }
-
-    public void DiffActivateGameOverPanel()
+    public void ActivateGameOverPanel()
     {
         quizUI.GameOverPanel.gameObject.SetActive(true);
     }
