@@ -184,6 +184,11 @@ public class QuizManager : MonoBehaviour
         quizUI.GameOverPanel.gameObject.SetActive(true);
     }
 
+    public void DiffActivateGameOverPanel()
+    {
+        quizUI.GameOverPanel.gameObject.SetActive(true);
+    }
+
     void ActivateWalkPanel()
     {
         quizUI.Walkpanel.gameObject.SetActive(true);
