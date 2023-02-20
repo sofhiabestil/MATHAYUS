@@ -31,6 +31,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 3561427653066446849}
+  - {fileID: 122515906289276207}
   - {fileID: 140178425539624803}
   - {fileID: 8053679082001581385}
   - {fileID: 3561427652116282656}
@@ -81,6 +82,82 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!1 &4314736000077634717
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 122515906289276207}
+  - component: {fileID: 7082921779084934260}
+  - component: {fileID: 6739708212442638874}
+  m_Layer: 0
+  m_Name: DoorNoAnimation
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &122515906289276207
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4314736000077634717}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 3561427653352259906}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: -17.086914, y: 291.3501}
+  m_SizeDelta: {x: 451.5195, y: 326.77}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!222 &7082921779084934260
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4314736000077634717}
+  m_CullTransparentMesh: 1
+--- !u!114 &6739708212442638874
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4314736000077634717}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 139883e0f2e6b08478b38b6063b09465, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
 --- !u!1001 &2306588083861489625
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -101,7 +178,7 @@ PrefabInstance:
     - target: {fileID: 5748510467786293904, guid: ed9f1e1b1ae6bf64d8cceca8ac61b843,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 5748510467786293904, guid: ed9f1e1b1ae6bf64d8cceca8ac61b843,
         type: 3}
@@ -198,6 +275,11 @@ PrefabInstance:
       propertyPath: m_Name
       value: fish 3 (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5748510467786293905, guid: ed9f1e1b1ae6bf64d8cceca8ac61b843,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ed9f1e1b1ae6bf64d8cceca8ac61b843, type: 3}
 --- !u!224 &8053679082001581385 stripped
@@ -236,7 +318,7 @@ PrefabInstance:
     - target: {fileID: 5598797729915958478, guid: fae5200425ef8e24396f44d476510f76,
         type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 5598797729915958478, guid: fae5200425ef8e24396f44d476510f76,
         type: 3}
@@ -356,7 +438,7 @@ PrefabInstance:
     - target: {fileID: 8611281625329684068, guid: b88bc05783c46494a9a29176cd1a35b5,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 8611281625329684068, guid: b88bc05783c46494a9a29176cd1a35b5,
         type: 3}
@@ -496,7 +578,7 @@ PrefabInstance:
     - target: {fileID: 7072902938883812620, guid: 89376a35e6bd8fc4e97fadac165bd748,
         type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 7072902938883812620, guid: 89376a35e6bd8fc4e97fadac165bd748,
         type: 3}
@@ -592,6 +674,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: fish 2 (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 7072902938883812623, guid: 89376a35e6bd8fc4e97fadac165bd748,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 89376a35e6bd8fc4e97fadac165bd748, type: 3}
