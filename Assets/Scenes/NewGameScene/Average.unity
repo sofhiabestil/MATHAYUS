@@ -5317,6 +5317,11 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 276.96
       objectReference: {fileID: 0}
+    - target: {fileID: 3561427652116282684, guid: a69f0cc1241d2e34a8ccda4cebd20c3b,
+        type: 3}
+      propertyPath: speed
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 3561427652116282687, guid: a69f0cc1241d2e34a8ccda4cebd20c3b,
         type: 3}
       propertyPath: NextPanel

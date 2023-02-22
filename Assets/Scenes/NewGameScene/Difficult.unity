@@ -9169,6 +9169,11 @@ PrefabInstance:
       propertyPath: NextPanel
       value: 
       objectReference: {fileID: 25928577}
+    - target: {fileID: 1770081122998352506, guid: 6cd1d62852b17ea47bf8732b6e49620d,
+        type: 3}
+      propertyPath: speed
+      value: 60
+      objectReference: {fileID: 0}
     - target: {fileID: 1770081123344080745, guid: 6cd1d62852b17ea47bf8732b6e49620d,
         type: 3}
       propertyPath: m_Name
