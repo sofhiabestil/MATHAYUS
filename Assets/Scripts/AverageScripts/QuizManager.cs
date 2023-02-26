@@ -124,12 +124,12 @@ public class QuizManager : MonoBehaviour
 
         if (gameStatus == GameStatus.Playing)
         {
-            Invoke("DismissMessagePanel", 2f);
+            Invoke("DismissMessagePanel", 2.5f);
 
             if (questions.Count > 0)
             {
                 //call SelectQuestion method again after 1s
-                Invoke("SelectQuestion", 1.5f);
+                Invoke("SelectQuestion", 2.5f);
             }
             else
             {
