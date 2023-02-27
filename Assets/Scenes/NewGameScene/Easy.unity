@@ -1817,7 +1817,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: DragPoint5
+          m_StringArgument: DragPoint6
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 233388771}
@@ -3108,7 +3108,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: DragPoint4
+          m_StringArgument: DragPoint5
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 487280180}
@@ -6308,7 +6308,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: DragPoint5
+          m_StringArgument: DragPoint6
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 861119023}
@@ -7139,7 +7139,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: DragPoint1
+          m_StringArgument: DragPoint2
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 807243535}
@@ -7706,7 +7706,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: DragPoint6
+          m_StringArgument: DragPoint1
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1009033664
@@ -9282,7 +9282,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: DragPoint2
+          m_StringArgument: DragPoint3
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 1207031462}
@@ -13574,7 +13574,7 @@ MonoBehaviour:
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: DragPoint3
+          m_StringArgument: DragPoint4
           m_BoolArgument: 0
         m_CallState: 2
       - m_Target: {fileID: 807243535}
