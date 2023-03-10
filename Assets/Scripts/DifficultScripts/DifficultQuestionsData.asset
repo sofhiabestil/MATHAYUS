@@ -13,23 +13,23 @@ MonoBehaviour:
   m_Name: DifficultQuestionsData
   m_EditorClassIdentifier: 
   difficultquestions:
-  - diffquestions: Number 1
-    answer: One
-  - diffquestions: Number 2
-    answer: Two
-  - diffquestions: Number 3
-    answer: Three
-  - diffquestions: Number 4
-    answer: Four
-  - diffquestions: Number 5
-    answer: Five
-  - diffquestions: Number 6
-    answer: Six
-  - diffquestions: Number 7
-    answer: Seven
-  - diffquestions: Number 8
+  - diffquestions: ' It is the 1st day of the week. '
+    answer: Sunday
+  - diffquestions: ' It is the 2nd day of the week. '
+    answer: Monday
+  - diffquestions: ' It is the 3rd day of the week. '
+    answer: Tuesday
+  - diffquestions: ' It is the 4th day of the week.'
+    answer: Wednesday
+  - diffquestions: 'It is the 5th day of the week. '
+    answer: Thursday
+  - diffquestions: 'It is the 6th day of the week. '
+    answer: Friday
+  - diffquestions: ' It is the 7th day of the week.'
+    answer: Saturday
+  - diffquestions: ' It is the 8th day of the week.'
     answer: Eight
-  - diffquestions: Number 9
-    answer: Nine
-  - diffquestions: Number 10
-    answer: Ten
+  - diffquestions: ' It is the day before Sunday.'
+    answer: Saturday
+  - diffquestions: It is the day before Monday.
+    answer: Sunday
