@@ -13,6 +13,8 @@ MonoBehaviour:
   m_Name: DifficultQuestionsData
   m_EditorClassIdentifier: 
   difficultquestions:
+  - diffquestions: abcdefghij
+    answer: abcdefghij
   - diffquestions: ' It is the 1st day of the week. '
     answer: Sunday
   - diffquestions: ' It is the 2nd day of the week. '
