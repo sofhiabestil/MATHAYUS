@@ -46,3 +46,25 @@ MonoBehaviour:
     - Sunday
     - Wedndesday
     correctAns: Monday
+  - questionInfo: If today is tuesday yesterday was?
+    questionType: 0
+    questionImg: {fileID: 0}
+    questionClip: {fileID: 0}
+    questionVideo: {fileID: 0}
+    options:
+    - Saturday
+    - Monday
+    - Sunday
+    - Wedndesday
+    correctAns: Monday
+  - questionInfo: If today is tuesday yesterday was?
+    questionType: 0
+    questionImg: {fileID: 0}
+    questionClip: {fileID: 0}
+    questionVideo: {fileID: 0}
+    options:
+    - Saturday
+    - Monday
+    - Sunday
+    - Wedndesday
+    correctAns: Monday

@@ -33,3 +33,23 @@ MonoBehaviour:
     answer: Saturday
   - diffquestions: It is the day before Monday.
     answer: Sunday
+  - diffquestions: It is the day before Monday.
+    answer: Sunday
+  - diffquestions: It is the day before Tuesday.
+    answer: Monday
+  - diffquestions: It is the day before Wednesday.
+    answer: Tuesday
+  - diffquestions: ' It is the day before Thursday. '
+    answer: Wednesday
+  - diffquestions: 'It is the day before Friday. '
+    answer: Thursday
+  - diffquestions: 'It is the day before Saturday. '
+    answer: Friday
+  - diffquestions: 'It is the day before Sunday. '
+    answer: Saturday
+  - diffquestions: 'It is the day after Sunday. '
+    answer: Monday
+  - diffquestions: It is the day after Monday.
+    answer: Tuesday
+  - diffquestions: It is the day after Tuesday.
+    answer: Wednesday
