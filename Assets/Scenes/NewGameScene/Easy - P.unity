@@ -2303,7 +2303,7 @@ PrefabInstance:
     - target: {fileID: 5598797729915958477, guid: fae5200425ef8e24396f44d476510f76,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5598797729915958478, guid: fae5200425ef8e24396f44d476510f76,
         type: 3}
@@ -6965,7 +6965,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &948384405
 RectTransform:
   m_ObjectHideFlags: 0
@@ -7033,6 +7033,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 948384404}
   m_CullTransparentMesh: 1
+--- !u!1 &954345667 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 936685089559552407, guid: 5cc16053da51f6e46ad8ed2ea4d0a1c2,
+    type: 3}
+  m_PrefabInstance: {fileID: 936685090228406612}
+  m_PrefabAsset: {fileID: 0}
 --- !u!224 &954345668 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 936685089559552400, guid: 5cc16053da51f6e46ad8ed2ea4d0a1c2,
@@ -8056,7 +8062,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22a346749b8ef224587608fe4b7ad8c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 60
+  speed: 40
 --- !u!114 &1031539295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8071,7 +8077,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NextPanel: {fileID: 893065590}
   WalkingPanel: {fileID: 561244320}
-  panelDuration: 9
+  targetObject: {fileID: 954345667}
 --- !u!1 &1071100643
 GameObject:
   m_ObjectHideFlags: 0

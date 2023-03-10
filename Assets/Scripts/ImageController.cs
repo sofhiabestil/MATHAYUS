@@ -3,13 +3,14 @@ using UnityEngine;
 public class ImageController : MonoBehaviour
 {
     public GameObject NextPanel, WalkingPanel;
-    public GameObject targetObject;
+    public float panelDuration = 2.0f; // duration in seconds
+    private float timer = 0.0f;
 
     private void Update()
     {
-        transform.position = Vector2.MoveTowards(transform.position, targetObject.transform.position, Time.deltaTime);
+        timer += Time.deltaTime;
 
-        if (Vector2.Distance(transform.position, targetObject.transform.position) < 0.1f)
+        if (timer >= panelDuration)
         {
             NextPanel.SetActive(true);
             WalkingPanel.SetActive(false);

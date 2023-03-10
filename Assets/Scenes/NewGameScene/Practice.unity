@@ -3079,6 +3079,11 @@ PrefabInstance:
       propertyPath: NextPanel
       value: 
       objectReference: {fileID: 389009472}
+    - target: {fileID: 3561427652116282687, guid: a69f0cc1241d2e34a8ccda4cebd20c3b,
+        type: 3}
+      propertyPath: panelDuration
+      value: 9
+      objectReference: {fileID: 0}
     - target: {fileID: 3561427653352259906, guid: a69f0cc1241d2e34a8ccda4cebd20c3b,
         type: 3}
       propertyPath: m_Pivot.x
@@ -3202,7 +3207,7 @@ PrefabInstance:
     - target: {fileID: 8997725088480445620, guid: a69f0cc1241d2e34a8ccda4cebd20c3b,
         type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a69f0cc1241d2e34a8ccda4cebd20c3b, type: 3}
@@ -8041,6 +8046,11 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Instruction
+      objectReference: {fileID: 0}
+    - target: {fileID: 2559433423301182567, guid: 65ef1561cf67fc5478ffd555c05da923,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 2559433423425804511, guid: 65ef1561cf67fc5478ffd555c05da923,
         type: 3}
