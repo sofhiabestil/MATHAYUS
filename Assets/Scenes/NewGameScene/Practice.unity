@@ -7927,11 +7927,56 @@ PrefabInstance:
       propertyPath: HintPanel
       value: 
       objectReference: {fileID: 1280061330}
+    - target: {fileID: 2559433422604188679, guid: 65ef1561cf67fc5478ffd555c05da923,
+        type: 3}
+      propertyPath: m_text
+      value: Saturday
+      objectReference: {fileID: 0}
+    - target: {fileID: 2559433422604188679, guid: 65ef1561cf67fc5478ffd555c05da923,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 2559433422604188679, guid: 65ef1561cf67fc5478ffd555c05da923,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 2559433422688231530, guid: 65ef1561cf67fc5478ffd555c05da923,
         type: 3}
       propertyPath: HintPanel
       value: 
       objectReference: {fileID: 1932372674}
+    - target: {fileID: 2559433422739642182, guid: 65ef1561cf67fc5478ffd555c05da923,
+        type: 3}
+      propertyPath: m_text
+      value: Monday
+      objectReference: {fileID: 0}
+    - target: {fileID: 2559433422739642182, guid: 65ef1561cf67fc5478ffd555c05da923,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 2559433422739642182, guid: 65ef1561cf67fc5478ffd555c05da923,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 2559433423080733804, guid: 65ef1561cf67fc5478ffd555c05da923,
+        type: 3}
+      propertyPath: m_text
+      value: Sunday
+      objectReference: {fileID: 0}
+    - target: {fileID: 2559433423080733804, guid: 65ef1561cf67fc5478ffd555c05da923,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 2559433423080733804, guid: 65ef1561cf67fc5478ffd555c05da923,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 30
+      objectReference: {fileID: 0}
     - target: {fileID: 2559433423289098171, guid: 65ef1561cf67fc5478ffd555c05da923,
         type: 3}
       propertyPath: HintPanel
@@ -8137,6 +8182,61 @@ PrefabInstance:
       propertyPath: JumpNico.Array.data[4]
       value: 
       objectReference: {fileID: 352366106}
+    - target: {fileID: 2559433423607287600, guid: 65ef1561cf67fc5478ffd555c05da923,
+        type: 3}
+      propertyPath: m_text
+      value: Friday
+      objectReference: {fileID: 0}
+    - target: {fileID: 2559433423607287600, guid: 65ef1561cf67fc5478ffd555c05da923,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 2559433423607287600, guid: 65ef1561cf67fc5478ffd555c05da923,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 2559433423630963640, guid: 65ef1561cf67fc5478ffd555c05da923,
+        type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 970.8549
+      objectReference: {fileID: 0}
+    - target: {fileID: 2559433423630963640, guid: 65ef1561cf67fc5478ffd555c05da923,
+        type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 138.4429
+      objectReference: {fileID: 0}
+    - target: {fileID: 2559433423630963640, guid: 65ef1561cf67fc5478ffd555c05da923,
+        type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.00004673
+      objectReference: {fileID: 0}
+    - target: {fileID: 2559433423630963640, guid: 65ef1561cf67fc5478ffd555c05da923,
+        type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.000010729
+      objectReference: {fileID: 0}
+    - target: {fileID: 2559433423630963647, guid: 65ef1561cf67fc5478ffd555c05da923,
+        type: 3}
+      propertyPath: m_text
+      value: What is the 6th day of the week?
+      objectReference: {fileID: 0}
+    - target: {fileID: 2559433423630963647, guid: 65ef1561cf67fc5478ffd555c05da923,
+        type: 3}
+      propertyPath: m_fontSize
+      value: 65
+      objectReference: {fileID: 0}
+    - target: {fileID: 2559433423630963647, guid: 65ef1561cf67fc5478ffd555c05da923,
+        type: 3}
+      propertyPath: m_margin.z
+      value: -6.93985
+      objectReference: {fileID: 0}
+    - target: {fileID: 2559433423630963647, guid: 65ef1561cf67fc5478ffd555c05da923,
+        type: 3}
+      propertyPath: m_fontSizeBase
+      value: 65
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 65ef1561cf67fc5478ffd555c05da923, type: 3}
 --- !u!1001 &3561427653916991629
