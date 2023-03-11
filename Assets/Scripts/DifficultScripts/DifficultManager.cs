@@ -36,7 +36,7 @@ public class DifficultManager : MonoBehaviour
     private bool checkAnswer = false;
     private float currentTime;
     public Button diffCheckButton;
-
+    private List<DifficultQuestionData> usedQuestions = new List<DifficultQuestionData>();
 
 
     public Text DiffTimerText { get { return difftimerText; } }
@@ -100,26 +100,55 @@ public class DifficultManager : MonoBehaviour
     }
 
 
- private void ModernFisherYatesShuffle(List<DifficultQuestionData> list)
+    private void ModernFisherYatesShuffle(List<DifficultQuestionData> list)
     {
-        for (int i = list.Count - 1; i > 0; i--)
+        int n = list.Count;
+        while (n > 1)
         {
-            int j = UnityEngine.Random.Range(0, i);
-            DifficultQuestionData temp = list[i];
-            list[i] = list[j];
-            list[j] = temp;
+            n--;
+            int k = UnityEngine.Random.Range(0, n + 1);
+            DifficultQuestionData temp = list[k];
+            list[k] = list[n];
+            list[n] = temp;
         }
     }
 
-
     void SetQuestion(){
-        DifficultGameStatus = DifficultGameStatus.Playing;      //set DifficultGameStatus to playing 
+        DifficultGameStatus = DifficultGameStatus.Playing;
+
+        // Generate a list of questions that have not been used before
+        List<DifficultQuestionData> unusedQuestions = new List<DifficultQuestionData>();
+        foreach (DifficultQuestionData question in difficultDataScriptable.difficultquestions)
+        {
+            if (!usedQuestions.Contains(question))
+            {
+                unusedQuestions.Add(question);
+            }
+        }
+
+        // Shuffle the list of unused questions using the modern Fisher-Yates shuffle
+        ModernFisherYatesShuffle(unusedQuestions);
+
+        // If all questions have been used, reset the used questions HashSet
+        if (unusedQuestions.Count == 0)
+        {
+            usedQuestions.Clear();
+            foreach (DifficultQuestionData question in difficultDataScriptable.difficultquestions)
+            {
+                unusedQuestions.Add(question);
+            }
+            ModernFisherYatesShuffle(unusedQuestions);
+        }
+
+        // Select the first question from the shuffled list of unused questions
+        DifficultQuestionData selectedQuestion = unusedQuestions[0];
+        usedQuestions.Add(selectedQuestion);
 
         // Set the text of the question
-        difficultquestions.text = difficultDataScriptable.difficultquestions[currentQuestionIndex].diffquestions;
+        difficultquestions.text = selectedQuestion.diffquestions;
 
         // Set the answerWord string variable
-        answerWord = difficultDataScriptable.difficultquestions[currentQuestionIndex].answer;
+        answerWord = selectedQuestion.answer;
 
         // Increment the question count and update the text
         diffquestionCount += 1;
