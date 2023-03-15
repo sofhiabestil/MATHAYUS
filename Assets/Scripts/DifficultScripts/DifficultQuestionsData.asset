@@ -13,8 +13,6 @@ MonoBehaviour:
   m_Name: DifficultQuestionsData
   m_EditorClassIdentifier: 
   difficultquestions:
-  - diffquestions: abcdefghi
-    answer: abcdefghi
   - diffquestions: ' It is the 1st day of the week. '
     answer: Sunday
   - diffquestions: ' It is the 2nd day of the week. '
@@ -33,8 +31,6 @@ MonoBehaviour:
     answer: Saturday
   - diffquestions: It is the day before Monday.
     answer: Sunday
-  - diffquestions: It is the day before Monday.
-    answer: Sunday
   - diffquestions: It is the day before Tuesday.
     answer: Monday
   - diffquestions: It is the day before Wednesday.
@@ -45,8 +41,6 @@ MonoBehaviour:
     answer: Thursday
   - diffquestions: 'It is the day before Saturday. '
     answer: Friday
-  - diffquestions: 'It is the day before Sunday. '
-    answer: Saturday
   - diffquestions: 'It is the day after Sunday. '
     answer: Monday
   - diffquestions: It is the day after Monday.
@@ -65,3 +59,57 @@ MonoBehaviour:
     answer: Saturday
   - diffquestions: 'How many days does the week have? '
     answer: Seven
+  - diffquestions: If today is Saturday, what day will it be on 5th day?
+    answer: 'Wednesday '
+  - diffquestions: If today is Sunday, what day will it be on 3rd day?
+    answer: Tuesday
+  - diffquestions: If today is Monday, what day is the 2nd day?
+    answer: Tuesday
+  - diffquestions: 'If today is Tuesday, what day will it be on the 7th day? '
+    answer: Sunday
+  - diffquestions: If today is Wednesday, what day will it be on the 5th day?
+    answer: Sunday
+  - diffquestions: If today is Thursday, what day will it be on the 6th day?
+    answer: Tuesday
+  - diffquestions: 'If today is Friday what day will it be on the 2nd day? '
+    answer: Saturday
+  - diffquestions: anSdyu
+    answer: ' Sunday'
+  - diffquestions: dMynao
+    answer: Monday
+  - diffquestions: Tsuyeda
+    answer: Tuesday
+  - diffquestions: 'Wedseydna '
+    answer: Wednesday
+  - diffquestions: ' ysarThud '
+    answer: Thursday
+  - diffquestions: airyFd
+    answer: Friday
+  - diffquestions: ' Sduyraat'
+    answer: Saturday
+  - diffquestions: ' Emseertpb'
+    answer: September
+  - diffquestions: Ylju
+    answer: July
+  - diffquestions: 'Yabrfreu '
+    answer: 'February '
+  - diffquestions: 'Yma '
+    answer: May
+  - diffquestions: Oorbetc
+    answer: 'October '
+  - diffquestions: Yaunajr
+    answer: January
+  - diffquestions: ' Ayre '
+    answer: ' Year'
+  - diffquestions: Plair
+    answer: April
+  - diffquestions: ' Thmon'
+    answer: 'Month '
+  - diffquestions: How many days are weekday?
+    answer: Five
+  - diffquestions: 'Sunday and Saturday are the? '
+    answer: 'Weekends '
+  - diffquestions: How many days are weekends?
+    answer: Two
+  - diffquestions: ' Monday to Fridays are the? '
+    answer: 'Weekdays '

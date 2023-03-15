@@ -1,4 +1,4 @@
-    using System;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -36,7 +36,7 @@ public class DifficultManager : MonoBehaviour
     private bool checkAnswer = false;
     private float currentTime;
     public Button diffCheckButton;
-
+    private List<DifficultQuestionData> usedQuestions = new List<DifficultQuestionData>();
 
 
     public Text DiffTimerText { get { return difftimerText; } }
@@ -52,7 +52,7 @@ public class DifficultManager : MonoBehaviour
     public GameObject DiffCorrectPanel { get { return diffcorrectPanel; } }
 
     public GameObject DiffWalkpanel { get { return diffWalkpanel; } }
-    
+
     private void Awake()
     {
         if (instance == null)
@@ -62,28 +62,29 @@ public class DifficultManager : MonoBehaviour
     }
 
     // Start is called before the first frame update
-    void Start() {
+    void Start()
+    {
 
-       
+
         currentTime = timeLimit;
 
         askedQuestions = new List<int>();
         selectedWordsIndex = new List<int>();   //create a new list at start        
         SetQuestion();                                  //set question
-        
+
     }
 
     private void Update()
     {
 
-      
+
         if (DifficultGameStatus == DifficultGameStatus.Playing)
         {
             currentTime -= Time.deltaTime;
             SetTimer(currentTime);
         }
 
-       
+
     }
 
     private void SetTimer(float value)
@@ -100,26 +101,56 @@ public class DifficultManager : MonoBehaviour
     }
 
 
- private void ModernFisherYatesShuffle(List<DifficultQuestionData> list)
+    private void ModernFisherYatesShuffle(List<DifficultQuestionData> list)
     {
-        for (int i = list.Count - 1; i > 0; i--)
+        int n = list.Count;
+        while (n > 1)
         {
-            int j = UnityEngine.Random.Range(0, i);
-            DifficultQuestionData temp = list[i];
-            list[i] = list[j];
-            list[j] = temp;
+            n--;
+            int k = UnityEngine.Random.Range(0, n + 1);
+            DifficultQuestionData temp = list[k];
+            list[k] = list[n];
+            list[n] = temp;
         }
     }
 
+    void SetQuestion()
+    {
+        DifficultGameStatus = DifficultGameStatus.Playing;
 
-    void SetQuestion(){
-        DifficultGameStatus = DifficultGameStatus.Playing;      //set DifficultGameStatus to playing 
+        // Generate a list of questions that have not been used before
+        List<DifficultQuestionData> unusedQuestions = new List<DifficultQuestionData>();
+        foreach (DifficultQuestionData question in difficultDataScriptable.difficultquestions)
+        {
+            if (!usedQuestions.Contains(question))
+            {
+                unusedQuestions.Add(question);
+            }
+        }
+
+        // Shuffle the list of unused questions using the modern Fisher-Yates shuffle
+        ModernFisherYatesShuffle(unusedQuestions);
+
+        // If all questions have been used, reset the used questions HashSet
+        if (unusedQuestions.Count == 0)
+        {
+            usedQuestions.Clear();
+            foreach (DifficultQuestionData question in difficultDataScriptable.difficultquestions)
+            {
+                unusedQuestions.Add(question);
+            }
+            ModernFisherYatesShuffle(unusedQuestions);
+        }
+
+        // Select the first question from the shuffled list of unused questions
+        DifficultQuestionData selectedQuestion = unusedQuestions[0];
+        usedQuestions.Add(selectedQuestion);
 
         // Set the text of the question
-        difficultquestions.text = difficultDataScriptable.difficultquestions[currentQuestionIndex].diffquestions;
+        difficultquestions.text = selectedQuestion.diffquestions;
 
         // Set the answerWord string variable
-        answerWord = difficultDataScriptable.difficultquestions[currentQuestionIndex].answer;
+        answerWord = selectedQuestion.answer;
 
         // Increment the question count and update the text
         diffquestionCount += 1;
@@ -156,20 +187,24 @@ public class DifficultManager : MonoBehaviour
         }
     }
     //Method called on Reset Button click and on new question
-    public void ResetQuestion(){
+    public void ResetQuestion()
+    {
         //activate all the answerWordList gameobject and set their word to "_"
-        for (int i = 0; i < answerWordList.Length; i++){
+        for (int i = 0; i < answerWordList.Length; i++)
+        {
             answerWordList[i].gameObject.SetActive(true);
             answerWordList[i].SetWord('_');
         }
 
         //Now deactivate the unwanted answerWordList gameobject (object more than answer string length)
-        for (int i = answerWord.Length; i < answerWordList.Length; i++){
+        for (int i = answerWord.Length; i < answerWordList.Length; i++)
+        {
             answerWordList[i].gameObject.SetActive(false);
         }
 
         //activate all the optionsWordList objects
-        for (int i = 0; i < optionsWordList.Length; i++){
+        for (int i = 0; i < optionsWordList.Length; i++)
+        {
             optionsWordList[i].gameObject.SetActive(true);
         }
 
@@ -181,38 +216,41 @@ public class DifficultManager : MonoBehaviour
     /// When we click on any options button this method is called
     /// </summary>
     /// <param name="value"></param>
-    public void CheckAnswer(){
+    public void CheckAnswer()
+    {
         DifficultGameStatus = DifficultGameStatus.Checking;
         correctAnswer = true;
 
         for (int i = 0; i < answerWord.Length; i++)
         {
             if (char.ToUpper(answerWord[i]) != char.ToUpper(answerWordList[i].wordValue))
-            {  
+            {
                 correctAnswer = false;
                 break;
             }
-      
+
         }
 
-        if (correctAnswer){
+        if (correctAnswer)
+        {
 
             diffscoreCount += 1;
             DiffScoreText.text = diffscoreCount + "/10";
             diffcorrectPanel.gameObject.SetActive(true);
             DifficultsoundEffect[1].Play();
 
-            Invoke("SetNextQuestion", 0.5f);  
+            Invoke("SetNextQuestion", 0.5f);
             Invoke("DiffDismissMessagePanel", 1.5f);
 
         }
-        else{
-            
+        else
+        {
+
             diffwrongPanel.gameObject.SetActive(true);
             diffcorrectMessage.text = answerWord;
             DifficultsoundEffect[0].Play();
 
-            Invoke("SetNextQuestion", 0.5f);  
+            Invoke("SetNextQuestion", 0.5f);
             Invoke("DiffDismissMessagePanel", 1.5f);
         }
 
@@ -233,17 +271,21 @@ public class DifficultManager : MonoBehaviour
             diffstar1.gameObject.SetActive(true);
         }
     }
-    void SetNextQuestion(){
-        
+    void SetNextQuestion()
+    {
+
         DifficultGameStatus = DifficultGameStatus.Playing;
-   
+
         //move to next question
         currentQuestionIndex++;
-        if (currentQuestionIndex < difficultDataScriptable.difficultquestions.Count && diffquestionCount < 10){
-            
+        if (currentQuestionIndex < difficultDataScriptable.difficultquestions.Count && diffquestionCount < 10)
+        {
+
             SetQuestion();
-        
-        }else {
+
+        }
+        else
+        {
             if (diffscoreCount > 4)
             {
                 Invoke("ActivateDiffWalkPanel", 1f);
@@ -254,7 +296,7 @@ public class DifficultManager : MonoBehaviour
             }
             DifficultGameStatus = DifficultGameStatus.Next;
         }
-   
+
     }
     public void RetryButton()
     {
@@ -279,7 +321,8 @@ public class DifficultManager : MonoBehaviour
 
     }
 
-    public void SelectedOption(WordData value){
+    public void SelectedOption(WordData value)
+    {
         //if DifficultGameStatus is next or currentAnswerIndex is more or equal to answerWord length
         if (DifficultGameStatus == DifficultGameStatus.Next || currentAnswerIndex >= answerWord.Length) return;
 
@@ -293,11 +336,12 @@ public class DifficultManager : MonoBehaviour
         if (currentAnswerIndex == answerWord.Length)
         {
             DifficultGameStatus = DifficultGameStatus.Checking;
-            
+
         }
     }
 
-    public void ResetLastWord(){
+    public void ResetLastWord()
+    {
         if (selectedWordsIndex.Count > 0)
         {
             int index = selectedWordsIndex[selectedWordsIndex.Count - 1];
@@ -313,8 +357,9 @@ public class DifficultManager : MonoBehaviour
         askedQuestions.Clear();
     }
 
-    void OnEndGame(){
-    ResetQuestionsList();
+    void OnEndGame()
+    {
+        ResetQuestionsList();
     }
 
     public void DiffRetryButton()
@@ -326,12 +371,14 @@ public class DifficultManager : MonoBehaviour
 
 
 [System.Serializable]
-public class DifficultQuestionData{
+public class DifficultQuestionData
+{
     public string diffquestions;
     public string answer;
 }
 
-public enum DifficultGameStatus{
+public enum DifficultGameStatus
+{
     Next,
     Playing,
     Checking
