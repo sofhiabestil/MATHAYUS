@@ -108,7 +108,7 @@ MonoBehaviour:
   - diffquestions: How many days are weekday?
     answer: Five
   - diffquestions: 'Sunday and Saturday are the? '
-    answer: 'Weekends '
+    answer: Weekends
   - diffquestions: How many days are weekends?
     answer: Two
   - diffquestions: ' Monday to Fridays are the? '
