@@ -92,11 +92,11 @@ MonoBehaviour:
   - diffquestions: Ylju
     answer: July
   - diffquestions: 'Yabrfreu '
-    answer: 'February '
+    answer: February
   - diffquestions: 'Yma '
     answer: May
   - diffquestions: Oorbetc
-    answer: 'October '
+    answer: October
   - diffquestions: Yaunajr
     answer: January
   - diffquestions: ' Ayre '
@@ -112,4 +112,4 @@ MonoBehaviour:
   - diffquestions: How many days are weekends?
     answer: Two
   - diffquestions: ' Monday to Fridays are the? '
-    answer: 'Weekdays '
+    answer: Weekdays
