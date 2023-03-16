@@ -30,11 +30,11 @@ MonoBehaviour:
     questionClip: {fileID: 0}
     questionVideo: {fileID: 0}
     options:
-    - 
-    - 
-    - 
-    - 
-    correctAns: 
+    - 1st
+    - 2nd
+    - 3rd
+    - 4th
+    correctAns: 2nd
   - questionInfo: ' Match the day to the correct number.                     TUESDAY  '
     questionType: 0
     questionImg: {fileID: 0}

@@ -126,7 +126,7 @@ public class QuizManager : MonoBehaviour
         {
             Invoke("DismissMessagePanel", 2.5f);
 
-            if (questions.Count > 0)
+            if (questions.Count > 0 && questionCount < 10)
             {
                 //call SelectQuestion method again after 1s
                 Invoke("SelectQuestion", 2.5f);
