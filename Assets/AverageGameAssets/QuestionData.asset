@@ -20,7 +20,7 @@ MonoBehaviour:
     questionVideo: {fileID: 0}
     options:
     - 7th
-    - '1st '
+    - 1st
     - 6th
     - 2nd
     correctAns: 1st
@@ -41,11 +41,11 @@ MonoBehaviour:
     questionClip: {fileID: 0}
     questionVideo: {fileID: 0}
     options:
-    - '3rd '
+    - 3rd
     - 4th
-    - '2nd '
+    - 2nd
     - 8th
-    correctAns: '3rd '
+    correctAns: 3rd
   - questionInfo: ' Match the day to the correct number.                                      
       WEDNESDAY  '
     questionType: 0
@@ -56,7 +56,7 @@ MonoBehaviour:
     - 7th
     - 4th
     - 3rd
-    - '5th '
+    - 5th
     correctAns: 4th
   - questionInfo: 'Match the day to the correct number.                                        
       THURSDAY  '
@@ -66,8 +66,8 @@ MonoBehaviour:
     questionVideo: {fileID: 0}
     options:
     - 7th
-    - '1st '
-    - '6th '
+    - 1st
+    - 6th
     - 5th
     correctAns: 5th
   - questionInfo: 'Match the day to the correct number.                                        
@@ -80,7 +80,7 @@ MonoBehaviour:
     - 5th
     - 1st
     - 6th
-    - '4th '
+    - 4th
     correctAns: 6th
   - questionInfo: 'Match the day to the correct number.                                        
       SATURDAY  '
@@ -91,9 +91,9 @@ MonoBehaviour:
     options:
     - 3rd
     - '2nd '
-    - 6th
+    - 7th
     - 4th
-    correctAns: 
+    correctAns: 7th
   - questionInfo: 'What is the 1st day of the week? '
     questionType: 0
     questionImg: {fileID: 0}
@@ -102,42 +102,42 @@ MonoBehaviour:
     options:
     - Monday
     - Saturday
-    - 'Sunday '
-    - 'Tuesday '
-    correctAns: 'Sunday '
+    - Sunday
+    - Tuesday
+    correctAns: Sunday
   - questionInfo: 'What is the 2nd day of the week? '
     questionType: 0
     questionImg: {fileID: 0}
     questionClip: {fileID: 0}
     questionVideo: {fileID: 0}
     options:
-    - 'Monday '
-    - 'Wednesday '
-    - 'Tuesday '
+    - Monday
+    - Friday
+    - Tuesday
     - Sunday
-    correctAns: 'Monday '
+    correctAns: Monday
   - questionInfo: 'What is the 3rd day of the week? '
     questionType: 0
     questionImg: {fileID: 0}
     questionClip: {fileID: 0}
     questionVideo: {fileID: 0}
     options:
-    - 'Thursday '
+    - Thursday
     - Saturday
-    - 'Tuesday '
-    - 'Wednesday '
-    correctAns: 'Tuesday '
+    - Tuesday
+    - Wednesday
+    correctAns: Tuesday
   - questionInfo: ' What is the 4th day of the week? '
     questionType: 0
     questionImg: {fileID: 0}
     questionClip: {fileID: 0}
     questionVideo: {fileID: 0}
     options:
-    - 'Thursday '
-    - 'Monday '
-    - 'Wednesday '
-    - 'Sunday '
-    correctAns: 'Wednesday '
+    - Thursday
+    - Monday
+    - Wednesday
+    - Sunday
+    correctAns: Wednesday
   - questionInfo: 'What is the 5th day of the week? '
     questionType: 0
     questionImg: {fileID: 0}
@@ -145,10 +145,10 @@ MonoBehaviour:
     questionVideo: {fileID: 0}
     options:
     - Monday
-    - 'Thursday  '
-    - 'Friday '
-    - 'Sunday '
-    correctAns: 'Thursday  '
+    - Thursday
+    - Friday
+    - Sunday
+    correctAns: Thursday
   - questionInfo: ' What is the 6th day of the week? '
     questionType: 0
     questionImg: {fileID: 0}
@@ -156,21 +156,21 @@ MonoBehaviour:
     questionVideo: {fileID: 0}
     options:
     - Saturday
-    - 'Thursday  '
-    - 'Friday '
-    - 'Sunday '
-    correctAns: 'Friday '
+    - Thursday
+    - Friday
+    - Sunday
+    correctAns: Friday
   - questionInfo: 'What is the 7th day of the week? '
     questionType: 0
     questionImg: {fileID: 0}
     questionClip: {fileID: 0}
     questionVideo: {fileID: 0}
     options:
-    - 'Sunday '
+    - Sunday
     - Friday
-    - 'Saturday '
+    - Saturday
     - Tuesday
-    correctAns: 'Saturday '
+    correctAns: Saturday
   - questionInfo: Which day comes after Sunday?
     questionType: 0
     questionImg: {fileID: 0}
@@ -178,10 +178,10 @@ MonoBehaviour:
     questionVideo: {fileID: 0}
     options:
     - Tuesday
-    - 'Wednesday '
-    - ' Monday '
-    - 'Saturday  '
-    correctAns: ' Monday '
+    - Wednesday
+    - ' Monday'
+    - Saturday
+    correctAns: ' Monday'
   - questionInfo: 'Which day comes after Monday? '
     questionType: 0
     questionImg: {fileID: 0}
@@ -189,9 +189,9 @@ MonoBehaviour:
     questionVideo: {fileID: 0}
     options:
     - Tuesday
-    - 'Wednesday '
-    - 'Sunday '
-    - 'Thursday '
+    - Wednesday
+    - Sunday
+    - Thursday
     correctAns: Tuesday
   - questionInfo: 'Which day comes after Tuesday? '
     questionType: 0
@@ -199,7 +199,7 @@ MonoBehaviour:
     questionClip: {fileID: 0}
     questionVideo: {fileID: 0}
     options:
-    - 'Tuesday '
+    - Tuesday
     - Wednesday
     - Monday
     - Saturday
@@ -236,7 +236,7 @@ MonoBehaviour:
     - Wednesday
     - Monday
     - Saturday
-    correctAns: 
+    correctAns: Monday
   - questionInfo: Which day comes after Saturday?
     questionType: 0
     questionImg: {fileID: 0}
@@ -258,7 +258,7 @@ MonoBehaviour:
     - Wednesday
     - Sunday
     - Thursday
-    correctAns: 'Sunday '
+    correctAns: Sunday
   - questionInfo: 'Which day is missing: Sunday, ________, Tuesday,Wednesday. '
     questionType: 0
     questionImg: {fileID: 0}
@@ -276,11 +276,11 @@ MonoBehaviour:
     questionClip: {fileID: 0}
     questionVideo: {fileID: 0}
     options:
-    - 'Tuesday '
+    - Tuesday
     - Wednesday
     - Sunday
     - Thursday
-    correctAns: 'Tuesday '
+    correctAns: Tuesday
   - questionInfo: 'Which day is missing:  Sunday , Monday, Tuesday, _________.'
     questionType: 0
     questionImg: {fileID: 0}
@@ -321,7 +321,7 @@ MonoBehaviour:
     questionVideo: {fileID: 0}
     options:
     - Tuesday
-    - Wednesday
+    - Sunday
     - Monday
     - Saturday
     correctAns: Saturday
@@ -332,7 +332,7 @@ MonoBehaviour:
     questionVideo: {fileID: 0}
     options:
     - Tuesday
-    - Wednesda
+    - Friday
     - Sunday
     - Thursday
     correctAns: Sunday
@@ -457,7 +457,7 @@ MonoBehaviour:
     - 9th
     - 8th
     - 1st
-    correctAns: '9th '
+    correctAns: 9th
   - questionInfo: In correct order of the month, what is the place number of August?
     questionType: 0
     questionImg: {fileID: 0}
@@ -508,7 +508,7 @@ MonoBehaviour:
     questionClip: {fileID: 0}
     questionVideo: {fileID: 0}
     options:
-    - 27 day
+    - 27 days
     - 28 days
     - 30 days
     - 29 days
