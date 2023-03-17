@@ -13,123 +13,98 @@ MonoBehaviour:
   m_Name: QuestionData
   m_EditorClassIdentifier: 
   questions:
-  - QuestionInfo: Question 1
+  - QuestionInfo: ' What is the 1st day of the week? '
     options:
-    - 1
-    - 2
-    - 3
-    - 4
-    CorrectAnswer: 1
-    Hints: Question 1 Hint
-  - QuestionInfo: Question 2
+    - Monday
+    - Saturday
+    - Sunday
+    - Tuesday
+    CorrectAnswer: Sunday
+    Hints: Special day because it's a day when many people go to a special place
+      to pray or sing songs with others.
+  - QuestionInfo: What is the 2nd day of the week?
     options:
-    - 1
-    - 2
-    - 3
-    - 4
-    CorrectAnswer: 2
-    Hints: Question  2  Hint
-  - QuestionInfo: Question 3
+    - Monday
+    - Wednesday
+    - Tuesday
+    - Sunday
+    CorrectAnswer: Monday
+    Hints: Many people think it's a great day to start getting things done because
+      it's the first full day of the regular school week. Its name begins with the
+      "M."
+  - QuestionInfo: What is the 3rd day of the week?
     options:
-    - 1
-    - 2
-    - 3
-    - 4
-    CorrectAnswer: 3
-    Hints: Question  3  Hint
-  - QuestionInfo: Question 4
+    - Thursday
+    - Saturday
+    - Tuesday
+    - Wednesday
+    CorrectAnswer: Tuesday
+    Hints: 'If we count on Sunday, Monday,  what day comes next? It''s a day that
+      starts with the letter T! '
+  - QuestionInfo: What is the 4th day of the week?
     options:
-    - 1
-    - 2
-    - 3
-    - 4
-    CorrectAnswer: 4
-    Hints: Question 4 Hint
-  - QuestionInfo: Question 5
+    - Thursday
+    - Monday
+    - Wednesday
+    - Sunday
+    CorrectAnswer: Wednesday
+    Hints: 'Sunday is 1, Monday is 2, Tuesday is 3, and what comes after Tuesday?
+      It''s a day that sounds like "wendys." '
+  - QuestionInfo: ' What is the 5th day of the week?'
     options:
-    - 5
-    - 6
-    - 7
-    - 8
-    CorrectAnswer: 5
-    Hints: Question 5 Hint
-  - QuestionInfo: Question 6
+    - Monday
+    - Thursday
+    - Friday
+    - Sunday
+    CorrectAnswer: Thursday
+    Hints: ' It''s a day that rhymes with "Thirst."'
+  - QuestionInfo: What is the 6th day of the week?
     options:
-    - 5
-    - 6
-    - 7
-    - 8
-    CorrectAnswer: 6
-    Hints: Question 6 Hint
-  - QuestionInfo: Question 7
+    - Saturday
+    - Thursday
+    - Friday
+    - Sunday
+    CorrectAnswer: Friday
+    Hints: The 6th day of the week comes after Thursday and before Saturday.
+  - QuestionInfo: ' What is the 7th day of the week?'
     options:
-    - 5
-    - 6
-    - 7
-    - 8
-    CorrectAnswer: 7
-    Hints: Question 7 Hint
-  - QuestionInfo: Question 8
+    - Friday
+    - Saturday
+    - Tuesday
+    - Sunday
+    CorrectAnswer: Saturday
+    Hints: Think about the weekend! It's the day after Friday when you don't have
+      to go to school or do homework. It's a great day to play outside or spend time
+      with family and friends.
+  - QuestionInfo: How many days are there in February when it's a leap year?
     options:
-    - 7
-    - 8
-    - 9
-    - 10
-    CorrectAnswer: 8
+    - 27 days
+    - 28 days
+    - 30 days
+    - 29 days
+    CorrectAnswer: 28 days
     Hints: Question 8 Hint
-  - QuestionInfo: Question 9
+  - QuestionInfo: How many weekdays are there in a week?
     options:
-    - 7
-    - 8
-    - 9
-    - 10
-    CorrectAnswer: 9
+    - '6 '
+    - '7 '
+    - 5
+    - 2
+    CorrectAnswer: '7 '
     Hints: Question 9 Hint
-  - QuestionInfo: Question 10
+  - QuestionInfo: 'How many days are there in February when it''s not a leap year? '
     options:
-    - 10
-    - 7
-    - 8
-    - 9
-    CorrectAnswer: 10
+    - 27 days
+    - 28 days
+    - 30 days
+    - 29 days
+    CorrectAnswer: 28 days
     Hints: Question 10 Hint
-  - QuestionInfo: Question 11
+  - QuestionInfo: What day is in the middle of the week?
     options:
-    - 10
-    - 11
-    - 8
-    - 9
-    CorrectAnswer: 11
+    - Thursday
+    - Wednesday
+    - Friday
+    - Tuesday
+    CorrectAnswer: Wednesday
     Hints: Question 11 Hint
-  - QuestionInfo: Question 12
-    options:
-    - 10
-    - 11
-    - 13
-    - 12
-    CorrectAnswer: 12
-    Hints: Question 12 Hint
-  - QuestionInfo: Question 13
-    options:
-    - 10
-    - 11
-    - 13
-    - 12
-    CorrectAnswer: 13
-    Hints: Question 13 Hint
-  - QuestionInfo: Question 14
-    options:
-    - 14
-    - 11
-    - 13
-    - 12
-    CorrectAnswer: 14
-    Hints: Question 14 Hint
-  - QuestionInfo: Question 15
-    options:
-    - 15
-    - 11
-    - 13
-    - 12
-    CorrectAnswer: 15
-    Hints: Question 15 Hint

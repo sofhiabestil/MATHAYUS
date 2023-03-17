@@ -236,7 +236,7 @@ MonoBehaviour:
     - Wednesday
     - Monday
     - Saturday
-    correctAns: Monday
+    correctAns: Saturday
   - questionInfo: Which day comes after Saturday?
     questionType: 0
     questionImg: {fileID: 0}
