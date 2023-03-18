@@ -60,7 +60,7 @@ MonoBehaviour:
   - diffquestions: 'How many days does the week have? '
     answer: Seven
   - diffquestions: If today is Saturday, what day will it be on 5th day?
-    answer: 'Wednesday '
+    answer: Wednesday
   - diffquestions: If today is Sunday, what day will it be on 3rd day?
     answer: Tuesday
   - diffquestions: If today is Monday, what day is the 2nd day?
@@ -73,37 +73,37 @@ MonoBehaviour:
     answer: Tuesday
   - diffquestions: 'If today is Friday what day will it be on the 2nd day? '
     answer: Saturday
-  - diffquestions: anSdyu
-    answer: ' Sunday'
-  - diffquestions: dMynao
+  - diffquestions: Unscramble the letters to create a meaningful word for "anSdyu"
+    answer: Sunday
+  - diffquestions: Unscramble the letters to create a meaningful word for "dMynao"
     answer: Monday
-  - diffquestions: Tsuyeda
+  - diffquestions: Unscramble the letters to create a meaningful word for "Tsuyeda"
     answer: Tuesday
-  - diffquestions: 'Wedseydna '
+  - diffquestions: Unscramble the letters to create a meaningful word for "Wedseydna"
     answer: Wednesday
-  - diffquestions: ' ysarThud '
+  - diffquestions: Unscramble the letters to create a meaningful word for "ysarThud"
     answer: Thursday
-  - diffquestions: airyFd
+  - diffquestions: Unscramble the letters to create a meaningful word for "airyFd"
     answer: Friday
-  - diffquestions: ' Sduyraat'
+  - diffquestions: Unscramble the letters to create a meaningful word for "Sduyraat"
     answer: Saturday
-  - diffquestions: ' Emseertpb'
+  - diffquestions: Unscramble the letters to create a meaningful word for "Emseertpb"
     answer: September
-  - diffquestions: Ylju
+  - diffquestions: Unscramble the letters to create a meaningful word for "Ylju"
     answer: July
-  - diffquestions: 'Yabrfreu '
+  - diffquestions: Unscramble the letters to create a meaningful word for "Yabrfreu"
     answer: February
-  - diffquestions: 'Yma '
+  - diffquestions: Unscramble the letters to create a meaningful word for "Yma"
     answer: May
-  - diffquestions: Oorbetc
+  - diffquestions: Unscramble the letters to create a meaningful word for "Oorbetc"
     answer: October
-  - diffquestions: Yaunajr
+  - diffquestions: Unscramble the letters to create a meaningful word for "Yaunajr"
     answer: January
-  - diffquestions: ' Ayre '
-    answer: ' Year'
-  - diffquestions: Plair
+  - diffquestions: Unscramble the letters to create a meaningful word for "Ayre"
+    answer: Year
+  - diffquestions: Unscramble the letters to create a meaningful word for "Plair"
     answer: April
-  - diffquestions: ' Thmon'
+  - diffquestions: Unscramble the letters to create a meaningful word for "Thmon"
     answer: 'Month '
   - diffquestions: How many days are weekday?
     answer: Five
