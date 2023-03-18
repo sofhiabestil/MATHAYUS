@@ -12451,7 +12451,7 @@ RectTransform:
   m_Children:
   - {fileID: 1858822806}
   m_Father: {fileID: 1630384418}
-  m_RootOrder: 7
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -12958,8 +12958,8 @@ RectTransform:
   - {fileID: 1190796078}
   - {fileID: 994332662}
   - {fileID: 1633744213}
-  - {fileID: 608873784}
   - {fileID: 1597181481}
+  - {fileID: 608873784}
   - {fileID: 561244321}
   - {fileID: 893065591}
   - {fileID: 386682774}
@@ -16453,5 +16453,10 @@ PrefabInstance:
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
       objectReference: {fileID: 1630384422}
+    - target: {fileID: 8488350137004518480, guid: a3d23da91abb51542a41a435e4a7b565,
+        type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_IntArgument
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: a3d23da91abb51542a41a435e4a7b565, type: 3}
