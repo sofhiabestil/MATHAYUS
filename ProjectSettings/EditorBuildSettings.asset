@@ -12,12 +12,6 @@ EditorBuildSettings:
     path: Assets/Scenes/SampleScene.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 1
-    path: Assets/Scenes/DifficultGameScene.unity
-    guid: 5aed6c28bcb281847bb4fb0d8d7905ca
-  - enabled: 1
-    path: Assets/Scenes/PracticeGameScene.unity
-    guid: 75b21ed2506f954489729fa183181f7a
-  - enabled: 1
     path: Assets/Scenes/Levels Menu.unity
     guid: 0ef9658ac69d234428b3bebe2e7b0b49
   - enabled: 1
@@ -30,7 +24,7 @@ EditorBuildSettings:
     path: Assets/Scenes/NewGameScene/Average.unity
     guid: 99036944d0ca125499621543269e8df0
   - enabled: 1
-    path: Assets/Scenes/NewGameScene/Practice.unity
+    path: Assets/Scenes/NewGameScene/AverageP.unity
     guid: 5ecd4eda601645f4bb3315ea5f665059
   - enabled: 1
     path: Assets/Scenes/NewGameScene/Easy.unity
@@ -41,4 +35,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/EasyGameScene.unity
     guid: 57da9e66439cc464688fbb8978d0b1d8
+  - enabled: 1
+    path: Assets/Scenes/NewGameScene/EasyP.unity
+    guid: 0bd846e9a36edcb47bf397f6ea9d5040
+  - enabled: 1
+    path: Assets/Scenes/NewGameScene/DifficultP.unity
+    guid: a465306d48cadcc448e7ffc2ed2deb88
   m_configObjects: {}

@@ -3,19 +3,19 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
-public class DragObjectData
+public class PDragObjectData
 {
     public int id;
     public Vector2 startingPosition;
 }
 
-public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler{
+public class PDragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler{
     private RectTransform rectTrans;
     public Canvas myCanvas;
     private CanvasGroup canvasGroup;
     public int id;
     public Vector2 startingPosition;
-    public List<DragObjectData> objectsData = new List<DragObjectData>();
+    public List<PDragObjectData> objectsData = new List<PDragObjectData>();
     public GameObject[] objectsToReset;
     private int score = 0;
 
@@ -25,8 +25,8 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
         canvasGroup = GetComponent<CanvasGroup>();
         foreach (GameObject obj in objectsToReset)
         {
-            DragObjectData data = new DragObjectData();
-            data.id = obj.GetComponent<DragAndDrop>().id;
+            PDragObjectData data = new PDragObjectData();
+            data.id = obj.GetComponent<PDragAndDrop>().id;
             data.startingPosition = obj.GetComponent<RectTransform>().anchoredPosition;
             objectsData.Add(data);
         }
@@ -50,12 +50,12 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
     {
     }
 
-    public void SetScore(int newScore)
+    public void PSetScore(int newScore)
     {
         score = newScore;
     }
 
-    public int GetScore()
+    public int PGetScore()
     {
         return score;
     }
@@ -64,8 +64,8 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
         foreach (GameObject obj in objectsToReset)
         {
             RectTransform rect = obj.GetComponent<RectTransform>();
-            int id = obj.GetComponent<DragAndDrop>().id;
-            DragObjectData data = objectsData.Find(x => x.id == id);
+            int id = obj.GetComponent<PDragAndDrop>().id;
+            PDragObjectData data = objectsData.Find(x => x.id == id);
             rect.anchoredPosition = data.startingPosition;
         }
     }

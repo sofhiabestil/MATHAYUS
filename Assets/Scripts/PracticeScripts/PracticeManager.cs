@@ -54,7 +54,7 @@ public class PracticeManager : MonoBehaviour{
         practicehandler.SetQuestion(SelectedQuestion);
 
         questionCount += 1;
-        practicehandler.QuestionCountText.text = "Q :" + questionCount + "/10";
+        practicehandler.QuestionCountText.text = "Q :" + questionCount + "/5";
 
         questions.RemoveAt(0);
     }
@@ -67,7 +67,7 @@ public class PracticeManager : MonoBehaviour{
             CorrectAnswer = true;
             scoreCount += 1;
 
-            practicehandler.ScoreText.text = scoreCount + "/10";
+            practicehandler.ScoreText.text = scoreCount + "/5";
             Invoke("ActivateCorrectPanel", 1f);
 
         }
@@ -80,7 +80,7 @@ public class PracticeManager : MonoBehaviour{
 
             Invoke("DismissMessagePanel", 2.5f);
 
-            if (questions.Count > 0 && questionCount < 10){
+            if (questions.Count > 0 && questionCount < 5){
 
                 Invoke("SelectQuestion", 2.5f);
 
@@ -101,11 +101,11 @@ public class PracticeManager : MonoBehaviour{
 
         }
 
-        if (scoreCount == 10)
+        if (scoreCount == 5)
         {
             practicehandler.star3.gameObject.SetActive(true);
         }
-        else if (scoreCount > 4 && scoreCount < 10)
+        else if (scoreCount > 3 && scoreCount < 5)
         {
             practicehandler.star2.gameObject.SetActive(true);
         }
@@ -113,7 +113,7 @@ public class PracticeManager : MonoBehaviour{
         {
             practicehandler.star0.gameObject.SetActive(true);
         }
-        else if (scoreCount < 5)
+        else if (scoreCount < 2)
         {
             practicehandler.star1.gameObject.SetActive(true);
         }
