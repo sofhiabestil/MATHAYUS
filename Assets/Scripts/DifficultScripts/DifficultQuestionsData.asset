@@ -113,3 +113,104 @@ MonoBehaviour:
     answer: Two
   - diffquestions: ' Monday to Fridays are the? '
     answer: Weekdays
+  - diffquestions: 'It is the 1st month of the year. '
+    answer: January
+  - diffquestions: It is the 2nd month of the year
+    answer: February
+  - diffquestions: It is the 3rd month of the year.
+    answer: March
+  - diffquestions: It is the 4th month of the year.
+    answer: April
+  - diffquestions: It is the 4th month of the year.
+    answer: April
+  - diffquestions: It is the 5th month of the year.
+    answer: May
+  - diffquestions: It is the 6th month of the year.
+    answer: June
+  - diffquestions: It is the 7th month of the year.
+    answer: July
+  - diffquestions: It is the 8th month of the year.
+    answer: August
+  - diffquestions: It is the 9th month of the year.
+    answer: September
+  - diffquestions: It is the 10th month of the year.
+    answer: October
+  - diffquestions: It is the 11th month of the year.
+    answer: November
+  - diffquestions: It is the 12th month of the year.
+    answer: December
+  - diffquestions: This is the month before January
+    answer: December
+  - diffquestions: This is the month before February
+    answer: January
+  - diffquestions: This is the month before March
+    answer: February
+  - diffquestions: This is the month before April
+    answer: March
+  - diffquestions: This is the month before May
+    answer: April
+  - diffquestions: This is the month before June
+    answer: May
+  - diffquestions: This is the month before July
+    answer: June
+  - diffquestions: This is the month before August
+    answer: July
+  - diffquestions: This is the month before September
+    answer: August
+  - diffquestions: This is the month before October
+    answer: September
+  - diffquestions: This is the month before November
+    answer: October
+  - diffquestions: This is the month after January
+    answer: February
+  - diffquestions: This is the month after February
+    answer: March
+  - diffquestions: This is the month after March
+    answer: April
+  - diffquestions: This is the month after April
+    answer: May
+  - diffquestions: This is the month after May
+    answer: June
+  - diffquestions: This is the month after June
+    answer: July
+  - diffquestions: This is the month after July
+    answer: August
+  - diffquestions: This is the month after August
+    answer: September
+  - diffquestions: This is the month after September
+    answer: October
+  - diffquestions: This is the month after October
+    answer: November
+  - diffquestions: This is the month after November
+    answer: December
+  - diffquestions: This is the month after December
+    answer: January
+  - diffquestions: A period of 365 or 366 days
+    answer: Year
+  - diffquestions: "The month we celebrate New year\t"
+    answer: January
+  - diffquestions: The month we celebrate Valentines
+    answer: February
+  - diffquestions: In what month does summer start?
+    answer: March
+  - diffquestions: What month do we celebrate Labor Day in the Philippines?
+    answer: May
+  - diffquestions: 'What month do we celebrate Independence Day in the Philippines? '
+    answer: June
+  - diffquestions: The month we celebrate Halloween
+    answer: November
+  - diffquestions: The month we celebrate Christmas
+    answer: December
+  - diffquestions: It is the month that have 28 day only, if leap year it have 29
+      days
+    answer: February
+  - diffquestions: It is the last month of the year
+    answer: December
+  - diffquestions: ronemevb
+    answer: November
+  - diffquestions: ' Neuj'
+    answer: JUne
+  - diffquestions: dbemerce
+    answer: December
+  - diffquestions: ' hrcma '
+    answer: March
