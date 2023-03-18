@@ -15,7 +15,7 @@ public class SlotHolder : MonoBehaviour, IDropHandler
     public bool filled = false;
     public Text EasyScoreText;
 
-    [SerializeField] private GameObject weekpanel, monthpanel1, monthpanel2, gameoverpanel;
+    [SerializeField] private GameObject monthpanel1, monthpanel2, gameoverpanel;
 
     public GameObject GameOverPanel { get { return gameoverpanel; } }
 
@@ -23,7 +23,7 @@ public class SlotHolder : MonoBehaviour, IDropHandler
     
     public GameObject MonthPanel2 { get { return monthpanel2; } }
 
-    public GameObject WeekPanel { get { return weekpanel; } }
+    //public GameObject WeekPanel { get { return weekpanel; } }
 
 
     public void OnDrop(PointerEventData eventData)
@@ -34,7 +34,7 @@ public class SlotHolder : MonoBehaviour, IDropHandler
             if (eventData.pointerDrag.GetComponent<DragAndDrop>().id == id)
             {
                 Debug.Log("Correct");
-                
+                eventData.pointerDrag.GetComponent<DragAndDrop>().SetScore(score);
             }
             else
             {
@@ -91,19 +91,19 @@ public class SlotHolder : MonoBehaviour, IDropHandler
                                 score++;
                                 EasyScoreText.text = score + "/10";
 
-                                if (currentPanel == 1)
+                                if (currentPanel == 0)
+                                {
+                                    Invoke("ActivateMonthPanel2", 1f);
+                                }
+                                else if (currentPanel == 1)
                                 {
                                     Invoke("ActivateMonthPanel1", 1f);
                                 }
                                 else if (currentPanel == 2)
                                 {
-                                    Invoke("ActivateMonthPanel2", 1f);
-                                }
-                                else if (currentPanel == 3)
-                                {
                                     Invoke("EasyActivateGameOverPanel", 1f);
                                 }
-                                
+
                                 currentPanel++;
 
                                 // Check if current panel is greater than max panels
@@ -135,13 +135,12 @@ public class SlotHolder : MonoBehaviour, IDropHandler
 
     }
 
-    void ActivateMonthPanel1(){
-        MonthPanel1.gameObject.SetActive(true);
-        WeekPanel.gameObject.SetActive(false);
-
-    }
     void ActivateMonthPanel2(){   
         MonthPanel2.gameObject.SetActive(true);
+        MonthPanel1.gameObject.SetActive(false);
+
+    }
+    void ActivateMonthPanel1(){
         MonthPanel1.gameObject.SetActive(false);
 
     }
