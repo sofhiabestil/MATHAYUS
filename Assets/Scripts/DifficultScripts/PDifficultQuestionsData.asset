@@ -13,12 +13,24 @@ MonoBehaviour:
   m_Name: PDifficultQuestionsData
   m_EditorClassIdentifier: 
   Pdifficultquestions:
-  - diffquestions: Question
-    answer: Answer
+  - diffquestions: It is the day before Sunday.
+    answer: Saturday
     dhints: Question Hint
-  - diffquestions: Sample 1
-    answer: Sample2
+  - diffquestions: It is the day before Monday.
+    answer: Sunday
     dhints: Sample 1 hint
-  - diffquestions: Sample 2
-    answer: Sample1
+  - diffquestions: It is the day before Tuesday.
+    answer: Monday
+    dhints: Sample 2 Hint
+  - diffquestions: It is the day before Wednesday.
+    answer: Tuesday
+    dhints: Sample 2 Hint
+  - diffquestions: It is the day before Thursday.
+    answer: Wednesday
+    dhints: Sample 2 Hint
+  - diffquestions: It is the day before Friday.
+    answer: Thursday
+    dhints: Sample 2 Hint
+  - diffquestions: It is the day before Saturday.
+    answer: Friday
     dhints: Sample 2 Hint
