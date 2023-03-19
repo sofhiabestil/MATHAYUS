@@ -906,7 +906,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 10/19
+  m_Text: 0/7
 --- !u!222 &128071085
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -1245,6 +1245,10 @@ MonoBehaviour:
   monthpanel1: {fileID: 1542894334}
   monthpanel2: {fileID: 1292019149}
   gameoverpanel: {fileID: 386682773}
+  star0: {fileID: 0}
+  star1: {fileID: 0}
+  star2: {fileID: 0}
+  star3: {fileID: 0}
 --- !u!1 &173231462
 GameObject:
   m_ObjectHideFlags: 0
@@ -1341,6 +1345,10 @@ MonoBehaviour:
   EasyScoreText: {fileID: 128071084}
   pgameoverpanel: {fileID: 386682773}
   walkingpanel: {fileID: 561244320}
+  star0: {fileID: 1374323990}
+  star1: {fileID: 1112127523}
+  star2: {fileID: 1519748379}
+  star3: {fileID: 2040394545}
 --- !u!1 &188132637
 GameObject:
   m_ObjectHideFlags: 0
@@ -1437,6 +1445,10 @@ MonoBehaviour:
   EasyScoreText: {fileID: 128071084}
   pgameoverpanel: {fileID: 386682773}
   walkingpanel: {fileID: 561244320}
+  star0: {fileID: 1374323990}
+  star1: {fileID: 1112127523}
+  star2: {fileID: 1519748379}
+  star3: {fileID: 2040394545}
 --- !u!1 &193543338
 GameObject:
   m_ObjectHideFlags: 0
@@ -2084,6 +2096,10 @@ MonoBehaviour:
   EasyScoreText: {fileID: 128071084}
   pgameoverpanel: {fileID: 386682773}
   walkingpanel: {fileID: 561244320}
+  star0: {fileID: 1374323990}
+  star1: {fileID: 1112127523}
+  star2: {fileID: 1519748379}
+  star3: {fileID: 2040394545}
 --- !u!1 &257804164
 GameObject:
   m_ObjectHideFlags: 0
@@ -2950,6 +2966,10 @@ MonoBehaviour:
   monthpanel1: {fileID: 1542894334}
   monthpanel2: {fileID: 1292019149}
   gameoverpanel: {fileID: 386682773}
+  star0: {fileID: 0}
+  star1: {fileID: 0}
+  star2: {fileID: 0}
+  star3: {fileID: 0}
 --- !u!1 &435305296
 GameObject:
   m_ObjectHideFlags: 0
@@ -3047,6 +3067,10 @@ MonoBehaviour:
   monthpanel1: {fileID: 1542894334}
   monthpanel2: {fileID: 1292019149}
   gameoverpanel: {fileID: 386682773}
+  star0: {fileID: 0}
+  star1: {fileID: 0}
+  star2: {fileID: 0}
+  star3: {fileID: 0}
 --- !u!1 &437012914
 GameObject:
   m_ObjectHideFlags: 0
@@ -3224,6 +3248,10 @@ MonoBehaviour:
   monthpanel1: {fileID: 1542894334}
   monthpanel2: {fileID: 1292019149}
   gameoverpanel: {fileID: 386682773}
+  star0: {fileID: 0}
+  star1: {fileID: 0}
+  star2: {fileID: 0}
+  star3: {fileID: 0}
 --- !u!1 &471059632
 GameObject:
   m_ObjectHideFlags: 0
@@ -3680,7 +3708,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 495939615}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1630384423}
+        m_TargetAssemblyTypeName: LevelsMenu, Assembly-CSharp
+        m_MethodName: Loadlevel
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &495939615
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3816,6 +3856,10 @@ MonoBehaviour:
   monthpanel1: {fileID: 1542894334}
   monthpanel2: {fileID: 1292019149}
   gameoverpanel: {fileID: 386682773}
+  star0: {fileID: 0}
+  star1: {fileID: 0}
+  star2: {fileID: 0}
+  star3: {fileID: 0}
 --- !u!224 &516085698 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5598797729915958478, guid: fae5200425ef8e24396f44d476510f76,
@@ -4025,6 +4069,10 @@ MonoBehaviour:
   monthpanel1: {fileID: 1542894334}
   monthpanel2: {fileID: 1292019149}
   gameoverpanel: {fileID: 386682773}
+  star0: {fileID: 0}
+  star1: {fileID: 0}
+  star2: {fileID: 0}
+  star3: {fileID: 0}
 --- !u!1 &551109253
 GameObject:
   m_ObjectHideFlags: 0
@@ -4423,6 +4471,10 @@ MonoBehaviour:
   EasyScoreText: {fileID: 128071084}
   pgameoverpanel: {fileID: 386682773}
   walkingpanel: {fileID: 561244320}
+  star0: {fileID: 1374323990}
+  star1: {fileID: 1112127523}
+  star2: {fileID: 1519748379}
+  star3: {fileID: 2040394545}
 --- !u!1 &608873783 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 8488350135117677080, guid: a3d23da91abb51542a41a435e4a7b565,
@@ -5912,6 +5964,10 @@ MonoBehaviour:
   monthpanel1: {fileID: 1542894334}
   monthpanel2: {fileID: 1292019149}
   gameoverpanel: {fileID: 386682773}
+  star0: {fileID: 0}
+  star1: {fileID: 0}
+  star2: {fileID: 0}
+  star3: {fileID: 0}
 --- !u!1 &805692652
 GameObject:
   m_ObjectHideFlags: 0
@@ -6313,6 +6369,10 @@ MonoBehaviour:
   EasyScoreText: {fileID: 128071084}
   pgameoverpanel: {fileID: 386682773}
   walkingpanel: {fileID: 561244320}
+  star0: {fileID: 1374323990}
+  star1: {fileID: 1112127523}
+  star2: {fileID: 1519748379}
+  star3: {fileID: 2040394545}
 --- !u!1 &826211627
 GameObject:
   m_ObjectHideFlags: 0
@@ -7205,6 +7265,7 @@ GameObject:
   - component: {fileID: 935117562}
   - component: {fileID: 935117561}
   - component: {fileID: 935117560}
+  - component: {fileID: 935117563}
   m_Layer: 0
   m_Name: RetryButton
   m_TagString: Untagged
@@ -7276,7 +7337,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 935117561}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 935117563}
+        m_TargetAssemblyTypeName: PDragAndDrop, Assembly-CSharp
+        m_MethodName: RetryButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &935117561
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -7315,6 +7388,22 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 935117558}
   m_CullTransparentMesh: 1
+--- !u!114 &935117563
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 935117558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1700cf87bdb3faa499206699b02bb909, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myCanvas: {fileID: 0}
+  id: 0
+  startingPosition: {x: 0, y: 0}
+  objectsToReset: []
 --- !u!1 &948384404
 GameObject:
   m_ObjectHideFlags: 0
@@ -8574,6 +8663,10 @@ MonoBehaviour:
   monthpanel1: {fileID: 1542894334}
   monthpanel2: {fileID: 1292019149}
   gameoverpanel: {fileID: 386682773}
+  star0: {fileID: 0}
+  star1: {fileID: 0}
+  star2: {fileID: 0}
+  star3: {fileID: 0}
 --- !u!1 &1085098908
 GameObject:
   m_ObjectHideFlags: 0
@@ -8747,6 +8840,10 @@ MonoBehaviour:
   monthpanel1: {fileID: 1542894334}
   monthpanel2: {fileID: 1292019149}
   gameoverpanel: {fileID: 386682773}
+  star0: {fileID: 0}
+  star1: {fileID: 0}
+  star2: {fileID: 0}
+  star3: {fileID: 0}
 --- !u!1 &1112127523
 GameObject:
   m_ObjectHideFlags: 0
@@ -9545,6 +9642,10 @@ MonoBehaviour:
   EasyScoreText: {fileID: 128071084}
   pgameoverpanel: {fileID: 386682773}
   walkingpanel: {fileID: 561244320}
+  star0: {fileID: 1374323990}
+  star1: {fileID: 1112127523}
+  star2: {fileID: 1519748379}
+  star3: {fileID: 2040394545}
 --- !u!1 &1204903124
 GameObject:
   m_ObjectHideFlags: 0
@@ -11083,6 +11184,10 @@ MonoBehaviour:
   monthpanel1: {fileID: 1542894334}
   monthpanel2: {fileID: 1292019149}
   gameoverpanel: {fileID: 386682773}
+  star0: {fileID: 0}
+  star1: {fileID: 0}
+  star2: {fileID: 0}
+  star3: {fileID: 0}
 --- !u!1 &1424916277
 GameObject:
   m_ObjectHideFlags: 0
@@ -11259,6 +11364,10 @@ MonoBehaviour:
   EasyScoreText: {fileID: 128071084}
   pgameoverpanel: {fileID: 386682773}
   walkingpanel: {fileID: 561244320}
+  star0: {fileID: 1374323990}
+  star1: {fileID: 1112127523}
+  star2: {fileID: 1519748379}
+  star3: {fileID: 2040394545}
 --- !u!1 &1449377824
 GameObject:
   m_ObjectHideFlags: 0
@@ -13217,6 +13326,7 @@ GameObject:
   - component: {fileID: 1630384420}
   - component: {fileID: 1630384419}
   - component: {fileID: 1630384422}
+  - component: {fileID: 1630384423}
   m_Layer: 0
   m_Name: Canvas
   m_TagString: Untagged
@@ -13320,6 +13430,18 @@ Canvas:
   m_SortingOrder: 0
   m_TargetDisplay: 0
 --- !u!114 &1630384422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1630384417}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad32dff6233214f4aba2ef106ea42420, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &1630384423
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -14525,6 +14647,10 @@ MonoBehaviour:
   monthpanel1: {fileID: 1542894334}
   monthpanel2: {fileID: 1292019149}
   gameoverpanel: {fileID: 386682773}
+  star0: {fileID: 0}
+  star1: {fileID: 0}
+  star2: {fileID: 0}
+  star3: {fileID: 0}
 --- !u!1 &1846956355
 GameObject:
   m_ObjectHideFlags: 0

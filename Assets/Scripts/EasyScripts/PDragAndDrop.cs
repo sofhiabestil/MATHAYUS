@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 public class PDragObjectData
 {
     public int id;
@@ -68,5 +69,10 @@ public class PDragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandle
             PDragObjectData data = objectsData.Find(x => x.id == id);
             rect.anchoredPosition = data.startingPosition;
         }
+    }
+
+    public void RetryButton()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
