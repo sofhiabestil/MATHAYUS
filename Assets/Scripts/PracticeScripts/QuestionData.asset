@@ -82,16 +82,16 @@ MonoBehaviour:
     - 28 days
     - 30 days
     - 29 days
-    CorrectAnswer: 28 days
-    Hints: Question 8 Hint
+    CorrectAnswer: 29 days
+    Hints: When it's not a leap year, February has 28 days.
   - QuestionInfo: How many weekdays are there in a week?
     options:
     - '6 '
     - '7 '
     - 5
     - 2
-    CorrectAnswer: '7 '
-    Hints: Question 9 Hint
+    CorrectAnswer: 5
+    Hints: Weekdays are the days of the week that are not Saturday or Sunday.
   - QuestionInfo: 'How many days are there in February when it''s not a leap year? '
     options:
     - 27 days
@@ -99,7 +99,7 @@ MonoBehaviour:
     - 30 days
     - 29 days
     CorrectAnswer: 28 days
-    Hints: Question 10 Hint
+    Hints: It's in a leap year, February has 29 days.
   - QuestionInfo: What day is in the middle of the week?
     options:
     - Thursday
@@ -107,4 +107,5 @@ MonoBehaviour:
     - Friday
     - Tuesday
     CorrectAnswer: Wednesday
-    Hints: Question 11 Hint
+    Hints: The days of the week are Sunday, Monday, Tuesday, Wednesday, Thursday,
+      Friday, and Saturday.
