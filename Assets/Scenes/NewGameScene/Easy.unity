@@ -8482,7 +8482,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 22a346749b8ef224587608fe4b7ad8c0, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 60
+  speed: 80
 --- !u!114 &1031539295
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -8497,7 +8497,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NextPanel: {fileID: 893065590}
   WalkingPanel: {fileID: 561244320}
-  panelDuration: 9
+  panelDuration: 7
 --- !u!1 &1071100643
 GameObject:
   m_ObjectHideFlags: 0

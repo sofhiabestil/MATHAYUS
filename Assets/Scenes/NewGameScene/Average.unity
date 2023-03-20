@@ -7131,7 +7131,7 @@ PrefabInstance:
     - target: {fileID: 3561427652116282684, guid: a69f0cc1241d2e34a8ccda4cebd20c3b,
         type: 3}
       propertyPath: speed
-      value: 60
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 3561427652116282687, guid: a69f0cc1241d2e34a8ccda4cebd20c3b,
         type: 3}
@@ -7141,7 +7141,7 @@ PrefabInstance:
     - target: {fileID: 3561427652116282687, guid: a69f0cc1241d2e34a8ccda4cebd20c3b,
         type: 3}
       propertyPath: panelDuration
-      value: 9
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 3561427653066446849, guid: a69f0cc1241d2e34a8ccda4cebd20c3b,
         type: 3}

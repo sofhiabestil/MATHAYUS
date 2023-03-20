@@ -113,7 +113,7 @@ public class QuizManager : MonoBehaviour
             //quizUI.wrongPanel.gameObject.SetActive(true);
             //quizUI.CorrectAnswerMessage.text = selectedQuestion.correctAns;
             //quizUI.PracticesoundEffect[0].Play();
-            Invoke("ActivateWrongPanel", 1.0f);
+            Invoke("ActivateWrongPanel", 1f);
 
             if (lifeRemaining <= 0)
             {
@@ -124,7 +124,7 @@ public class QuizManager : MonoBehaviour
 
         if (gameStatus == GameStatus.Playing)
         {
-            Invoke("DismissMessagePanel", 2.5f);
+            Invoke("DismissMessagePanel", 3.0f);
 
             if (questions.Count > 0 && questionCount < 10)
             {
@@ -135,13 +135,13 @@ public class QuizManager : MonoBehaviour
             {
                 if (scoreCount > 4)
                 {
-                    Invoke("ActivateWalkPanel", 2f);
+                    Invoke("ActivateWalkPanel", 3f);
                     //Invoke("ActivateGameOverPanel", 2f);
                     //gameStatus = GameStatus.Next;
                     /*quizUI.GameOverPanel.SetActive(true);*/
                 }
                 else {
-                    Invoke("ActivateGameOverPanel", 2f);
+                    Invoke("ActivateGameOverPanel", 3f);
                 }
                 gameStatus = GameStatus.Next;
             }

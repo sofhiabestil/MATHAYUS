@@ -6867,7 +6867,7 @@ MonoBehaviour:
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 5
+          m_IntArgument: 3
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -11591,8 +11591,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -42.390312, y: -36.629}
-  m_SizeDelta: {x: 1050.7264, y: 84.0326}
+  m_AnchoredPosition: {x: -42.390312, y: -62.18348}
+  m_SizeDelta: {x: 1050.7264, y: 127.8402}
   m_Pivot: {x: 0.4606133, y: -0.00000028312206}
 --- !u!114 &1301713138
 MonoBehaviour:
@@ -11617,7 +11617,7 @@ MonoBehaviour:
   m_FontData:
     m_Font: {fileID: 12800000, guid: 9e3d03763abce024e89319ec177a4ae4, type: 3}
     m_FontSize: 50
-    m_FontStyle: 1
+    m_FontStyle: 0
     m_BestFit: 1
     m_MinSize: 5
     m_MaxSize: 70
@@ -13847,8 +13847,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 106, y: -53.315}
-  m_SizeDelta: {x: 437.4238, y: 106.63}
+  m_AnchoredPosition: {x: 136, y: -53.315}
+  m_SizeDelta: {x: 778.24, y: 106.63}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1486046001
 MonoBehaviour:
@@ -21070,12 +21070,12 @@ PrefabInstance:
     - target: {fileID: 1770081122998352500, guid: 6cd1d62852b17ea47bf8732b6e49620d,
         type: 3}
       propertyPath: panelDuration
-      value: 9
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 1770081122998352506, guid: 6cd1d62852b17ea47bf8732b6e49620d,
         type: 3}
       propertyPath: speed
-      value: 60
+      value: 80
       objectReference: {fileID: 0}
     - target: {fileID: 1770081123344080745, guid: 6cd1d62852b17ea47bf8732b6e49620d,
         type: 3}

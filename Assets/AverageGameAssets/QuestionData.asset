@@ -402,17 +402,6 @@ MonoBehaviour:
     - Tues
     - Mun
     correctAns: Mon
-  - questionInfo: Are Sunday and Monday, months or days?
-    questionType: 0
-    questionImg: {fileID: 0}
-    questionClip: {fileID: 0}
-    questionVideo: {fileID: 0}
-    options:
-    - Months
-    - Days
-    - 'Years '
-    - Leap Year
-    correctAns: Days
   - questionInfo: 'Match the month to its abbreviation.                   JANUARY '
     questionType: 0
     questionImg: {fileID: 0}

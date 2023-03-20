@@ -78,7 +78,7 @@ public class PracticeManager : MonoBehaviour{
         }
         if (practicegameStatus == PracticeGameStatus.Playing){
 
-            Invoke("DismissMessagePanel", 2.5f);
+            Invoke("DismissMessagePanel", 3.0f);
 
             if (questions.Count > 0 && questionCount < 5){
 
@@ -87,13 +87,13 @@ public class PracticeManager : MonoBehaviour{
             }else{
                 if (scoreCount > 4)
                 { 
-                    Invoke("ActivateWalkPanel", 2f);
+                    Invoke("ActivateWalkPanel", 3f);
                     //Invoke("ActivateGameOverPanel", 2f);
                     
                 }
                 else
                 {
-                    Invoke("ActivateGameOverPanel", 2f);
+                    Invoke("ActivateGameOverPanel", 3f);
                 }
                 
                 practicegameStatus = PracticeGameStatus.Next;
