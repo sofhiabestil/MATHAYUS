@@ -48,15 +48,15 @@ MonoBehaviour:
   - diffquestions: It is the day after Tuesday.
     answer: Wednesday
   - diffquestions: It is the day after Wednesday.
-    answer: Tuesday
+    answer: Thursday
   - diffquestions: It is the day after Thursday.
     answer: Friday
   - diffquestions: It is the day after Friday.
-    answer: Thursday
-  - diffquestions: It is the day after Saturday.
-    answer: Friday
-  - diffquestions: 'It is the day after Sunday. '
     answer: Saturday
+  - diffquestions: It is the day after Saturday.
+    answer: Sunday
+  - diffquestions: 'It is the day after Sunday. '
+    answer: Monday
   - diffquestions: 'How many days does the week have? '
     answer: Seven
   - diffquestions: If today is Saturday, what day will it be on 5th day?
