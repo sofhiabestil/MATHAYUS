@@ -18,7 +18,7 @@ public class PDragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandle
     public Vector2 startingPosition;
     public List<PDragObjectData> objectsData = new List<PDragObjectData>();
     public GameObject[] objectsToReset;
-    private int Pscore = 0;
+    private int score = 0;
 
     void Start()
     {
@@ -50,6 +50,16 @@ public class PDragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandle
     public void OnPointerDown(PointerEventData eventData)
     {
     }
+
+    public void PSetScore(int newScore)
+    {
+        score = newScore;
+    }
+
+    public int PGetScore()
+    {
+        return score;
+    }
     public void ResetObjects()
     {
         foreach (GameObject obj in objectsToReset)
@@ -58,14 +68,11 @@ public class PDragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandle
             int id = obj.GetComponent<PDragAndDrop>().id;
             PDragObjectData data = objectsData.Find(x => x.id == id);
             rect.anchoredPosition = data.startingPosition;
-           
-
         }
-        Pscore = 0; // Reset score
     }
+
     public void RetryButton()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        Pscore = 0;
     }
 }

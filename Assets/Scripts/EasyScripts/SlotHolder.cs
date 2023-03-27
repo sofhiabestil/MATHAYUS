@@ -9,9 +9,8 @@ using UnityEngine.UI;
 public class SlotHolder : MonoBehaviour, IDropHandler
 {
     public int id;
-    private int score;
+    public int score;
     public Button checkButton;
-    public Button resetButton;
     private bool allHoldersFilled = false;
     public bool filled = false;
     public Text EasyScoreText;
@@ -51,31 +50,11 @@ public class SlotHolder : MonoBehaviour, IDropHandler
     void Start()
     {
         checkButton.interactable = false;
-        resetButton.onClick.AddListener(ResetSlots); // Add listener to reset button
     }
-    void ResetSlots()
-    {
-        checkButton.interactable = false; // Disable check button
-        DragAndDrop[] dragObjects = FindObjectsOfType<DragAndDrop>();
-        SlotHolder[] slotHolders = FindObjectsOfType<SlotHolder>();
 
-        foreach (SlotHolder slotHolder in slotHolders)
-        {
-            slotHolder.filled = false; // Set all slot holders to not filled
-        }
 
-        foreach (DragAndDrop dragObject in dragObjects)
-        {
-            dragObject.ResetObjects(); // Reset position of drag objects
-        }
-
-        score = 0; // Reset score
-        EasyScoreText.text = score + "/7"; // Update score text
-        star0.SetActive(false); // Deactivate all stars
-        star1.SetActive(false);
-        star2.SetActive(false);
-        star3.SetActive(false);
-    }
+    private int maxPanels = 2; // total number of panels
+    private int currentPanel = 0;
     public void checkAnswer()
     {
         DragAndDrop[] dragObjects = FindObjectsOfType<DragAndDrop>();
@@ -95,40 +74,39 @@ public class SlotHolder : MonoBehaviour, IDropHandler
 
         if (allHoldersFilled)
         {
+            foreach (DragAndDrop dragObject in dragObjects)
+            {
+                RectTransform dragObjectRect = dragObject.GetComponent<RectTransform>();
+                bool correctPlacement = false;
+                foreach (SlotHolder slotHolder in slotHolders)
+                {
+                    if (dragObjectRect.anchoredPosition == slotHolder.GetComponent<RectTransform>().anchoredPosition)
+                    {
+                        if (dragObject.id == slotHolder.id)
+                        {
+                            //dragObject.GetComponent<Image>().color = Color.green;
+                            score++;
+                            EasyScoreText.text = score + "/12";
+                            correctPlacement = true;
+                        }
+                        else
+                        {
+                            //dragObject.GetComponent<Image>().color = Color.red;
+                        }
+                    }
+                }
+
+                if (!correctPlacement)
+                {
+                    //dragObject.GetComponent<Image>().color = Color.white;
+                } 
+            }
+
             int currentPanel = 0; // variable to keep track of current panel
             int maxPanels = 2; // total number of panels
 
             // Wait until checkButton is clicked before changing panels
             checkButton.onClick.AddListener(delegate {
-                bool correctPlacement = false;
-
-                foreach (DragAndDrop dragObject in dragObjects)
-                {
-                    RectTransform dragObjectRect = dragObject.GetComponent<RectTransform>();
-                    foreach (SlotHolder slotHolder in slotHolders)
-                    {
-                        if (dragObjectRect.anchoredPosition == slotHolder.GetComponent<RectTransform>().anchoredPosition)
-                        {
-                            if (dragObject.id == slotHolder.id)
-                            {
-                                dragObject.GetComponent<Image>().color = Color.green;
-                                score++;
-                                EasyScoreText.text = score + "/12";
-                                correctPlacement = true;
-                            }
-                            else
-                            {
-                                dragObject.GetComponent<Image>().color = Color.red;
-                            }
-                        }
-                    }
-
-                    if (!correctPlacement)
-                    {
-                        dragObject.GetComponent<Image>().color = Color.white;
-                    }
-                }
-
                 if (currentPanel == 0)
                 {
                     Invoke("ActivateMonthPanel2", 1f);
@@ -156,8 +134,7 @@ public class SlotHolder : MonoBehaviour, IDropHandler
         }
     }
 
-
-
+    
     void ActivateMonthPanel2(){   
         MonthPanel2.gameObject.SetActive(true);
         MonthPanel1.gameObject.SetActive(false);
