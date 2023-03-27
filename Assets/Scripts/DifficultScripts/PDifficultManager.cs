@@ -234,7 +234,7 @@ public class PDifficultManager : MonoBehaviour
             DifficultsoundEffect[1].Play();
 
             Invoke("SetNextQuestion", 0.5f);  
-            Invoke("DiffDismissMessagePanel", 1.5f);
+            Invoke("DiffDismissMessagePanel", 3.0f);
 
         }
         else{
@@ -244,7 +244,7 @@ public class PDifficultManager : MonoBehaviour
             DifficultsoundEffect[0].Play();
 
             Invoke("SetNextQuestion", 0.5f);  
-            Invoke("DiffDismissMessagePanel", 1.5f);
+            Invoke("DiffDismissMessagePanel", 3.0f);
         }
 
         if (diffscoreCount == 5)
@@ -270,18 +270,18 @@ public class PDifficultManager : MonoBehaviour
    
         //move to next question
         currentQuestionIndex++;
-        if (currentQuestionIndex < PdifficultDataScriptable.Pdifficultquestions.Count && diffquestionCount < 10){
+        if (currentQuestionIndex < PdifficultDataScriptable.Pdifficultquestions.Count && diffquestionCount < 5){
             
             SetQuestion();
         
         }else {
             if (diffscoreCount > 4)
             {
-                Invoke("ActivateDiffWalkPanel", 1f);
+                Invoke("ActivateDiffWalkPanel", 3.0f);
             }
             else
             {
-                Invoke("DiffActivateGameOverPanel", 0.9f);
+                Invoke("DiffActivateGameOverPanel", 3.0f);
             }
             PDifficultGameStatus = PDifficultGameStatus.Next;
         }

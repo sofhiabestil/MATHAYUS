@@ -299,7 +299,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   NextPanel: {fileID: 0}
   WalkingPanel: {fileID: 1770081123344080745}
-  targetObject: {fileID: 1770081122881620933}
+  panelDuration: 2
 --- !u!1 &1770081123344080745
 GameObject:
   m_ObjectHideFlags: 0

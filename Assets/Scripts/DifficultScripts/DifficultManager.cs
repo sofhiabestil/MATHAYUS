@@ -240,7 +240,7 @@ public class DifficultManager : MonoBehaviour
             DifficultsoundEffect[1].Play();
 
             Invoke("SetNextQuestion", 0.5f);
-            Invoke("DiffDismissMessagePanel", 1.5f);
+            Invoke("DiffDismissMessagePanel", 3.0f);
 
         }
         else
@@ -251,7 +251,7 @@ public class DifficultManager : MonoBehaviour
             DifficultsoundEffect[0].Play();
 
             Invoke("SetNextQuestion", 0.5f);
-            Invoke("DiffDismissMessagePanel", 1.5f);
+            Invoke("DiffDismissMessagePanel", 3.0f);
         }
 
         if (diffscoreCount == 10)
@@ -288,11 +288,11 @@ public class DifficultManager : MonoBehaviour
         {
             if (diffscoreCount > 4)
             {
-                Invoke("ActivateDiffWalkPanel", 1f);
+                Invoke("ActivateDiffWalkPanel", 3.0f);
             }
             else
             {
-                Invoke("DiffActivateGameOverPanel", 0.9f);
+                Invoke("DiffActivateGameOverPanel", 3.0f);
             }
             DifficultGameStatus = DifficultGameStatus.Next;
         }

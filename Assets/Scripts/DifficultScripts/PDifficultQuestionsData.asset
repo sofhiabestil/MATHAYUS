@@ -13,12 +13,36 @@ MonoBehaviour:
   m_Name: PDifficultQuestionsData
   m_EditorClassIdentifier: 
   Pdifficultquestions:
-  - diffquestions: Question
-    answer: Answer
-    dhints: Question Hint
-  - diffquestions: Sample 1
-    answer: Sample2
-    dhints: Sample 1 hint
-  - diffquestions: Sample 2
-    answer: Sample1
-    dhints: Sample 2 Hint
+  - diffquestions: It is the day before Sunday.
+    answer: Saturday
+    dhints: It is the day between Saturday and Monday.
+  - diffquestions: It is the day before Monday.
+    answer: Sunday
+    dhints: It is the day between Sunday and Tuesday.
+  - diffquestions: It is the day before Tuesday.
+    answer: Monday
+    dhints: It is the day between Monday and Wednesday.
+  - diffquestions: It is the day before Wednesday.
+    answer: Tuesday
+    dhints: It is the day between Tuesday and Thursday.
+  - diffquestions: It is the day before Thursday.
+    answer: Wednesday
+    dhints: It is the day between Wednesday and Friday.
+  - diffquestions: It is the day before Friday.
+    answer: Thursday
+    dhints: It is the day between Thursday and Saturday.
+  - diffquestions: It is the day before Saturday.
+    answer: Friday
+    dhints: It is the day between Friday and Sunday.
+  - diffquestions: It is the 1st month of the year.
+    answer: January
+    dhints: The month is typically associated with New Year's resolutions.
+  - diffquestions: ' It is the 2nd month of the year.'
+    answer: February
+    dhints: This month has 28 days in a common year and 29 days in a leap year.
+  - diffquestions: It is the 3rd month of the year.
+    answer: March
+    dhints: It's the name of the month that comes after February and before April.
+  - diffquestions: It is the 4th month of the year.
+    answer: April
+    dhints: It's the name of the month that comes after March and before May.

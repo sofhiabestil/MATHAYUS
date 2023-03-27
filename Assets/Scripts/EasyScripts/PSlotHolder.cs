@@ -18,7 +18,7 @@ public class PSlotHolder : MonoBehaviour, IDropHandler
 
 
     [SerializeField] private GameObject pgameoverpanel, walkingpanel;
-
+    [SerializeField] public GameObject star0, star1, star2, star3;
     public GameObject WalkingPanel { get { return walkingpanel; } }
 
     public GameObject PGameOverPanel { get { return pgameoverpanel; } }
@@ -85,11 +85,26 @@ public class PSlotHolder : MonoBehaviour, IDropHandler
                                 Pscore++;
                                 EasyScoreText.text = Pscore + "/7";
 
-                                if (Pscore > 4)
+                                if (Pscore == 7)
                                 {
+                                    star3.gameObject.SetActive(true);
                                     Invoke("ActivateWalkingPanel", 1f);
-                                    Debug.Log("Activate Walk");
+
                                 }
+                                else if (Pscore >= 5 && Pscore < 7)
+                                {
+                                    star2.gameObject.SetActive(true);
+                                    star3.gameObject.SetActive(false);
+                                    Invoke("ActivateGameOverPanel", 1f);
+                                }
+                                else if (Pscore <= 4)
+                                {
+                                    star1.gameObject.SetActive(true);
+                                    star2.gameObject.SetActive(false);
+                                    star3.gameObject.SetActive(false);
+                                    Invoke("ActivateGameOverPanel", 1f);
+                                }
+
                             });
 
                         }
@@ -101,10 +116,35 @@ public class PSlotHolder : MonoBehaviour, IDropHandler
                                 dragObject.GetComponent<Image>().color = Color.red;
                                 PcheckButton.onClick.RemoveAllListeners();
 
-                                if (Pscore < 3)
+                                if (Pscore == 0)
                                 {
                                     Invoke("ActivateGameOverPanel", 1f);
-                                    Debug.Log("Activate Game Over");
+                                    star0.gameObject.SetActive(true);
+
+                                }
+                                else if (Pscore < 3)
+                                {
+                                    Invoke("ActivateGameOverPanel", 1f);
+                                    star1.gameObject.SetActive(false);
+                                    star2.gameObject.SetActive(false);
+                                    star3.gameObject.SetActive(false);
+                                    star0.gameObject.SetActive(true);
+                                }
+                                else if (Pscore >= 3 && Pscore < 5)
+                                {
+                                    Invoke("ActivateGameOverPanel", 1f);
+                                    star1.gameObject.SetActive(true);
+                                    star2.gameObject.SetActive(false);
+                                    star3.gameObject.SetActive(false);
+                                    star0.gameObject.SetActive(false);
+                                }
+                                else if (Pscore >= 5 && Pscore < 7)
+                                {
+                                    Invoke("ActivateGameOverPanel", 1f);
+                                    star2.gameObject.SetActive(true);
+                                    star3.gameObject.SetActive(false);
+                                    star1.gameObject.SetActive(false);
+                                    star0.gameObject.SetActive(false);
                                 }
                             });
                         }
@@ -118,9 +158,27 @@ public class PSlotHolder : MonoBehaviour, IDropHandler
             PcheckButton.interactable = false;
             if (emptySlotExists) Debug.Log("Not all holders are filled");
         }
-    }
 
-    void ActivateGameOverPanel(){
+    /* if (Pscore == 7)
+     {
+         star3.gameObject.SetActive(true);
+     }
+     else if (Pscore > 4 && Pscore < 7)
+     {
+        star2.gameObject.SetActive(true);
+     }
+     else if (Pscore == 0)
+     {
+         star0.gameObject.SetActive(true);
+     }
+
+    else if (Pscore <= 3)
+     {
+         star1.gameObject.SetActive(true);
+     }*/
+}
+
+void ActivateGameOverPanel(){
         PGameOverPanel.gameObject.SetActive(true);
 
     }

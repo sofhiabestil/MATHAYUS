@@ -48,15 +48,15 @@ MonoBehaviour:
   - diffquestions: It is the day after Tuesday.
     answer: Wednesday
   - diffquestions: It is the day after Wednesday.
-    answer: Tuesday
+    answer: Thursday
   - diffquestions: It is the day after Thursday.
     answer: Friday
   - diffquestions: It is the day after Friday.
-    answer: Thursday
-  - diffquestions: It is the day after Saturday.
-    answer: Friday
-  - diffquestions: 'It is the day after Sunday. '
     answer: Saturday
+  - diffquestions: It is the day after Saturday.
+    answer: Sunday
+  - diffquestions: 'It is the day after Sunday. '
+    answer: Monday
   - diffquestions: 'How many days does the week have? '
     answer: Seven
   - diffquestions: If today is Saturday, what day will it be on 5th day?
@@ -73,37 +73,45 @@ MonoBehaviour:
     answer: Tuesday
   - diffquestions: 'If today is Friday what day will it be on the 2nd day? '
     answer: Saturday
-  - diffquestions: Unscramble the letters to create a meaningful word for "anSdyu"
+  - diffquestions: Arrange the letters in the right order to form a word. "anSdyu"
     answer: Sunday
-  - diffquestions: Unscramble the letters to create a meaningful word for "dMynao"
+  - diffquestions: Arrange the letters in the right order to form a word. "dMynao"
     answer: Monday
-  - diffquestions: Unscramble the letters to create a meaningful word for "Tsuyeda"
+  - diffquestions: Arrange the letters in the right order to form a word.  "Tsuyeda"
     answer: Tuesday
-  - diffquestions: Unscramble the letters to create a meaningful word for "Wedseydna"
+  - diffquestions: Arrange the letters in the right order to form a word.  "Wedseydna"
     answer: Wednesday
-  - diffquestions: Unscramble the letters to create a meaningful word for "ysarThud"
+  - diffquestions: Arrange the letters in the right order to form a word.  "ysarThud"
     answer: Thursday
-  - diffquestions: Unscramble the letters to create a meaningful word for "airyFd"
+  - diffquestions: Arrange the letters in the right order to form a word.  "airyFd"
     answer: Friday
-  - diffquestions: Unscramble the letters to create a meaningful word for "Sduyraat"
+  - diffquestions: Arrange the letters in the right order to form a word. "Sduyraat"
     answer: Saturday
-  - diffquestions: Unscramble the letters to create a meaningful word for "Emseertpb"
-    answer: September
-  - diffquestions: Unscramble the letters to create a meaningful word for "Ylju"
-    answer: July
-  - diffquestions: Unscramble the letters to create a meaningful word for "Yabrfreu"
-    answer: February
-  - diffquestions: Unscramble the letters to create a meaningful word for "Yma"
-    answer: May
-  - diffquestions: Unscramble the letters to create a meaningful word for "Oorbetc"
-    answer: October
-  - diffquestions: Unscramble the letters to create a meaningful word for "Yaunajr"
+  - diffquestions: Arrange the letters in the right order to form a word.  "Yaunajr"
     answer: January
-  - diffquestions: Unscramble the letters to create a meaningful word for "Ayre"
+  - diffquestions: Arrange the letters in the right order to form a word.  "Yabrfreu"
+    answer: February
+  - diffquestions: 'Arrange the letters in the right order to form a word. "hrcma" '
+    answer: march
+  - diffquestions: Arrange the letters in the right order to form a word. "Yma"
+    answer: May
+  - diffquestions: Arrange the letters in the right order to form a word. "Neuj"
+    answer: june
+  - diffquestions: Arrange the letters in the right order to form a word.  "Ylju"
+    answer: July
+  - diffquestions: Arrange the letters in the right order to form a word.  "Emseertpb"
+    answer: September
+  - diffquestions: Arrange the letters in the right order to form a word. "Oorbetc"
+    answer: October
+  - diffquestions: Arrange the letters in the right order to form a word. "ronemevb"
+    answer: november
+  - diffquestions: Arrange the letters in the right order to form a word. "dbemerce"
+    answer: december
+  - diffquestions: Arrange the letters in the right order to form a word.  "Ayre"
     answer: Year
-  - diffquestions: Unscramble the letters to create a meaningful word for "Plair"
+  - diffquestions: Arrange the letters in the right order to form a word. "Plair"
     answer: April
-  - diffquestions: Unscramble the letters to create a meaningful word for "Thmon"
+  - diffquestions: Arrange the letters in the right order to form a word. "Thmon"
     answer: 'Month '
   - diffquestions: How many days are weekday?
     answer: Five
@@ -206,11 +214,3 @@ MonoBehaviour:
     answer: February
   - diffquestions: It is the last month of the year
     answer: December
-  - diffquestions: ronemevb
-    answer: November
-  - diffquestions: ' Neuj'
-    answer: JUne
-  - diffquestions: dbemerce
-    answer: December
-  - diffquestions: ' hrcma '
-    answer: March
