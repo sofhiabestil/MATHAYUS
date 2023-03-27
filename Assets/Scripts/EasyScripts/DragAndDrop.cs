@@ -46,11 +46,9 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
     {
         canvasGroup.blocksRaycasts = true;
     }
-
     public void OnPointerDown(PointerEventData eventData)
     {
     }
-
     public void SetScore(int newScore)
     {
         score = newScore;
@@ -68,6 +66,7 @@ public class DragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler
             int id = obj.GetComponent<DragAndDrop>().id;
             DragObjectData data = objectsData.Find(x => x.id == id);
             rect.anchoredPosition = data.startingPosition;
+            score = 0; // Reset score
         }
     }
 
