@@ -1,8 +1,6 @@
-using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class PDragObjectData
 {
@@ -10,7 +8,8 @@ public class PDragObjectData
     public Vector2 startingPosition;
 }
 
-public class PDragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler{
+public class PDragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler
+{
     private RectTransform rectTrans;
     public Canvas myCanvas;
     private CanvasGroup canvasGroup;
