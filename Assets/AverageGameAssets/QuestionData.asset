@@ -402,20 +402,6 @@ MonoBehaviour:
     - Tues
     - Mun
     correctAns: Mon
-<<<<<<< HEAD
-  - questionInfo: Are Sunday and Monday, months or days?
-    questionType: 0
-    questionImg: {fileID: 0}
-    questionClip: {fileID: 0}
-    questionVideo: {fileID: 0}
-    options:
-    - Months
-    - Days
-    - Years
-    - Leap Year
-    correctAns: Days
-=======
->>>>>>> 91b5d2246c1d77ab01e7bd7a0d3b192c19be3d85
   - questionInfo: 'Match the month to its abbreviation.                   JANUARY '
     questionType: 0
     questionImg: {fileID: 0}
@@ -604,17 +590,6 @@ MonoBehaviour:
     - January
     - ' April'
     correctAns: January
-  - questionInfo: Which month comes before March?
-    questionType: 0
-    questionImg: {fileID: 0}
-    questionClip: {fileID: 0}
-    questionVideo: {fileID: 0}
-    options:
-    - October
-    - February
-    - May
-    - April
-    correctAns: February
   - questionInfo: Which month comes before March?
     questionType: 0
     questionImg: {fileID: 0}
@@ -857,17 +832,6 @@ MonoBehaviour:
     - December
     - April
     correctAns: December
-  - questionInfo: Which month comes after November?
-    questionType: 0
-    questionImg: {fileID: 0}
-    questionClip: {fileID: 0}
-    questionVideo: {fileID: 0}
-    options:
-    - January
-    - June
-    - December
-    - April
-    correctAns: December
   - questionInfo: 'Which Month comes after December? '
     questionType: 0
     questionImg: {fileID: 0}
@@ -878,17 +842,6 @@ MonoBehaviour:
     - October
     - May
     - January
-    correctAns: January
-  - questionInfo: What is the 1st month of the year?
-    questionType: 0
-    questionImg: {fileID: 0}
-    questionClip: {fileID: 0}
-    questionVideo: {fileID: 0}
-    options:
-    - December
-    - January
-    - February
-    - March
     correctAns: January
   - questionInfo: What is the 1st month of the year?
     questionType: 0
