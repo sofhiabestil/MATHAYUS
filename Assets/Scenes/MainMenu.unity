@@ -5478,8 +5478,8 @@ GameObject:
   - component: {fileID: 1976644503}
   - component: {fileID: 1976644505}
   - component: {fileID: 1976644504}
-  - component: {fileID: 1976644507}
   - component: {fileID: 1976644506}
+  - component: {fileID: 1976644507}
   m_Layer: 5
   m_Name: child-icon
   m_TagString: Untagged
@@ -5567,7 +5567,7 @@ Animator:
   m_GameObject: {fileID: 1976644502}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 93b5ae9be6c84f04db0dbb96f427005d, type: 2}
+  m_Controller: {fileID: 9100000, guid: 25055ec320a4a5b47aa3469555ecba45, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
