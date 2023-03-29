@@ -13,7 +13,7 @@ public class PracticeUIHandler : MonoBehaviour
     [SerializeField] private List<Button> options;
     [SerializeField] public List<AudioSource> PracticesoundEffect = new List<AudioSource>();
     [SerializeField] private GameObject gameOverPanel, walkpanel;
-    [SerializeField] public GameObject star0, star1, star2, star3, wrongPanel, correctPanel;
+    [SerializeField] public GameObject star0, star1, star2, star3, wrongPanel, correctPanel, Paverageconfetti;
     [SerializeField] public List<GameObject> JumpNico = new List<GameObject>();
 
     private PracticeQuestion question;
@@ -32,6 +32,8 @@ public class PracticeUIHandler : MonoBehaviour
     public GameObject WrongPanel { get { return wrongPanel; } }
 
     public GameObject CorrectPanel { get { return correctPanel; } }
+
+    public GameObject PAverageConfetti { get { return Paverageconfetti; } }
 
     void Awake()
     {
