@@ -15,7 +15,7 @@ public class SlotHolder : MonoBehaviour, IDropHandler
     public bool filled = false;
     public Text EasyScoreText;
 
-    [SerializeField] private GameObject monthpanel1, monthpanel2, gameoverpanel;
+    [SerializeField] private GameObject monthpanel1, monthpanel2, gameoverpanel, EasyConfetti;
     //[SerializeField] private GameObject wrongAnswer, correctAnswer;
     [SerializeField] public GameObject star0, star1, star2, star3;
 
@@ -148,6 +148,7 @@ public class SlotHolder : MonoBehaviour, IDropHandler
 
         void EasyActivateGameOverPanel(){
         GameOverPanel.gameObject.SetActive(true);
+        EasyConfetti.gameObject.SetActive(true);
         MonthPanel2.gameObject.SetActive(false);
         MonthPanel1.gameObject.SetActive(false);
 

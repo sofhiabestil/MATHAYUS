@@ -100,7 +100,7 @@ public class QuizManager : MonoBehaviour
             correctAns = true;
             scoreCount += 1;
             quizUI.ScoreText.text = scoreCount + "/10";
-            Invoke("ActivateCorrectPanel", 1f);
+            Invoke("ActivateCorrectPanel", 1.3f);
             //quizUI.correctPanel.gameObject.SetActive(true);
             //quizUI.PracticesoundEffect[1].Play();
 
@@ -113,7 +113,7 @@ public class QuizManager : MonoBehaviour
             //quizUI.wrongPanel.gameObject.SetActive(true);
             //quizUI.CorrectAnswerMessage.text = selectedQuestion.correctAns;
             //quizUI.PracticesoundEffect[0].Play();
-            Invoke("ActivateWrongPanel", 1f);
+            Invoke("ActivateWrongPanel", 1.3f);
 
             if (lifeRemaining <= 0)
             {
@@ -124,12 +124,12 @@ public class QuizManager : MonoBehaviour
 
         if (gameStatus == GameStatus.Playing)
         {
-            Invoke("DismissMessagePanel", 3.0f);
+            Invoke("DismissMessagePanel", 3.5f);
 
             if (questions.Count > 0 && questionCount < 10)
             {
                 //call SelectQuestion method again after 1s
-                Invoke("SelectQuestion", 2.5f);
+                Invoke("SelectQuestion", 3.5f);
             }
             else
             {
@@ -182,6 +182,8 @@ public class QuizManager : MonoBehaviour
     public void ActivateGameOverPanel()
     {
         quizUI.GameOverPanel.gameObject.SetActive(true);
+        quizUI.AverageConfetti.gameObject.SetActive(true);
+
     }
 
     void ActivateWalkPanel()
@@ -199,10 +201,8 @@ public class QuizManager : MonoBehaviour
     void ActivateWrongPanel()
     {
         quizUI.wrongPanel.gameObject.SetActive(true);
-        quizUI.CorrectAnswerMessage.text = selectedQuestion.correctAns;
         quizUI.PracticesoundEffect[0].Play();
     }
-
 }
 
 [System.Serializable]

@@ -18,7 +18,7 @@ public class PSlotHolder : MonoBehaviour, IDropHandler
     public Vector2 initialPosition;
 
 
-    [SerializeField] private GameObject pgameoverpanel, walkingpanel;
+    [SerializeField] private GameObject pgameoverpanel, walkingpanel, PeasyConfetti;
     [SerializeField] public GameObject star0, star1, star2, star3;
 
     public GameObject WalkingPanel { get { return walkingpanel; } }
@@ -186,6 +186,7 @@ public class PSlotHolder : MonoBehaviour, IDropHandler
     {
         PGameOverPanel.gameObject.SetActive(true);
         WalkingPanel.gameObject.SetActive(false);
+        PeasyConfetti.gameObject.SetActive(true);
     }
 
     void ActivateWalkingPanel()

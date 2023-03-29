@@ -12,7 +12,7 @@ public class ImageController : MonoBehaviour
 
         if (timer >= panelDuration)
         {
-            NextPanel.SetActive(true);
+            NextPanel.SetActive(true);          
             WalkingPanel.SetActive(false);
         }
     }

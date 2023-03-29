@@ -1275,6 +1275,7 @@ MonoBehaviour:
   monthpanel1: {fileID: 1542894334}
   monthpanel2: {fileID: 1292019149}
   gameoverpanel: {fileID: 386682773}
+  EasyConfetti: {fileID: 624212807}
   star0: {fileID: 1374323990}
   star1: {fileID: 1112127523}
   star2: {fileID: 1519748379}
@@ -1376,6 +1377,7 @@ MonoBehaviour:
   monthpanel1: {fileID: 1542894334}
   monthpanel2: {fileID: 1292019149}
   gameoverpanel: {fileID: 386682773}
+  EasyConfetti: {fileID: 0}
   star0: {fileID: 0}
   star1: {fileID: 0}
   star2: {fileID: 0}
@@ -1623,6 +1625,7 @@ MonoBehaviour:
   monthpanel1: {fileID: 1542894334}
   monthpanel2: {fileID: 1292019149}
   gameoverpanel: {fileID: 386682773}
+  EasyConfetti: {fileID: 0}
   star0: {fileID: 0}
   star1: {fileID: 0}
   star2: {fileID: 0}
@@ -2275,6 +2278,7 @@ MonoBehaviour:
   monthpanel1: {fileID: 1542894334}
   monthpanel2: {fileID: 1292019149}
   gameoverpanel: {fileID: 386682773}
+  EasyConfetti: {fileID: 0}
   star0: {fileID: 0}
   star1: {fileID: 0}
   star2: {fileID: 0}
@@ -3041,6 +3045,7 @@ MonoBehaviour:
   monthpanel1: {fileID: 1542894334}
   monthpanel2: {fileID: 1292019149}
   gameoverpanel: {fileID: 386682773}
+  EasyConfetti: {fileID: 624212807}
   star0: {fileID: 1374323990}
   star1: {fileID: 1112127523}
   star2: {fileID: 1519748379}
@@ -3142,6 +3147,7 @@ MonoBehaviour:
   monthpanel1: {fileID: 1542894334}
   monthpanel2: {fileID: 1292019149}
   gameoverpanel: {fileID: 386682773}
+  EasyConfetti: {fileID: 624212807}
   star0: {fileID: 1374323990}
   star1: {fileID: 1112127523}
   star2: {fileID: 1519748379}
@@ -3323,6 +3329,7 @@ MonoBehaviour:
   monthpanel1: {fileID: 1542894334}
   monthpanel2: {fileID: 1292019149}
   gameoverpanel: {fileID: 386682773}
+  EasyConfetti: {fileID: 624212807}
   star0: {fileID: 1374323990}
   star1: {fileID: 1112127523}
   star2: {fileID: 1519748379}
@@ -3797,7 +3804,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 92, y: 18.175}
+  m_AnchoredPosition: {x: 92, y: 18.174988}
   m_SizeDelta: {x: 185, y: 176}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &495939614
@@ -3991,6 +3998,7 @@ MonoBehaviour:
   monthpanel1: {fileID: 1542894334}
   monthpanel2: {fileID: 1292019149}
   gameoverpanel: {fileID: 386682773}
+  EasyConfetti: {fileID: 624212807}
   star0: {fileID: 1374323990}
   star1: {fileID: 1112127523}
   star2: {fileID: 1519748379}
@@ -4204,6 +4212,7 @@ MonoBehaviour:
   monthpanel1: {fileID: 1542894334}
   monthpanel2: {fileID: 1292019149}
   gameoverpanel: {fileID: 386682773}
+  EasyConfetti: {fileID: 624212807}
   star0: {fileID: 1374323990}
   star1: {fileID: 1112127523}
   star2: {fileID: 1519748379}
@@ -4607,6 +4616,7 @@ MonoBehaviour:
   monthpanel1: {fileID: 1542894334}
   monthpanel2: {fileID: 1292019149}
   gameoverpanel: {fileID: 386682773}
+  EasyConfetti: {fileID: 0}
   star0: {fileID: 0}
   star1: {fileID: 0}
   star2: {fileID: 0}
@@ -4622,6 +4632,107 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 8488350135117677079, guid: a3d23da91abb51542a41a435e4a7b565,
     type: 3}
   m_PrefabInstance: {fileID: 8488350135583944495}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &624212805
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 1630384418}
+    m_Modifications:
+    - target: {fileID: 6903110974919163553, guid: ecfe97afa43e26a4c9f7e67f2feb6286,
+        type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6903110974919163553, guid: ecfe97afa43e26a4c9f7e67f2feb6286,
+        type: 3}
+      propertyPath: InitialModule.startSpeed.scalar
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 6903110974919163553, guid: ecfe97afa43e26a4c9f7e67f2feb6286,
+        type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6903110974919163558, guid: ecfe97afa43e26a4c9f7e67f2feb6286,
+        type: 3}
+      propertyPath: m_Name
+      value: Confetti
+      objectReference: {fileID: 0}
+    - target: {fileID: 6903110974919163558, guid: ecfe97afa43e26a4c9f7e67f2feb6286,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6903110974919163559, guid: ecfe97afa43e26a4c9f7e67f2feb6286,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 12
+      objectReference: {fileID: 0}
+    - target: {fileID: 6903110974919163559, guid: ecfe97afa43e26a4c9f7e67f2feb6286,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6903110974919163559, guid: ecfe97afa43e26a4c9f7e67f2feb6286,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 30
+      objectReference: {fileID: 0}
+    - target: {fileID: 6903110974919163559, guid: ecfe97afa43e26a4c9f7e67f2feb6286,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6903110974919163559, guid: ecfe97afa43e26a4c9f7e67f2feb6286,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6903110974919163559, guid: ecfe97afa43e26a4c9f7e67f2feb6286,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6903110974919163559, guid: ecfe97afa43e26a4c9f7e67f2feb6286,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6903110974919163559, guid: ecfe97afa43e26a4c9f7e67f2feb6286,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: -0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6903110974919163559, guid: ecfe97afa43e26a4c9f7e67f2feb6286,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6903110974919163559, guid: ecfe97afa43e26a4c9f7e67f2feb6286,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6903110974919163559, guid: ecfe97afa43e26a4c9f7e67f2feb6286,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: ecfe97afa43e26a4c9f7e67f2feb6286, type: 3}
+--- !u!4 &624212806 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 6903110974919163559, guid: ecfe97afa43e26a4c9f7e67f2feb6286,
+    type: 3}
+  m_PrefabInstance: {fileID: 624212805}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &624212807 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 6903110974919163558, guid: ecfe97afa43e26a4c9f7e67f2feb6286,
+    type: 3}
+  m_PrefabInstance: {fileID: 624212805}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &627299224
 GameObject:
@@ -5720,6 +5831,7 @@ MonoBehaviour:
   monthpanel1: {fileID: 1542894334}
   monthpanel2: {fileID: 1292019149}
   gameoverpanel: {fileID: 386682773}
+  EasyConfetti: {fileID: 624212807}
   star0: {fileID: 1374323990}
   star1: {fileID: 1112127523}
   star2: {fileID: 1519748379}
@@ -6155,6 +6267,7 @@ MonoBehaviour:
   monthpanel1: {fileID: 1542894334}
   monthpanel2: {fileID: 1292019149}
   gameoverpanel: {fileID: 386682773}
+  EasyConfetti: {fileID: 624212807}
   star0: {fileID: 1374323990}
   star1: {fileID: 1112127523}
   star2: {fileID: 1519748379}
@@ -6561,6 +6674,7 @@ MonoBehaviour:
   monthpanel1: {fileID: 1542894334}
   monthpanel2: {fileID: 1292019149}
   gameoverpanel: {fileID: 386682773}
+  EasyConfetti: {fileID: 0}
   star0: {fileID: 0}
   star1: {fileID: 0}
   star2: {fileID: 0}
@@ -7543,7 +7657,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -102, y: 16.175}
+  m_AnchoredPosition: {x: -102, y: 16.174988}
   m_SizeDelta: {x: 181, y: 172}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &935117560
@@ -7673,7 +7787,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &948384405
 RectTransform:
   m_ObjectHideFlags: 0
@@ -8878,6 +8992,7 @@ MonoBehaviour:
   monthpanel1: {fileID: 1542894334}
   monthpanel2: {fileID: 1292019149}
   gameoverpanel: {fileID: 386682773}
+  EasyConfetti: {fileID: 624212807}
   star0: {fileID: 1374323990}
   star1: {fileID: 1112127523}
   star2: {fileID: 1519748379}
@@ -9085,6 +9200,7 @@ MonoBehaviour:
   monthpanel1: {fileID: 1542894334}
   monthpanel2: {fileID: 1292019149}
   gameoverpanel: {fileID: 386682773}
+  EasyConfetti: {fileID: 624212807}
   star0: {fileID: 1374323990}
   star1: {fileID: 1112127523}
   star2: {fileID: 1519748379}
@@ -9770,6 +9886,7 @@ MonoBehaviour:
   monthpanel1: {fileID: 1542894334}
   monthpanel2: {fileID: 1292019149}
   gameoverpanel: {fileID: 386682773}
+  EasyConfetti: {fileID: 0}
   star0: {fileID: 0}
   star1: {fileID: 0}
   star2: {fileID: 0}
@@ -11342,10 +11459,11 @@ MonoBehaviour:
   monthpanel1: {fileID: 1542894334}
   monthpanel2: {fileID: 1292019149}
   gameoverpanel: {fileID: 386682773}
-  star0: {fileID: 0}
-  star1: {fileID: 0}
-  star2: {fileID: 0}
-  star3: {fileID: 0}
+  EasyConfetti: {fileID: 624212807}
+  star0: {fileID: 1374323990}
+  star1: {fileID: 1112127523}
+  star2: {fileID: 1519748379}
+  star3: {fileID: 2040394545}
 --- !u!1 &1427049365
 GameObject:
   m_ObjectHideFlags: 0
@@ -11443,6 +11561,7 @@ MonoBehaviour:
   monthpanel1: {fileID: 1542894334}
   monthpanel2: {fileID: 1292019149}
   gameoverpanel: {fileID: 386682773}
+  EasyConfetti: {fileID: 0}
   star0: {fileID: 0}
   star1: {fileID: 0}
   star2: {fileID: 0}
@@ -12158,19 +12277,7 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1490183177}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls:
-      - m_Target: {fileID: 1490183179}
-        m_TargetAssemblyTypeName: ButtonScript, Assembly-CSharp
-        m_MethodName: OpenHintPanel
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
+      m_Calls: []
 --- !u!114 &1490183177
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -12218,10 +12325,12 @@ MonoBehaviour:
   m_GameObject: {fileID: 1490183173}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 43040f7511d0bd847a8673ec3b96ac69, type: 3}
+  m_Script: {fileID: 11500000, guid: 014db3e06602ab04a9f7ca0e0b8ba419, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  HintPanel: {fileID: 386682773}
+  Confetti: {fileID: 624212807}
+  GameOverPanel: {fileID: 386682773}
+  button: {fileID: 1490183176}
 --- !u!1 &1492471290
 GameObject:
   m_ObjectHideFlags: 0
@@ -13360,6 +13469,7 @@ RectTransform:
   - {fileID: 893065591}
   - {fileID: 386682774}
   - {fileID: 948384405}
+  - {fileID: 624212806}
   m_Father: {fileID: 1007513318}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -13417,8 +13527,8 @@ Canvas:
   m_GameObject: {fileID: 1630384417}
   m_Enabled: 1
   serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_RenderMode: 1
+  m_Camera: {fileID: 1007513317}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -14665,6 +14775,7 @@ MonoBehaviour:
   monthpanel1: {fileID: 1542894334}
   monthpanel2: {fileID: 1292019149}
   gameoverpanel: {fileID: 386682773}
+  EasyConfetti: {fileID: 624212807}
   star0: {fileID: 1374323990}
   star1: {fileID: 1112127523}
   star2: {fileID: 1519748379}

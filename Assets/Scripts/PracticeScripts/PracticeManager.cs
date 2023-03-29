@@ -73,16 +73,16 @@ public class PracticeManager : MonoBehaviour{
         }
         else{
             Invoke("ActivateWrongPanel", 1f);
+            Invoke("CorrectMessage", 1f);
             
-
         }
         if (practicegameStatus == PracticeGameStatus.Playing){
 
-            Invoke("DismissMessagePanel", 3.0f);
+            Invoke("DismissMessagePanel", 4.0f);
 
             if (questions.Count > 0 && questionCount < 5){
 
-                Invoke("SelectQuestion", 2.5f);
+                Invoke("SelectQuestion", 4f);
 
             }else{
                 if (scoreCount > 4)
@@ -94,7 +94,6 @@ public class PracticeManager : MonoBehaviour{
                 else
                 {
                     Invoke("ActivateGameOverPanel", 3f);
-                    Invoke("ActivateConfetti", 3f);
                 }
                 
                 practicegameStatus = PracticeGameStatus.Next;
@@ -130,6 +129,7 @@ public class PracticeManager : MonoBehaviour{
 
     void ActivateGameOverPanel(){
     practicehandler.GameOverPanel.gameObject.SetActive(true);
+    GameObject ob = Instantiate(practicehandler.Paverageconfetti);
 
     }
 
@@ -146,21 +146,17 @@ public class PracticeManager : MonoBehaviour{
         practicehandler.PracticesoundEffect[1].Play();
     }
 
-
-    void ActivateConfetti()
-    {
-        GameObject ob = Instantiate(practicehandler.Paverageconfetti);
-        Destroy(ob, 2.5f);
-    }
-
     void ActivateWrongPanel()
     {
         practicehandler.wrongPanel.gameObject.SetActive(true);
-        practicehandler.CorrectAnswerMessage.text = SelectedQuestion.CorrectAnswer;
         practicehandler.PracticesoundEffect[0].Play();
     }
 
-    
+    void CorrectMessage()
+    {
+        practicehandler.CorrectAnswerMessage.text = SelectedQuestion.CorrectAnswer;
+    }
+
 }
 
 [System.Serializable]

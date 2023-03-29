@@ -12,7 +12,7 @@ public class PDifficultManager : MonoBehaviour
     public static PDifficultManager p_instance; //Instance to make is available in other scripts without reference
     [SerializeField] private PDifficultDataScriptable PdifficultDataScriptable;
     [SerializeField] private Text difficultquestions, diffquestioncountText;          //image element to show the image
-    [SerializeField] public GameObject diffstar0, diffstar1, diffstar2, diffstar3, diffwrongPanel, diffcorrectPanel;
+    [SerializeField] public GameObject diffstar0, diffstar1, diffstar2, diffstar3, diffwrongPanel, diffcorrectPanel, Pdifficultconfetti;
     [SerializeField] private GameObject diffgameOverPanel, diffWalkpanel;
     [SerializeField] private float timeLimit = 1800f;
     [SerializeField] private TextMeshProUGUI diffscoreText, diffcorrectMessage, PDifficultHintText;
@@ -233,8 +233,8 @@ public class PDifficultManager : MonoBehaviour
             diffcorrectPanel.gameObject.SetActive(true);
             DifficultsoundEffect[1].Play();
 
-            Invoke("SetNextQuestion", 0.5f);  
-            Invoke("DiffDismissMessagePanel", 3.0f);
+            Invoke("SetNextQuestion", 3.5f);  
+            Invoke("DiffDismissMessagePanel", 3.5f);
 
         }
         else{
@@ -243,8 +243,8 @@ public class PDifficultManager : MonoBehaviour
             diffcorrectMessage.text = answerWord;
             DifficultsoundEffect[0].Play();
 
-            Invoke("SetNextQuestion", 0.5f);  
-            Invoke("DiffDismissMessagePanel", 3.0f);
+            Invoke("SetNextQuestion", 3.5f);  
+            Invoke("DiffDismissMessagePanel", 3.5f);
         }
 
         if (diffscoreCount == 5)
@@ -277,11 +277,11 @@ public class PDifficultManager : MonoBehaviour
         }else {
             if (diffscoreCount > 4)
             {
-                Invoke("ActivateDiffWalkPanel", 3.0f);
+                Invoke("ActivateDiffWalkPanel", 0.5f);
             }
             else
             {
-                Invoke("DiffActivateGameOverPanel", 3.0f);
+                Invoke("DiffActivateGameOverPanel", 0.5f);
             }
             PDifficultGameStatus = PDifficultGameStatus.Next;
         }
@@ -301,6 +301,7 @@ public class PDifficultManager : MonoBehaviour
     public void DiffActivateGameOverPanel()
     {
         diffgameOverPanel.gameObject.SetActive(true);
+        Pdifficultconfetti.gameObject.SetActive(true);
     }
 
 

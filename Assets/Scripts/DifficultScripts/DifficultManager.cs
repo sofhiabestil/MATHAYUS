@@ -12,10 +12,10 @@ public class DifficultManager : MonoBehaviour
     public static DifficultManager instance; //Instance to make is available in other scripts without reference
     [SerializeField] private DifficultDataScriptable difficultDataScriptable;
     [SerializeField] private Text difficultquestions, diffquestioncountText, difftimerText;           //image element to show the image
-    [SerializeField] public GameObject diffstar0, diffstar1, diffstar2, diffstar3, diffwrongPanel, diffcorrectPanel;
+    [SerializeField] public GameObject diffstar0, diffstar1, diffstar2, diffstar3, diffwrongPanel, diffcorrectPanel, DifficultConfetti;
     [SerializeField] private GameObject diffgameOverPanel, diffWalkpanel;
     [SerializeField] private float timeLimit = 1800f;
-    [SerializeField] private TextMeshProUGUI diffscoreText, diffcorrectMessage;
+    [SerializeField] private TextMeshProUGUI diffscoreText;
     [SerializeField] private WordData[] answerWordList;     //list of answers word in the game
     [SerializeField] private WordData[] optionsWordList;    //list of options word in the game\
     [SerializeField] public List<AudioSource> DifficultsoundEffect = new List<AudioSource>();
@@ -44,7 +44,6 @@ public class DifficultManager : MonoBehaviour
 
     public TextMeshProUGUI DiffScoreText { get { return diffscoreText; } }
 
-    public TextMeshProUGUI DiffCorrectAnswerMessage { get { return diffcorrectMessage; } }
     public GameObject DiffGameOverPanel { get { return diffgameOverPanel; } }
 
     public GameObject DiffWrongPanel { get { return diffwrongPanel; } }
@@ -52,6 +51,7 @@ public class DifficultManager : MonoBehaviour
     public GameObject DiffCorrectPanel { get { return diffcorrectPanel; } }
 
     public GameObject DiffWalkpanel { get { return diffWalkpanel; } }
+
 
     private void Awake()
     {
@@ -239,19 +239,18 @@ public class DifficultManager : MonoBehaviour
             diffcorrectPanel.gameObject.SetActive(true);
             DifficultsoundEffect[1].Play();
 
-            Invoke("SetNextQuestion", 0.5f);
-            Invoke("DiffDismissMessagePanel", 3.0f);
+            Invoke("SetNextQuestion", 3.5f);
+            Invoke("DiffDismissMessagePanel", 3.5f);
 
         }
         else
         {
 
             diffwrongPanel.gameObject.SetActive(true);
-            diffcorrectMessage.text = answerWord;
             DifficultsoundEffect[0].Play();
 
-            Invoke("SetNextQuestion", 0.5f);
-            Invoke("DiffDismissMessagePanel", 3.0f);
+            Invoke("SetNextQuestion", 3.5f);
+            Invoke("DiffDismissMessagePanel", 3.5f);
         }
 
         if (diffscoreCount == 10)
@@ -288,11 +287,11 @@ public class DifficultManager : MonoBehaviour
         {
             if (diffscoreCount > 4)
             {
-                Invoke("ActivateDiffWalkPanel", 3.0f);
+                Invoke("ActivateDiffWalkPanel", 0.5f);
             }
             else
             {
-                Invoke("DiffActivateGameOverPanel", 3.0f);
+                Invoke("DiffActivateGameOverPanel", 0.5f);
             }
             DifficultGameStatus = DifficultGameStatus.Next;
         }
@@ -312,6 +311,7 @@ public class DifficultManager : MonoBehaviour
     public void DiffActivateGameOverPanel()
     {
         diffgameOverPanel.gameObject.SetActive(true);
+        DifficultConfetti.gameObject.SetActive(true);
     }
 
 
