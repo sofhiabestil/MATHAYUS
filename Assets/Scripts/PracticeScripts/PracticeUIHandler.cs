@@ -78,24 +78,28 @@ public class PracticeUIHandler : MonoBehaviour
             if (buttonIndex == 0)
             {
                 JumpNico[4].SetActive(false);
+                PracticesoundEffect[3].Play();
                 JumpNico[0].SetActive(true);
                 Invoke("ResetJumpNico", 1.5f);
             }
             else if (buttonIndex == 1)
             {
                 JumpNico[4].SetActive(false);
+                PracticesoundEffect[3].Play();
                 JumpNico[1].SetActive(true);
                 Invoke("ResetJumpNico", 1.5f);
             }
             else if (buttonIndex == 2)
             {
                 JumpNico[4].SetActive(false);
+                PracticesoundEffect[3].Play();
                 JumpNico[2].SetActive(true);
                 Invoke("ResetJumpNico", 1.5f);
             }
             else if (buttonIndex == 3)
             {
                 JumpNico[4].SetActive(false);
+                PracticesoundEffect[3].Play();
                 JumpNico[3].SetActive(true);
                 Invoke("ResetJumpNico", 1.5f);
             }

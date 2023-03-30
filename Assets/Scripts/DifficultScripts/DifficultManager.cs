@@ -312,6 +312,8 @@ public class DifficultManager : MonoBehaviour
     {
         diffgameOverPanel.gameObject.SetActive(true);
         DifficultConfetti.gameObject.SetActive(true);
+        DifficultsoundEffect[2].Play();
+
     }
 
 

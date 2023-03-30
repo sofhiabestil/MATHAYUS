@@ -183,6 +183,7 @@ public class QuizManager : MonoBehaviour
     {
         quizUI.GameOverPanel.gameObject.SetActive(true);
         quizUI.AverageConfetti.gameObject.SetActive(true);
+        quizUI.PracticesoundEffect[2].Play();
 
     }
 

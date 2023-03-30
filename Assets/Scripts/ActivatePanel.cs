@@ -4,6 +4,7 @@ using UnityEngine.UI;
 public class ActivatePanel : MonoBehaviour
 {
     public GameObject Confetti, GameOverPanel;
+    public AudioSource Congrats;
     public Button button;
 
     void Start()
@@ -14,6 +15,7 @@ public class ActivatePanel : MonoBehaviour
     void ActivateObjects()
     {
         Confetti.SetActive(true);
+        Congrats.Play();
         GameOverPanel.SetActive(true);
     }
 }

@@ -16,6 +16,7 @@ public class PSlotHolder : MonoBehaviour, IDropHandler
     public bool filled = false;
     public Text EasyScoreText;
     public Vector2 initialPosition;
+    public AudioSource PracticeCongrats;
 
 
     [SerializeField] private GameObject pgameoverpanel, walkingpanel, PeasyConfetti;
@@ -186,6 +187,7 @@ public class PSlotHolder : MonoBehaviour, IDropHandler
     {
         PGameOverPanel.gameObject.SetActive(true);
         WalkingPanel.gameObject.SetActive(false);
+        PracticeCongrats.Play();
         PeasyConfetti.gameObject.SetActive(true);
     }
 

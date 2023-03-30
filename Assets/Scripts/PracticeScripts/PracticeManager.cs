@@ -129,7 +129,8 @@ public class PracticeManager : MonoBehaviour{
 
     void ActivateGameOverPanel(){
     practicehandler.GameOverPanel.gameObject.SetActive(true);
-    GameObject ob = Instantiate(practicehandler.Paverageconfetti);
+    practicehandler.Paverageconfetti.gameObject.SetActive(true);
+    practicehandler.PracticesoundEffect[2].Play();
 
     }
 
