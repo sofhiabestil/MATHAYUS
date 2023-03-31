@@ -256,18 +256,31 @@ public class DifficultManager : MonoBehaviour
         if (diffscoreCount == 10)
         {
             diffstar3.gameObject.SetActive(true);
+            dawesome.gameObject.SetActive(true);
+            dwelldone.gameObject.SetActive(false);
+            dkeepitup.gameObject.SetActive(false);
         }
         else if (diffscoreCount > 4 && diffscoreCount < 10)
         {
             diffstar2.gameObject.SetActive(true);
+            dwelldone.gameObject.SetActive(true);
+            dawesome.gameObject.SetActive(false);
+            dkeepitup.gameObject.SetActive(false);
         }
         else if (diffscoreCount == 0)
         {
             diffstar0.gameObject.SetActive(true);
+            dkeepitup.gameObject.SetActive(true);
+            dwelldone.gameObject.SetActive(false);
+            dawesome.gameObject.SetActive(false);
+           
         }
         else if (diffscoreCount < 5)
         {
             diffstar1.gameObject.SetActive(true);
+            dkeepitup.gameObject.SetActive(true);
+            dwelldone.gameObject.SetActive(false);
+            dawesome.gameObject.SetActive(false);
         }
     }
     void SetNextQuestion()
