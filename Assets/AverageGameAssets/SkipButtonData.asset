@@ -10,7 +10,7 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 994aa64503b1bbf47b9b03b85d66e2b3, type: 3}
-  m_Name: QuestionData
+  m_Name: SkipButtonData
   m_EditorClassIdentifier: 
   questions:
   - questionInfo: 'Match the day to the correct number.                       SUNDAY '

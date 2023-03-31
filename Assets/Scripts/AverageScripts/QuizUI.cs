@@ -135,11 +135,16 @@ public class QuizUI : MonoBehaviour
 
         switch (btn.name)
         {
-            case "Days":
+            case "SkipButtonData":
                 quizManager.StartGame(0);
                 averageMenuPanel.SetActive(false);
                 gameMenuPanel.SetActive(true);
                 break;
+            /*case "Days":
+                quizManager.StartGame(0);
+                averageMenuPanel.SetActive(false);
+                gameMenuPanel.SetActive(true);
+                break;*/
             case "Months":
                 quizManager.StartGame(1);
                 averageMenuPanel.SetActive(false);
@@ -155,6 +160,11 @@ public class QuizUI : MonoBehaviour
                 averageMenuPanel.SetActive(false);
                 gameMenuPanel.SetActive(true);
                 break;
+           /* case "SkipButton":
+                quizManager.StartGame(3);
+                averageMenuPanel.SetActive(false);
+                gameMenuPanel.SetActive(true);
+                break;*/
         }
     }
 
