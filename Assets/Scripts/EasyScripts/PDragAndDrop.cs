@@ -1,6 +1,8 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 public class PDragObjectData
 {
@@ -17,7 +19,7 @@ public class PDragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandle
     public Vector2 startingPosition;
     public List<PDragObjectData> objectsData = new List<PDragObjectData>();
     public GameObject[] objectsToReset;
-    private int Pscore = 0;
+    private int score = 0;
 
     void Start()
     {
@@ -50,6 +52,15 @@ public class PDragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandle
     {
     }
 
+    public void SetScore(int newScore)
+    {
+        score = newScore;
+    }
+
+    public int GetScore()
+    {
+        return score;
+    }
     public void ResetObjects()
     {
         foreach (GameObject obj in objectsToReset)
@@ -59,12 +70,10 @@ public class PDragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandle
             PDragObjectData data = objectsData.Find(x => x.id == id);
             rect.anchoredPosition = data.startingPosition;
         }
-        Pscore = 0;
     }
 
     public void RetryButton()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-        Pscore = 0;
     }
 }

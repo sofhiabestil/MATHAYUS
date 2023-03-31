@@ -9,25 +9,24 @@ using UnityEngine.UI;
 public class PSlotHolder : MonoBehaviour, IDropHandler
 {
     public int id;
+    public bool filled = false;
     public int Pscore;
     public Button PcheckButton;
     public Button PresetButton;
     private bool allHoldersFilled = false;
-    public bool filled = false;
     public Text EasyScoreText;
     public Vector2 initialPosition;
     public AudioSource PracticeCongrats;
 
 
-    [SerializeField] private GameObject pgameoverpanel, walkingpanel, PeasyConfetti;
+    [SerializeField] private GameObject pgameoverpanel, PeasyConfetti;
     [SerializeField] public GameObject star0, star1, star2, star3;
 
-    public GameObject WalkingPanel { get { return walkingpanel; } }
 
     public GameObject PGameOverPanel { get { return pgameoverpanel; } }
 
     public Text TextScore { get { return EasyScoreText; } }
-
+    
 
     public void OnDrop(PointerEventData eventData)
     {
@@ -64,7 +63,7 @@ public class PSlotHolder : MonoBehaviour, IDropHandler
             checkAnswer();
         }
     }
-
+    
     void Start()
     {
         PcheckButton.interactable = false;
@@ -95,7 +94,7 @@ public class PSlotHolder : MonoBehaviour, IDropHandler
     }
 
 
-    public void checkAnswer()
+   public void checkAnswer()
     {
         PDragAndDrop[] dragObjects = FindObjectsOfType<PDragAndDrop>();
         PSlotHolder[] slotHolders = FindObjectsOfType<PSlotHolder>();
@@ -183,17 +182,9 @@ public class PSlotHolder : MonoBehaviour, IDropHandler
     void ActivateGameOverPanel()
     {
         PGameOverPanel.gameObject.SetActive(true);
-        WalkingPanel.gameObject.SetActive(false);
         PracticeCongrats.Play();
         PeasyConfetti.gameObject.SetActive(true);
     }
-
-    void ActivateWalkingPanel()
-    {
-        WalkingPanel.gameObject.SetActive(true);
-        PGameOverPanel.gameObject.SetActive(false);
-    }
-
 
 }
 

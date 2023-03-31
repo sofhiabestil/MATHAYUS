@@ -12,8 +12,8 @@ public class PDifficultManager : MonoBehaviour
     public static PDifficultManager p_instance; //Instance to make is available in other scripts without reference
     [SerializeField] private PDifficultDataScriptable PdifficultDataScriptable;
     [SerializeField] private Text difficultquestions, diffquestioncountText;          //image element to show the image
-    [SerializeField] public GameObject diffstar0, diffstar1, diffstar2, diffstar3, diffwrongPanel, diffcorrectPanel, Pdifficultconfetti;
-    [SerializeField] private GameObject diffgameOverPanel, diffWalkpanel;
+    [SerializeField] public GameObject diffstar0, diffstar1, diffstar2, diffstar3, diffwrongPanel, diffcorrectPanel, Pdifficultconfetti, pkeepitup, pwelldone, pawesome ;
+    [SerializeField] private GameObject diffgameOverPanel;
     [SerializeField] private float timeLimit = 1800f;
     [SerializeField] private TextMeshProUGUI diffscoreText, diffcorrectMessage, PDifficultHintText;
     [SerializeField] private PWordData[] answerWordList;     //list of answers word in the game
@@ -50,8 +50,6 @@ public class PDifficultManager : MonoBehaviour
     public GameObject DiffWrongPanel { get { return diffwrongPanel; } }
 
     public GameObject DiffCorrectPanel { get { return diffcorrectPanel; } }
-
-    public GameObject DiffWalkpanel { get { return diffWalkpanel; } }
     
     private void Awake()
     {
@@ -250,18 +248,31 @@ public class PDifficultManager : MonoBehaviour
         if (diffscoreCount == 5)
         {
             diffstar3.gameObject.SetActive(true);
+            pawesome.gameObject.SetActive(true);
+            pwelldone.gameObject.SetActive(false);
+            pkeepitup.gameObject.SetActive(false);
         }
-        else if (diffscoreCount > 3 && diffscoreCount < 5)
+        else if (diffscoreCount  == 3 || diffscoreCount == 4)
         {
             diffstar2.gameObject.SetActive(true);
+            pwelldone.gameObject.SetActive(true);
+            pawesome.gameObject.SetActive(false);
+            pkeepitup.gameObject.SetActive(false);
         }
         else if (diffscoreCount == 0)
         {
             diffstar0.gameObject.SetActive(true);
+            pkeepitup.gameObject.SetActive(true);
+            pawesome.gameObject.SetActive(false);
+            pwelldone.gameObject.SetActive(false);
+            
         }
-        else if (diffscoreCount < 2)
+        else if (diffscoreCount == 2 || diffscoreCount == 1) 
         {
             diffstar1.gameObject.SetActive(true);
+            pkeepitup.gameObject.SetActive(true);
+            pawesome.gameObject.SetActive(false);
+            pwelldone.gameObject.SetActive(false);
         }
     }
     void SetNextQuestion(){
@@ -296,13 +307,6 @@ public class PDifficultManager : MonoBehaviour
         diffgameOverPanel.gameObject.SetActive(true);
         Pdifficultconfetti.gameObject.SetActive(true);
         DifficultsoundEffect[2].Play();
-
-    }
-
-
-    void ActivateDiffWalkPanel()
-    {
-        DiffWalkpanel.gameObject.SetActive(true);
 
     }
 

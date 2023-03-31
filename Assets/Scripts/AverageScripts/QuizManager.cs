@@ -153,18 +153,31 @@ public class QuizManager : MonoBehaviour
         if (scoreCount == 10)
         {
             quizUI.star3.gameObject.SetActive(true);
+            quizUI.Aawesome.gameObject.SetActive(true);
+            quizUI.Awelldone.gameObject.SetActive(false);
+            quizUI.Akeepitup.gameObject.SetActive(false);
         }
         else if (scoreCount > 4 && scoreCount < 10)
         {
             quizUI.star2.gameObject.SetActive(true);
+            quizUI.Awelldone.gameObject.SetActive(true);
+            quizUI.Aawesome.gameObject.SetActive(false);
+            quizUI.Akeepitup.gameObject.SetActive(false);
         }
         else if (scoreCount == 0)
         {
             quizUI.star0.gameObject.SetActive(true);
+            quizUI.Akeepitup.gameObject.SetActive(true);
+            quizUI.Awelldone.gameObject.SetActive(false);
+            quizUI.Aawesome.gameObject.SetActive(false);
+            
         }
         else if (scoreCount < 5)
         {
             quizUI.star1.gameObject.SetActive(true);
+            quizUI.Akeepitup.gameObject.SetActive(true);
+            quizUI.Awelldone.gameObject.SetActive(false);
+            quizUI.Aawesome.gameObject.SetActive(false);
         }
 
         //Test

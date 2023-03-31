@@ -11,7 +11,7 @@ public class QuizUI : MonoBehaviour
     [SerializeField] private TextMeshProUGUI questionText, scoreText, timerText, questioncountText;
     [SerializeField] private List<Image> lifeImageList;
     [SerializeField] private GameObject gameOverPanel, averageMenuPanel, gameMenuPanel, walkpanel;
-    [SerializeField] public  GameObject star0, star1, star2, star3, wrongPanel, correctPanel, Averageconfetti;
+    [SerializeField] public  GameObject star0, star1, star2, star3, wrongPanel, correctPanel, Averageconfetti, Akeepitup,Awelldone,Aawesome;
     [SerializeField] private Image questionImage;
     [SerializeField] private UnityEngine.Video.VideoPlayer questionVideo;
     [SerializeField] private AudioSource questionAudio;

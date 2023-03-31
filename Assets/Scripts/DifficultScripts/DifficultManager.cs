@@ -12,7 +12,7 @@ public class DifficultManager : MonoBehaviour
     public static DifficultManager instance; //Instance to make is available in other scripts without reference
     [SerializeField] private DifficultDataScriptable difficultDataScriptable;
     [SerializeField] private Text difficultquestions, diffquestioncountText, difftimerText;           //image element to show the image
-    [SerializeField] public GameObject diffstar0, diffstar1, diffstar2, diffstar3, diffwrongPanel, diffcorrectPanel, DifficultConfetti;
+    [SerializeField] public GameObject diffstar0, diffstar1, diffstar2, diffstar3, diffwrongPanel, diffcorrectPanel, DifficultConfetti, dkeepitup, dwelldone, dawesome;
     [SerializeField] private GameObject diffgameOverPanel, diffWalkpanel;
     [SerializeField] private float timeLimit = 1800f;
     [SerializeField] private TextMeshProUGUI diffscoreText;

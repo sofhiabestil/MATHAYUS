@@ -67,7 +67,7 @@ public class PracticeManager : MonoBehaviour{
             CorrectAnswer = true;
             scoreCount += 1;
 
-            practicehandler.ScoreText.text = scoreCount + "/5";
+            
             Invoke("ActivateCorrectPanel", 1f);
 
         }
@@ -91,21 +91,40 @@ public class PracticeManager : MonoBehaviour{
 
         }
 
+        practicehandler.ScoreText.text = scoreCount + "/5";
+
         if (scoreCount == 5)
         {
             practicehandler.star3.gameObject.SetActive(true);
+            practicehandler.awesome.gameObject.SetActive(true);
+            practicehandler.welldone.gameObject.SetActive(false);
+            practicehandler.keepitup.gameObject.SetActive(false);
+
+
         }
-        else if (scoreCount > 3 && scoreCount < 5)
+        else if (scoreCount == 3 || scoreCount == 4)
         {
             practicehandler.star2.gameObject.SetActive(true);
+            practicehandler.welldone.gameObject.SetActive(true);
+            practicehandler.awesome.gameObject.SetActive(false);
+            practicehandler.keepitup.gameObject.SetActive(false);
+
+
         }
         else if (scoreCount == 0)
         {
             practicehandler.star0.gameObject.SetActive(true);
+            practicehandler.keepitup.gameObject.SetActive(true);
+            practicehandler.welldone.gameObject.SetActive(false);
+            practicehandler.awesome.gameObject.SetActive(false);
         }
-        else if (scoreCount < 2)
+        else if (scoreCount == 2 || scoreCount == 1)
         {
             practicehandler.star1.gameObject.SetActive(true);
+            practicehandler.keepitup.gameObject.SetActive(true);
+            practicehandler.welldone.gameObject.SetActive(false);
+            practicehandler.awesome.gameObject.SetActive(false);
+
         }
 
         return CorrectAnswer;
@@ -124,12 +143,6 @@ public class PracticeManager : MonoBehaviour{
 
     }
 
-
-    void ActivateWalkPanel()
-    {
-        practicehandler.Walkpanel.gameObject.SetActive(true);
-
-    }
 
     void ActivateCorrectPanel()
     {
