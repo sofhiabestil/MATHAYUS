@@ -89,6 +89,8 @@ public class PSlotHolder : MonoBehaviour, IDropHandler
         foreach (PSlotHolder slotHolder in slotHolders)
         {
             slotHolder.filled = false;
+            Pscore = 0; // Reset score
+            TextScore.text = Pscore + "/7"; // Update score text
         }
     }
 
