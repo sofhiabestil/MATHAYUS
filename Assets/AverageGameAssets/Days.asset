@@ -46,25 +46,91 @@ MonoBehaviour:
     - Sunday
     - Wedndesday
     correctAns: Monday
-  - questionInfo: If today is tuesday yesterday was?
+  - questionInfo: 'Match the day to the correct number. SUNDAY '
     questionType: 0
     questionImg: {fileID: 0}
     questionClip: {fileID: 0}
     questionVideo: {fileID: 0}
     options:
-    - Saturday
-    - Monday
-    - Sunday
-    - Wedndesday
-    correctAns: Monday
-  - questionInfo: If today is tuesday yesterday was?
+    - 7th
+    - 1st
+    - 6th
+    - 2nd
+    correctAns: 1st
+  - questionInfo: 'Match the day to the correct number. MONDAY  '
     questionType: 0
     questionImg: {fileID: 0}
     questionClip: {fileID: 0}
     questionVideo: {fileID: 0}
     options:
-    - Saturday
+    - 7th
+    - 1st
+    - 6th
+    - 2nd
+    correctAns: 2nd
+  - questionInfo: 'Match the day to the correct number. TUESDAY  '
+    questionType: 0
+    questionImg: {fileID: 0}
+    questionClip: {fileID: 0}
+    questionVideo: {fileID: 0}
+    options:
+    - 3rd
+    - 1st
+    - 6th
+    - 2nd
+    correctAns: 3rd
+  - questionInfo: 'Match the day to the correct number. WEDNESDAY  '
+    questionType: 0
+    questionImg: {fileID: 0}
+    questionClip: {fileID: 0}
+    questionVideo: {fileID: 0}
+    options:
+    - 3rd
+    - 1st
+    - 4th
+    - 2nd
+    correctAns: 4th
+  - questionInfo: 'Match the day to the correct number. THURSDAY  '
+    questionType: 0
+    questionImg: {fileID: 0}
+    questionClip: {fileID: 0}
+    questionVideo: {fileID: 0}
+    options:
+    - 5th
+    - 1st
+    - 4th
+    - 2nd
+    correctAns: 5th
+  - questionInfo: 'Match the day to the correct number. FRIDAY  '
+    questionType: 0
+    questionImg: {fileID: 0}
+    questionClip: {fileID: 0}
+    questionVideo: {fileID: 0}
+    options:
+    - 5th
+    - 6th
+    - 4th
+    - 7th
+    correctAns: 6th
+  - questionInfo: 'Match the day to the correct number. SATURDAY  '
+    questionType: 0
+    questionImg: {fileID: 0}
+    questionClip: {fileID: 0}
+    questionVideo: {fileID: 0}
+    options:
+    - 3rd
+    - 6th
+    - 1st
+    - 7th
+    correctAns: 7th
+  - questionInfo: What is the 1st day of the week?
+    questionType: 0
+    questionImg: {fileID: 0}
+    questionClip: {fileID: 0}
+    questionVideo: {fileID: 0}
+    options:
     - Monday
+    - Saturday
     - Sunday
-    - Wedndesday
-    correctAns: Monday
+    - Tuesday
+    correctAns: Sunday
