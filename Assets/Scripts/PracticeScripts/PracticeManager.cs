@@ -84,18 +84,8 @@ public class PracticeManager : MonoBehaviour{
 
                 Invoke("SelectQuestion", 4f);
 
-            }else{
-                if (scoreCount > 4)
-                { 
-                    Invoke("ActivateWalkPanel", 3f);
-                    //Invoke("ActivateGameOverPanel", 2f);
-                    
-                }
-                else
-                {
-                    Invoke("ActivateGameOverPanel", 3f);
-                }
-                
+            }else{       
+                    Invoke("ActivateGameOverPanel", 4f);
                 practicegameStatus = PracticeGameStatus.Next;
             }
 

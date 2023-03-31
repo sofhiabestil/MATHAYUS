@@ -82,7 +82,7 @@ public class PSlotHolder : MonoBehaviour, IDropHandler
             dragObject.ResetObjects(); // Reset position of drag objects
         }
         Pscore = 0; // Reset score
-        TextScore.text = Pscore + "/7"; // Update score text
+        EasyScoreText.text = Pscore + "/7"; // Update score text
         star0.SetActive(false); // Deactivate all stars
 
         // Set all slot holders to not filled
@@ -90,7 +90,7 @@ public class PSlotHolder : MonoBehaviour, IDropHandler
         {
             slotHolder.filled = false;
             Pscore = 0; // Reset score
-            TextScore.text = Pscore + "/7"; // Update score text
+            EasyScoreText.text = Pscore + "/7"; // Update score text
         }
     }
 
@@ -130,12 +130,12 @@ public class PSlotHolder : MonoBehaviour, IDropHandler
                                 dragObject.GetComponent<Image>().color = Color.green;
 
                                 Pscore++;
-                                EasyScoreText.text = Pscore + "/7";
+                                TextScore.text = Pscore + "/7";
 
                                 if (Pscore == 7)
                                 {
                                     star3.gameObject.SetActive(true);
-                                    Invoke("ActivateWalkingPanel", 1f);
+                                    Invoke("ActivateGameOverPanel", 1f);
 
 
                                 }
@@ -147,17 +147,12 @@ public class PSlotHolder : MonoBehaviour, IDropHandler
                                 else if (Pscore <= 4 && Pscore != 0)
                                 {
                                     star1.gameObject.SetActive(true);
-                                    star2.gameObject.SetActive(false);
-                                    star3.gameObject.SetActive(false);
                                     Invoke("ActivateGameOverPanel", 1f);
                                 }
                                 else if (Pscore == 0)
                                 {
-                                    Invoke("ActivateGameOverPanel", 1f);
-                                    star2.gameObject.SetActive(false);
-                                    star3.gameObject.SetActive(false);
-                                    star1.gameObject.SetActive(false);
                                     star0.gameObject.SetActive(true);
+                                    Invoke("ActivateGameOverPanel", 1f);
                                 }
 
 

@@ -275,14 +275,7 @@ public class PDifficultManager : MonoBehaviour
             SetQuestion();
         
         }else {
-            if (diffscoreCount > 4)
-            {
-                Invoke("ActivateDiffWalkPanel", 0.5f);
-            }
-            else
-            {
-                Invoke("DiffActivateGameOverPanel", 0.5f);
-            }
+                Invoke("DiffActivateGameOverPanel", 0.1f);
             PDifficultGameStatus = PDifficultGameStatus.Next;
         }
    
