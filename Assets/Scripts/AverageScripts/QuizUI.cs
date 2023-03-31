@@ -135,7 +135,7 @@ public class QuizUI : MonoBehaviour
 
         switch (btn.name)
         {
-            case "SkipButtonData":
+            case "Skip":
                 quizManager.StartGame(0);
                 averageMenuPanel.SetActive(false);
                 gameMenuPanel.SetActive(true);
