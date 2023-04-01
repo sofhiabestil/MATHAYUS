@@ -1144,18 +1144,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 4
-  score: 0
+  scores: 0
+  TotalScore: 0
   checkButton: {fileID: 2140620877}
   resetButton: {fileID: 0}
   filled: 0
   EasyScoreText: {fileID: 128071084}
+  EasyCongrats: {fileID: 0}
   gameoverpanel: {fileID: 386682773}
   EasyConfetti: {fileID: 0}
   EasyWalkingPanel: {fileID: 0}
+  panel1: {fileID: 0}
+  panel2: {fileID: 0}
   star0: {fileID: 0}
   star1: {fileID: 0}
   star2: {fileID: 0}
   star3: {fileID: 0}
+  Ekeepitup: {fileID: 0}
+  Ewelldone: {fileID: 0}
+  Eawesome: {fileID: 0}
 --- !u!1 &173231462
 GameObject:
   m_ObjectHideFlags: 0
@@ -3289,18 +3296,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 3
-  score: 0
+  scores: 0
+  TotalScore: 0
   checkButton: {fileID: 2140620877}
   resetButton: {fileID: 0}
   filled: 0
   EasyScoreText: {fileID: 128071084}
+  EasyCongrats: {fileID: 0}
   gameoverpanel: {fileID: 386682773}
   EasyConfetti: {fileID: 0}
   EasyWalkingPanel: {fileID: 0}
+  panel1: {fileID: 0}
+  panel2: {fileID: 0}
   star0: {fileID: 0}
   star1: {fileID: 0}
   star2: {fileID: 0}
   star3: {fileID: 0}
+  Ekeepitup: {fileID: 0}
+  Ewelldone: {fileID: 0}
+  Eawesome: {fileID: 0}
 --- !u!1 &435305296
 GameObject:
   m_ObjectHideFlags: 0
@@ -3391,18 +3405,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 2
-  score: 0
+  scores: 0
+  TotalScore: 0
   checkButton: {fileID: 2140620877}
   resetButton: {fileID: 0}
   filled: 0
   EasyScoreText: {fileID: 128071084}
+  EasyCongrats: {fileID: 0}
   gameoverpanel: {fileID: 386682773}
   EasyConfetti: {fileID: 0}
   EasyWalkingPanel: {fileID: 0}
+  panel1: {fileID: 0}
+  panel2: {fileID: 0}
   star0: {fileID: 0}
   star1: {fileID: 0}
   star2: {fileID: 0}
   star3: {fileID: 0}
+  Ekeepitup: {fileID: 0}
+  Ewelldone: {fileID: 0}
+  Eawesome: {fileID: 0}
 --- !u!1 &454827666
 GameObject:
   m_ObjectHideFlags: 0
@@ -3645,18 +3666,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 0
-  score: 0
+  scores: 0
+  TotalScore: 0
   checkButton: {fileID: 2140620877}
   resetButton: {fileID: 0}
   filled: 0
   EasyScoreText: {fileID: 128071084}
+  EasyCongrats: {fileID: 0}
   gameoverpanel: {fileID: 386682773}
   EasyConfetti: {fileID: 0}
   EasyWalkingPanel: {fileID: 0}
+  panel1: {fileID: 0}
+  panel2: {fileID: 0}
   star0: {fileID: 0}
   star1: {fileID: 0}
   star2: {fileID: 0}
   star3: {fileID: 0}
+  Ekeepitup: {fileID: 0}
+  Ewelldone: {fileID: 0}
+  Eawesome: {fileID: 0}
 --- !u!1 &471059632
 GameObject:
   m_ObjectHideFlags: 0
@@ -4453,18 +4481,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 0
-  score: 0
+  scores: 0
+  TotalScore: 0
   checkButton: {fileID: 2140620877}
   resetButton: {fileID: 0}
   filled: 0
   EasyScoreText: {fileID: 128071084}
+  EasyCongrats: {fileID: 0}
   gameoverpanel: {fileID: 386682773}
   EasyConfetti: {fileID: 0}
   EasyWalkingPanel: {fileID: 0}
+  panel1: {fileID: 0}
+  panel2: {fileID: 0}
   star0: {fileID: 0}
   star1: {fileID: 0}
   star2: {fileID: 0}
   star3: {fileID: 0}
+  Ekeepitup: {fileID: 0}
+  Ewelldone: {fileID: 0}
+  Eawesome: {fileID: 0}
 --- !u!1 &519712642
 GameObject:
   m_ObjectHideFlags: 0
@@ -4771,18 +4806,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 5
-  score: 0
+  scores: 0
+  TotalScore: 0
   checkButton: {fileID: 2140620877}
   resetButton: {fileID: 0}
   filled: 0
   EasyScoreText: {fileID: 128071084}
+  EasyCongrats: {fileID: 0}
   gameoverpanel: {fileID: 386682773}
   EasyConfetti: {fileID: 0}
   EasyWalkingPanel: {fileID: 0}
+  panel1: {fileID: 0}
+  panel2: {fileID: 0}
   star0: {fileID: 0}
   star1: {fileID: 0}
   star2: {fileID: 0}
   star3: {fileID: 0}
+  Ekeepitup: {fileID: 0}
+  Ewelldone: {fileID: 0}
+  Eawesome: {fileID: 0}
 --- !u!1 &551109253
 GameObject:
   m_ObjectHideFlags: 0
@@ -6197,7 +6239,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6c66ba0607902fa47aa5553d4bcdd2d9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: be038ee6aa8f87342b0903111c91c967, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -6994,18 +7036,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 0
-  score: 0
+  scores: 0
+  TotalScore: 0
   checkButton: {fileID: 2140620877}
   resetButton: {fileID: 0}
   filled: 0
   EasyScoreText: {fileID: 128071084}
+  EasyCongrats: {fileID: 0}
   gameoverpanel: {fileID: 386682773}
   EasyConfetti: {fileID: 0}
   EasyWalkingPanel: {fileID: 0}
+  panel1: {fileID: 0}
+  panel2: {fileID: 0}
   star0: {fileID: 0}
   star1: {fileID: 0}
   star2: {fileID: 0}
   star3: {fileID: 0}
+  Ekeepitup: {fileID: 0}
+  Ewelldone: {fileID: 0}
+  Eawesome: {fileID: 0}
 --- !u!1 &805692652
 GameObject:
   m_ObjectHideFlags: 0
@@ -7066,7 +7115,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4979aa5cd5a19654db1c64c08b18bef9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec383a4dcee2d2a478cb6f3fb72c0152, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7184,7 +7233,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ec305828bb0ee3a42bc44a7748aa9100, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 05c0cf04e3382154099200be98ae6500, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -7293,7 +7342,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 79736c298ae0c5143875d46ff8140fe2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 837cfd19ae4058f4c8d12c91625f5b1a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8134,7 +8183,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b21b1a50faa547946894ad73266f330b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c2aebbeeb985aa046b8f00a0fe51889a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -8411,7 +8460,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6df703975cbb908459e33761b4b04721, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 12bc02885813524469303ea4f9a926f0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9152,7 +9201,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: ec305828bb0ee3a42bc44a7748aa9100, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 05c0cf04e3382154099200be98ae6500, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -9891,18 +9940,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 0
-  score: 0
+  scores: 0
+  TotalScore: 0
   checkButton: {fileID: 2140620877}
   resetButton: {fileID: 0}
   filled: 0
   EasyScoreText: {fileID: 128071084}
+  EasyCongrats: {fileID: 0}
   gameoverpanel: {fileID: 386682773}
   EasyConfetti: {fileID: 0}
   EasyWalkingPanel: {fileID: 0}
+  panel1: {fileID: 0}
+  panel2: {fileID: 0}
   star0: {fileID: 0}
   star1: {fileID: 0}
   star2: {fileID: 0}
   star3: {fileID: 0}
+  Ekeepitup: {fileID: 0}
+  Ewelldone: {fileID: 0}
+  Eawesome: {fileID: 0}
 --- !u!1 &1085098908
 GameObject:
   m_ObjectHideFlags: 0
@@ -10086,18 +10142,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 0
-  score: 0
+  scores: 0
+  TotalScore: 0
   checkButton: {fileID: 2140620877}
   resetButton: {fileID: 0}
   filled: 0
   EasyScoreText: {fileID: 128071084}
+  EasyCongrats: {fileID: 0}
   gameoverpanel: {fileID: 386682773}
   EasyConfetti: {fileID: 0}
   EasyWalkingPanel: {fileID: 0}
+  panel1: {fileID: 0}
+  panel2: {fileID: 0}
   star0: {fileID: 0}
   star1: {fileID: 0}
   star2: {fileID: 0}
   star3: {fileID: 0}
+  Ekeepitup: {fileID: 0}
+  Ewelldone: {fileID: 0}
+  Eawesome: {fileID: 0}
 --- !u!1 &1112127523
 GameObject:
   m_ObjectHideFlags: 0
@@ -11274,7 +11337,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 79736c298ae0c5143875d46ff8140fe2, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 837cfd19ae4058f4c8d12c91625f5b1a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -12215,7 +12278,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 93dbbd6ae44d868449c73c53c992f21b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 056fc41e4a831e142bcaae3d830f3534, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -12765,18 +12828,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 6
-  score: 0
+  scores: 0
+  TotalScore: 0
   checkButton: {fileID: 2140620877}
   resetButton: {fileID: 0}
   filled: 0
   EasyScoreText: {fileID: 128071084}
+  EasyCongrats: {fileID: 0}
   gameoverpanel: {fileID: 386682773}
   EasyConfetti: {fileID: 0}
   EasyWalkingPanel: {fileID: 0}
+  panel1: {fileID: 0}
+  panel2: {fileID: 0}
   star0: {fileID: 0}
   star1: {fileID: 0}
   star2: {fileID: 0}
   star3: {fileID: 0}
+  Ekeepitup: {fileID: 0}
+  Ewelldone: {fileID: 0}
+  Eawesome: {fileID: 0}
 --- !u!1 &1424916277
 GameObject:
   m_ObjectHideFlags: 0
@@ -13699,7 +13769,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6c66ba0607902fa47aa5553d4bcdd2d9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: be038ee6aa8f87342b0903111c91c967, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -14864,7 +14934,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: b21b1a50faa547946894ad73266f330b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: c2aebbeeb985aa046b8f00a0fe51889a, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -16688,18 +16758,25 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 0
-  score: 0
+  scores: 0
+  TotalScore: 0
   checkButton: {fileID: 2140620877}
   resetButton: {fileID: 0}
   filled: 0
   EasyScoreText: {fileID: 128071084}
+  EasyCongrats: {fileID: 0}
   gameoverpanel: {fileID: 386682773}
   EasyConfetti: {fileID: 0}
   EasyWalkingPanel: {fileID: 0}
+  panel1: {fileID: 0}
+  panel2: {fileID: 0}
   star0: {fileID: 0}
   star1: {fileID: 0}
   star2: {fileID: 0}
   star3: {fileID: 0}
+  Ekeepitup: {fileID: 0}
+  Ewelldone: {fileID: 0}
+  Eawesome: {fileID: 0}
 --- !u!1 &1778848623
 GameObject:
   m_ObjectHideFlags: 0
@@ -17255,7 +17332,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 93dbbd6ae44d868449c73c53c992f21b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 056fc41e4a831e142bcaae3d830f3534, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -17694,7 +17771,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 6df703975cbb908459e33761b4b04721, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 12bc02885813524469303ea4f9a926f0, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -17820,7 +17897,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 4979aa5cd5a19654db1c64c08b18bef9, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ec383a4dcee2d2a478cb6f3fb72c0152, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
