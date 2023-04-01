@@ -1332,6 +1332,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 3
   scores: 0
+  TotalScore: 0
   checkButton: {fileID: 2140620877}
   resetButton: {fileID: 199120611}
   filled: 0
@@ -1537,6 +1538,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 1
   scores: 0
+  TotalScore: 0
   checkButton: {fileID: 2140620877}
   resetButton: {fileID: 199120611}
   filled: 0
@@ -1840,6 +1842,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 6
   scores: 0
+  TotalScore: 0
   checkButton: {fileID: 2140620877}
   resetButton: {fileID: 199120611}
   filled: 0
@@ -1985,7 +1988,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: -97, y: 109.00001}
+  m_AnchoredPosition: {x: -97, y: 109}
   m_SizeDelta: {x: 156.1954, y: 154.45001}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &199120611
@@ -2305,6 +2308,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 3
   scores: 0
+  TotalScore: 0
   checkButton: {fileID: 2140620877}
   resetButton: {fileID: 199120611}
   filled: 0
@@ -3423,6 +3427,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 2
   scores: 0
+  TotalScore: 0
   checkButton: {fileID: 2140620877}
   resetButton: {fileID: 199120611}
   filled: 0
@@ -3629,6 +3634,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 1
   scores: 0
+  TotalScore: 0
   checkButton: {fileID: 2140620877}
   resetButton: {fileID: 199120611}
   filled: 0
@@ -3915,6 +3921,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 20
   scores: 0
+  TotalScore: 0
   checkButton: {fileID: 2140620877}
   resetButton: {fileID: 199120611}
   filled: 0
@@ -4361,6 +4368,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 19
   scores: 0
+  TotalScore: 0
   checkButton: {fileID: 2140620877}
   resetButton: {fileID: 199120611}
   filled: 0
@@ -4979,6 +4987,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 4
   scores: 0
+  TotalScore: 0
   checkButton: {fileID: 2140620877}
   resetButton: {fileID: 199120611}
   filled: 0
@@ -5482,6 +5491,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 5
   scores: 0
+  TotalScore: 0
   checkButton: {fileID: 2140620877}
   resetButton: {fileID: 199120611}
   filled: 0
@@ -6585,6 +6595,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 0
   scores: 0
+  TotalScore: 0
   checkButton: {fileID: 2140620877}
   resetButton: {fileID: 199120611}
   filled: 0
@@ -7127,6 +7138,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 21
   scores: 0
+  TotalScore: 0
   checkButton: {fileID: 2140620877}
   resetButton: {fileID: 199120611}
   filled: 0
@@ -7438,6 +7450,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 2
   scores: 0
+  TotalScore: 0
   checkButton: {fileID: 2140620877}
   resetButton: {fileID: 199120611}
   filled: 0
@@ -9734,6 +9747,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 18
   scores: 0
+  TotalScore: 0
   checkButton: {fileID: 2140620877}
   resetButton: {fileID: 199120611}
   filled: 0
@@ -10200,6 +10214,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 23
   scores: 0
+  TotalScore: 0
   checkButton: {fileID: 2140620877}
   resetButton: {fileID: 199120611}
   filled: 0
@@ -11236,6 +11251,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 4
   scores: 0
+  TotalScore: 0
   checkButton: {fileID: 2140620877}
   resetButton: {fileID: 199120611}
   filled: 0
@@ -13031,6 +13047,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 5
   scores: 0
+  TotalScore: 0
   checkButton: {fileID: 2140620877}
   resetButton: {fileID: 199120611}
   filled: 0
@@ -13236,6 +13253,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 7
   scores: 0
+  TotalScore: 0
   checkButton: {fileID: 2140620877}
   resetButton: {fileID: 199120611}
   filled: 0
@@ -16843,6 +16861,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   id: 22
   scores: 0
+  TotalScore: 0
   checkButton: {fileID: 2140620877}
   resetButton: {fileID: 199120611}
   filled: 0
@@ -19489,7 +19508,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 112, y: 109.00001}
+  m_AnchoredPosition: {x: 112, y: 109}
   m_SizeDelta: {x: 156.1954, y: 154.45001}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2140620877
