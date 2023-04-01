@@ -51,16 +51,6 @@ public class PDragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandle
     public void OnPointerDown(PointerEventData eventData)
     {
     }
-
-    public void SetScore(int newScore)
-    {
-        score = newScore;
-    }
-
-    public int GetScore()
-    {
-        return score;
-    }
     public void ResetObjects()
     {
         foreach (GameObject obj in objectsToReset)

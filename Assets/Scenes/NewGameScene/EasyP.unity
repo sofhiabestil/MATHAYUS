@@ -1247,10 +1247,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 1
+  filled: 0
   Pscore: 0
   PcheckButton: {fileID: 2140620877}
   PresetButton: {fileID: 199120611}
-  filled: 0
   EasyScoreText: {fileID: 128071084}
   initialPosition: {x: 0, y: 0}
   PracticeCongrats: {fileID: 173231467}
@@ -1448,10 +1448,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 6
+  filled: 0
   Pscore: 0
   PcheckButton: {fileID: 2140620877}
   PresetButton: {fileID: 199120611}
-  filled: 0
   EasyScoreText: {fileID: 128071084}
   initialPosition: {x: 0, y: 0}
   PracticeCongrats: {fileID: 188132642}
@@ -1814,6 +1814,7 @@ GameObject:
   - component: {fileID: 199120612}
   - component: {fileID: 199120611}
   - component: {fileID: 199120615}
+  - component: {fileID: 199120616}
   m_Layer: 0
   m_Name: ResetButton
   m_TagString: Untagged
@@ -1959,6 +1960,18 @@ MonoBehaviour:
   - {fileID: 1610248180}
   - {fileID: 1353978192}
   - {fileID: 805692652}
+--- !u!225 &199120616
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 199120609}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
 --- !u!1 &202727892
 GameObject:
   m_ObjectHideFlags: 0
@@ -2325,10 +2338,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 3
+  filled: 0
   Pscore: 0
   PcheckButton: {fileID: 2140620877}
   PresetButton: {fileID: 199120611}
-  filled: 0
   EasyScoreText: {fileID: 128071084}
   initialPosition: {x: 0, y: 0}
   PracticeCongrats: {fileID: 241350003}
@@ -5140,10 +5153,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 5
+  filled: 0
   Pscore: 0
   PcheckButton: {fileID: 2140620877}
   PresetButton: {fileID: 199120611}
-  filled: 0
   EasyScoreText: {fileID: 128071084}
   initialPosition: {x: 0, y: 0}
   PracticeCongrats: {fileID: 589058368}
@@ -7157,10 +7170,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 2
+  filled: 0
   Pscore: 0
   PcheckButton: {fileID: 2140620877}
   PresetButton: {fileID: 199120611}
-  filled: 0
   EasyScoreText: {fileID: 128071084}
   initialPosition: {x: 0, y: 0}
   PracticeCongrats: {fileID: 813875199}
@@ -10770,10 +10783,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 4
+  filled: 0
   Pscore: 0
   PcheckButton: {fileID: 2140620877}
   PresetButton: {fileID: 199120611}
-  filled: 0
   EasyScoreText: {fileID: 128071084}
   initialPosition: {x: 0, y: 0}
   PracticeCongrats: {fileID: 1201872831}
@@ -12694,10 +12707,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 7
+  filled: 0
   Pscore: 0
   PcheckButton: {fileID: 2140620877}
   PresetButton: {fileID: 199120611}
-  filled: 0
   EasyScoreText: {fileID: 128071084}
   initialPosition: {x: 0, y: 0}
   PracticeCongrats: {fileID: 1427049370}
@@ -14483,7 +14496,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1605479167
 RectTransform:
   m_ObjectHideFlags: 0

@@ -67,7 +67,7 @@ public class PSlotHolder : MonoBehaviour, IDropHandler
     void Start()
     {
         PcheckButton.interactable = false;
-        PresetButton.onClick.AddListener(ResetSlots); // Add listener to reset button
+        PresetButton.onClick.AddListener(ResetSlots); // Add listener to reset butto
 
     }
     public void ResetSlots()
@@ -94,7 +94,7 @@ public class PSlotHolder : MonoBehaviour, IDropHandler
     }
 
 
-   public void checkAnswer()
+    public void checkAnswer()
     {
         PDragAndDrop[] dragObjects = FindObjectsOfType<PDragAndDrop>();
         PSlotHolder[] slotHolders = FindObjectsOfType<PSlotHolder>();
@@ -113,63 +113,58 @@ public class PSlotHolder : MonoBehaviour, IDropHandler
 
         if (allHoldersFilled)
         {
-            foreach (PDragAndDrop dragObject in dragObjects)
+            PcheckButton.onClick.AddListener(delegate
             {
-                RectTransform dragObjectRect = dragObject.GetComponent<RectTransform>();
-                foreach (PSlotHolder slotHolder in slotHolders)
+                int score = 0;
+                foreach (PDragAndDrop dragObject in dragObjects)
                 {
-                    if (dragObjectRect.anchoredPosition == slotHolder.GetComponent<RectTransform>().anchoredPosition)
+                    RectTransform dragObjectRect = dragObject.GetComponent<RectTransform>();
+                    foreach (PSlotHolder slotHolder in slotHolders)
                     {
-                        if (dragObject.id == slotHolder.id)
+                        if (dragObjectRect.anchoredPosition == slotHolder.GetComponent<RectTransform>().anchoredPosition)
                         {
-                            // Wait until checkButton is clicked before changing color
-                            PcheckButton.onClick.AddListener(delegate
+                            if (dragObject.id == slotHolder.id)
                             {
-
                                 dragObject.GetComponent<Image>().color = Color.green;
-
-                                Pscore++;
-                                TextScore.text = Pscore + "/7";
-
-                                if (Pscore == 7)
-                                {
-                                    star3.gameObject.SetActive(true);
-                                    Invoke("ActivateGameOverPanel", 1f);
-
-
-                                }
-                                else if (Pscore >= 5 && Pscore <= 6)
-                                {
-                                    star2.gameObject.SetActive(true);
-                                    Invoke("ActivateGameOverPanel", 1f);
-                                }
-                                else if (Pscore <= 4 && Pscore != 0)
-                                {
-                                    star1.gameObject.SetActive(true);
-                                    Invoke("ActivateGameOverPanel", 1f);
-                                }
-                                else if (Pscore == 0)
-                                {
-                                    star0.gameObject.SetActive(true);
-                                    Invoke("ActivateGameOverPanel", 1f);
-                                }
-
-
-                            });
-
-                        }
-                        else
-                        {
-                            // Wait until checkButton is clicked before changing color
-                            PcheckButton.onClick.AddListener(delegate
+                                score++;
+                            }
+                            else
                             {
                                 dragObject.GetComponent<Image>().color = Color.red;
-                                PcheckButton.onClick.RemoveAllListeners();
-                            });
+                            }
                         }
                     }
                 }
-            }
+
+                // Update score and stars
+                if (score == 7)
+                {
+                    star3.gameObject.SetActive(true);
+                    Invoke("ActivateGameOverPanel", 1f);
+                }
+                else if (score >= 5 && score <= 6)
+                {
+                    star2.gameObject.SetActive(true);
+                    Invoke("ActivateGameOverPanel", 1f);
+                }
+                else if (score <= 4 && score != 0)
+                {
+                    star1.gameObject.SetActive(true);
+                    Invoke("ActivateGameOverPanel", 1f);
+                }
+                else if (score == 0)
+                {
+                    star0.gameObject.SetActive(true);
+                    Invoke("ActivateGameOverPanel", 1f);
+                }
+
+                // Update score text and reset check button
+                Pscore = score;
+                TextScore.text = Pscore + "/7";
+                PcheckButton.onClick.RemoveAllListeners();
+                PcheckButton.interactable = false;
+            });
+
             PcheckButton.interactable = true;
         }
         else
@@ -178,6 +173,8 @@ public class PSlotHolder : MonoBehaviour, IDropHandler
             if (emptySlotExists) Debug.Log("Not all holders are filled");
         }
     }
+
+
 
     void ActivateGameOverPanel()
     {
