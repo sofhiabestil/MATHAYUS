@@ -20,7 +20,7 @@ public class PSlotHolder : MonoBehaviour, IDropHandler
 
 
     [SerializeField] private GameObject pgameoverpanel, PeasyConfetti;
-    [SerializeField] public GameObject star0, star1, star2, star3;
+    [SerializeField] public GameObject star0, star1, star2, star3, keepitup, welldone, awesome;
 
 
     public GameObject PGameOverPanel { get { return pgameoverpanel; } }
@@ -140,20 +140,32 @@ public class PSlotHolder : MonoBehaviour, IDropHandler
                 if (score == 7)
                 {
                     star3.gameObject.SetActive(true);
+                    awesome.gameObject.SetActive(true);
+                    welldone.gameObject.SetActive(false);
+                    keepitup.gameObject.SetActive(false);
                     Invoke("ActivateGameOverPanel", 1f);
                 }
                 else if (score >= 5 && score <= 6)
                 {
                     star2.gameObject.SetActive(true);
+                    awesome.gameObject.SetActive(false);
+                    welldone.gameObject.SetActive(true);
+                    keepitup.gameObject.SetActive(false);
                     Invoke("ActivateGameOverPanel", 1f);
                 }
                 else if (score <= 4 && score != 0)
                 {
+                    awesome.gameObject.SetActive(false);
+                    welldone.gameObject.SetActive(false);
+                    keepitup.gameObject.SetActive(true);
                     star1.gameObject.SetActive(true);
                     Invoke("ActivateGameOverPanel", 1f);
                 }
                 else if (score == 0)
                 {
+                    awesome.gameObject.SetActive(false);
+                    welldone.gameObject.SetActive(false);
+                    keepitup.gameObject.SetActive(true);
                     star0.gameObject.SetActive(true);
                     Invoke("ActivateGameOverPanel", 1f);
                 }
