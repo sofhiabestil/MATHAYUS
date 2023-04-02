@@ -10983,8 +10983,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: The top right corner indicates the number of the question you are currently
-    answering. You must answer all ten questions.
+  m_text: The top right corner is the Hint button to help you answer the question.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 70b9c635cbbc8b945b278875b627ec89, type: 2}
   m_sharedMaterial: {fileID: -255603591768071407, guid: 70b9c635cbbc8b945b278875b627ec89,
