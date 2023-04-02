@@ -48,7 +48,7 @@ public class SlotHolder : MonoBehaviour, IDropHandler
     void Start()
     {
         checkButton.interactable = false;
-        resetButton.onClick.AddListener(ResetSlots); // Add listener to reset button
+        resetButton.onClick.AddListener(ResetSlots); // Add listener to reset butto
 
     }
     public void ResetSlots()
@@ -61,195 +61,114 @@ public class SlotHolder : MonoBehaviour, IDropHandler
         {
             dragObject.ResetObjects(); // Reset position of drag objects
         }
-
-        if (inPanel1)
-        {
-            panel1Score = 0; // Reset panel 1 score
-            EasyScoreText.text = panel2Score + "/" + "6"; // Update score text
-        }
-        else
-        {
-            panel2Score = 0; // Reset panel 2 score
-            EasyScoreText.text = panel1Score + "/" + ""; // Update score text
-        }
-
-        // Deactivate all stars
-        star0.SetActive(false);
-        star1.SetActive(false);
-        star2.SetActive(false);
-        star3.SetActive(false);
+        scores = 0; // Reset score
+        EasyScoreText.text = scores + "/12"; // Update score text
+        star0.SetActive(false); // Deactivate all stars
 
         // Set all slot holders to not filled
         foreach (SlotHolder slotHolder in slotHolders)
         {
             slotHolder.filled = false;
+            scores = 0; // Reset score
+            EasyScoreText.text = scores + "/7"; // Update score text
         }
     }
-    private void CheckAnswer()
+
+
+    public void CheckAnswer()
     {
-        if (inPanel1)
+        DragAndDrop[] dragObjects = FindObjectsOfType<DragAndDrop>();
+        SlotHolder[] slotHolders = FindObjectsOfType<SlotHolder>();
+        allHoldersFilled = true;
+        bool emptySlotExists = false;
+
+        foreach (SlotHolder slotHolder in slotHolders)
         {
-            // Check answer for panel 1
-            DragAndDrop[] dragObjects = panel1.GetComponentsInChildren<DragAndDrop>();
-            SlotHolder[] slotHolders = panel1.GetComponentsInChildren<SlotHolder>();
-
-            bool allHoldersFilled = true;
-            bool emptySlotExists = false;
-
-            foreach (SlotHolder slotHolder in slotHolders)
+            if (!slotHolder.filled)
             {
-                if (!slotHolder.filled)
-                {
-                    allHoldersFilled = false;
-                    emptySlotExists = true;
-                    break;
-                }
+                allHoldersFilled = false;
+                emptySlotExists = true;
+                break;
             }
+        }
 
-            if (allHoldersFilled)
+        if (allHoldersFilled)
+        {
+            checkButton.onClick.AddListener(delegate
             {
-                checkButton.onClick.AddListener(delegate
+                int score = 0;
+                foreach (DragAndDrop dragObject in dragObjects)
                 {
-                    int score = 0;
-                    foreach (DragAndDrop dragObject in dragObjects)
+                    RectTransform dragObjectRect = dragObject.GetComponent<RectTransform>();
+                    foreach (SlotHolder slotHolder in slotHolders)
                     {
-                        RectTransform dragObjectRect = dragObject.GetComponent<RectTransform>();
-                        foreach (SlotHolder slotHolder in slotHolders)
+                        if (dragObjectRect.anchoredPosition == slotHolder.GetComponent<RectTransform>().anchoredPosition)
                         {
-                            if (dragObjectRect.anchoredPosition == slotHolder.GetComponent<RectTransform>().anchoredPosition)
+                            if (dragObject.id == slotHolder.id)
                             {
-                                if (dragObject.id == slotHolder.id)
-                                {
-                                    dragObject.GetComponent<Image>().color = Color.green;
-                                    score++;
-                                }
-                                else
-                                {
-                                    dragObject.GetComponent<Image>().color = Color.red;
-                                }
+                                dragObject.GetComponent<Image>().color = Color.green;
+                                score++;
+                            }
+                            else
+                            {
+                                dragObject.GetComponent<Image>().color = Color.red;
                             }
                         }
                     }
-
-                    panel1Score = score;
-                    EasyScoreText.text = " " + panel1Score;
-                    Invoke("ActivatePanel2", 1f);
-                    inPanel1 = false;
-                    
-                    checkButton.onClick.RemoveAllListeners();
-                    checkButton.interactable = false;
-
-                });
-
-                checkButton.interactable = true;
-            }
-            else
-            {
-                if (emptySlotExists)
-                {
-                    Debug.Log("Not all holders are filled");
                 }
-            }
+
+                scores = score;
+                EasyScoreText.text = scores + "/12";
+
+                // Update score and stars
+                if (scores == 12)
+                {
+                    star3.gameObject.SetActive(true);
+                    Eawesome.gameObject.SetActive(true);
+                    Ewelldone.gameObject.SetActive(false);
+                    Ekeepitup.gameObject.SetActive(false);
+                    Invoke("ActivateEasyWalkingPanel", 1f);
+                }
+                else if (scores >= 6 && TotalScore <= 11)
+                {
+                    star2.gameObject.SetActive(true);
+                    Eawesome.gameObject.SetActive(false);
+                    Ewelldone.gameObject.SetActive(true);
+                    Ekeepitup.gameObject.SetActive(false);
+                    Invoke("ActivateEasyWalkingPanel", 1f);
+                }
+                else if (scores <= 5 && TotalScore != 0)
+                {
+                    star1.gameObject.SetActive(true);
+                    Eawesome.gameObject.SetActive(false);
+                    Ewelldone.gameObject.SetActive(false);
+                    Ekeepitup.gameObject.SetActive(true);
+                    Invoke("EasyActivateGameOverPanel", 1f);
+                }
+                else if (scores == 0)
+                {
+                    star0.gameObject.SetActive(true);
+                    Eawesome.gameObject.SetActive(false);
+                    Ewelldone.gameObject.SetActive(false);
+                    Ekeepitup.gameObject.SetActive(true);
+                    Invoke("EasyActivateGameOverPanel", 1f);
+                }
+
+
+                checkButton.onClick.RemoveAllListeners();
+                checkButton.interactable = false;
+            });
+
+            checkButton.interactable = true;
         }
         else
         {
-            // Check answer for panel 2
-            DragAndDrop[] dragObjects = panel2.GetComponentsInChildren<DragAndDrop>();
-            SlotHolder[] slotHolders = panel2.GetComponentsInChildren<SlotHolder>();
-
-            bool allHoldersFilled = true;
-            bool emptySlotExists = false;
-
-            foreach (SlotHolder slotHolder in slotHolders)
-            {
-                if (!slotHolder.filled)
-                {
-                    allHoldersFilled = false;
-                    emptySlotExists = true;
-                    break;
-                }
-            }
-
-            if (allHoldersFilled)
-            {
-                checkButton.onClick.AddListener(delegate
-                {
-                    int score = 0;
-                    foreach (DragAndDrop dragObject in dragObjects)
-                    {
-                        RectTransform dragObjectRect = dragObject.GetComponent<RectTransform>();
-                        foreach (SlotHolder slotHolder in slotHolders)
-                        {
-                            if (dragObjectRect.anchoredPosition == slotHolder.GetComponent<RectTransform>().anchoredPosition)
-                            {
-                                if (dragObject.id == slotHolder.id)
-                                {
-                                    dragObject.GetComponent<Image>().color = Color.green;
-                                    score++;
-                                }
-                                else
-                                {
-                                    dragObject.GetComponent<Image>().color = Color.red;
-                                }
-                            }
-                        }
-                    }
-                    panel2Score = score;
-                    TotalScore = (panel1Score + panel2Score);
-                    EasyScoreText.text = TotalScore + "/12";
-                    inPanel1 = false;
-
-                    if (TotalScore == 12)
-                    {
-                        star3.gameObject.SetActive(true);
-                        Eawesome.gameObject.SetActive(true);
-                        Ewelldone.gameObject.SetActive(false);
-                        Ekeepitup.gameObject.SetActive(false);
-                        Invoke("ActivateEasyWalkingPanel", 1f);
-                    }
-                    else if (TotalScore >= 6 && TotalScore <= 11)
-                    {
-                        star2.gameObject.SetActive(true);
-                        Eawesome.gameObject.SetActive(false);
-                        Ewelldone.gameObject.SetActive(true);
-                        Ekeepitup.gameObject.SetActive(false);
-                        Invoke("ActivateEasyWalkingPanel", 1f);
-                    }
-                    else if (TotalScore <= 5 && TotalScore != 0)
-                    {
-                        star1.gameObject.SetActive(true);
-                        Eawesome.gameObject.SetActive(false);
-                        Ewelldone.gameObject.SetActive(false);
-                        Ekeepitup.gameObject.SetActive(true);     
-                        Invoke("EasyActivateGameOverPanel", 1f);
-                    }
-                    else if (TotalScore == 0)
-                    {
-                        star0.gameObject.SetActive(true);
-                        Eawesome.gameObject.SetActive(false);
-                        Ewelldone.gameObject.SetActive(false);
-                        Ekeepitup.gameObject.SetActive(true);
-                        Invoke("EasyActivateGameOverPanel", 1f);
-                    }
-
-
-                    checkButton.onClick.RemoveAllListeners();
-                    checkButton.interactable = false;
-                });
-
-                checkButton.interactable = true;
-            }
-            else
-            {
-                if (emptySlotExists)
-                {
-                    Debug.Log("Not all holders are filled");
-                }
-                checkButton.interactable = false; // reset check button
-            }
+            checkButton.interactable = false;
+            if (emptySlotExists) Debug.Log("Not all holders are filled");
         }
+    }
 
-  }
+
         void EasyActivateGameOverPanel(){
         GameOverPanel.gameObject.SetActive(true);
         EasyConfetti.gameObject.SetActive(true);
