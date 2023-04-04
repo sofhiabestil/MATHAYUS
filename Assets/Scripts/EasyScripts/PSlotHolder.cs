@@ -16,7 +16,7 @@ public class PSlotHolder : MonoBehaviour, IDropHandler
     private bool allHoldersFilled = false;
     public Text EasyScoreText;
     public Vector2 initialPosition;
-    public AudioSource PracticeCongrats;
+    public AudioSource PracticeCongrats, soundkeepitup, soundwelldone, soundawesome;
 
 
     [SerializeField] private GameObject pgameoverpanel, PeasyConfetti;
@@ -140,6 +140,7 @@ public class PSlotHolder : MonoBehaviour, IDropHandler
                 if (score == 7)
                 {
                     star3.gameObject.SetActive(true);
+                    Invoke("activateAwesome", 0.5f);
                     awesome.gameObject.SetActive(true);
                     welldone.gameObject.SetActive(false);
                     keepitup.gameObject.SetActive(false);
@@ -148,6 +149,7 @@ public class PSlotHolder : MonoBehaviour, IDropHandler
                 else if (score >= 5 && score <= 6)
                 {
                     star2.gameObject.SetActive(true);
+                    Invoke("activateWelldone", 0.5f);
                     awesome.gameObject.SetActive(false);
                     welldone.gameObject.SetActive(true);
                     keepitup.gameObject.SetActive(false);
@@ -156,6 +158,7 @@ public class PSlotHolder : MonoBehaviour, IDropHandler
                 else if (score <= 4 && score != 0)
                 {
                     awesome.gameObject.SetActive(false);
+                    Invoke("activateKeepitUp", 0.5f);
                     welldone.gameObject.SetActive(false);
                     keepitup.gameObject.SetActive(true);
                     star1.gameObject.SetActive(true);
@@ -164,6 +167,7 @@ public class PSlotHolder : MonoBehaviour, IDropHandler
                 else if (score == 0)
                 {
                     awesome.gameObject.SetActive(false);
+                    Invoke("activateKeepitUp", 0.5f);
                     welldone.gameObject.SetActive(false);
                     keepitup.gameObject.SetActive(true);
                     star0.gameObject.SetActive(true);
@@ -194,6 +198,24 @@ public class PSlotHolder : MonoBehaviour, IDropHandler
         PracticeCongrats.Play();
         PeasyConfetti.gameObject.SetActive(true);
     }
+
+    void activateAwesome()
+    {
+        soundawesome.Play();
+
+    }
+
+    void activateWelldone()
+    {
+        soundwelldone.Play();
+
+    }
+
+    void activateKeepitUp()
+    {
+        soundkeepitup.Play();
+    }
+
 
 }
 

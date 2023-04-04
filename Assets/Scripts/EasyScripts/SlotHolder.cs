@@ -9,23 +9,25 @@ using UnityEngine.UI;
 public class SlotHolder : MonoBehaviour, IDropHandler
 {
     public int id;
-    public int scores, TotalScore;
+    //public int Easyscores;
     public Button checkButton, resetButton;
     private bool allHoldersFilled = false;
     public bool filled = false;
     public Text EasyScoreText;
-    public AudioSource EasyCongrats;
+    public AudioSource EasyCongrats, Esoundkeepitup, Esoundwelldone, Esoundawesome;
 
 
     [SerializeField] private GameObject gameoverpanel, EasyConfetti, EasyWalkingPanel, panel1,panel2;
     [SerializeField] public GameObject star0, star1, star2, star3, Ekeepitup, Ewelldone, Eawesome;
 
-
-    private int panel1Score = 0;
-    private int panel2Score = 0;
-    private bool inPanel1 = true;
     public GameObject GameOverPanel { get { return gameoverpanel; } }
+    //public int easyscores { get { return Easyscores; } }
 
+    public int Easyscores { get; private set; }
+    public void SetEasyScore(int easyscore)
+    {
+        Easyscores = easyscore;
+    }
     public void OnDrop(PointerEventData eventData)
     {
        
@@ -61,16 +63,16 @@ public class SlotHolder : MonoBehaviour, IDropHandler
         {
             dragObject.ResetObjects(); // Reset position of drag objects
         }
-        scores = 0; // Reset score
-        EasyScoreText.text = scores + "/12"; // Update score text
+        Easyscores = 0; // Reset score
+        EasyScoreText.text = Easyscores + "/12"; // Update score text
         star0.SetActive(false); // Deactivate all stars
 
         // Set all slot holders to not filled
         foreach (SlotHolder slotHolder in slotHolders)
         {
             slotHolder.filled = false;
-            scores = 0; // Reset score
-            EasyScoreText.text = scores + "/7"; // Update score text
+            Easyscores = 0; // Reset score
+            EasyScoreText.text = Easyscores + "/7"; // Update score text
         }
     }
 
@@ -96,7 +98,8 @@ public class SlotHolder : MonoBehaviour, IDropHandler
         {
             checkButton.onClick.AddListener(delegate
             {
-                int score = 0;
+                int easyscore = 0;
+
                 foreach (DragAndDrop dragObject in dragObjects)
                 {
                     RectTransform dragObjectRect = dragObject.GetComponent<RectTransform>();
@@ -107,7 +110,8 @@ public class SlotHolder : MonoBehaviour, IDropHandler
                             if (dragObject.id == slotHolder.id)
                             {
                                 dragObject.GetComponent<Image>().color = Color.green;
-                                score++;
+                                easyscore++;
+                               
                             }
                             else
                             {
@@ -117,11 +121,12 @@ public class SlotHolder : MonoBehaviour, IDropHandler
                     }
                 }
 
-                scores = score;
-                EasyScoreText.text = scores + "/12";
-
+                foreach (SlotHolder slotHolder in slotHolders)
+                {
+                    slotHolder.SetEasyScore(easyscore);
+                }
                 // Update score and stars
-                if (scores == 12)
+                if (easyscore == 12)
                 {
                     star3.gameObject.SetActive(true);
                     Eawesome.gameObject.SetActive(true);
@@ -129,7 +134,7 @@ public class SlotHolder : MonoBehaviour, IDropHandler
                     Ekeepitup.gameObject.SetActive(false);
                     Invoke("ActivateEasyWalkingPanel", 1f);
                 }
-                else if (scores >= 6 && TotalScore <= 11)
+                else if (easyscore >= 6 && easyscore <= 11)
                 {
                     star2.gameObject.SetActive(true);
                     Eawesome.gameObject.SetActive(false);
@@ -137,24 +142,28 @@ public class SlotHolder : MonoBehaviour, IDropHandler
                     Ekeepitup.gameObject.SetActive(false);
                     Invoke("ActivateEasyWalkingPanel", 1f);
                 }
-                else if (scores <= 5 && TotalScore != 0)
+                else if (easyscore <= 5 && easyscore != 0)
                 {
                     star1.gameObject.SetActive(true);
+                    Invoke("E_ActivateKeepitUp", 0.5f);
                     Eawesome.gameObject.SetActive(false);
                     Ewelldone.gameObject.SetActive(false);
                     Ekeepitup.gameObject.SetActive(true);
                     Invoke("EasyActivateGameOverPanel", 1f);
                 }
-                else if (scores == 0)
+                else if (easyscore == 0)
                 {
+                    Invoke("EasyActivateGameOverPanel", 1f);
                     star0.gameObject.SetActive(true);
+                    Invoke("E_ActivateKeepitUp", 0.5f);
                     Eawesome.gameObject.SetActive(false);
                     Ewelldone.gameObject.SetActive(false);
                     Ekeepitup.gameObject.SetActive(true);
-                    Invoke("EasyActivateGameOverPanel", 1f);
+              
                 }
 
-
+            
+                EasyScoreText.text = Easyscores + "/12";
                 checkButton.onClick.RemoveAllListeners();
                 checkButton.interactable = false;
             });
@@ -169,11 +178,20 @@ public class SlotHolder : MonoBehaviour, IDropHandler
     }
 
 
-        void EasyActivateGameOverPanel(){
+    void EasyActivateGameOverPanel()
+    {
         GameOverPanel.gameObject.SetActive(true);
         EasyConfetti.gameObject.SetActive(true);
         EasyCongrats.Play();
 
+        if(Easyscores == 12)
+        {
+            Esoundawesome.Play();
+        }
+        else if (Easyscores >= 6 && Easyscores <= 11)
+        {
+            Esoundwelldone.Play();
+        }
     }
     void ActivateEasyWalkingPanel()
     {
@@ -185,8 +203,22 @@ public class SlotHolder : MonoBehaviour, IDropHandler
         panel2.SetActive(true);
     }
 
+    void E_ActivateAwesome()
+    {
+        Esoundawesome.Play();
 
+    }
+
+    void E_ActivateWelldone()
+    {
+        Esoundwelldone.Play();
+
+    }
+
+    void E_ActivateKeepitUp()
+    {
+        Esoundkeepitup.Play();
+    }
 }
 
-/*              
-*/
+

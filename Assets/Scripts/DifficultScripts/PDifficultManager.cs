@@ -308,6 +308,23 @@ public class PDifficultManager : MonoBehaviour
         Pdifficultconfetti.gameObject.SetActive(true);
         DifficultsoundEffect[2].Play();
 
+        if (diffscoreCount == 5)
+        {
+            DifficultsoundEffect[5].Play();
+        }
+        else if (diffscoreCount == 3 || diffscoreCount == 4)
+        {
+            DifficultsoundEffect[4].Play();
+        }
+        else if (diffscoreCount == 0)
+        {
+            DifficultsoundEffect[3].Play();
+        }
+        else if (diffscoreCount == 2 || diffscoreCount == 1)
+        {
+            DifficultsoundEffect[3].Play();
+        }
+
     }
 
     public void SelectedOption(PWordData value){

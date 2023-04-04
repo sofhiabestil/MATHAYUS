@@ -141,8 +141,23 @@ public class PracticeManager : MonoBehaviour{
     practicehandler.Paverageconfetti.gameObject.SetActive(true);
     practicehandler.PracticesoundEffect[2].Play();
 
+        if (scoreCount == 5)
+        {
+            practicehandler.PracticesoundEffect[6].Play();
+        }
+        else if (scoreCount == 3 || scoreCount == 4)
+        {
+            practicehandler.PracticesoundEffect[5].Play();
+        }
+        else if (scoreCount == 0)
+        {
+            practicehandler.PracticesoundEffect[4].Play();
+        }
+        else if (scoreCount == 2 || scoreCount == 1)
+        {
+            practicehandler.PracticesoundEffect[4].Play();
+        }
     }
-
 
     void ActivateCorrectPanel()
     {
