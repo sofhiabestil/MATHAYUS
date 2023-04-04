@@ -14,12 +14,18 @@ public class QuizManager : MonoBehaviour
     //current question data
     private Question selectedQuestion;
 
-    private int scoreCount = 0;
+    //public int scoreCount = 0;
     private float currentTime;
     private int lifeRemaining = 3;
     private int questionCount = 0;
 
     private GameStatus gameStatus = GameStatus.Next;
+
+    public int scoreCount { get; private set; }
+    public void SetScore(int score)
+    {
+        scoreCount = score;
+    }
 
     public GameStatus GameStatus { get { return gameStatus; } }
 
@@ -197,7 +203,18 @@ public class QuizManager : MonoBehaviour
         quizUI.GameOverPanel.gameObject.SetActive(true);
         quizUI.AverageConfetti.gameObject.SetActive(true);
         quizUI.PracticesoundEffect[2].Play();
+       
 
+       if (scoreCount == 0)
+        {
+            quizUI.PracticesoundEffect[4].Play();
+
+        }
+        else if (scoreCount < 5)
+        {
+            quizUI.PracticesoundEffect[4].Play();
+
+        }
     }
 
     void ActivateWalkPanel()

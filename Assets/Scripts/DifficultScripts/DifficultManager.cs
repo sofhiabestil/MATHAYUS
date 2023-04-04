@@ -31,12 +31,18 @@ public class DifficultManager : MonoBehaviour
     private int currentAnswerIndex = 0, currentQuestionIndex = 0;   //index to keep track of current answer and current question
     private bool correctAnswer = true;                      //bool to decide if answer is correct or not
     private string answerWord;                              //string to store answer of current question
-    private int diffscoreCount = 0;
     private int diffquestionCount = 0;
     private bool checkAnswer = false;
     private float currentTime;
     public Button diffCheckButton;
     private List<DifficultQuestionData> usedQuestions = new List<DifficultQuestionData>();
+
+
+    public int diffscoreCount { get; private set; }
+    public void SetScore(int score)
+    {
+        diffscoreCount = score;
+    }
 
 
     public Text DiffTimerText { get { return difftimerText; } }
@@ -326,6 +332,15 @@ public class DifficultManager : MonoBehaviour
         diffgameOverPanel.gameObject.SetActive(true);
         DifficultConfetti.gameObject.SetActive(true);
         DifficultsoundEffect[2].Play();
+
+        if (diffscoreCount == 0)
+        {
+            DifficultsoundEffect[3].Play();
+        }
+        else if (diffscoreCount < 5)
+        {
+            DifficultsoundEffect[3].Play();
+        }
 
     }
 
