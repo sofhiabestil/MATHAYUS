@@ -112,7 +112,7 @@ MonoBehaviour:
   - diffquestions: Arrange the letters in the right order to form a word. "Plair"
     answer: April
   - diffquestions: Arrange the letters in the right order to form a word. "Thmon"
-    answer: 'Month '
+    answer: Month
   - diffquestions: How many days are weekday?
     answer: Five
   - diffquestions: 'Sunday and Saturday are the? '
