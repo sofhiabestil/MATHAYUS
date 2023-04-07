@@ -2133,7 +2133,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 99, y: -214.37}
+  m_AnchoredPosition: {x: 96, y: -39.121}
   m_SizeDelta: {x: 170.2055, y: 158.56433}
   m_Pivot: {x: 0, y: 1}
 --- !u!114 &828856556
@@ -4057,7 +4057,7 @@ MonoBehaviour:
   soundOffImage: {fileID: 0}
   button: {fileID: 0}
   asrc: {fileID: 906286107}
-  sfx1: {fileID: 8300000, guid: 67eae92e57a224744aeeb946bb06c363, type: 3}
+  sfx1: {fileID: 0}
 --- !u!1 &1291539648
 GameObject:
   m_ObjectHideFlags: 0

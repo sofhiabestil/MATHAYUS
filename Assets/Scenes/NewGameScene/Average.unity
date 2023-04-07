@@ -5213,7 +5213,7 @@ MonoBehaviour:
   soundOffImage: {fileID: 0}
   button: {fileID: 0}
   asrc: {fileID: 156691626}
-  sfx1: {fileID: 8300000, guid: 7360cf0311e677f4dabb6283250767af, type: 3}
+  sfx1: {fileID: 8300000, guid: 9cf98e6d1308e7942b7ac3efef268f7c, type: 3}
 --- !u!1 &843353396
 GameObject:
   m_ObjectHideFlags: 0
@@ -17472,4 +17472,4 @@ MonoBehaviour:
   soundOffImage: {fileID: 21300000, guid: a6020435f524554498c49f3859c28e49, type: 3}
   button: {fileID: 1431604475890640057}
   asrc: {fileID: 156691626}
-  sfx1: {fileID: 8300000, guid: 7360cf0311e677f4dabb6283250767af, type: 3}
+  sfx1: {fileID: 8300000, guid: 9cf98e6d1308e7942b7ac3efef268f7c, type: 3}
