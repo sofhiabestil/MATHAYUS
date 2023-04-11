@@ -1029,7 +1029,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 413, y: -502.5001}
+  m_AnchoredPosition: {x: 413, y: -502.50006}
   m_SizeDelta: {x: 554, y: 974.04}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &142516286
@@ -2870,7 +2870,6 @@ GameObject:
   - component: {fileID: 395329194}
   - component: {fileID: 395329193}
   - component: {fileID: 395329196}
-  - component: {fileID: 395329197}
   m_Layer: 5
   m_Name: Difficult Canvas
   m_TagString: Untagged
@@ -2988,22 +2987,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ad32dff6233214f4aba2ef106ea42420, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &395329197
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 395329191}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 11d3bb12869a9bc469f40dce6185bbcb, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  soundOffImage: {fileID: 0}
-  button: {fileID: 0}
-  asrc: {fileID: 1709533058}
-  sfx1: {fileID: 8300000, guid: 0b381c6214bd5884baa555a85f2a2bad, type: 3}
 --- !u!1 &484617937
 GameObject:
   m_ObjectHideFlags: 0
@@ -10890,7 +10873,6 @@ GameObject:
   - component: {fileID: 2031176654}
   - component: {fileID: 2031176653}
   - component: {fileID: 2031176656}
-  - component: {fileID: 2031176655}
   m_Layer: 5
   m_Name: Text (TMP)
   m_TagString: Untagged
@@ -11016,22 +10998,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2031176651}
   m_CullTransparentMesh: 1
---- !u!114 &2031176655
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2031176651}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ce4594bb1f98154a9a131f8e9940064, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  delayBeforeStart: 2
-  timeBtwChars: 0.05
-  leadingChar: '|'
-  leadingCharBeforeDelay: 0
 --- !u!225 &2031176656
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -11956,7 +11922,16 @@ PrefabInstance:
       propertyPath: m_Color.a
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1255473011434942188, guid: b18541092489ba94e9edc5e8f793fdde, type: 3}
+    - {fileID: 1255473010681336143, guid: b18541092489ba94e9edc5e8f793fdde, type: 3}
+    - {fileID: 1255473010295919693, guid: b18541092489ba94e9edc5e8f793fdde, type: 3}
+    - {fileID: 1255473010559909725, guid: b18541092489ba94e9edc5e8f793fdde, type: 3}
+    - {fileID: 1255473010245486023, guid: b18541092489ba94e9edc5e8f793fdde, type: 3}
+    - {fileID: 1255473010836198133, guid: b18541092489ba94e9edc5e8f793fdde, type: 3}
+    - {fileID: 1255473010985980176, guid: b18541092489ba94e9edc5e8f793fdde, type: 3}
+    - {fileID: 1255473010363025933, guid: b18541092489ba94e9edc5e8f793fdde, type: 3}
+    - {fileID: 1255473010830091932, guid: b18541092489ba94e9edc5e8f793fdde, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b18541092489ba94e9edc5e8f793fdde, type: 3}
 --- !u!224 &1255473010902585455 stripped
 RectTransform:

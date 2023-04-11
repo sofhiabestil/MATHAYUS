@@ -641,7 +641,16 @@ PrefabInstance:
       propertyPath: m_Color.a
       value: 0.7607843
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1255473010245486023, guid: b18541092489ba94e9edc5e8f793fdde, type: 3}
+    - {fileID: 1255473010836198133, guid: b18541092489ba94e9edc5e8f793fdde, type: 3}
+    - {fileID: 1255473010985980176, guid: b18541092489ba94e9edc5e8f793fdde, type: 3}
+    - {fileID: 1255473010363025933, guid: b18541092489ba94e9edc5e8f793fdde, type: 3}
+    - {fileID: 1255473010830091932, guid: b18541092489ba94e9edc5e8f793fdde, type: 3}
+    - {fileID: 1255473010559909725, guid: b18541092489ba94e9edc5e8f793fdde, type: 3}
+    - {fileID: 1255473010295919693, guid: b18541092489ba94e9edc5e8f793fdde, type: 3}
+    - {fileID: 1255473010681336143, guid: b18541092489ba94e9edc5e8f793fdde, type: 3}
+    - {fileID: 1255473011434942188, guid: b18541092489ba94e9edc5e8f793fdde, type: 3}
   m_SourcePrefab: {fileID: 100100000, guid: b18541092489ba94e9edc5e8f793fdde, type: 3}
 --- !u!224 &1627131 stripped
 RectTransform:

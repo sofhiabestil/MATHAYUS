@@ -397,7 +397,6 @@ GameObject:
   - component: {fileID: 82912047}
   - component: {fileID: 82912049}
   - component: {fileID: 82912048}
-  - component: {fileID: 82912050}
   m_Layer: 0
   m_Name: Object Introduction Text
   m_TagString: Untagged
@@ -523,22 +522,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 82912046}
   m_CullTransparentMesh: 1
---- !u!114 &82912050
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 82912046}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ce4594bb1f98154a9a131f8e9940064, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  delayBeforeStart: 0
-  timeBtwChars: 0.1
-  leadingChar: '|'
-  leadingCharBeforeDelay: 0
 --- !u!1 &85984354
 GameObject:
   m_ObjectHideFlags: 0
@@ -912,7 +895,6 @@ GameObject:
   - component: {fileID: 145530120}
   - component: {fileID: 145530122}
   - component: {fileID: 145530121}
-  - component: {fileID: 145530123}
   m_Layer: 0
   m_Name: Start the game text
   m_TagString: Untagged
@@ -1038,22 +1020,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 145530119}
   m_CullTransparentMesh: 1
---- !u!114 &145530123
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 145530119}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ce4594bb1f98154a9a131f8e9940064, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  delayBeforeStart: 0
-  timeBtwChars: 0.1
-  leadingChar: '|'
-  leadingCharBeforeDelay: 0
 --- !u!1 &146787965
 GameObject:
   m_ObjectHideFlags: 0
@@ -1144,13 +1110,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 4
-  scores: 0
-  TotalScore: 0
   checkButton: {fileID: 2140620877}
   resetButton: {fileID: 0}
   filled: 0
   EasyScoreText: {fileID: 128071084}
   EasyCongrats: {fileID: 0}
+  Esoundkeepitup: {fileID: 0}
+  Esoundwelldone: {fileID: 0}
+  Esoundawesome: {fileID: 0}
   gameoverpanel: {fileID: 386682773}
   EasyConfetti: {fileID: 0}
   EasyWalkingPanel: {fileID: 0}
@@ -4187,13 +4154,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 3
-  scores: 0
-  TotalScore: 0
   checkButton: {fileID: 2140620877}
   resetButton: {fileID: 0}
   filled: 0
   EasyScoreText: {fileID: 128071084}
   EasyCongrats: {fileID: 0}
+  Esoundkeepitup: {fileID: 0}
+  Esoundwelldone: {fileID: 0}
+  Esoundawesome: {fileID: 0}
   gameoverpanel: {fileID: 386682773}
   EasyConfetti: {fileID: 0}
   EasyWalkingPanel: {fileID: 0}
@@ -4296,13 +4264,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 2
-  scores: 0
-  TotalScore: 0
   checkButton: {fileID: 2140620877}
   resetButton: {fileID: 0}
   filled: 0
   EasyScoreText: {fileID: 128071084}
   EasyCongrats: {fileID: 0}
+  Esoundkeepitup: {fileID: 0}
+  Esoundwelldone: {fileID: 0}
+  Esoundawesome: {fileID: 0}
   gameoverpanel: {fileID: 386682773}
   EasyConfetti: {fileID: 0}
   EasyWalkingPanel: {fileID: 0}
@@ -4557,13 +4526,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 0
-  scores: 0
-  TotalScore: 0
   checkButton: {fileID: 2140620877}
   resetButton: {fileID: 0}
   filled: 0
   EasyScoreText: {fileID: 128071084}
   EasyCongrats: {fileID: 0}
+  Esoundkeepitup: {fileID: 0}
+  Esoundwelldone: {fileID: 0}
+  Esoundawesome: {fileID: 0}
   gameoverpanel: {fileID: 386682773}
   EasyConfetti: {fileID: 0}
   EasyWalkingPanel: {fileID: 0}
@@ -5372,13 +5342,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 0
-  scores: 0
-  TotalScore: 0
   checkButton: {fileID: 2140620877}
   resetButton: {fileID: 0}
   filled: 0
   EasyScoreText: {fileID: 128071084}
   EasyCongrats: {fileID: 0}
+  Esoundkeepitup: {fileID: 0}
+  Esoundwelldone: {fileID: 0}
+  Esoundawesome: {fileID: 0}
   gameoverpanel: {fileID: 386682773}
   EasyConfetti: {fileID: 0}
   EasyWalkingPanel: {fileID: 0}
@@ -5697,13 +5668,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 5
-  scores: 0
-  TotalScore: 0
   checkButton: {fileID: 2140620877}
   resetButton: {fileID: 0}
   filled: 0
   EasyScoreText: {fileID: 128071084}
   EasyCongrats: {fileID: 0}
+  Esoundkeepitup: {fileID: 0}
+  Esoundwelldone: {fileID: 0}
+  Esoundawesome: {fileID: 0}
   gameoverpanel: {fileID: 386682773}
   EasyConfetti: {fileID: 0}
   EasyWalkingPanel: {fileID: 0}
@@ -6980,7 +6952,6 @@ GameObject:
   - component: {fileID: 694019369}
   - component: {fileID: 694019371}
   - component: {fileID: 694019370}
-  - component: {fileID: 694019372}
   m_Layer: 0
   m_Name: Exit text
   m_TagString: Untagged
@@ -7107,22 +7078,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 694019368}
   m_CullTransparentMesh: 1
---- !u!114 &694019372
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 694019368}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ce4594bb1f98154a9a131f8e9940064, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  delayBeforeStart: 0
-  timeBtwChars: 0.1
-  leadingChar: '|'
-  leadingCharBeforeDelay: 0
 --- !u!1 &706727870
 GameObject:
   m_ObjectHideFlags: 0
@@ -7134,7 +7089,6 @@ GameObject:
   - component: {fileID: 706727871}
   - component: {fileID: 706727873}
   - component: {fileID: 706727872}
-  - component: {fileID: 706727874}
   m_Layer: 0
   m_Name: Welcome
   m_TagString: Untagged
@@ -7260,22 +7214,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 706727870}
   m_CullTransparentMesh: 1
---- !u!114 &706727874
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 706727870}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ce4594bb1f98154a9a131f8e9940064, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  delayBeforeStart: 1
-  timeBtwChars: 0.1
-  leadingChar: '|'
-  leadingCharBeforeDelay: 0
 --- !u!1 &708467522
 GameObject:
   m_ObjectHideFlags: 0
@@ -8224,13 +8162,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 0
-  scores: 0
-  TotalScore: 0
   checkButton: {fileID: 2140620877}
   resetButton: {fileID: 0}
   filled: 0
   EasyScoreText: {fileID: 128071084}
   EasyCongrats: {fileID: 0}
+  Esoundkeepitup: {fileID: 0}
+  Esoundwelldone: {fileID: 0}
+  Esoundawesome: {fileID: 0}
   gameoverpanel: {fileID: 386682773}
   EasyConfetti: {fileID: 0}
   EasyWalkingPanel: {fileID: 0}
@@ -11192,7 +11131,6 @@ GameObject:
   - component: {fileID: 1022389533}
   - component: {fileID: 1022389535}
   - component: {fileID: 1022389534}
-  - component: {fileID: 1022389536}
   m_Layer: 0
   m_Name: Reset Answer Text
   m_TagString: Untagged
@@ -11319,22 +11257,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1022389532}
   m_CullTransparentMesh: 1
---- !u!114 &1022389536
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1022389532}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ce4594bb1f98154a9a131f8e9940064, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  delayBeforeStart: 0
-  timeBtwChars: 0.1
-  leadingChar: '|'
-  leadingCharBeforeDelay: 0
 --- !u!1 &1071100643
 GameObject:
   m_ObjectHideFlags: 0
@@ -11425,13 +11347,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 0
-  scores: 0
-  TotalScore: 0
   checkButton: {fileID: 2140620877}
   resetButton: {fileID: 0}
   filled: 0
   EasyScoreText: {fileID: 128071084}
   EasyCongrats: {fileID: 0}
+  Esoundkeepitup: {fileID: 0}
+  Esoundwelldone: {fileID: 0}
+  Esoundawesome: {fileID: 0}
   gameoverpanel: {fileID: 386682773}
   EasyConfetti: {fileID: 0}
   EasyWalkingPanel: {fileID: 0}
@@ -11627,13 +11550,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 0
-  scores: 0
-  TotalScore: 0
   checkButton: {fileID: 2140620877}
   resetButton: {fileID: 0}
   filled: 0
   EasyScoreText: {fileID: 128071084}
   EasyCongrats: {fileID: 0}
+  Esoundkeepitup: {fileID: 0}
+  Esoundwelldone: {fileID: 0}
+  Esoundawesome: {fileID: 0}
   gameoverpanel: {fileID: 386682773}
   EasyConfetti: {fileID: 0}
   EasyWalkingPanel: {fileID: 0}
@@ -14610,13 +14534,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 6
-  scores: 0
-  TotalScore: 0
   checkButton: {fileID: 2140620877}
   resetButton: {fileID: 0}
   filled: 0
   EasyScoreText: {fileID: 128071084}
   EasyCongrats: {fileID: 0}
+  Esoundkeepitup: {fileID: 0}
+  Esoundwelldone: {fileID: 0}
+  Esoundawesome: {fileID: 0}
   gameoverpanel: {fileID: 386682773}
   EasyConfetti: {fileID: 0}
   EasyWalkingPanel: {fileID: 0}
@@ -15221,7 +15146,6 @@ GameObject:
   - component: {fileID: 1438924335}
   - component: {fileID: 1438924338}
   - component: {fileID: 1438924337}
-  - component: {fileID: 1438924336}
   m_Layer: 0
   m_Name: HintText
   m_TagString: Untagged
@@ -15249,22 +15173,6 @@ RectTransform:
   m_AnchoredPosition: {x: -0.0057187, y: 26.092}
   m_SizeDelta: {x: 1168.6, y: 282.35}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1438924336
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1438924334}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ce4594bb1f98154a9a131f8e9940064, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  delayBeforeStart: 0
-  timeBtwChars: 0.1
-  leadingChar: '|'
-  leadingCharBeforeDelay: 0
 --- !u!114 &1438924337
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -15497,7 +15405,6 @@ GameObject:
   - component: {fileID: 1452677063}
   - component: {fileID: 1452677065}
   - component: {fileID: 1452677064}
-  - component: {fileID: 1452677066}
   m_Layer: 0
   m_Name: Show Instruction Text
   m_TagString: Untagged
@@ -15624,22 +15531,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1452677062}
   m_CullTransparentMesh: 1
---- !u!114 &1452677066
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1452677062}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ce4594bb1f98154a9a131f8e9940064, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  delayBeforeStart: 0
-  timeBtwChars: 0.1
-  leadingChar: '|'
-  leadingCharBeforeDelay: 0
 --- !u!1 &1457220473
 GameObject:
   m_ObjectHideFlags: 0
@@ -16387,7 +16278,6 @@ GameObject:
   - component: {fileID: 1543073364}
   - component: {fileID: 1543073367}
   - component: {fileID: 1543073366}
-  - component: {fileID: 1543073365}
   m_Layer: 0
   m_Name: DragAndDrop Text (1)
   m_TagString: Untagged
@@ -16415,22 +16305,6 @@ RectTransform:
   m_AnchoredPosition: {x: 2.7032, y: 48.343994}
   m_SizeDelta: {x: 1204.3, y: 308.53}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1543073365
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1543073363}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ce4594bb1f98154a9a131f8e9940064, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  delayBeforeStart: 0
-  timeBtwChars: 0.1
-  leadingChar: '|'
-  leadingCharBeforeDelay: 0
 --- !u!114 &1543073366
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18415,7 +18289,6 @@ GameObject:
   - component: {fileID: 1746272322}
   - component: {fileID: 1746272324}
   - component: {fileID: 1746272323}
-  - component: {fileID: 1746272325}
   m_Layer: 0
   m_Name: Check Answer Text
   m_TagString: Untagged
@@ -18541,22 +18414,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1746272321}
   m_CullTransparentMesh: 1
---- !u!114 &1746272325
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1746272321}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ce4594bb1f98154a9a131f8e9940064, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  delayBeforeStart: 0
-  timeBtwChars: 0.1
-  leadingChar: '|'
-  leadingCharBeforeDelay: 0
 --- !u!1 &1752196012
 GameObject:
   m_ObjectHideFlags: 0
@@ -18837,13 +18694,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   id: 0
-  scores: 0
-  TotalScore: 0
   checkButton: {fileID: 2140620877}
   resetButton: {fileID: 0}
   filled: 0
   EasyScoreText: {fileID: 128071084}
   EasyCongrats: {fileID: 0}
+  Esoundkeepitup: {fileID: 0}
+  Esoundwelldone: {fileID: 0}
+  Esoundawesome: {fileID: 0}
   gameoverpanel: {fileID: 386682773}
   EasyConfetti: {fileID: 0}
   EasyWalkingPanel: {fileID: 0}
@@ -20115,7 +19973,6 @@ GameObject:
   - component: {fileID: 1975390643}
   - component: {fileID: 1975390645}
   - component: {fileID: 1975390644}
-  - component: {fileID: 1975390646}
   m_Layer: 0
   m_Name: DragAndDrop Text
   m_TagString: Untagged
@@ -20241,22 +20098,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1975390642}
   m_CullTransparentMesh: 1
---- !u!114 &1975390646
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1975390642}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5ce4594bb1f98154a9a131f8e9940064, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  delayBeforeStart: 0
-  timeBtwChars: 0.1
-  leadingChar: '|'
-  leadingCharBeforeDelay: 0
 --- !u!1 &1990895071
 GameObject:
   m_ObjectHideFlags: 0
