@@ -1503,8 +1503,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: If you need to see the instructions again,  click on the  "i"  button to
-    the left corner of the screen to display them.
+  m_text: To review the instructions, select the "i" button located at the left corner
+    of the screen
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 70b9c635cbbc8b945b278875b627ec89, type: 2}
   m_sharedMaterial: {fileID: -255603591768071407, guid: 70b9c635cbbc8b945b278875b627ec89,
@@ -8637,8 +8637,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: If you want to quit the game and return to the main menu, click on the
-    back button on the left corner of the screen, beside the instruction button.
+  m_text: To exit the game and go back to the main menu, select the back button located
+    at the left corner of the screen
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 70b9c635cbbc8b945b278875b627ec89, type: 2}
   m_sharedMaterial: {fileID: -255603591768071407, guid: 70b9c635cbbc8b945b278875b627ec89,

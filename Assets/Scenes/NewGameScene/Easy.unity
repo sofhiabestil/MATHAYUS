@@ -9134,7 +9134,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &727482516
 RectTransform:
   m_ObjectHideFlags: 0
@@ -10185,8 +10185,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0.68986, y: 24.06}
-  m_SizeDelta: {x: 1170.0399, y: 295.072}
+  m_AnchoredPosition: {x: 0.0049453, y: 39.567}
+  m_SizeDelta: {x: 1189.9, y: 326.08}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &781530442
 MonoBehaviour:
@@ -10208,8 +10208,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: If you want to quit the game, click on the back button on the left corner
-    of the screen.
+  m_text: To exit the game and go back to the main menu, select the back button located
+    at the left corner of the screen.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 70b9c635cbbc8b945b278875b627ec89, type: 2}
   m_sharedMaterial: {fileID: -255603591768071407, guid: 70b9c635cbbc8b945b278875b627ec89,
@@ -10237,8 +10237,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 65
-  m_fontSizeBase: 65
+  m_fontSize: 55
+  m_fontSizeBase: 55
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -14370,7 +14370,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 0}
   m_AnchorMax: {x: 1, y: 0}
-  m_AnchoredPosition: {x: 353.99994, y: 257.67}
+  m_AnchoredPosition: {x: 354, y: 257.67}
   m_SizeDelta: {x: 613.7307, y: 515.3332}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!225 &1165847478
@@ -16083,8 +16083,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: If you make a mistake, you can click the "Erase" button to reset the position
-    of the  object
+  m_text: To reset the position of the object if you make a mistake, select the "Erase"
+    button.
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 70b9c635cbbc8b945b278875b627ec89, type: 2}
   m_sharedMaterial: {fileID: -255603591768071407, guid: 70b9c635cbbc8b945b278875b627ec89,
@@ -19715,7 +19715,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1542894335
 RectTransform:
   m_ObjectHideFlags: 0
@@ -23152,7 +23152,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &2023193639
 RectTransform:
   m_ObjectHideFlags: 0
