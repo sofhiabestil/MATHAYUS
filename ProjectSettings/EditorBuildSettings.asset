@@ -41,4 +41,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/NewGameScene/DifficultP.unity
     guid: a465306d48cadcc448e7ffc2ed2deb88
+  - enabled: 1
+    path: Assets/Scenes/Introduction.unity
+    guid: a891ca2c7fd615a4b87226b44e0b684b
   m_configObjects: {}
