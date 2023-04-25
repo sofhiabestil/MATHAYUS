@@ -3758,8 +3758,8 @@ GameObject:
   - component: {fileID: 199120613}
   - component: {fileID: 199120612}
   - component: {fileID: 199120611}
-  - component: {fileID: 199120614}
   - component: {fileID: 199120615}
+  - component: {fileID: 199120616}
   m_Layer: 0
   m_Name: ResetButton
   m_TagString: Untagged
@@ -3832,8 +3832,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 199120614}
-        m_TargetAssemblyTypeName: DragAndDrop, Assembly-CSharp
+      - m_Target: {fileID: 199120616}
+        m_TargetAssemblyTypeName: CResetButton, Assembly-CSharp
         m_MethodName: ResetObjects
         m_Mode: 1
         m_Arguments:
@@ -3882,7 +3882,19 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 199120609}
   m_CullTransparentMesh: 1
---- !u!114 &199120614
+--- !u!225 &199120615
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 199120609}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &199120616
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -3891,7 +3903,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 199120609}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e0f6b0fb3743e4a4eb3d1be0e1e13d5f, type: 3}
+  m_Script: {fileID: 11500000, guid: 1fb7ceafd3968494b9cceb74953ab708, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   myCanvas: {fileID: 1630384421}
@@ -3910,18 +3922,6 @@ MonoBehaviour:
   - {fileID: 920254343}
   - {fileID: 1610998946}
   - {fileID: 1360387483}
---- !u!225 &199120615
-CanvasGroup:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 199120609}
-  m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
-  m_IgnoreParentGroups: 0
 --- !u!1 &202727892
 GameObject:
   m_ObjectHideFlags: 0

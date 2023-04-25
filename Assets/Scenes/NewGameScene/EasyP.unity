@@ -2387,8 +2387,8 @@ GameObject:
   - component: {fileID: 199120613}
   - component: {fileID: 199120612}
   - component: {fileID: 199120611}
-  - component: {fileID: 199120615}
   - component: {fileID: 199120616}
+  - component: {fileID: 199120617}
   m_Layer: 0
   m_Name: ResetButton
   m_TagString: Untagged
@@ -2461,8 +2461,8 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 199120615}
-        m_TargetAssemblyTypeName: PDragAndDrop, Assembly-CSharp
+      - m_Target: {fileID: 199120617}
+        m_TargetAssemblyTypeName: ResetButton, Assembly-CSharp
         m_MethodName: ResetObjects
         m_Mode: 1
         m_Arguments:
@@ -2511,29 +2511,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 199120609}
   m_CullTransparentMesh: 1
---- !u!114 &199120615
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 199120609}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1700cf87bdb3faa499206699b02bb909, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  myCanvas: {fileID: 1630384421}
-  id: 0
-  startingPosition: {x: 0, y: 0}
-  objectsToReset:
-  - {fileID: 991529341}
-  - {fileID: 923850148}
-  - {fileID: 1205760670}
-  - {fileID: 1482936314}
-  - {fileID: 1610248180}
-  - {fileID: 1353978192}
-  - {fileID: 805692652}
 --- !u!225 &199120616
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -2546,6 +2523,29 @@ CanvasGroup:
   m_Interactable: 1
   m_BlocksRaycasts: 1
   m_IgnoreParentGroups: 0
+--- !u!114 &199120617
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 199120609}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b3e31e35fd0fbb446a6fc8e4f4cdfe94, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  myCanvas: {fileID: 1630384421}
+  id: 0
+  startingPosition: {x: 0, y: 0}
+  objectsToReset:
+  - {fileID: 1205760670}
+  - {fileID: 991529341}
+  - {fileID: 923850148}
+  - {fileID: 1482936314}
+  - {fileID: 1353978192}
+  - {fileID: 1610248180}
+  - {fileID: 805692652}
 --- !u!1 &202727892
 GameObject:
   m_ObjectHideFlags: 0
@@ -4581,7 +4581,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.1439209, y: 9.438904}
+  m_AnchoredPosition: {x: -0.14404297, y: 9.438965}
   m_SizeDelta: {x: 1822.2808, y: 1674.1531}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &471059634
@@ -20223,7 +20223,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.3741455, y: 1}
+  m_AnchoredPosition: {x: -0.37402344, y: 1}
   m_SizeDelta: {x: 21.241, y: 2}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2023193640
