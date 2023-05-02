@@ -4,10 +4,12 @@ using UnityEngine;
 using UnityEngine.EventSystems;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+
 public class PDragObjectData
 {
     public int id;
     public Vector2 startingPosition;
+
 }
 
 public class PDragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandler, IEndDragHandler, IDragHandler
@@ -33,6 +35,7 @@ public class PDragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandle
             objectsData.Add(data);
         }
     }
+
     public void OnBeginDrag(PointerEventData eventData)
     {
         canvasGroup.blocksRaycasts = false;
@@ -51,6 +54,7 @@ public class PDragAndDrop : MonoBehaviour, IPointerDownHandler, IBeginDragHandle
     public void OnPointerDown(PointerEventData eventData)
     {
     }
+
     public void ResetObjects()
     {
         foreach (GameObject obj in objectsToReset)
