@@ -1363,7 +1363,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &659336474
 RectTransform:
   m_ObjectHideFlags: 0
@@ -3339,8 +3339,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Exit
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 25ac5334720ad49489b4f5b7c77f1980, type: 2}
-  m_sharedMaterial: {fileID: 4975844335374053225, guid: 25ac5334720ad49489b4f5b7c77f1980,
+  m_fontAsset: {fileID: 11400000, guid: 94fd4c746b854e343a23bde8bcc08f2d, type: 2}
+  m_sharedMaterial: {fileID: 3274649748147995264, guid: 94fd4c746b854e343a23bde8bcc08f2d,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
@@ -4866,7 +4866,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: 8fd2a122d18d554428de61b897ad8863, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ed5b7137ffa8af14a8bfcda6cd30af90, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -5903,8 +5903,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: Do you really want to exit ?
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 25ac5334720ad49489b4f5b7c77f1980, type: 2}
-  m_sharedMaterial: {fileID: 4975844335374053225, guid: 25ac5334720ad49489b4f5b7c77f1980,
+  m_fontAsset: {fileID: 11400000, guid: 94fd4c746b854e343a23bde8bcc08f2d, type: 2}
+  m_sharedMaterial: {fileID: 3274649748147995264, guid: 94fd4c746b854e343a23bde8bcc08f2d,
     type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
