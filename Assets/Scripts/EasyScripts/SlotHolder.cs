@@ -13,14 +13,16 @@ public class SlotHolder : MonoBehaviour, IDropHandler
     public Button checkButton, resetButton;
     private bool allHoldersFilled = false;
     public bool filled = false;
-    public Text EasyScoreText;
-    public AudioSource EasyCongrats, Esoundkeepitup, Esoundwelldone, Esoundawesome;
+    public Text EasyScoreText, EasyScoreTextFailed;
+    public AudioSource EasyCongrats, Esoundtryagain, Esoundwelldone, Esoundawesome, EasysadCongrats;
 
 
-    [SerializeField] private GameObject gameoverpanel, EasyConfetti, EasyWalkingPanel, panel1,panel2;
+    [SerializeField] private GameObject gameoverpanel, gameoverpanelfailed, EasyConfetti, EasyWalkingPanel, panel1,panel2;
     [SerializeField] public GameObject star0, star1, star2, star3, Ekeepitup, Ewelldone, Eawesome;
 
     public GameObject GameOverPanel { get { return gameoverpanel; } }
+
+    public GameObject GameOverPanelFailed { get { return gameoverpanelfailed; } }
     //public int easyscores { get { return Easyscores; } }
 
     public int Easyscores { get; private set; }
@@ -65,6 +67,7 @@ public class SlotHolder : MonoBehaviour, IDropHandler
         }
         Easyscores = 0; // Reset score
         EasyScoreText.text = Easyscores + "/12"; // Update score text
+        EasyScoreTextFailed.text = Easyscores + "/12";
         star0.SetActive(false); // Deactivate all stars
 
         // Set all slot holders to not filled
@@ -72,7 +75,8 @@ public class SlotHolder : MonoBehaviour, IDropHandler
         {
             slotHolder.filled = false;
             Easyscores = 0; // Reset score
-            EasyScoreText.text = Easyscores + "/7"; // Update score text
+            EasyScoreText.text = Easyscores + "/12"; // Update score text
+            EasyScoreTextFailed.text = Easyscores + "/12";
         }
     }
 
@@ -145,17 +149,17 @@ public class SlotHolder : MonoBehaviour, IDropHandler
                 else if (easyscore <= 5 && easyscore != 0)
                 {
                     star1.gameObject.SetActive(true);
-                    Invoke("E_ActivateKeepitUp", 0.5f);
+                    Invoke("E_Activateryagain", 0.5f);
                     Eawesome.gameObject.SetActive(false);
                     Ewelldone.gameObject.SetActive(false);
                     Ekeepitup.gameObject.SetActive(true);
-                    Invoke("EasyActivateGameOverPanel", 1f);
+                    Invoke("EasyActivateGameOverPanelFailed", 1f);
                 }
                 else if (easyscore == 0)
                 {
-                    Invoke("EasyActivateGameOverPanel", 1f);
+                    Invoke("EasyActivateGameOverPanelFailed", 1f);
                     star0.gameObject.SetActive(true);
-                    Invoke("E_ActivateKeepitUp", 0.5f);
+                    Invoke("E_Activateryagain", 0.5f);
                     Eawesome.gameObject.SetActive(false);
                     Ewelldone.gameObject.SetActive(false);
                     Ekeepitup.gameObject.SetActive(true);
@@ -163,7 +167,8 @@ public class SlotHolder : MonoBehaviour, IDropHandler
                 }
 
             
-                EasyScoreText.text = Easyscores + "/12";
+                EasyScoreText.text = Easyscores + " / 12";
+                EasyScoreTextFailed.text = Easyscores + " / 12";
                 checkButton.onClick.RemoveAllListeners();
                 checkButton.interactable = false;
             });
@@ -193,6 +198,13 @@ public class SlotHolder : MonoBehaviour, IDropHandler
             Esoundwelldone.Play();
         }
     }
+
+
+    void EasyActivateGameOverPanelFailed()
+    {
+        GameOverPanelFailed.gameObject.SetActive(true);
+        EasysadCongrats.Play();
+    }
     void ActivateEasyWalkingPanel()
     {
         EasyWalkingPanel.gameObject.SetActive(true);
@@ -215,9 +227,9 @@ public class SlotHolder : MonoBehaviour, IDropHandler
 
     }
 
-    void E_ActivateKeepitUp()
+    void E_Activateryagain()
     {
-        Esoundkeepitup.Play();
+        Esoundtryagain.Play();
     }
 }
 
