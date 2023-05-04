@@ -12,10 +12,10 @@ public class DifficultManager : MonoBehaviour
     public static DifficultManager instance; //Instance to make is available in other scripts without reference
     [SerializeField] private DifficultDataScriptable difficultDataScriptable;
     [SerializeField] private Text difficultquestions, diffquestioncountText, difftimerText;           //image element to show the image
-    [SerializeField] public GameObject diffstar0, diffstar1, diffstar2, diffstar3, diffwrongPanel, diffcorrectPanel, DifficultConfetti, dkeepitup, dwelldone, dawesome;
-    [SerializeField] private GameObject diffgameOverPanel, diffWalkpanel;
+    [SerializeField] public GameObject diffstar0, diffstar1, diffstar2, diffstar3, diffwrongPanel, diffcorrectPanel, DifficultConfetti, dtryagain, dwelldone, dawesome;
+    [SerializeField] private GameObject diffgameOverPanel, diffgameOverPanelFailed, diffWalkpanel;
     [SerializeField] private float timeLimit = 1800f;
-    [SerializeField] private TextMeshProUGUI diffscoreText;
+    [SerializeField] private TextMeshProUGUI diffscoreText, diffscoreTextFailed;
     [SerializeField] private WordData[] answerWordList;     //list of answers word in the game
     [SerializeField] private WordData[] optionsWordList;    //list of options word in the game\
     [SerializeField] public List<AudioSource> DifficultsoundEffect = new List<AudioSource>();
@@ -50,7 +50,11 @@ public class DifficultManager : MonoBehaviour
 
     public TextMeshProUGUI DiffScoreText { get { return diffscoreText; } }
 
+    public TextMeshProUGUI DiffScoreTextFailed { get { return diffscoreTextFailed; } }
+
     public GameObject DiffGameOverPanel { get { return diffgameOverPanel; } }
+
+    public GameObject DiffGameOverPanelFailed { get { return diffgameOverPanelFailed; } }
 
     public GameObject DiffWrongPanel { get { return diffwrongPanel; } }
 
@@ -242,6 +246,7 @@ public class DifficultManager : MonoBehaviour
 
             diffscoreCount += 1;
             DiffScoreText.text = diffscoreCount + "/10";
+            DiffScoreTextFailed.text = diffscoreCount + "/10";
             diffcorrectPanel.gameObject.SetActive(true);
             DifficultsoundEffect[1].Play();
 
@@ -264,19 +269,19 @@ public class DifficultManager : MonoBehaviour
             diffstar3.gameObject.SetActive(true);
             dawesome.gameObject.SetActive(true);
             dwelldone.gameObject.SetActive(false);
-            dkeepitup.gameObject.SetActive(false);
+            dtryagain.gameObject.SetActive(false);
         }
         else if (diffscoreCount > 4 && diffscoreCount < 10)
         {
             diffstar2.gameObject.SetActive(true);
             dwelldone.gameObject.SetActive(true);
             dawesome.gameObject.SetActive(false);
-            dkeepitup.gameObject.SetActive(false);
+            dtryagain.gameObject.SetActive(false);
         }
         else if (diffscoreCount == 0)
         {
             diffstar0.gameObject.SetActive(true);
-            dkeepitup.gameObject.SetActive(true);
+            dtryagain.gameObject.SetActive(true);
             dwelldone.gameObject.SetActive(false);
             dawesome.gameObject.SetActive(false);
            
@@ -284,7 +289,7 @@ public class DifficultManager : MonoBehaviour
         else if (diffscoreCount < 5)
         {
             diffstar1.gameObject.SetActive(true);
-            dkeepitup.gameObject.SetActive(true);
+            dtryagain.gameObject.SetActive(true);
             dwelldone.gameObject.SetActive(false);
             dawesome.gameObject.SetActive(false);
         }
@@ -329,19 +334,15 @@ public class DifficultManager : MonoBehaviour
 
     public void DiffActivateGameOverPanel()
     {
-        diffgameOverPanel.gameObject.SetActive(true);
-        DifficultConfetti.gameObject.SetActive(true);
-        DifficultsoundEffect[2].Play();
+        diffgameOverPanelFailed.gameObject.SetActive(true);
+        //DifficultConfetti.gameObject.SetActive(true);
+        DifficultsoundEffect[6].Play();
 
-        if (diffscoreCount == 0)
+        if (diffscoreCount == 0 || diffscoreCount < 5) 
         {
             DifficultsoundEffect[3].Play();
         }
-        else if (diffscoreCount < 5)
-        {
-            DifficultsoundEffect[3].Play();
-        }
-
+       
     }
 
 
