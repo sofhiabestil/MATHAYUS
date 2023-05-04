@@ -16,11 +16,11 @@ public class PSlotHolder : MonoBehaviour, IDropHandler
     private bool allHoldersFilled = false;
     public Text EasyScoreText;
     public Vector2 initialPosition;
-    public AudioSource PracticeCongrats, soundkeepitup, soundwelldone, soundawesome;
+    public AudioSource PracticeCongrats, soundtryagain, soundwelldone, soundawesome;
 
 
     [SerializeField] private GameObject pgameoverpanel, PeasyConfetti;
-    [SerializeField] public GameObject star0, star1, star2, star3, keepitup, welldone, awesome;
+    [SerializeField] public GameObject star0, star1, star2, star3, tryagain, welldone, awesome;
 
 
     public GameObject PGameOverPanel { get { return pgameoverpanel; } }
@@ -143,8 +143,10 @@ public class PSlotHolder : MonoBehaviour, IDropHandler
                     Invoke("activateAwesome", 0.5f);
                     awesome.gameObject.SetActive(true);
                     welldone.gameObject.SetActive(false);
-                    keepitup.gameObject.SetActive(false);
+                    tryagain.gameObject.SetActive(false);
                     Invoke("ActivateGameOverPanel", 1f);
+                    Invoke("ActivateCongrats", 1f);
+                    Invoke("ActivateConfetti", 1f);
                 }
                 else if (score >= 5 && score <= 6)
                 {
@@ -152,24 +154,24 @@ public class PSlotHolder : MonoBehaviour, IDropHandler
                     Invoke("activateWelldone", 0.5f);
                     awesome.gameObject.SetActive(false);
                     welldone.gameObject.SetActive(true);
-                    keepitup.gameObject.SetActive(false);
+                    tryagain.gameObject.SetActive(false);
                     Invoke("ActivateGameOverPanel", 1f);
+                    Invoke("ActivateCongrats", 1f);
+                    Invoke("ActivateConfetti", 1f);
                 }
                 else if (score <= 4 && score != 0)
                 {
                     awesome.gameObject.SetActive(false);
-                    Invoke("activateKeepitUp", 0.5f);
                     welldone.gameObject.SetActive(false);
-                    keepitup.gameObject.SetActive(true);
+                    tryagain.gameObject.SetActive(false);
                     star1.gameObject.SetActive(true);
                     Invoke("ActivateGameOverPanel", 1f);
                 }
                 else if (score == 0)
                 {
                     awesome.gameObject.SetActive(false);
-                    Invoke("activateKeepitUp", 0.5f);
                     welldone.gameObject.SetActive(false);
-                    keepitup.gameObject.SetActive(true);
+                    tryagain.gameObject.SetActive(false);
                     star0.gameObject.SetActive(true);
                     Invoke("ActivateGameOverPanel", 1f);
                 }
@@ -195,10 +197,18 @@ public class PSlotHolder : MonoBehaviour, IDropHandler
     void ActivateGameOverPanel()
     {
         PGameOverPanel.gameObject.SetActive(true);
-        PracticeCongrats.Play();
-        PeasyConfetti.gameObject.SetActive(true);
+
     }
 
+    void ActivateCongrats()
+    {
+        PracticeCongrats.Play();
+    }
+
+    void ActivateConfetti()
+    {
+        PeasyConfetti.gameObject.SetActive(true);
+    }
     void activateAwesome()
     {
         soundawesome.Play();
@@ -210,10 +220,9 @@ public class PSlotHolder : MonoBehaviour, IDropHandler
         soundwelldone.Play();
 
     }
-
-    void activateKeepitUp()
+    void activateTryagain()
     {
-        soundkeepitup.Play();
+        soundtryagain.Play();
     }
 
 
