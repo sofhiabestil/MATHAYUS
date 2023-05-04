@@ -12,8 +12,8 @@ public class PracticeUIHandler : MonoBehaviour
     [SerializeField] private TextMeshProUGUI QuestionText, HintText, scoreText, questioncountText, correctMessage;
     [SerializeField] private List<Button> options;
     [SerializeField] public List<AudioSource> PracticesoundEffect = new List<AudioSource>();
-    [SerializeField] private GameObject gameOverPanel;
-    [SerializeField] public GameObject star0, star1, star2, star3, wrongPanel, correctPanel, Paverageconfetti, keepitup, welldone, awesome ;
+    [SerializeField] private GameObject gameOverPanel, gameOverPanelFailed;
+    [SerializeField] public GameObject star0, star1, star2, star3, wrongPanel, correctPanel, Paverageconfetti, tryagain, welldone, awesome ;
     [SerializeField] public List<GameObject> JumpNico = new List<GameObject>();
 
     private PracticeQuestion question;
@@ -27,6 +27,7 @@ public class PracticeUIHandler : MonoBehaviour
 
     public GameObject GameOverPanel { get { return gameOverPanel; } }
 
+    public GameObject GameOverPanelFailed { get { return gameOverPanelFailed; } }
     public GameObject WrongPanel { get { return wrongPanel; } }
 
     public GameObject CorrectPanel { get { return correctPanel; } }
