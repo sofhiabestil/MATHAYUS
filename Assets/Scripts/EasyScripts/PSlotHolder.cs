@@ -16,7 +16,7 @@ public class PSlotHolder : MonoBehaviour, IDropHandler
     private bool allHoldersFilled = false;
     public Text EasyScoreText, failedScoreText;
     public Vector2 initialPosition;
-    public AudioSource PracticeCongrats, soundtryagain, soundwelldone, soundawesome;
+    public AudioSource PracticeCongrats, soundtryagain, soundwelldone, soundawesome, Practicesad;
 
 
     [SerializeField] private GameObject pgameoverpanel, pgameoverpanelfailed, PeasyConfetti;
@@ -170,7 +170,7 @@ public class PSlotHolder : MonoBehaviour, IDropHandler
                     awesome.gameObject.SetActive(false);
                     welldone.gameObject.SetActive(false);
                     tryagain.gameObject.SetActive(true);
-                   
+                    Invoke("ActivateSadCongrats", 1f);
                     Invoke("ActivateGameOverPanelFailed", 1f);
                     Invoke("activateTryagainSoundEffect", 1f);
                 }
@@ -180,6 +180,7 @@ public class PSlotHolder : MonoBehaviour, IDropHandler
                     awesome.gameObject.SetActive(false);
                     welldone.gameObject.SetActive(false);
                     tryagain.gameObject.SetActive(true);
+                    Invoke("ActivateSadCongrats", 1f);
                     Invoke("ActivateGameOverPanelFailed", 1f);
                     Invoke("activateTryagainSoundEffect", 1f);
                 }
@@ -219,6 +220,11 @@ public class PSlotHolder : MonoBehaviour, IDropHandler
     void ActivateCongrats()
     {
         PracticeCongrats.Play();
+    }
+
+    void ActivateSadCongrats()
+    {
+        Practicesad.Play();
     }
 
     void ActivateConfetti()
