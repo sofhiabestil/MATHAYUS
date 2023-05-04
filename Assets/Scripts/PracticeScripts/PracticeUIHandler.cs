@@ -9,7 +9,7 @@ public class PracticeUIHandler : MonoBehaviour
 {
 
     [SerializeField] private PracticeManager practicemanager;
-    [SerializeField] private TextMeshProUGUI QuestionText, HintText, scoreText, questioncountText, correctMessage;
+    [SerializeField] private TextMeshProUGUI QuestionText, HintText, scoreText, scoreTextFailed, questioncountText, correctMessage;
     [SerializeField] private List<Button> options;
     [SerializeField] public List<AudioSource> PracticesoundEffect = new List<AudioSource>();
     [SerializeField] private GameObject gameOverPanel, gameOverPanelFailed;
@@ -20,6 +20,8 @@ public class PracticeUIHandler : MonoBehaviour
     private bool answered;
 
     public TextMeshProUGUI ScoreText { get { return scoreText; } }
+
+    public TextMeshProUGUI ScoreTextFailed { get { return scoreTextFailed; } }
 
     public TextMeshProUGUI QuestionCountText { get { return questioncountText; } }
 

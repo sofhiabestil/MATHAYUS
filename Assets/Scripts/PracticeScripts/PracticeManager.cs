@@ -82,24 +82,13 @@ public class PracticeManager : MonoBehaviour{
 
             if (questions.Count > 0 && questionCount < 5){
 
-                Invoke("SelectQuestion", 4f);
+                    Invoke("SelectQuestion", 4f);
 
             }
-            else if (scoreCount == 0)
-                {
+            else if (scoreCount == 0 || scoreCount == 2 || scoreCount == 1)
+            {
                     Invoke("ActivateGameOverPanelFailed", 4f);
-                    practicehandler.star0.gameObject.SetActive(true);
-                    practicehandler.welldone.gameObject.SetActive(false);
-                    practicehandler.awesome.gameObject.SetActive(false);
-                }
-                else if (scoreCount == 2 || scoreCount == 1)
-                {
-                    Invoke("ActivateGameOverPanelFailed", 4f);
-                    practicehandler.star1.gameObject.SetActive(true);
-                    practicehandler.welldone.gameObject.SetActive(false);
-                    practicehandler.awesome.gameObject.SetActive(false);
-
-                }
+            }
             else
             {       
                     Invoke("ActivateGameOverPanel", 4f);
@@ -109,6 +98,7 @@ public class PracticeManager : MonoBehaviour{
         }
 
         practicehandler.ScoreText.text = scoreCount + "/5";
+        practicehandler.ScoreTextFailed.text = scoreCount + "/5";
 
         if (scoreCount == 5)
         {
@@ -126,6 +116,19 @@ public class PracticeManager : MonoBehaviour{
             practicehandler.awesome.gameObject.SetActive(false);
             practicehandler.tryagain.gameObject.SetActive(false);
 
+        }
+        else if (scoreCount == 0)
+        {
+            practicehandler.star0.gameObject.SetActive(true);
+            practicehandler.welldone.gameObject.SetActive(false);
+            practicehandler.awesome.gameObject.SetActive(false);
+        }
+
+        else if (scoreCount == 2 || scoreCount == 1)
+        {
+            practicehandler.star1.gameObject.SetActive(true);
+            practicehandler.welldone.gameObject.SetActive(false);
+            practicehandler.awesome.gameObject.SetActive(false);
 
         }
 
@@ -162,10 +165,12 @@ public class PracticeManager : MonoBehaviour{
 
         if (scoreCount == 0)
         {
+            practicehandler.star0.gameObject.SetActive(true);
             practicehandler.PracticesoundEffect[4].Play();
         }
         else if (scoreCount == 2 || scoreCount == 1)
         {
+            practicehandler.star1.gameObject.SetActive(true);
             practicehandler.PracticesoundEffect[4].Play();
         }
     }

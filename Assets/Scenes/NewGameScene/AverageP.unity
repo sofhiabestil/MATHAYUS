@@ -1205,6 +1205,7 @@ MonoBehaviour:
   QuestionText: {fileID: 232071683}
   HintText: {fileID: 970632865}
   scoreText: {fileID: 2127548305}
+  scoreTextFailed: {fileID: 710198229}
   questioncountText: {fileID: 918016039}
   correctMessage: {fileID: 277031798}
   options:
@@ -1223,8 +1224,8 @@ MonoBehaviour:
   - {fileID: 184101561}
   gameOverPanel: {fileID: 389009472}
   gameOverPanelFailed: {fileID: 848570015}
-  star0: {fileID: 1697906859}
-  star1: {fileID: 3446625}
+  star0: {fileID: 2137110259}
+  star1: {fileID: 497952657}
   star2: {fileID: 1763909198}
   star3: {fileID: 1075139731}
   wrongPanel: {fileID: 1909469289}
@@ -5369,7 +5370,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 1/10
+  m_text: 0/5
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 70b9c635cbbc8b945b278875b627ec89, type: 2}
   m_sharedMaterial: {fileID: -255603591768071407, guid: 70b9c635cbbc8b945b278875b627ec89,
@@ -8085,7 +8086,7 @@ PrefabInstance:
     - target: {fileID: 5598797729915958477, guid: fae5200425ef8e24396f44d476510f76,
         type: 3}
       propertyPath: m_IsActive
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 5598797729915958478, guid: fae5200425ef8e24396f44d476510f76,
         type: 3}
@@ -11389,7 +11390,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1605801579
 RectTransform:
   m_ObjectHideFlags: 0
@@ -12987,7 +12988,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1788058036
 RectTransform:
   m_ObjectHideFlags: 0
