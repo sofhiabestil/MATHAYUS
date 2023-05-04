@@ -1337,7 +1337,7 @@ MonoBehaviour:
   EasyScoreText: {fileID: 128071084}
   initialPosition: {x: 0, y: 0}
   PracticeCongrats: {fileID: 173231467}
-  soundkeepitup: {fileID: 173231469}
+  soundtryagain: {fileID: 0}
   soundwelldone: {fileID: 173231468}
   soundawesome: {fileID: 173231470}
   pgameoverpanel: {fileID: 386682773}
@@ -1346,7 +1346,7 @@ MonoBehaviour:
   star1: {fileID: 1112127523}
   star2: {fileID: 1519748379}
   star3: {fileID: 2040394545}
-  keepitup: {fileID: 753538032}
+  tryagain: {fileID: 753538032}
   welldone: {fileID: 519712642}
   awesome: {fileID: 1973647040}
 --- !u!82 &173231467
@@ -1838,7 +1838,7 @@ MonoBehaviour:
   EasyScoreText: {fileID: 128071084}
   initialPosition: {x: 0, y: 0}
   PracticeCongrats: {fileID: 188132642}
-  soundkeepitup: {fileID: 188132644}
+  soundtryagain: {fileID: 0}
   soundwelldone: {fileID: 188132643}
   soundawesome: {fileID: 188132645}
   pgameoverpanel: {fileID: 386682773}
@@ -1847,7 +1847,7 @@ MonoBehaviour:
   star1: {fileID: 1112127523}
   star2: {fileID: 1519748379}
   star3: {fileID: 2040394545}
-  keepitup: {fileID: 753538032}
+  tryagain: {fileID: 753538032}
   welldone: {fileID: 519712642}
   awesome: {fileID: 1973647040}
 --- !u!82 &188132642
@@ -3029,7 +3029,7 @@ MonoBehaviour:
   EasyScoreText: {fileID: 128071084}
   initialPosition: {x: 0, y: 0}
   PracticeCongrats: {fileID: 241350003}
-  soundkeepitup: {fileID: 241350005}
+  soundtryagain: {fileID: 0}
   soundwelldone: {fileID: 241350004}
   soundawesome: {fileID: 241350006}
   pgameoverpanel: {fileID: 386682773}
@@ -3038,7 +3038,7 @@ MonoBehaviour:
   star1: {fileID: 1112127523}
   star2: {fileID: 1519748379}
   star3: {fileID: 2040394545}
-  keepitup: {fileID: 753538032}
+  tryagain: {fileID: 753538032}
   welldone: {fileID: 519712642}
   awesome: {fileID: 1973647040}
 --- !u!82 &241350003
@@ -6506,7 +6506,7 @@ MonoBehaviour:
   EasyScoreText: {fileID: 128071084}
   initialPosition: {x: 0, y: 0}
   PracticeCongrats: {fileID: 589058368}
-  soundkeepitup: {fileID: 589058370}
+  soundtryagain: {fileID: 0}
   soundwelldone: {fileID: 589058369}
   soundawesome: {fileID: 589058371}
   pgameoverpanel: {fileID: 386682773}
@@ -6515,7 +6515,7 @@ MonoBehaviour:
   star1: {fileID: 1112127523}
   star2: {fileID: 1519748379}
   star3: {fileID: 2040394545}
-  keepitup: {fileID: 753538032}
+  tryagain: {fileID: 753538032}
   welldone: {fileID: 519712642}
   awesome: {fileID: 1973647040}
 --- !u!82 &589058368
@@ -8907,7 +8907,7 @@ MonoBehaviour:
   EasyScoreText: {fileID: 128071084}
   initialPosition: {x: 0, y: 0}
   PracticeCongrats: {fileID: 813875199}
-  soundkeepitup: {fileID: 813875201}
+  soundtryagain: {fileID: 0}
   soundwelldone: {fileID: 813875200}
   soundawesome: {fileID: 813875202}
   pgameoverpanel: {fileID: 386682773}
@@ -8916,7 +8916,7 @@ MonoBehaviour:
   star1: {fileID: 1112127523}
   star2: {fileID: 1519748379}
   star3: {fileID: 2040394545}
-  keepitup: {fileID: 753538032}
+  tryagain: {fileID: 753538032}
   welldone: {fileID: 519712642}
   awesome: {fileID: 1973647040}
 --- !u!82 &813875199
@@ -12822,7 +12822,7 @@ MonoBehaviour:
   EasyScoreText: {fileID: 128071084}
   initialPosition: {x: 0, y: 0}
   PracticeCongrats: {fileID: 1201872831}
-  soundkeepitup: {fileID: 1201872833}
+  soundtryagain: {fileID: 0}
   soundwelldone: {fileID: 1201872832}
   soundawesome: {fileID: 1201872834}
   pgameoverpanel: {fileID: 386682773}
@@ -12831,7 +12831,7 @@ MonoBehaviour:
   star1: {fileID: 1112127523}
   star2: {fileID: 1519748379}
   star3: {fileID: 2040394545}
-  keepitup: {fileID: 753538032}
+  tryagain: {fileID: 753538032}
   welldone: {fileID: 519712642}
   awesome: {fileID: 1973647040}
 --- !u!82 &1201872831
@@ -14842,7 +14842,7 @@ MonoBehaviour:
   EasyScoreText: {fileID: 128071084}
   initialPosition: {x: 0, y: 0}
   PracticeCongrats: {fileID: 1427049370}
-  soundkeepitup: {fileID: 1427049372}
+  soundtryagain: {fileID: 0}
   soundwelldone: {fileID: 1427049371}
   soundawesome: {fileID: 1427049373}
   pgameoverpanel: {fileID: 386682773}
@@ -14851,7 +14851,7 @@ MonoBehaviour:
   star1: {fileID: 1112127523}
   star2: {fileID: 1519748379}
   star3: {fileID: 2040394545}
-  keepitup: {fileID: 753538032}
+  tryagain: {fileID: 753538032}
   welldone: {fileID: 519712642}
   awesome: {fileID: 1973647040}
 --- !u!82 &1427049370
