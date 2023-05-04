@@ -8,10 +8,10 @@ using UnityEngine.SceneManagement;
 public class QuizUI : MonoBehaviour
 {
     [SerializeField] private QuizManager quizManager;
-    [SerializeField] private TextMeshProUGUI questionText, scoreText, timerText, questioncountText;
+    [SerializeField] private TextMeshProUGUI questionText, scoreText, scoreTextFailed, timerText, questioncountText;
     [SerializeField] private List<Image> lifeImageList;
-    [SerializeField] private GameObject gameOverPanel, averageMenuPanel, gameMenuPanel, walkpanel;
-    [SerializeField] public  GameObject star0, star1, star2, star3, wrongPanel, correctPanel, Averageconfetti, Akeepitup,Awelldone,Aawesome;
+    [SerializeField] private GameObject gameOverPanel, gameOverPanelFailed, averageMenuPanel, gameMenuPanel, walkpanel;
+    [SerializeField] public  GameObject star0, star1, star2, star3, wrongPanel, correctPanel, Averageconfetti, Atryagain,Awelldone,Aawesome;
     [SerializeField] private Image questionImage;
     [SerializeField] private UnityEngine.Video.VideoPlayer questionVideo;
     [SerializeField] private AudioSource questionAudio;
@@ -26,12 +26,16 @@ public class QuizUI : MonoBehaviour
 
     public TextMeshProUGUI ScoreText { get { return scoreText; } }
 
+    public TextMeshProUGUI ScoreTextFailed { get { return scoreTextFailed; } }
+
     public TextMeshProUGUI TimerText { get { return timerText; } }
     //public TextMeshProUGUI QuestionNum { get { return questionNum; } }
 
     public TextMeshProUGUI QuestionCountText { get { return questioncountText; } }
 
     public GameObject GameOverPanel { get { return gameOverPanel; } }
+
+    public GameObject GameOverPanelFailed { get { return gameOverPanelFailed; } }
 
     public GameObject Walkpanel { get { return walkpanel; } }
 
