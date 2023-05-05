@@ -6367,6 +6367,12 @@ MonoBehaviour:
   - {fileID: 145530121}
   activeButtonIndex: 4
   activeTextIndex: 4
+--- !u!1 &489742387 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4025422917406451545, guid: 02d37c74a3e2fd64aa02eb2ca6cc3367,
+    type: 3}
+  m_PrefabInstance: {fileID: 1361990965}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &495939612
 GameObject:
   m_ObjectHideFlags: 0
@@ -19198,7 +19204,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panels:
   - {fileID: 1605479166}
-  - {fileID: 948384404}
+  - {fileID: 489742387}
   buttons:
   - {fileID: 1620735616}
 --- !u!1 &1624940430
