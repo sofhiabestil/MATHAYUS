@@ -1557,11 +1557,14 @@ MonoBehaviour:
   resetButton: {fileID: 0}
   filled: 0
   EasyScoreText: {fileID: 128071084}
+  EasyScoreTextFailed: {fileID: 0}
   EasyCongrats: {fileID: 0}
-  Esoundkeepitup: {fileID: 0}
+  Esoundtryagain: {fileID: 0}
   Esoundwelldone: {fileID: 0}
   Esoundawesome: {fileID: 0}
+  EasysadCongrats: {fileID: 0}
   gameoverpanel: {fileID: 386682773}
+  gameoverpanelfailed: {fileID: 0}
   EasyConfetti: {fileID: 0}
   EasyWalkingPanel: {fileID: 0}
   panel1: {fileID: 0}
@@ -5191,11 +5194,14 @@ MonoBehaviour:
   resetButton: {fileID: 0}
   filled: 0
   EasyScoreText: {fileID: 128071084}
+  EasyScoreTextFailed: {fileID: 0}
   EasyCongrats: {fileID: 0}
-  Esoundkeepitup: {fileID: 0}
+  Esoundtryagain: {fileID: 0}
   Esoundwelldone: {fileID: 0}
   Esoundawesome: {fileID: 0}
+  EasysadCongrats: {fileID: 0}
   gameoverpanel: {fileID: 386682773}
+  gameoverpanelfailed: {fileID: 0}
   EasyConfetti: {fileID: 0}
   EasyWalkingPanel: {fileID: 0}
   panel1: {fileID: 0}
@@ -5301,11 +5307,14 @@ MonoBehaviour:
   resetButton: {fileID: 0}
   filled: 0
   EasyScoreText: {fileID: 128071084}
+  EasyScoreTextFailed: {fileID: 0}
   EasyCongrats: {fileID: 0}
-  Esoundkeepitup: {fileID: 0}
+  Esoundtryagain: {fileID: 0}
   Esoundwelldone: {fileID: 0}
   Esoundawesome: {fileID: 0}
+  EasysadCongrats: {fileID: 0}
   gameoverpanel: {fileID: 386682773}
+  gameoverpanelfailed: {fileID: 0}
   EasyConfetti: {fileID: 0}
   EasyWalkingPanel: {fileID: 0}
   panel1: {fileID: 0}
@@ -5669,11 +5678,14 @@ MonoBehaviour:
   resetButton: {fileID: 0}
   filled: 0
   EasyScoreText: {fileID: 128071084}
+  EasyScoreTextFailed: {fileID: 0}
   EasyCongrats: {fileID: 0}
-  Esoundkeepitup: {fileID: 0}
+  Esoundtryagain: {fileID: 0}
   Esoundwelldone: {fileID: 0}
   Esoundawesome: {fileID: 0}
+  EasysadCongrats: {fileID: 0}
   gameoverpanel: {fileID: 386682773}
+  gameoverpanelfailed: {fileID: 0}
   EasyConfetti: {fileID: 0}
   EasyWalkingPanel: {fileID: 0}
   panel1: {fileID: 0}
@@ -6595,11 +6607,14 @@ MonoBehaviour:
   resetButton: {fileID: 0}
   filled: 0
   EasyScoreText: {fileID: 128071084}
+  EasyScoreTextFailed: {fileID: 0}
   EasyCongrats: {fileID: 0}
-  Esoundkeepitup: {fileID: 0}
+  Esoundtryagain: {fileID: 0}
   Esoundwelldone: {fileID: 0}
   Esoundawesome: {fileID: 0}
+  EasysadCongrats: {fileID: 0}
   gameoverpanel: {fileID: 386682773}
+  gameoverpanelfailed: {fileID: 0}
   EasyConfetti: {fileID: 0}
   EasyWalkingPanel: {fileID: 0}
   panel1: {fileID: 0}
@@ -7027,11 +7042,14 @@ MonoBehaviour:
   resetButton: {fileID: 0}
   filled: 0
   EasyScoreText: {fileID: 128071084}
+  EasyScoreTextFailed: {fileID: 0}
   EasyCongrats: {fileID: 0}
-  Esoundkeepitup: {fileID: 0}
+  Esoundtryagain: {fileID: 0}
   Esoundwelldone: {fileID: 0}
   Esoundawesome: {fileID: 0}
+  EasysadCongrats: {fileID: 0}
   gameoverpanel: {fileID: 386682773}
+  gameoverpanelfailed: {fileID: 0}
   EasyConfetti: {fileID: 0}
   EasyWalkingPanel: {fileID: 0}
   panel1: {fileID: 0}
@@ -9804,11 +9822,14 @@ MonoBehaviour:
   resetButton: {fileID: 0}
   filled: 0
   EasyScoreText: {fileID: 128071084}
+  EasyScoreTextFailed: {fileID: 0}
   EasyCongrats: {fileID: 0}
-  Esoundkeepitup: {fileID: 0}
+  Esoundtryagain: {fileID: 0}
   Esoundwelldone: {fileID: 0}
   Esoundawesome: {fileID: 0}
+  EasysadCongrats: {fileID: 0}
   gameoverpanel: {fileID: 386682773}
+  gameoverpanelfailed: {fileID: 0}
   EasyConfetti: {fileID: 0}
   EasyWalkingPanel: {fileID: 0}
   panel1: {fileID: 0}
@@ -13140,11 +13161,14 @@ MonoBehaviour:
   resetButton: {fileID: 0}
   filled: 0
   EasyScoreText: {fileID: 128071084}
+  EasyScoreTextFailed: {fileID: 0}
   EasyCongrats: {fileID: 0}
-  Esoundkeepitup: {fileID: 0}
+  Esoundtryagain: {fileID: 0}
   Esoundwelldone: {fileID: 0}
   Esoundawesome: {fileID: 0}
+  EasysadCongrats: {fileID: 0}
   gameoverpanel: {fileID: 386682773}
+  gameoverpanelfailed: {fileID: 0}
   EasyConfetti: {fileID: 0}
   EasyWalkingPanel: {fileID: 0}
   panel1: {fileID: 0}
@@ -13343,11 +13367,14 @@ MonoBehaviour:
   resetButton: {fileID: 0}
   filled: 0
   EasyScoreText: {fileID: 128071084}
+  EasyScoreTextFailed: {fileID: 0}
   EasyCongrats: {fileID: 0}
-  Esoundkeepitup: {fileID: 0}
+  Esoundtryagain: {fileID: 0}
   Esoundwelldone: {fileID: 0}
   Esoundawesome: {fileID: 0}
+  EasysadCongrats: {fileID: 0}
   gameoverpanel: {fileID: 386682773}
+  gameoverpanelfailed: {fileID: 0}
   EasyConfetti: {fileID: 0}
   EasyWalkingPanel: {fileID: 0}
   panel1: {fileID: 0}
@@ -16625,11 +16652,14 @@ MonoBehaviour:
   resetButton: {fileID: 0}
   filled: 0
   EasyScoreText: {fileID: 128071084}
+  EasyScoreTextFailed: {fileID: 0}
   EasyCongrats: {fileID: 0}
-  Esoundkeepitup: {fileID: 0}
+  Esoundtryagain: {fileID: 0}
   Esoundwelldone: {fileID: 0}
   Esoundawesome: {fileID: 0}
+  EasysadCongrats: {fileID: 0}
   gameoverpanel: {fileID: 386682773}
+  gameoverpanelfailed: {fileID: 0}
   EasyConfetti: {fileID: 0}
   EasyWalkingPanel: {fileID: 0}
   panel1: {fileID: 0}
@@ -19198,7 +19228,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   panels:
   - {fileID: 1605479166}
-  - {fileID: 948384404}
+  - {fileID: 1882909125}
   buttons:
   - {fileID: 1620735616}
 --- !u!1 &1624940430
@@ -20782,11 +20812,14 @@ MonoBehaviour:
   resetButton: {fileID: 0}
   filled: 0
   EasyScoreText: {fileID: 128071084}
+  EasyScoreTextFailed: {fileID: 0}
   EasyCongrats: {fileID: 0}
-  Esoundkeepitup: {fileID: 0}
+  Esoundtryagain: {fileID: 0}
   Esoundwelldone: {fileID: 0}
   Esoundawesome: {fileID: 0}
+  EasysadCongrats: {fileID: 0}
   gameoverpanel: {fileID: 386682773}
+  gameoverpanelfailed: {fileID: 0}
   EasyConfetti: {fileID: 0}
   EasyWalkingPanel: {fileID: 0}
   panel1: {fileID: 0}
@@ -21533,6 +21566,12 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1879413307}
   m_CullTransparentMesh: 1
+--- !u!1 &1882909125 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4025422917406451545, guid: 02d37c74a3e2fd64aa02eb2ca6cc3367,
+    type: 3}
+  m_PrefabInstance: {fileID: 1361990965}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1914999682
 GameObject:
   m_ObjectHideFlags: 0

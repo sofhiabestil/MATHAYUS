@@ -7,4 +7,11 @@ public class LevelsMenu : MonoBehaviour
     {
         SceneManager.LoadScene(index);
     }
+
+
+    public void LoadStringlevel(string namaScene)
+    {
+        SceneManager.LoadScene(namaScene);
+    }
 }
+

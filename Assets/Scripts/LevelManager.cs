@@ -5,30 +5,34 @@ using UnityEngine.UI;
 
 public class LevelManager : MonoBehaviour
 {
-    int levelsUnlocked;
-    public Button[] buttons;
+    public Button buttonlevel2;
+    public Button buttonlevel3;
 
     void Start()
     {
-        levelsUnlocked = PlayerPrefs.GetInt("levelsUnlocked", 1);
-
-        for (int i = 0; i < buttons.Length; i++)
-        {
-
-            buttons[i].interactable = false;
-        }
-
-        for (int i = 0; i < levelsUnlocked; i++)
-        {
-
-            buttons[i].interactable = true;
-        }
-
+        CheckLevel();    
     }
 
+   public void CheckLevel(){
+        
+        int StatusLevel2 = PlayerPrefs.GetInt("Average");
+        int StatusLevel3 = PlayerPrefs.GetInt("Difficult");
 
-    void Update()
+        if(StatusLevel2 == 1){
+            buttonlevel2.interactable = true;
+        }else
+             buttonlevel2.interactable = false;
+
+        if(StatusLevel3 == 1){
+             buttonlevel3.interactable = true;
+        }else
+             buttonlevel3.interactable = false;    
+   }
+
+    public void OnApplicationQuit()
     {
-
+        // Lock all unlocked levels
+        PlayerPrefs.SetInt("Average", 0);
+        PlayerPrefs.SetInt("Difficult", 0);
     }
 }

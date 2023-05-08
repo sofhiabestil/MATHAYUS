@@ -440,6 +440,52 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 190592048}
   m_CullTransparentMesh: 1
+--- !u!1 &243338314
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 243338316}
+  - component: {fileID: 243338315}
+  m_Layer: 0
+  m_Name: UnlockLevel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &243338315
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 243338314}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57fc8fa1d0193ee45a86c3ca0b6a7e82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  buttonlevel2: {fileID: 2072135788}
+  buttonlevel3: {fileID: 715917590}
+--- !u!4 &243338316
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 243338314}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &379648732
 GameObject:
   m_ObjectHideFlags: 0
@@ -453,8 +499,6 @@ GameObject:
   - component: {fileID: 379648736}
   - component: {fileID: 379648735}
   - component: {fileID: 379648734}
-  - component: {fileID: 379648738}
-  - component: {fileID: 379648739}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -567,38 +611,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!114 &379648738
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 379648732}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8517e7682f9e4ee45bec388415e901c0, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buttons:
-  - {fileID: 1244460332}
-  - {fileID: 2072135788}
-  - {fileID: 715917590}
---- !u!114 &379648739
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 379648732}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 57fc8fa1d0193ee45a86c3ca0b6a7e82, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  buttons:
-  - {fileID: 1244460332}
-  - {fileID: 2072135788}
-  - {fileID: 715917590}
 --- !u!1 &406568249
 GameObject:
   m_ObjectHideFlags: 0
@@ -1057,21 +1069,21 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 715917591}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 379648734}
+      - m_Target: {fileID: 847263044}
         m_TargetAssemblyTypeName: LevelsMenu, Assembly-CSharp
-        m_MethodName: Loadlevel
-        m_Mode: 3
+        m_MethodName: LoadStringlevel
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 8
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Difficult
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &715917591
@@ -1383,6 +1395,50 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 824973991}
   m_CullTransparentMesh: 1
+--- !u!1 &847263042
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 847263043}
+  - component: {fileID: 847263044}
+  m_Layer: 0
+  m_Name: LevelManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &847263043
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847263042}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 4
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &847263044
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 847263042}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ad32dff6233214f4aba2ef106ea42420, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &890478257
 GameObject:
   m_ObjectHideFlags: 0
@@ -1821,16 +1877,16 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 379648734}
+      - m_Target: {fileID: 847263044}
         m_TargetAssemblyTypeName: LevelsMenu, Assembly-CSharp
-        m_MethodName: Loadlevel
-        m_Mode: 3
+        m_MethodName: LoadStringlevel
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 7
+          m_IntArgument: 0
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Easy
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &1244460333
@@ -2332,21 +2388,21 @@ MonoBehaviour:
     m_PressedTrigger: Pressed
     m_SelectedTrigger: Selected
     m_DisabledTrigger: Disabled
-  m_Interactable: 1
+  m_Interactable: 0
   m_TargetGraphic: {fileID: 2072135789}
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 379648734}
+      - m_Target: {fileID: 847263044}
         m_TargetAssemblyTypeName: LevelsMenu, Assembly-CSharp
-        m_MethodName: Loadlevel
-        m_Mode: 3
+        m_MethodName: LoadStringlevel
+        m_Mode: 5
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
           m_IntArgument: 5
           m_FloatArgument: 0
-          m_StringArgument: 
+          m_StringArgument: Average
           m_BoolArgument: 0
         m_CallState: 2
 --- !u!114 &2072135789
