@@ -21237,4 +21237,4 @@ MonoBehaviour:
   soundOffImage: {fileID: 21300000, guid: a6020435f524554498c49f3859c28e49, type: 3}
   button: {fileID: 1431604475890640057}
   asrc: {fileID: 156691626}
-  sfx1: {fileID: 8300000, guid: 9cf98e6d1308e7942b7ac3efef268f7c, type: 3}
+  sfx1: {fileID: 8300000, guid: d85d600e738a9584cb8b290b348461ac, type: 3}
