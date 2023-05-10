@@ -106,6 +106,7 @@ public class QuizManager : MonoBehaviour
             correctAns = true;
             scoreCount += 1;
             quizUI.ScoreText.text = scoreCount + "/10";
+            quizUI.ScoreTextFailed.text = scoreCount + "/10";
             Invoke("ActivateCorrectPanel", 1.3f);
             //quizUI.correctPanel.gameObject.SetActive(true);
             //quizUI.PracticesoundEffect[1].Play();
@@ -146,6 +147,7 @@ public class QuizManager : MonoBehaviour
                     //gameStatus = GameStatus.Next;
                     /*quizUI.GameOverPanel.SetActive(true);*/
                 }
+
                 else {
                     Invoke("ActivateGameOverPanel", 3f);
                 }
@@ -161,19 +163,19 @@ public class QuizManager : MonoBehaviour
             quizUI.star3.gameObject.SetActive(true);
             quizUI.Aawesome.gameObject.SetActive(true);
             quizUI.Awelldone.gameObject.SetActive(false);
-            quizUI.Akeepitup.gameObject.SetActive(false);
+            quizUI.Atryagain.gameObject.SetActive(false);
         }
         else if (scoreCount > 4 && scoreCount < 10)
         {
             quizUI.star2.gameObject.SetActive(true);
             quizUI.Awelldone.gameObject.SetActive(true);
             quizUI.Aawesome.gameObject.SetActive(false);
-            quizUI.Akeepitup.gameObject.SetActive(false);
+            quizUI.Atryagain.gameObject.SetActive(false);
         }
         else if (scoreCount == 0)
         {
             quizUI.star0.gameObject.SetActive(true);
-            quizUI.Akeepitup.gameObject.SetActive(true);
+            quizUI.Atryagain.gameObject.SetActive(true);
             quizUI.Awelldone.gameObject.SetActive(false);
             quizUI.Aawesome.gameObject.SetActive(false);
             
@@ -181,7 +183,7 @@ public class QuizManager : MonoBehaviour
         else if (scoreCount < 5)
         {
             quizUI.star1.gameObject.SetActive(true);
-            quizUI.Akeepitup.gameObject.SetActive(true);
+            quizUI.Atryagain.gameObject.SetActive(true);
             quizUI.Awelldone.gameObject.SetActive(false);
             quizUI.Aawesome.gameObject.SetActive(false);
         }
@@ -200,21 +202,17 @@ public class QuizManager : MonoBehaviour
 
     public void ActivateGameOverPanel()
     {
-        quizUI.GameOverPanel.gameObject.SetActive(true);
-        quizUI.AverageConfetti.gameObject.SetActive(true);
-        quizUI.PracticesoundEffect[2].Play();
+        quizUI.GameOverPanelFailed.gameObject.SetActive(true);
+        //quizUI.AverageConfetti.gameObject.SetActive(true);
+        quizUI.PracticesoundEffect[7].Play();
        
 
-       if (scoreCount == 0)
+       if (scoreCount == 0 || scoreCount < 5)
         {
             quizUI.PracticesoundEffect[4].Play();
 
         }
-        else if (scoreCount < 5)
-        {
-            quizUI.PracticesoundEffect[4].Play();
-
-        }
+       
     }
 
     void ActivateWalkPanel()

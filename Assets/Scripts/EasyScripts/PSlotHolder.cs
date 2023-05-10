@@ -14,19 +14,22 @@ public class PSlotHolder : MonoBehaviour, IDropHandler
     public Button PcheckButton;
     public Button PresetButton;
     private bool allHoldersFilled = false;
-    public Text EasyScoreText;
+    public Text EasyScoreText, failedScoreText;
     public Vector2 initialPosition;
-    public AudioSource PracticeCongrats, soundkeepitup, soundwelldone, soundawesome;
+    public AudioSource PracticeCongrats, soundtryagain, soundwelldone, soundawesome, Practicesad;
 
 
-    [SerializeField] private GameObject pgameoverpanel, PeasyConfetti;
-    [SerializeField] public GameObject star0, star1, star2, star3, keepitup, welldone, awesome;
+    [SerializeField] private GameObject pgameoverpanel, pgameoverpanelfailed, PeasyConfetti;
+    [SerializeField] public GameObject star0, star1, star2, star3, tryagain, welldone, awesome;
 
 
     public GameObject PGameOverPanel { get { return pgameoverpanel; } }
 
+    public GameObject PGameOverPanelFailed { get { return pgameoverpanelfailed; } }
+
     public Text TextScore { get { return EasyScoreText; } }
-    
+    public Text TextScoreFailed { get { return failedScoreText; } }
+
 
     public void OnDrop(PointerEventData eventData)
     {
@@ -82,6 +85,7 @@ public class PSlotHolder : MonoBehaviour, IDropHandler
         }
         Pscore = 0; // Reset score
         EasyScoreText.text = Pscore + "/7"; // Update score text
+        TextScoreFailed.text = Pscore + "/7";
         star0.SetActive(false); // Deactivate all stars
 
         // Set all slot holders to not filled
@@ -90,6 +94,7 @@ public class PSlotHolder : MonoBehaviour, IDropHandler
             slotHolder.filled = false;
             Pscore = 0; // Reset score
             EasyScoreText.text = Pscore + "/7"; // Update score text
+            TextScoreFailed.text = Pscore + "/7";
         }
     }
 
@@ -143,8 +148,10 @@ public class PSlotHolder : MonoBehaviour, IDropHandler
                     Invoke("activateAwesome", 0.5f);
                     awesome.gameObject.SetActive(true);
                     welldone.gameObject.SetActive(false);
-                    keepitup.gameObject.SetActive(false);
+                    tryagain.gameObject.SetActive(false);
                     Invoke("ActivateGameOverPanel", 1f);
+                    Invoke("ActivateCongrats", 1f);
+                    Invoke("ActivateConfetti", 1f);
                 }
                 else if (score >= 5 && score <= 6)
                 {
@@ -152,31 +159,36 @@ public class PSlotHolder : MonoBehaviour, IDropHandler
                     Invoke("activateWelldone", 0.5f);
                     awesome.gameObject.SetActive(false);
                     welldone.gameObject.SetActive(true);
-                    keepitup.gameObject.SetActive(false);
+                    tryagain.gameObject.SetActive(false);
                     Invoke("ActivateGameOverPanel", 1f);
+                    Invoke("ActivateCongrats", 1f);
+                    Invoke("ActivateConfetti", 1f);
                 }
                 else if (score <= 4 && score != 0)
                 {
-                    awesome.gameObject.SetActive(false);
-                    Invoke("activateKeepitUp", 0.5f);
-                    welldone.gameObject.SetActive(false);
-                    keepitup.gameObject.SetActive(true);
                     star1.gameObject.SetActive(true);
-                    Invoke("ActivateGameOverPanel", 1f);
+                    awesome.gameObject.SetActive(false);
+                    welldone.gameObject.SetActive(false);
+                    tryagain.gameObject.SetActive(true);
+                    Invoke("ActivateSadCongrats", 1f);
+                    Invoke("ActivateGameOverPanelFailed", 1f);
+                    Invoke("activateTryagainSoundEffect", 1f);
                 }
                 else if (score == 0)
                 {
-                    awesome.gameObject.SetActive(false);
-                    Invoke("activateKeepitUp", 0.5f);
-                    welldone.gameObject.SetActive(false);
-                    keepitup.gameObject.SetActive(true);
                     star0.gameObject.SetActive(true);
-                    Invoke("ActivateGameOverPanel", 1f);
+                    awesome.gameObject.SetActive(false);
+                    welldone.gameObject.SetActive(false);
+                    tryagain.gameObject.SetActive(true);
+                    Invoke("ActivateSadCongrats", 1f);
+                    Invoke("ActivateGameOverPanelFailed", 1f);
+                    Invoke("activateTryagainSoundEffect", 1f);
                 }
 
                 // Update score text and reset check button
                 Pscore = score;
                 TextScore.text = Pscore + "/7";
+                TextScoreFailed.text = Pscore + "/7";
                 PcheckButton.onClick.RemoveAllListeners();
                 PcheckButton.interactable = false;
             });
@@ -195,10 +207,30 @@ public class PSlotHolder : MonoBehaviour, IDropHandler
     void ActivateGameOverPanel()
     {
         PGameOverPanel.gameObject.SetActive(true);
-        PracticeCongrats.Play();
-        PeasyConfetti.gameObject.SetActive(true);
+
     }
 
+    void ActivateGameOverPanelFailed()
+    {
+        PGameOverPanelFailed.gameObject.SetActive(true);
+        PGameOverPanel.gameObject.SetActive(false);
+
+    }
+
+    void ActivateCongrats()
+    {
+        PracticeCongrats.Play();
+    }
+
+    void ActivateSadCongrats()
+    {
+        Practicesad.Play();
+    }
+
+    void ActivateConfetti()
+    {
+        PeasyConfetti.gameObject.SetActive(true);
+    }
     void activateAwesome()
     {
         soundawesome.Play();
@@ -210,10 +242,9 @@ public class PSlotHolder : MonoBehaviour, IDropHandler
         soundwelldone.Play();
 
     }
-
-    void activateKeepitUp()
+    void activateTryagainSoundEffect()
     {
-        soundkeepitup.Play();
+        soundtryagain.Play();
     }
 
 

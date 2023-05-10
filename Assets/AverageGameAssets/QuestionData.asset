@@ -986,17 +986,6 @@ MonoBehaviour:
     - 12
     - 11
     correctAns: 12
-  - questionInfo: Are January and December, Months or days?
-    questionType: 0
-    questionImg: {fileID: 0}
-    questionClip: {fileID: 0}
-    questionVideo: {fileID: 0}
-    options:
-    - Months
-    - Days
-    - 'Years '
-    - Leap year
-    correctAns: Months
   - questionInfo: What is the last month of the year?
     questionType: 0
     questionImg: {fileID: 0}
