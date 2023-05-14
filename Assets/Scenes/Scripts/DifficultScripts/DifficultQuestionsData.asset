@@ -73,45 +73,45 @@ MonoBehaviour:
     answer: Tuesday
   - diffquestions: 'If today is Friday what day will it be on the 2nd day? '
     answer: Saturday
-  - diffquestions: Arrange the letters in the right order to form a word. "anSdyu"
+  - diffquestions: ' Unscramble the name of days  A, N, S, D, Y, U'
     answer: Sunday
-  - diffquestions: Arrange the letters in the right order to form a word. "dMynao"
+  - diffquestions: Unscramble the name of days D, M, Y, N, A, O
     answer: Monday
-  - diffquestions: Arrange the letters in the right order to form a word.  "Tsuyeda"
+  - diffquestions: Unscramble the name of days.  T, S, U, Y, E, D, A
     answer: Tuesday
-  - diffquestions: Arrange the letters in the right order to form a word.  "Wedseydna"
+  - diffquestions: Unscramble the name of days. W, E, D, S, E, Y, D, N, A
     answer: Wednesday
-  - diffquestions: Arrange the letters in the right order to form a word.  "ysarThud"
+  - diffquestions: Unscramble the name of days.  Y, S, A, R, T, H, U, D
     answer: Thursday
-  - diffquestions: Arrange the letters in the right order to form a word.  "airyFd"
+  - diffquestions: Unscramble the name of days. A, I, R, Y, F, D
     answer: Friday
-  - diffquestions: Arrange the letters in the right order to form a word. "Sduyraat"
+  - diffquestions: 'Unscramble the name of days.  S, D, U, Y, R, A, A, T '
     answer: Saturday
-  - diffquestions: Arrange the letters in the right order to form a word.  "Yaunajr"
+  - diffquestions: Unscramble the name of months. Y, A, U, N, A, J, R
     answer: January
-  - diffquestions: Arrange the letters in the right order to form a word.  "Yabrfreu"
+  - diffquestions: Unscramble the name of months. Y, A, B, R, F, R, E, U
     answer: February
-  - diffquestions: 'Arrange the letters in the right order to form a word. "hrcma" '
+  - diffquestions: Unscramble the name of months.  H, R, C, M, A
     answer: march
-  - diffquestions: Arrange the letters in the right order to form a word. "Yma"
+  - diffquestions: Unscramble the name of months. Y, M, A
     answer: May
-  - diffquestions: Arrange the letters in the right order to form a word. "Neuj"
+  - diffquestions: Unscramble the name of months.  N, E, U, J
     answer: june
-  - diffquestions: Arrange the letters in the right order to form a word.  "Ylju"
+  - diffquestions: Unscramble the name of months. Y, L, J, U
     answer: July
-  - diffquestions: Arrange the letters in the right order to form a word.  "Emseertpb"
+  - diffquestions: 'Unscramble the name of months. E, M, S, E, E, R, T, P, B   '
     answer: September
-  - diffquestions: Arrange the letters in the right order to form a word. "Oorbetc"
+  - diffquestions: Unscramble the name of months. O, O, R, B, E, T, C
     answer: October
-  - diffquestions: Arrange the letters in the right order to form a word. "ronemevb"
+  - diffquestions: Unscramble the name of months. R,O, N, E, E, M, E, V, B
     answer: november
-  - diffquestions: Arrange the letters in the right order to form a word. "dbemerce"
+  - diffquestions: Unscramble the name of months. D, B, E, M, E, R, C, E
     answer: december
-  - diffquestions: Arrange the letters in the right order to form a word.  "Ayre"
+  - diffquestions: ' Unscramble the name related to  the months.  A, Y, R, E '
     answer: Year
-  - diffquestions: Arrange the letters in the right order to form a word. "Plair"
+  - diffquestions: Unscramble the name of months. P, L, A, I, R
     answer: April
-  - diffquestions: Arrange the letters in the right order to form a word. "Thmon"
+  - diffquestions: Unscramble the name of months T, H, M, O, N
     answer: Month
   - diffquestions: How many days are weekday?
     answer: Five
